@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Website</title>
+    </head>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css"></style>
+
+    <body>
+        <!-- Navbar -->
+        <div id="navbar"></div>
+
+        <div class="pages">
+            <div class="content">
+                <h1>Projects</h1>
+                <p>A collection of projects I made in Khan Academy and GitHub</p>
+                
+                <div class="filters">
+                    <ul>
+                        <li class="project-filters-li"><a onclick="javascript: handleProjectFilters(0, 'all')">All</a></li>
+                        <li class="project-filters-li"><a onclick="javascript: handleProjectFilters(1, 'featured')">Featured</a></li>
+                        <li class="project-filters-li"><a onclick="javascript: handleProjectFilters(2, 'contests')">Contests</a></li>
+                        <li class="project-filters-li"><a onclick="javascript: handleProjectFilters(3, 'projects')">Projects</a></li>
+                        <li class="project-filters-li"><a onclick="javascript: handleProjectFilters(4, 'misc')">Misc.</a></li>
+                    </ul>
+                </div>
+
+                <div id="filter-description"></div>
+                
+                <div id="all-projects-container">
+                    <div class="all-project-thumbnails">
+                        <h1>Website entry</h1>
+                        <p>HTML/CSS</p>
+                        <p>Contest Entry</p>
+                    </div>
+
+                    <div class="all-project-thumbnails">
+                        <h1>Website entry</h1>
+                        <p>HTML/CSS</p>
+                        <p>Contest Entry</p>
+                    </div>
+                </div>
+
+                <div id="project-description">
+                    <a id="close-description" onclick="javascript:closeDescription()"><i class="fa fa-close"></i></a>
+                    <div id="project-description-content"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+   		<div id="footer"></div>
+    </body>
+
+    <script src="init.js"></script>
+    <script src="loadProjects.js"></script>
+</html>

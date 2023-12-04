@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Website</title>
+    </head>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu:wght@300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    <!-- highlight.js -->
+    <link rel='stylesheet' id='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css'/>
+    
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css"></style>
+
+    <body>
+        <!-- TODO
+            1. Underbars under every section title (neater look)
+            2. Fix broken links when navigating using filter
+            3. Filters should stay even when pages are switched.
+        -->
+
+        <div id="navbar"></div>
+
+        <div class="pages">
+            <div class="content">
+
+                <!-- The ones to show or hide -->
+                <div id="activity-show-general">
+                    <h1>Posts</h1>
+                    <p>Here you can find records of my milestones, things I'm doing, and a few 3am musings.</p>
+
+                    <div class="filters">
+                        <ul>
+                            <li class="activity-filters-li"><a onclick="javascript:handleActivityFilters(0, 'newer')">Newer</a></li>
+                            <li class="activity-filters-li"><a onclick="javascript:handleActivityFilters(1, 'older')">Older</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hide for now -->
+                <div id="activity-show-specific">
+                    <a href="activity.html">Back to content</a>
+                </div>
+
+                <!-- Depending on the URL, we show one of these two -->
+                <div id="all-activity-posts"></div>
+                <div id="specific-activity-post"></div>
+
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+    
+
+    <script src="loadActivityPost.js"></script>
+    <script src="init.js"></script>
+
+    <!-- Code highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+</html>

@@ -1,0 +1,386 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+pre > code {
+	font-family: Source Code Pro;
+    font-size: 14px;
+	line-height: 1.6em;
+    background-color: black;
+    border-radius: 8px;
+}
+
+#footer {
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	font-family: Ubuntu;
+	padding-top: 10px;
+}
+
+#footer p {
+	text-align: center;
+	padding: 10px;
+}
+
+#navbar {
+	background-color: black;
+
+	width: 100%;
+	font-size: 25px;
+	font-family: Ubuntu;
+	position: fixed;
+
+	z-index:10;
+}
+
+#navbar ul {
+	list-style-type: none;
+}
+
+#navbar ul li a {
+	text-decoration: none;
+	text-align: center;
+	width: 100px;
+
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	color: white;
+	float: left;
+
+	transition: 0.2s;
+}
+
+#navbar ul li a:hover {
+	background-color: gray;
+}
+
+.filters {
+	display: flex;
+	width: fit-content;
+	height: 40px;
+}
+
+.filters ul {
+	list-style-type: none;
+	margin-left: -40px;
+}
+
+.filters ul li {
+	float: left;
+	min-width: 100px;
+	background: rgb(122, 194, 203);
+}
+
+.filters ul li a {
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	color: black;
+
+	text-align: center;
+	transition: 0.2s;
+}
+
+.filters ul li a:hover {
+	cursor: pointer;
+	background-color: rgb(80, 131, 138);
+	color: white;
+}
+
+.pages {
+	padding: 50px;
+	padding-top: 100px;
+}
+
+.content h1 {
+	font-family: Kanit;
+	font-size: 45px;
+}
+
+.content h2 {
+	font-family: Kanit;
+	font-size: 35px;
+}
+
+.content p {
+	font-family: Ubuntu;
+	font-size: 25px;
+
+	line-height: 50px;
+
+	margin-bottom: 50px;
+}
+
+#specific-activity-post figure {
+	margin-bottom: 50px;
+}
+
+.content a {
+	font-family: Ubuntu;
+	font-size: 25px;
+	color: rgb(120, 120, 120);
+}
+
+.content ul,ol {
+	padding-left: 40px;
+	font-size: 23px;
+	font-family: Ubuntu;
+	line-height: 40px;
+
+	padding-bottom: 20px;
+}
+
+.subtitles {
+	padding-top: 30px;
+}
+
+#all-activity-posts {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.activity-posts-container {
+	margin-left: 40px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.activity-posts-container a {
+	text-decoration: none;
+	color: black;
+}
+
+.activity-posts {
+	box-shadow: 3px 3px 10px rgb(0, 0, 0);
+
+	height: 430px;
+	width: 400px;
+
+	margin-top: 50px;
+
+	border-radius: 3px;
+	text-decoration: none;
+	
+	transition: 0.2s;
+}
+
+.activity-posts h1 {
+	display: inline-block;
+
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
+	font-size: 25px;
+}
+.activity-posts p {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+
+	line-height: 40px;
+}
+
+.activity-posts img {
+	object-fit: cover;
+	width: inherit;
+	height: 200px;
+
+	margin-bottom: -10px;
+
+	border-bottom: 2px solid rgb(0, 0, 0, 0.3);
+}
+
+.activity-posts:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	box-shadow: 6px 6px 10px rgb(0, 0, 0);
+	transform: translateX(-5px) translateY(-5px);
+}
+
+#specific-activity-post h1 {
+	text-align: center;
+}
+
+#specific-activity-post img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	margin-bottom: 15px;
+}
+
+#specific-activity-post ul,ol {
+	line-height: 50px;
+}
+
+#specific-activity-post li {
+	margin-bottom: 10px;
+}
+
+figcaption {
+	text-align: center;
+	font-family: Ubuntu;
+	font-size: 20px;
+}
+
+.math-vector span {
+	margin-left: -0.1em;
+}
+
+#all-projects-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project-thumbnails {
+	box-shadow: 3px 3px 10px rgb(0, 0, 0);
+	
+	height: 310px;
+	width: 300px;
+
+	margin-top: 50px;
+	margin-left: 50px;
+
+	border-radius: 3px;
+	text-decoration: none;
+	
+	transition: 0.2s;
+}
+
+.project-thumbnails i {
+	font-size: 23px;
+	margin-right: 3px;
+}
+
+.project-thumbnails-img {
+	width: inherit;
+}
+
+.project-thumbnails-img img {
+	object-fit: cover;
+	width: inherit;
+	height: 200px;
+	padding: 0;
+	margin: 0;
+
+	border-bottom: 2px solid rgb(0, 0, 0, 0.3);
+}
+
+.project-thumbnails-text-main h1 {
+	font-size: 23px;
+	margin-left: 20px;
+}
+
+.project-thumbnails-text-main p {
+	font-size: 15px;
+	margin-left: 20px;
+	vertical-align: bottom;
+}
+
+.project-thumbnails-text-main i {
+	font-size: 15px;
+}
+
+.project-thumbnails-text-descriptions {
+	display: flex;
+	flex-wrap: wrap;
+	float: right;
+
+	margin-top: -50%;
+
+	width: 100px;
+}
+
+.project-thumbnails-text-descriptions p i {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 28px;
+	margin-left: 12px;
+}
+
+.project-thumbnails-text-descriptions p {
+	text-align: center;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+	margin-top: -25px;
+	margin-left: 10px;
+}
+
+.project-thumbnails:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	box-shadow: 6px 6px 10px rgb(0, 0, 0);
+	transform: translateX(-5px) translateY(-5px);
+}
+
+#project-description {
+	background-color: rgb(122, 194, 203);
+	position: fixed;
+	left: 50%;
+	top: 50%;
+
+	border-radius: 10px;
+	box-shadow: -2px -2px 20px rgb(0, 0, 0);
+
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#close-description a i {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#close-description a {
+	background-color: rgb(120, 120, 120);
+	color: black;
+	font-size: 30px;
+	border-radius: 10px 0px 5px 0px;
+}
+
+#close-description a:hover {
+	cursor: pointer;
+	background-color: rgb(200, 200, 200);
+}
+
+#filter-description p {
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+.languages-used-container {
+	display: flex;
+	margin-left: 20px;
+}
+
+.languages-used {
+	border-radius: 10px;
+	height: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	margin-right: 7px;
+	margin-top: 5px;
+}
+
+.languages-used p {
+	text-align: center;
+	margin-top: -14px;
+	margin-left: 0px;
+	font-size: 12px;
+	font-family: Kanit;
+}
+.math-eq {
+	font-family: serif;
+	font-weight: bold;
+
+	padding-left: 3px;
+}
