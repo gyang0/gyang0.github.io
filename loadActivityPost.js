@@ -4,7 +4,7 @@ var activityPosts = [
         title: "CodeForces XOR problem",
         mainImg: "images/activity/20230916_CodeForces_XOR_1.png",
         published: 20230916,
-        updated: 20230926,
+        updated: 20231204,
         summary: "Detailed explanation of problem 1847C (with XOR)",
 
         content: [
