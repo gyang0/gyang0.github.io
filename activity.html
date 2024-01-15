@@ -3,22 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>Website</title>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu:wght@300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+        <!-- highlight.js -->
+        <link rel='stylesheet' id='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css'/>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css"></style>
+
+        <!-- KaTex -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+        <!-- KaTex Autoloader -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
     </head>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu:wght@300&family=Source+Code+Pro&display=swap" rel="stylesheet">
-
-    <!-- highlight.js -->
-    <link rel='stylesheet' id='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css'/>
-    
-    
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css"></style>
 
     <body>
         <div id="navbar"></div>
@@ -51,15 +59,16 @@
             </div>
         </div>
 
+        <span id="test"></span>
+
         <div id="footer"></div>
     </body>
     
-
-    <script src="loadActivityPost.js"></script>
     <script src="init.js"></script>
+    <script src="loadActivityPost.js"></script>
 
     <!-- Code highlighting -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
-
+    
 </html>

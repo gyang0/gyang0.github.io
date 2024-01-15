@@ -21,69 +21,65 @@ var activityPosts = [
 
             ["h2", "", "Problem Statement"],
             ["ol-start", "", ""],
-            ["li", "", `There is an array <span class="math-eq">a</span> with <span class="math-eq">N</span> elements.`],
-            ["li", "", `We can add an element to the end of this array. The new element will have value<br>
-                        <span class="math-eq">
-                            a[i] \u2295 a[i + 1] \u2295 a[i + 2] \u2295 ... \u2295 a[N - 1]</sub>
-                        </span><br>
-                        where <span class="math-eq">i</span> is any index within the bounds of the array.`],
-            ["li", "", `Using the procedure, we can add as many new elements as we want. <span class="math-eq">N</span> will increase by 1
+            ["li", "", `There is an array \\(a\\) with \\(N\\) elements.`],
+            ["li", "", `We can add an element to the end of this array. The new element will have value 
+                        \\(a[i] \\oplus a[i + 1] \\oplus a[i + 2] \\oplus ... \\oplus a[N - 1]\\),
+                        where \\(i\\) is any index within the bounds of the array.`],
+            ["li", "", `Using the procedure, we can add as many new elements as we want. \\(N\\) will increase by 1
                         whenever a new element is added.`],
             ["li", "", "What is the maximum number that can be produced?"],
             ["ol-end", "", ""],
             
             ["h2", "", "Bounds"],
             ["ol-start", "", ""],
-            ["li", "", `1 <= <span class="math-eq">N</span> <= 10<sup>5</sup>`],
-            ["li", "", `0 <= <span class="math-eq">a[i]</span> <= 2<sup>8</sup>`],
+            ["li", "", `\\(1 <= N <= 10^5\\)`],
+            ["li", "", `\\(0 <= a[i] <= 2^8\\)`],
             ["ol-end", "", ""],
             
             ["h2", "", "Editorial"],
             ["ol-start", "", ""],
             ["li", "", `Since the problem involves XOR, let's think in terms of bits. Each element in the array will be a bitset.<br>
-                        Then we can see that there's a maximum bound to the new element we can add. <span class="math-eq">a[i]</span> <= 2<sup>8</sup>,
-                        which means that there's only 8 possible bit positions. The maximum possible element is (in bitset form) 11111111.
+                        Then we can see that there's a maximum bound to the new element we can add. \\(a[i] <= 2^8\\),
+                        which means that there's only 8 possible bit positions. The maximum possible element is (in binary) \\(11111111\\).
                         There's no point in continuing after we get that.`],
             ["li", "margin-top:50px", `Simulating a run is always a good idea. Let's see what happens when we add a new element, choosing index
-                                        <span class="math-eq">i = 2</span> as our "pivot point."`],
+                                        \\(i = 2\\) as our "pivot point."`],
             ["figure", "", "images/activity/20230916_CodeForces_XOR_3.png", `Simulating 1 run`],
             ["li", "margin-top:50px", `The complexity of the problem lies in the fact that we can choose to repeat the operation multiple times. What happens
-                                        when we do that? Let's choose a second index <span class="math-eq">i = 4</span> and repeat the operation.`],
+                                        when we do that? Let's choose a second index \\(i = 4\\) and repeat the operation.`],
             ["figure", "", "images/activity/20230916_CodeForces_XOR_4.png", `Simulating 2 runs`],
             ["li", "margin-top:50px", `Now some key XOR concepts:<br>
-                            <span class="math-eq">a<sub>i</sub></span> \u2295 <span class="math-eq">a<sub>i</sub></span> = 0<br>
-                            <span class="math-eq">a<sub>i</sub></span> \u2295 0 = <span class="math-eq">a<sub>i</sub></span><br>
-                            <span class="math-eq">a<sub>i</sub></span> \u2295 <span class="math-eq">a<sub>j</sub></span>
-                                = <span class="math-eq">a<sub>j</sub></span> \u2295 <span class="math-eq">a<sub>i</sub></span> &nbsp;&nbsp; (we can jumble
-                                the order and it still works)`],
-            ["li", "margin-top:50px", `Notice anything intersting? The expression for the added value cancels down to <span class="math-eq">a[2] \u2295 a[3]</span>,
-                                        which doesn't use any new values! The XOR of a subarray from i = 2 to i = 3, to be exact.
+                            \\(x \\oplus x = 0\\) <br>
+                            \\(x \\oplus 0 = x\\) <br>
+                            \\(x \\oplus y = y \\oplus x\\)`],
+            ["li", "margin-top:50px", `Notice anything intersting? The expression for the added value cancels down to \\(a[2] \\oplus a[3]\\),
+                                        which doesn't use any new values! The XOR of a subarray from \\(i = 2\\) to \\(i = 3\\), to be exact.
                                         <br>
                                         Any added value will just be the XOR of a subarray. This is important. Do a few edge cases
-                                        (i = 0 or i = N - 1) to convince yourself that it works.`],
+                                        (\\(i = 0\\) or \\(i = N - 1\\)) to convince yourself that it works.`],
             ["li", "margin-top:50px", `Great, so we just need to find the maximum XOR subarray...but a naive solution (choosing two indices and 
-                                        iterating all elements in between) would run in O(N<sup>3</sup>). This won't pass.
+                                        iterating all elements in between) would run in \\(O(N^3)\\). This won't pass.
                                         
                                         <br><br>
 
-                                        We can take advantage of XOR properties for an O(2<sup>8</sup>N) solution. Let's call an XOR
-                                        subarray that starts at i = 0 an XOR prefix. Then for every index i, update the prefix to be
-                                        (previous XOR prefix) \u2295 a[i]. Store the XOR prefixes that have appeared so far.
+                                        We can take advantage of XOR properties for an \\(O(2^8N)\\) solution. Let's call an XOR
+                                        subarray that starts at \\(i = 0\\) an XOR prefix. Then for every index i, update the prefix to be
+                                        \\(\\text{(previous XOR prefix)} \\oplus a[i]\\). Store the XOR prefixes that have appeared so far.
                                         
                                         <br><br>
                                         
                                         Then for every index, check
-                                        (current XOR prefix) \u2295 (a previous XOR prefix) for all previous XOR prefixes. Compare these values
-                                        with each other to find the maximum XOR subarray. There will be at most 2<sup>8</sup> previous XOR prefixes,
-                                        hence the O(2<sup>8</sup>N) time complexity.
+                                        \\(\\text{(current XOR prefix)} \\oplus \\text{(a previous XOR prefix)}\\) for all previous XOR prefixes. Compare these values
+                                        with each other to find the maximum XOR subarray. There will be at most \\(2^8\\) previous XOR prefixes,
+                                        hence the \\(O(2^8N)\\) time complexity.
 
                                         <br><br>
 
-                                        Why does this work? Any XOR prefix will start at i = 0. Say that a previous XOR prefix ended at
-                                        i = ind1, and the current XOR prefix ends at i = ind2. Then (current XOR prefix) \u2295
-                                        (a previous XOR prefix) = the XOR subarray from i = ind1 to i = ind2, because the region from i = 0 to i = ind1
-                                        cancels out (check out XOR rules or map out a case). So by XORing a current prefix with a past one,
-                                        we can get the XOR subarray of elements in between.`],
+                                        Why does this work? Any XOR prefix will start at \\(i = 0\\). Say that a previous XOR prefix ended at
+                                        \\(i = A\\), and the current XOR prefix ends at \\(i = B\\). Then 
+                                        \\(\\text{(current XOR prefix)} \\oplus \\text{(a previous XOR prefix)} = \\text{XOR subarray from i = A to i = B}\\), 
+                                        because the region from \\(i = 0\\) to \\(i = A\\) sort of "cancels out." So by XORing a current prefix
+                                        with a past one, we can get the XOR subarray of elements in between.`],
             ["ol-end", "", ""],
 
             ["h2", "", "Code"],
@@ -144,7 +140,7 @@ int main(){
     return 0;
 }`
             ],
-            ["p", "", `And this will pass.`],
+            ["p", "", `Submission result:`],
             ["figure", "width:1200px", "images/activity/20230916_CodeForces_XOR_2.png", ``]
         ]
     },
@@ -166,6 +162,45 @@ int main(){
             ["p", "", `It was hard to set it correctly on my head, because the balance was off. Eventually I ended up using an old cap
                         reinforced with string inside, which seems to work. Pretty proud of it overall.`],
         ]
+    },
+    {
+        title: "Deriving Maxwell's Equations",
+        mainImg: "images/activity/20240114_maxwells_equations_1.png",
+        published: 20240114,
+        updated: 20240114,
+        summary: "Math final project - deriving the 4 equations with multivariable calc.",
+        content: [
+            ["p", "", `My first attempt at writing a formal paper. It's kinda clumsy but was fun to do. Learned quite a bit about LaTeX.`],
+            ["p", "", `There were some points that are hastily patched around - like the difference between an H field and a B field, or the difference
+                        between a D field and an E field. A satisfying justification for Maxwell's addition to Ampere's Law was hard to find as
+                        well.
+                        <a href="https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=1156&context=kb_pubs#page=14" target="_blank">One paper</a>
+                         that Google turned up gave experimental verifications for the equations, but said that "Experimental evidence for the
+                         Maxwell-Ampere equation is not as extensive" as the other laws.`],
+            ["p", "", `There was also the question of whether using other electromagnetism laws to prove Maxwell's equations was illogical,
+                        since Maxwell's equations are supposed to be the foundation of everything else in electromagnetism. But without the laws, 
+                        I would have had to use experimental data or some more fundamental concepts to derive them. So I just used the laws and it 
+                        seems to have worked out. Lenz's Law and the Continuity Equation were especially helpful.`],
+            ["p", "", `One thing I'm proud of is the derivation of Faraday's Law. At one point, I got `],
+            ["p", "text-align: center", `\\( \\iint_S (\\nabla \\times \\textbf{E}) \\cdot d\\textbf{S} = -\\frac{d}{dt}\\iint_S \\textbf{B} \\cdot d\\textbf{S} \\)`],
+            ["p", "", `and I was tempted to just remove the integrals, since "Surface S is arbitrary." But then I noticed that they were flux
+                        integrals and not surface integrals, which made me think that it wouldn't work.`],
+            ["p", "", `After spending time with the second page of Google search results, I found an equation in
+                        <a href="http://sgpwe.izt.uam.mx/files/users/uami/jdf/proyectos/Derivar_inetegral.pdf" target="_blank">this article</a>,
+                        but I kept getting an answer that was off. Which led to a one more round of citation chasing, and fortunately the
+                        <a href="https://www.google.com/books/edition/The_Classical_Theory_of_Electricity_and/9rTQAAAAMAAJ?hl=en&gbpv=1&printsec=frontcover&pg=PA40" target="_blank">original source</a>
+                         was available on Google Books. It looks like there was a single misprint or something in the first article. The original equation is`],
+            ["p", "text-align: center", `\\( \\frac{d}{dt}\\iint_S \\textbf{B} \\cdot d\\textbf{S} = \\iint_S (\\nabla \\cdot \\textbf{B})\\textbf{v} \\cdot d\\textbf{S} -
+                                                                                                     \\int_C (\\textbf{v} \\times \\textbf{B}) \\cdot dL +
+                                                                                                     \\iint_S \\frac{\\partial \\textbf{B}}{\\partial t} \\cdot d\\textbf{S} \\)`],
+            ["p", "", `Which gave me the right result. That was satisfying, but way more work than I expected.`],
+            ["p", "", `<br>Anyways, the actual paper:`],
+            ["CUSTOM", "", `
+                    <div style="display: block; width: 90%; margin: 0 auto">
+                        <embed align="center" src="documents/20240114_maxwells_equations.pdf" width="100%" height="1000" type="application/pdf">
+                    </div>
+                `]
+        ]
     }
 ];
 
@@ -177,8 +212,6 @@ function tagConverter(arr){
     switch(arr[0]){
     case "img":
         return `<img src="${arr[2]}" style="${arr[1]}">`;
-    case "a":
-        return `<p><a href="${arr[2]}" target="_blank">${arr[3]}</a></p>`;
     case "br":
         return "<br>";
     case "ul-start":
@@ -287,7 +320,6 @@ function updatePage(){
             postContent += tagConverter(arr[i]);
         }
 
-        // Update posts
         document.getElementById("specific-activity-post").innerHTML = postContent;
 
         // Show/hide relevant content
