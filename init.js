@@ -15,3 +15,20 @@ var footerCode = `
 
 document.getElementById("navbar").innerHTML = navbarCode;
 document.getElementById("footer").innerHTML = footerCode;
+
+// Navigating using project/activity filters
+// id = used in code
+// name = as it appears on the page
+// desc = description
+let projectFilters = [
+    { id: "all", name: "All", desc: "Everything in one page." },
+    { id: "featured", name: "Featured", desc: "A showcase of my projects that I'm particularly proud of." },
+    { id: "contests", name: "Contests", desc: "Projects entered into contests (usually Khan Academy)." },
+    { id: "projects", name: "Projects", desc: "Some long-term or large-scale projects." },
+    { id: "misc", name: "Misc.", desc: "Miscellaneous" }
+];
+
+let activityFilters = [
+    { id: "newer", name: "Newer" },
+    { id: "older", name: "Older" }
+];

@@ -40,9 +40,11 @@
                     <p>Here you can find records of my milestones, things I'm doing, and a few 3am musings.</p>
 
                     <div class="filters">
-                        <ul>
-                            <li class="activity-filters-li"><a onclick="javascript:handleActivityFilters(0, 'newer')">Newer</a></li>
-                            <li class="activity-filters-li"><a onclick="javascript:handleActivityFilters(1, 'older')">Older</a></li>
+                        <ul id="activity-filters">
+                            <!-- # of li tags must be equal to activityFilters.length in init.js -->
+                            <!-- too lazy to fix -->
+                            <li class="activity-filters-li"><a onclick=""></a></li>
+                            <li class="activity-filters-li"><a onclick=""></a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,6 +67,7 @@
     </body>
     
     <script src="init.js"></script>
+    <script src="data.js"></script>
     <script src="loadActivityPost.js"></script>
 
     <!-- Code highlighting -->
