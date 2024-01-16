@@ -1,11 +1,16 @@
 function closeDescription(){
-	document.getElementById("project-description").innerHTML = "";
+    document.getElementById("cover-projects-page").style = "opacity: 0%";
+
+    var el = document.getElementById("project-description");
+    el.style = "opacity: 0%; pointer-events: none";
 }
 
 function showDescription(id){
+    document.getElementById("cover-projects-page").style = "opacity: 99%";
+
 	// Popup
 	var el = document.getElementById("project-description");
-	el.style.display = "block";
+    el.style = "opacity: 100%";
 	el.innerHTML = `
         <div id="close-description">
 		  <a onclick="javascript:closeDescription()">
@@ -142,4 +147,3 @@ projects.sort((obj1, obj2) => {
 
 // Display relevant projects
 handleProjectFilters(localStorage.getItem("globalProjectFilter") ?? 0);
-closeDescription();
