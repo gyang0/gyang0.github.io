@@ -375,5 +375,52 @@ int main(){
                     </div>
                 `]
         ]
+    },
+    {
+        title: "Some Thoughts on Product Names",
+        mainImg: null,
+        published: 20240117,
+        updated: 20240118,
+        summary: "A couple of stuff I noticed about naming products. Examples of both good and bad names.",
+        content: [
+            ["p", "", `Naming is quite important. It's the first thing people see, most of the time. A good name can push people to explore further, 
+                        but a bad name is easy to forget, or worse, actively weirds people out.`],
+            ["p", "", `I think this is especially true for online products, whether it's a
+                        <a href="https://dayssincelastjavascriptframework.com/" target="_blank">new JS framework</a> by a solo dev or a audio mixer 
+                        by a huge company. There's a ton of competition online, so people want to stand out. But sometimes, they try too hard and 
+                        it shows.`],
+            ["p", "", `For example, C++ is a good name. It creatively shows that it's meant to be an improvement to C, while staying relevant to 
+                        general programming syntax. One problem is that it's a bit of a mouthful to pronounce. But I guess "cpp" as an alternative
+                        is good enough.`],
+            ["figure", "width: 300px", "https://images.uncyclomedia.co/uncyclopedia/en/a/a1/Cpp_rat_mascot_2.jpeg?20170128174614",
+                            `Keith, the C++ mascot`],
+            ["p", "", `Another example of a good name is <a href="https://github.com/Zushah/Chalkboard" target="_blank">ChalkBoard</a>, a JS math 
+                        library by <a href="https://github.com/Zushah" target="_blank">Zushah</a>. It's quirky, easy to remember, and fits its 
+                        topic surprisingly well &mdash; "Chalkboard" -> academics -> math? I like this approach a lot better than trying to shoehorn 
+                        a direct math reference into the name. For example, something like "descartes.js" would have felt a little off.`],
+            
+            ["p", "", `JavaScript is a bad name. I don't even need to explain this. Just look at the number of people confused by its supposed 
+                        relationship to Java. Actually, "Java" by itself is a great name, but JavaScript just had to come along and force its way 
+                        into the name's fame.`],
+            ["p", "", `Sometimes I see names that come from really obscure concepts. Mostly geeks writing their own libraries for math/science stuff.
+                        But in certain situations, this can work well too. As long as the obscure name accurately describes the  product, it's okay.
+                        For example, <a href="https://github.com/benlansdell/analemma" target="_blank">analemma.js</a> accurately describes what
+                        it's supposed to do &mdash; model the <a href="https://en.wikipedia.org/wiki/Analemma" target="_blank">analemma</a>, an
+                        astronomical phenomenon.`],
+            ["p", "", `But if the obscure name doesn't really describe your product accurately, probably the best thing to do is to find another
+                        name. Recently I saw something on Khan Academy's programming section about a user who was working on a vector library.
+                        Processing.js's PVector is pretty slow, so I guess they wanted to make an alternative. That user was calling the library
+                        "analemma.js." Unlike the previous example, this name doesn't pertain to the product. People who come across 
+                        this library will have to think "why is it called that?" Also, the word "analemma" has an unfortunate conotation when a 
+                        single space is inserted. Odds are, people will see it.`],
+            ["p", "", `Another bad name, for a product used by millions of users: <a href="https://procreate.com/" target="_blank">Procreate</a>.
+                        I get it, it's supposed to be Pro + Create. But if you look up the definition of "procreate," this is not what you see:`],
+            ["figure", "width: 600px", "images/activity/20240117_Project_Names_1.png", ``],
+            ["p", "", `That is a fancy way to say "have sex." Procreate is a great app. It should have a better name, one free of such 
+                        allusions.`],
+
+            ["p", "", `<br>(By the way, this post is half-joking. Don't take it too seriously.)`]
+            
+        ]
     }
 ];
