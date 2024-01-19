@@ -1,12 +1,12 @@
 // Navbar and footer
-var navbarCode = `
+const navbarCode = `
 	<ul>
    		<li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="activity.html">Activity</a></li>
    	</ul>`;
 
-var footerCode = `
+const footerCode = `
 	<p>Website hosted through GitHub pages</p>
 	<p><i class="fa fa-copyright"></i> ${new Date().getFullYear()} by Gene Yang</p><br>
     <p>
@@ -16,11 +16,12 @@ var footerCode = `
 document.getElementById("navbar").innerHTML = navbarCode;
 document.getElementById("footer").innerHTML = footerCode;
 
+
 // Navigating using project/activity filters
 // id = used in code
 // name = as it appears on the page
 // desc = description
-let projectFilters = [
+const projectFilters = [
     { id: "all", name: "All", desc: "Everything in one page." },
     { id: "featured", name: "Featured", desc: "A showcase of my projects that I'm particularly proud of." },
     { id: "contests", name: "Contests", desc: "Projects entered into contests (usually Khan Academy)." },
@@ -28,7 +29,7 @@ let projectFilters = [
     { id: "misc", name: "Misc.", desc: "Miscellaneous" }
 ];
 
-let activityFilters = [
+const activityFilters = [
     { id: "newer", name: "Newer" },
     { id: "older", name: "Older" }
 ];

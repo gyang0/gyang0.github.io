@@ -39,36 +39,36 @@ function tagConverter(arr){
 }
 
 function dateFormatter(num){
-    var months = ["January", "February", "March", "April",
-                  "May", "June", "July", "August",
-                  "September", "October", "November", "December"];
+    const months = ["January", "February", "March", "April",
+                    "May", "June", "July", "August",
+                    "September", "October", "November", "December"];
 
     // Current format of num: YYYYMMDD
-    var day = num % 100;
+    let day = num % 100;
     num = Math.floor(num/100);
 
     // Now YYYYMM
-    var month = months[num % 100 - 1];
+    let month = months[num % 100 - 1];
     num = Math.floor(num/100);
 
     // Now YYYY
-    var year = num;
+    let year = num;
 
     return month + " " + day + ", " + year;
 }
 
 function updateActivityPage(){
-    var link = window.location.href;
+    const link = window.location.href;
 
     // Link doesn't specify a page -> show all posts
     if(!link.includes("?page=")){
-        var posts = "";
-        for(var i = 0; i < activityPosts.length; i++){
+        let posts = "";
+        for(let i = 0; i < activityPosts.length; i++){
 
             // First half
             posts += `
                 <div class="activity-posts-container">
-                    <a href="activity.html?page=${i}">
+                    <a href="activity.html?page=${activityPosts[i].pageID}">
                         <div class="activity-posts">
             `;
 
@@ -95,8 +95,21 @@ function updateActivityPage(){
         document.getElementById("activity-show-specific").style.display = "none";
 
     } else {
-        var index = parseInt(link.charAt(link.length - 1), 10);
-        var postContent = "";
+        let pageID = parseInt(link.charAt(link.length - 1), 10);
+        let postContent = "";
+
+        // Index of content corresponding to page ID
+        let index = -1;
+        for(let i = 0; i < activityPosts.length; i++){
+            if(activityPosts[i].pageID == pageID){
+                index = i;
+                break;
+            }
+        }
+
+        if(index == -1){
+            return;
+        }
 
         // Title and date
         postContent += `
@@ -109,8 +122,8 @@ function updateActivityPage(){
         `;
 
         // Interpret every tag and add to content
-        var arr = activityPosts[index].content;
-        for(var i = 0; i < arr.length; i++){
+        let arr = activityPosts[index].content;
+        for(let i = 0; i < arr.length; i++){
             postContent += tagConverter(arr[i]);
         }
 
@@ -124,8 +137,8 @@ function updateActivityPage(){
 
 function handleActivityFilters(filter){
     localStorage.setItem("globalActivityFilter", filter);
-    var arr = document.getElementsByClassName("activity-filters-li");
-    for(var i = 0; i < arr.length; i++){
+    let arr = document.getElementsByClassName("activity-filters-li");
+    for(let i = 0; i < arr.length; i++){
         arr[i].innerHTML = `<a onclick="javascript: handleActivityFilters(${i})">${activityFilters[i].name}</a>`;
         arr[i].style = "background-color: rgb(122, 194, 203)";
     }

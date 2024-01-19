@@ -327,7 +327,11 @@ figcaption {
 	left: 25%;
 	top: 20%;
 
-	border-radius: 5px;
+	border-radius: 7px;
+
+	box-shadow: 4px 0px 20px 3px #7F8287;
+
+	opacity: 0%;
 
 	transition: 0.4s;
 	z-index: 500;

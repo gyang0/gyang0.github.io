@@ -1,5 +1,5 @@
 // Project data
-var projects = [
+const projects = [
     {
         type: ["misc"],
         details: "",
@@ -173,13 +173,14 @@ var projects = [
 
 
 // Activity posts
-var activityPosts = [
+const activityPosts = [
     {
         title: "CodeForces XOR problem",
         mainImg: "images/activity/20230916_CodeForces_XOR_1.png",
         published: 20230916,
         updated: 20231204,
         summary: "Detailed explanation of problem 1847C (with XOR)",
+        pageID: 0,
 
         content: [
             ["p", "", `This is one of my favorite CodeForces problems, because of how elegant the solution is. But I think the editorial
@@ -324,6 +325,8 @@ int main(){
         published: 20230926,
         updated: 20231021,
         summary: "Photos, sketches, descriptions. Your favorite demon from the Nightmare Realm.",
+        pageID: 1,
+
         content: [
             ["p", "", `9/27/2023: Made frame out of chopsticks.`],
             ["figure", "width: 400px", "images/activity/20230926_halloween_2023_1.jpg", `This took a lot of tape.`],
@@ -343,6 +346,8 @@ int main(){
         published: 20240114,
         updated: 20240114,
         summary: "Math final project - deriving the 4 equations with multivariable calc.",
+        pageID: 2,
+
         content: [
             ["p", "", `My first attempt at writing a formal paper. It's kinda clumsy but was fun to do. Learned quite a bit about LaTeX.`],
             ["p", "", `There were some points that are hastily patched around - like the difference between an H field and a B field, or the difference
@@ -382,6 +387,8 @@ int main(){
         published: 20240117,
         updated: 20240118,
         summary: "A couple of stuff I noticed about naming products. Examples of both good and bad names.",
+        pageID: 3,
+
         content: [
             ["p", "", `Naming is quite important. It's the first thing people see, most of the time. A good name can push people to explore further, 
                         but a bad name is easy to forget, or worse, actively weirds people out.`],

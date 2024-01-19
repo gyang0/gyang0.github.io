@@ -1,7 +1,7 @@
 function closeDescription(){
     document.getElementById("cover-projects-page").style = "opacity: 0%";
 
-    var el = document.getElementById("project-description");
+    let el = document.getElementById("project-description");
     el.style = "opacity: 0%; pointer-events: none";
 }
 
@@ -9,7 +9,7 @@ function showDescription(id){
     document.getElementById("cover-projects-page").style = "opacity: 99%";
 
 	// Popup
-	var el = document.getElementById("project-description");
+	let el = document.getElementById("project-description");
     el.style = "opacity: 100%";
 	el.innerHTML = `
         <div id="close-description">
@@ -56,7 +56,7 @@ function handleProjectFilters(filter){
 
     // Display filters
     let arr = document.getElementsByClassName("project-filters-li");
-    for(var i = 0; i < arr.length; i++){
+    for(let i = 0; i < arr.length; i++){
         arr[i].innerHTML = `<a onclick="javascript: handleProjectFilters(${i})">${projectFilters[i].name}</a>`;
         arr[i].style = "background-color: rgb(122, 194, 203)";
     }
@@ -70,16 +70,16 @@ function handleProjectFilters(filter){
     document.getElementById("filter-description").innerHTML = `<p>${obj.name}</p>`;
     
     // Update data depending on filter
-    var el = document.getElementById("all-projects-container");
+    let el = document.getElementById("all-projects-container");
     el.innerHTML = "";
 
     // Set the description of the filter
-    for(var i = 0; i < projects.length; i++){
+    for(let i = 0; i < projects.length; i++){
         if(projects[i].type.includes(obj.id) || obj.id == "all"){
 
             // Add a trophy for the project title if needed.
-            var project_prize = "";
-            var project_blurb = "";
+            let project_prize = "";
+            let project_blurb = "";
 
             if(projects[i].details.includes("won")){
                 if(projects[i].details.includes("won-1")){
@@ -97,10 +97,10 @@ function handleProjectFilters(filter){
             }
 
             // Language list
-            var languagesCode = "";
+            let languagesCode = "";
 
-            for(var j = 0; j < projects[i].languages.length; j++){
-                var langCol = languageColor(projects[i].languages[j]);
+            for(let j = 0; j < projects[i].languages.length; j++){
+                let langCol = languageColor(projects[i].languages[j]);
                 languagesCode += `
                     <div class="languages-used" style="background-color: rgb(${langCol[0]}, ${langCol[1]}, ${langCol[2]}, 0.5)">
                         <p>${projects[i].languages[j]}</p>
@@ -109,7 +109,7 @@ function handleProjectFilters(filter){
 
 
             // Add the project thumbnail code
-            var thumbnailCode = `<div class="project-thumbnails" onclick="javascript:showDescription(${i})">`;
+            let thumbnailCode = `<div class="project-thumbnails" onclick="javascript:showDescription(${i})">`;
 
             // Images and title
             thumbnailCode += `
