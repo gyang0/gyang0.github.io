@@ -402,9 +402,9 @@ int main(){
             ["figure", "width: 300px", "https://images.uncyclomedia.co/uncyclopedia/en/a/a1/Cpp_rat_mascot_2.jpeg?20170128174614",
                             `Keith, the C++ mascot`],
             ["p", "", `Another example of a good name is <a href="https://github.com/Zushah/Chalkboard" target="_blank">ChalkBoard</a>, a JS math 
-                        library by <a href="https://github.com/Zushah" target="_blank">Zushah</a>. It's quirky, easy to remember, and fits its 
-                        topic surprisingly well &mdash; "Chalkboard" -> academics -> math? I like this approach a lot better than trying to shoehorn 
-                        a direct math reference into the name. For example, something like "descartes.js" would have felt a little off.`],
+                        library. It's quirky, easy to remember, and fits its topic surprisingly well &mdash; "Chalkboard" -> academics -> math? 
+                        I like this approach a lot better than trying to shoehorn a direct math reference into the name. For example, something 
+                        like "descartes.js" would have felt a little off.`],
             
             ["p", "", `JavaScript is a bad name. I don't even need to explain this. Just look at the number of people confused by its supposed 
                         relationship to Java. Actually, "Java" by itself is a great name, but JavaScript just had to come along and force its way 
@@ -428,6 +428,55 @@ int main(){
 
             ["p", "", `<br>(By the way, this post is half-joking. Don't take it too seriously.)`]
             
+        ]
+    },
+    {
+        title: "Why Aeneas?",
+        mainImg: "images/activity/20240130_Aeneas_1.png",
+        published: 20240130,
+        updated: 20240130,
+        summary: "Why choose him to write about?",
+        pageID: 4,
+
+        content: [
+            ["p", "", `This started off with a slight stupid (but what I believe is valid) question: Why did Vergil choose to write about Aeneas 
+                        in the Aeneid?`],
+        ]
+    },
+    {
+        title: "Sublime Text Package Configuration",
+        mainImg: "images/activity/20240201_Nord_Theme_3.png",
+        published: 20240201,
+        updated: 20240203,
+        summary: "Terminus and Nord theme",
+        pageID: 5,
+
+        content: [
+            ["p", "", `The main benefit of Sublime Text over VS Code is that it's fast. Comes at the cost of less features, but you can pretty much 
+                        work things out.`],
+            ["p", "", `One thing that helps is Terminus, which lets you use the terminal within the editor. Installing it is easy. You just have 
+                        to follow the steps in 
+                        <a href="https://www.geeksforgeeks.org/how-to-use-terminal-in-sublime-text-editor/" target="_blank">this article</a> 
+                        to install package control, add Terminus, and copy paste some data. Afterwards you can use the terminal without leaving 
+                        Sublime.`],
+            ["p", "", `Another thing that helps is a new color scheme. Personally I prefer the Nord theme, because it's easy to look at and all 
+                        colors have a certain coherence to the overall effect. Another good one is One Dark Pro if you like vibrant colors.`],
+            ["p", "", `Adding Nord to Sublime v4 is kind of a hassle. You start by following the directions 
+                        <a href="https://packagecontrol.io/packages/Nord" target="_blank">here</a>, which is easy enough. Then you can tweak the 
+                        colors if you want. Use the steps given by elangovan 
+                        <a href="https://forum.sublimetext.com/t/modify-customize-color-schemes/4467/3" target="_blank">in this forum comment</a> 
+                        to start editing the Nord.sublime-color-scheme file.`],
+            ["figure", "width: 600px", "images/activity/20240201_Nord_Theme_2.png", `From Nord.sublime-color-scheme`],
+
+            ["p", "", `Two changes I made were making comments 8% brighter ("nord3_bright" to #76839e) and making classes 12% brighter ("nord7" 
+                        to #a7dbda). Comment brightness because Nord comments are a little hard to see by design. Class brightness because for 
+                        code like ClassName.func(), it's hard to differentiate between ClassName and func by their colors. Here's the result: `],
+            ["figure", "width: 700px", "images/activity/20240201_Nord_Theme_1.png", ``],
+
+            ["p", "", `This still isn't satisfactory. Keywords like "function," "let," and "const" aren't being highlighted. It was hard to find 
+                        a solution for this. What you need to do is install the "JavaScriptNext - ES6 Syntax" package, following the same steps 
+                        used to install Terminus and Nord. This seems to fix the issue.`],
+            ["figure", "width: 800px", "images/activity/20240201_Nord_Theme_3.png", `Maybe not the most noticeable theme, but it has a wintery type of snugness to it.`],
         ]
     }
 ];

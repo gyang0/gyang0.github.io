@@ -12,9 +12,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu:wght@300&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
-        <!-- highlight.js -->
-        <link rel='stylesheet' id='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css'/>
-        
+        <!-- Nord highlight.js -->
+        <link rel='stylesheet' id='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/nord.min.css'/>
+        <style>
+            .hljs-comment {
+                color: #76839e; /* Nord comments in highlight.js are hard to see  */
+            }
+        </style>
+
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css"></style>
 
@@ -25,6 +30,7 @@
         <!-- KaTex Autoloader -->
         <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
         onload="renderMathInElement(document.body);"></script>
+
 
     </head>
 
