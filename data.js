@@ -431,19 +431,6 @@ int main(){
         ]
     },
     {
-        title: "Why Aeneas?",
-        mainImg: "images/activity/20240130_Aeneas_1.png",
-        published: 20240130,
-        updated: 20240130,
-        summary: "Why choose him to write about?",
-        pageID: 4,
-
-        content: [
-            ["p", "", `This started off with a slight stupid (but what I believe is valid) question: Why did Vergil choose to write about Aeneas 
-                        in the Aeneid?`],
-        ]
-    },
-    {
         title: "Sublime Text Package Configuration",
         mainImg: "images/activity/20240201_Nord_Theme_3.png",
         published: 20240201,
