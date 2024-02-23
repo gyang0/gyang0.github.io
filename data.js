@@ -1,175 +1,187 @@
 // Project data
-const projects = [
-    {
-        type: ["misc"],
-        details: "",
-        title: "Grades Overview",
-        author: "Gene Yang",
-        made: 20220621,
-        languages: ["C++"],
-        description: `An old program I made in the summer of 2022 after finishing my schools's C++ course. I decided to refurbish the code
-                    in the summer of 2023 and basically rewrote the whole thing. Learned about C++ file splitting and menu-driven design.`,
-        image: "images/projects/grades_overview.png",
-        linkTo: "https://github.com/gyang0/Grades_Overview"
-    },
-    {
-        type: ["contests"],
-        details: "",
-        title: "The Evil Twin Strategy",
-        author: "Gene Yang",
-        made: 20210625,
-        languages: ["Processing.js"],
-        description: `Entry for Khan Academy's Contest: Illustrate a Math Concept. This program was supposed to introduce a concept
-                      I saw in the University of Northern Colorado's math contest archives. Half the contest period was spent understanding
-                      the formulas.`,
-        image: "https://www.khanacademy.org/computer-programming/the-evil-twin-strategy/4839632158015488/latest.png",
-        linkTo: "https://www.khanacademy.org/computer-programming/the-evil-twin-strategy/4839632158015488"
-    },
-    {
-        type: ["contests"],
-        details: "",
-        title: "The Little Things",
-        author: "Gene Yang",
-        made: 20210827,
-        languages: ["Processing.js"],
-        description: `Entry for Khan Academy's Contest: The Great Outdoors. I learned a lot about image masking in ProcessingJS making
-                      this graphic. Inspired by my family's yearly trip to Colorado and the Rockies. There was a small roadstop with a stream
-                      that I liked.`,
-        image: "https://www.khanacademy.org/computer-programming/the-little-things/6734816294682624/latest.png",
-        linkTo: "https://www.khanacademy.org/computer-programming/the-little-things/6734816294682624"
-    },
-    {
-        type: ["contests"],
-        details: "won-2",
-        title: "Skyview Inn",
-        author: "Gene Yang",
-        made: 20211226,
-        languages: ["Processing.js"],
-        description: `Entry for Khan Academy's Contest: Mysteries. This earned 2nd place in the Advanced bracket. You play as the owner
-                        of a Skyview Inn, rumored to be haunted. The graphics and ghost mechanics took some time to implement.`,
-        image: "https://www.khanacademy.org/computer-programming/skyview-inn/6523416028954624/latest.png",
-        linkTo: "https://www.khanacademy.org/computer-programming/skyview-inn/6523416028954624"
-    },
-    {
-        type: ["contests"],
-        details: "",
-        title: "Sorting & Searching",
-        author: "Gene Yang",
-        made: 20220225,
-        languages: ["HTML/CSS", "JS"],
-        description: `Entry for Khan Academy's Contest: Introduce a CS Concept. This was my first time making an HTML entry. I tried to
-                      make a slideshow covering a few basic sorting and searching concepts.`,
-        image: "images/projects/sorting_and_searching.png",
-        linkTo: "https://www.khanacademy.org/computer-programming/sorting-and-searching-an-intro/5666805503803392"
-    },
-    {
-        type: ["contests"],
-        details: "won-3",
-        title: "Diagon Alley",
-        author: "Gene Yang",
-        made: 20221028,
-        languages: ["Processing.js"],
-        description: "Entry for Khan Academy's Contest: Magic. This earned 3rd place in the Advanced bracket. Pardon the crude pixel art.",
-        image: "https://www.khanacademy.org/computer-programming/diagon-alley/5460353548337152/latest.png",
-        linkTo: "https://www.khanacademy.org/computer-programming/diagon-alley/5460353548337152"
-    },
-    {
-        type: ["contests", "featured"],
-        details: "won-1",
-        title: "Linux Simulator",
-        author: "Gene Yang",
-        made: 20221230,
-        languages: ["Processing.js"],
-        description: `Entry for Khan Academy's Contest: Inventions. This won 1st place in the Advanced bracket.
-                        The program simulates the Linux termainal with a few working commands. Inspired by my recent installation of
-                        Ubuntu on a spare Chromebook.`,
-        image: "https://www.khanacademy.org/computer-programming/linux-simulator/6467088633348096/latest.png",
-        linkTo: "https://www.khanacademy.org/computer-programming/linux-simulator/6467088633348096"
-    },
-    {
-        type: ["projects", "featured"],
-        details: "",
-        title: "Hackberry: Chess Engine",
-        author: "Gene Yang",
-        made: 20220510,
-        languages: ["Java"],
-        description: `The culmination of a 4-month effort: a working chess engine in Java. It's still pretty slow and makes bad decisions
-        			  sometimes, but it can avoid checkmate and capture sensibly.`,
-        image: "images/projects/hackberry.png",
-        linkTo: "https://github.com/gyang0/Hackberry"
-    },
-    {
-        type: ["misc"],
-        details: "",
-        title: "Procrastination Buster",
-        author: "Gene Yang",
-        made: 20230607,
-        languages: ["C++"],
-        description: `Made because I was wasting way to much time online. The idea was that whenever I wanted to doom scroll, I'd have to
-                        learn a new algorithm/concept first as "payment." Was moderately successful, learned quite a bit of graph algorithms.`,
-        image: "images/projects/procrastination_buster.png",
-        linkTo: "https://github.com/gyang0/ProcrastinationBuster"
-    },
-    {
-        type: ["misc"],
-        details: "",
-        title: "Statistics Library",
-        author: "Gene Yang",
-        made: 20230530,
-        languages: ["JS"],
-        description: `Something to make drawing graphs/charts and carrying out statistical testing easier for HTML environments. I used
-                        the concepts I had learned from my school's science (core, MSB) course.`,
-        image: "images/projects/statistics_library.png",
-        linkTo: "https://github.com/gyang0/Statistics-Library"
-    },
-    {
-        type: ["contests"],
-        details: "",
-        title: "Perspective in Art",
-        author: "Gene Yang",
-        made: 20230625,
-        languages: ["HTML/CSS", "JS"],
-        description: `Entry for Khan Academy's Contest: New Perspectives. My program was designed to showcase the examples of perspective 
-                        in different works, from "The Odyssey" to "Joker" (2019 film). I used a lot of ideas from my English essays.`,
-        image: "images/projects/perspective_in_art.png",
-        linkTo: "https://www.khanacademy.org/computer-programming/perspective-in-art/6031994034372608"
-    },
-    {
-        type: ["featured", "misc"],
-        details: "",
-        title: "Learning WebGL",
-        author: "Gene Yang",
-        made: 20230701,
-        languages: ["HTML/CSS", "JS", "GLSL"],
-        description: `A collection of small programs made to get familiar with WebGL. The landscape shown is my "final project."`,
-        image: "images/projects/learning_webgl.png",
-        linkTo: "https://github.com/gyang0/learning-webgl"
-    },
-    {
-        type: ["contests"],
-        details: "",
-        title: "2023 Hackathon Entry",
-        author: "Gene Yang",
-        made: 20230903,
-        languages: ["HTML/CSS", "JS"],
-        description: `An entry for a 3-day hackathon at my school. The theme was "Climate change," and I made a program to predict flood paths
-                        caused by rising sea levels. It isn't very good, and didn't win, but I still think it's neat.`,
-        image: "images/projects/gcc_2023.png",
-        linkTo: "https://github.com/gyang0/GCC2023"
-    },
-    {
-        type: ["projects", "featured"],
-        details: "",
-        title: "Lost [Game]",
-        author: "Gene Yang",
-        made: 20231003,
-        languages: ["HTML/CSS", "JS"],
-        description: `A game for an idea that's been in my head for a long time. I prioritized atmosphere over a detailed storyline, 
-                        tried to make decent pixel art, and used lighting as a tool for immersion.`,
-        image: "images/projects/lost_game.png",
-        linkTo: "https://github.com/gyang0/lost-game"
-    }
-];
+const projects = {
+    "physics": [
+        {
+            details: "",
+            title: "Deriving Maxwell's Equations",
+            author: "Gene Yang",
+            made: 20231212,
+            tags: ["Multivariable Calc"],
+            description: "Final project for semester 1 of Multivariable Calculus: deriving all 4 equations using Multivariable theorems.",
+            image: "images/activity/20240114_maxwells_equations_1.png",
+            linkTo: null
+        }
+    ],
+    "classics": [
+        {
+            details: "",
+            title: "To Stop and Smell the Roses",
+            author: "Gene Yang",
+            made: 20240219,
+            tags: ["Greek"],
+            description: "Entry for the Paideia Institute 2024 High School Essay Contest. Topic: 'Why should we study Classical Greek?'",
+            image: null,
+            linkTo: null
+        }
+    ],
+    "coding": [
+        {
+            details: "",
+            title: "Grades Overview",
+            author: "Gene Yang",
+            made: 20220621,
+            tags: ["C++"],
+            description: `An old program I made in the summer of 2022 after finishing my schools's C++ course. I decided to refurbish the code
+                        in the summer of 2023 and basically rewrote the whole thing. Learned about C++ file splitting and menu-driven design.`,
+            image: "images/projects/grades_overview.png",
+            linkTo: "https://github.com/gyang0/Grades_Overview"
+        },
+        {
+            details: "",
+            title: "The Evil Twin Strategy",
+            author: "Gene Yang",
+            made: 20210625,
+            tags: ["Processing.js"],
+            description: `Entry for Khan Academy's Contest: Illustrate a Math Concept. This program was supposed to introduce a concept
+                          I saw in the University of Northern Colorado's math contest archives. Half the contest period was spent understanding
+                          the formulas.`,
+            image: "https://www.khanacademy.org/computer-programming/the-evil-twin-strategy/4839632158015488/latest.png",
+            linkTo: "https://www.khanacademy.org/computer-programming/the-evil-twin-strategy/4839632158015488"
+        },
+        {
+            details: "",
+            title: "The Little Things",
+            author: "Gene Yang",
+            made: 20210827,
+            tags: ["Processing.js"],
+            description: `Entry for Khan Academy's Contest: The Great Outdoors. I learned a lot about image masking in ProcessingJS making
+                          this graphic. Inspired by my family's yearly trip to Colorado and the Rockies. There was a small roadstop with a stream
+                          that I liked.`,
+            image: "https://www.khanacademy.org/computer-programming/the-little-things/6734816294682624/latest.png",
+            linkTo: "https://www.khanacademy.org/computer-programming/the-little-things/6734816294682624"
+        },
+        {
+            details: "won-2",
+            title: "Skyview Inn",
+            author: "Gene Yang",
+            made: 20211226,
+            tags: ["Processing.js"],
+            description: `Entry for Khan Academy's Contest: Mysteries. This earned 2nd place in the Advanced bracket. You play as the owner
+                            of a Skyview Inn, rumored to be haunted. The graphics and ghost mechanics took some time to implement.`,
+            image: "https://www.khanacademy.org/computer-programming/skyview-inn/6523416028954624/latest.png",
+            linkTo: "https://www.khanacademy.org/computer-programming/skyview-inn/6523416028954624"
+        },
+        {
+            details: "",
+            title: "Sorting & Searching",
+            author: "Gene Yang",
+            made: 20220225,
+            tags: ["HTML/CSS", "JS"],
+            description: `Entry for Khan Academy's Contest: Introduce a CS Concept. This was my first time making an HTML entry. I tried to
+                          make a slideshow covering a few basic sorting and searching concepts.`,
+            image: "images/projects/sorting_and_searching.png",
+            linkTo: "https://www.khanacademy.org/computer-programming/sorting-and-searching-an-intro/5666805503803392"
+        },
+        {
+            details: "won-3",
+            title: "Diagon Alley",
+            author: "Gene Yang",
+            made: 20221028,
+            tags: ["Processing.js"],
+            description: "Entry for Khan Academy's Contest: Magic. This earned 3rd place in the Advanced bracket. Pardon the crude pixel art.",
+            image: "https://www.khanacademy.org/computer-programming/diagon-alley/5460353548337152/latest.png",
+            linkTo: "https://www.khanacademy.org/computer-programming/diagon-alley/5460353548337152"
+        },
+        {
+            details: "won-1",
+            title: "Linux Simulator",
+            author: "Gene Yang",
+            made: 20221230,
+            tags: ["Processing.js"],
+            description: `Entry for Khan Academy's Contest: Inventions. This won 1st place in the Advanced bracket.
+                            The program simulates the Linux termainal with a few working commands. Inspired by my recent installation of
+                            Ubuntu on a spare Chromebook.`,
+            image: "https://www.khanacademy.org/computer-programming/linux-simulator/6467088633348096/latest.png",
+            linkTo: "https://www.khanacademy.org/computer-programming/linux-simulator/6467088633348096"
+        },
+        {
+            details: "",
+            title: "Hackberry: Chess Engine",
+            author: "Gene Yang",
+            made: 20220510,
+            tags: ["Java"],
+            description: `The culmination of a 4-month effort: a working chess engine in Java. It's still pretty slow and makes bad decisions
+            			  sometimes, but it can avoid checkmate and capture sensibly.`,
+            image: "images/projects/hackberry.png",
+            linkTo: "https://github.com/gyang0/Hackberry"
+        },
+        {
+            details: "",
+            title: "Procrastination Buster",
+            author: "Gene Yang",
+            made: 20230607,
+            tags: ["C++"],
+            description: `Made because I was wasting way to much time online. The idea was that whenever I wanted to doom scroll, I'd have to
+                            learn a new algorithm/concept first as "payment." Was moderately successful, learned quite a bit of graph algorithms.`,
+            image: "images/projects/procrastination_buster.png",
+            linkTo: "https://github.com/gyang0/ProcrastinationBuster"
+        },
+        {
+            details: "",
+            title: "Statistics Library",
+            author: "Gene Yang",
+            made: 20230530,
+            tags: ["JS"],
+            description: `Something to make drawing graphs/charts and carrying out statistical testing easier for HTML environments. I used
+                            the concepts I had learned from my school's science (core, MSB) course.`,
+            image: "images/projects/statistics_library.png",
+            linkTo: "https://github.com/gyang0/Statistics-Library"
+        },
+        {
+            details: "",
+            title: "Perspective in Art",
+            author: "Gene Yang",
+            made: 20230625,
+            tags: ["HTML/CSS", "JS"],
+            description: `Entry for Khan Academy's Contest: New Perspectives. My program was designed to showcase the examples of perspective 
+                            in different works, from "The Odyssey" to "Joker" (2019 film). I used a lot of ideas from my English essays.`,
+            image: "images/projects/perspective_in_art.png",
+            linkTo: "https://www.khanacademy.org/computer-programming/perspective-in-art/6031994034372608"
+        },
+        {
+            details: "",
+            title: "Learning WebGL",
+            author: "Gene Yang",
+            made: 20230701,
+            tags: ["HTML/CSS", "JS", "GLSL"],
+            description: `A collection of small programs made to get familiar with WebGL. The landscape shown is my "final project."`,
+            image: "images/projects/learning_webgl.png",
+            linkTo: "https://github.com/gyang0/learning-webgl"
+        },
+        {
+            details: "",
+            title: "2023 Hackathon Entry",
+            author: "Gene Yang",
+            made: 20230903,
+            tags: ["HTML/CSS", "JS"],
+            description: `An entry for a 3-day hackathon at my school. The theme was "Climate change," and I made a program to predict flood paths
+                            caused by rising sea levels. It isn't very good, and didn't win, but I still think it's neat.`,
+            image: "images/projects/gcc_2023.png",
+            linkTo: "https://github.com/gyang0/GCC2023"
+        },
+        {
+            details: "",
+            title: "Lost [Game]",
+            author: "Gene Yang",
+            made: 20231003,
+            tags: ["HTML/CSS", "JS"],
+            description: `A game for an idea that's been in my head for a long time. I prioritized atmosphere over a detailed storyline, 
+                            tried to make decent pixel art, and used lighting as a tool for immersion.`,
+            image: "images/projects/lost_game.png",
+            linkTo: "https://github.com/gyang0/lost-game"
+        }
+    ]
+};
 
 
 // Activity posts
@@ -341,7 +353,7 @@ int main(){
         ]
     },
     {
-        title: "Deriving Maxwell's Equations",
+        title: "Deriving Maxwell's Equations - Notes",
         mainImg: "images/activity/20240114_maxwells_equations_1.png",
         published: 20240114,
         updated: 20240114,
@@ -382,61 +394,12 @@ int main(){
         ]
     },
     {
-        title: "Some Thoughts on Product Names",
-        mainImg: null,
-        published: 20240117,
-        updated: 20240118,
-        summary: "A couple of stuff I noticed about naming products. Examples of both good and bad names.",
-        pageID: 3,
-
-        content: [
-            ["p", "", `Naming is quite important. It's the first thing people see, most of the time. A good name can push people to explore further, 
-                        but a bad name is easy to forget, or worse, actively weirds people out.`],
-            ["p", "", `I think this is especially true for online products, whether it's a
-                        <a href="https://dayssincelastjavascriptframework.com/" target="_blank">new JS framework</a> by a solo dev or a audio mixer 
-                        by a huge company. There's a ton of competition online, so people want to stand out. But sometimes, they try too hard and 
-                        it shows.`],
-            ["p", "", `For example, C++ is a good name. It creatively shows that it's meant to be an improvement to C, while staying relevant to 
-                        general programming syntax. One problem is that it's a bit of a mouthful to pronounce. But I guess "cpp" as an alternative
-                        is good enough.`],
-            ["figure", "width: 300px", "https://images.uncyclomedia.co/uncyclopedia/en/a/a1/Cpp_rat_mascot_2.jpeg?20170128174614",
-                            `Keith, the C++ mascot`],
-            ["p", "", `Another example of a good name is <a href="https://github.com/Zushah/Chalkboard" target="_blank">ChalkBoard</a>, a JS math 
-                        library. It's quirky, easy to remember, and fits its topic surprisingly well &mdash; "Chalkboard" -> academics -> math? 
-                        I like this approach a lot better than trying to shoehorn a direct math reference into the name. For example, something 
-                        like "descartes.js" would have felt a little off.`],
-            
-            ["p", "", `JavaScript is a bad name. I don't even need to explain this. Just look at the number of people confused by its supposed 
-                        relationship to Java. Actually, "Java" by itself is a great name, but JavaScript just had to come along and force its way 
-                        into the name's fame.`],
-            ["p", "", `Sometimes I see names that come from really obscure concepts. Mostly geeks writing their own libraries for math/science stuff.
-                        But in certain situations, this can work well too. As long as the obscure name accurately describes the  product, it's okay.
-                        For example, <a href="https://github.com/benlansdell/analemma" target="_blank">analemma.js</a> accurately describes what
-                        it's supposed to do &mdash; model the <a href="https://en.wikipedia.org/wiki/Analemma" target="_blank">analemma</a>, an
-                        astronomical phenomenon.`],
-            ["p", "", `But if the obscure name doesn't really describe your product accurately, probably the best thing to do is to find another
-                        name. Recently I saw something on Khan Academy's programming section about a user who was working on a vector library.
-                        Processing.js's PVector is pretty slow, so I guess they wanted to make an alternative. That user was calling the library
-                        "analemma.js." Unlike the previous example, this name doesn't pertain to the product. People who come across 
-                        this library will have to think "why is it called that?" Also, the word "analemma" has an unfortunate conotation when a 
-                        single space is inserted. Odds are, people will see it.`],
-            ["p", "", `Another bad name, for a product used by millions of users: <a href="https://procreate.com/" target="_blank">Procreate</a>.
-                        I get it, it's supposed to be Pro + Create. But if you look up the definition of "procreate," this is not what you see:`],
-            ["figure", "width: 600px", "images/activity/20240117_Project_Names_1.png", ``],
-            ["p", "", `That is a fancy way to say "have sex." Procreate is a great app. It should have a better name, one free of such 
-                        allusions.`],
-
-            ["p", "", `<br>(By the way, this post is half-joking. Don't take it too seriously.)`]
-            
-        ]
-    },
-    {
         title: "Sublime Text Package Configuration",
         mainImg: "images/activity/20240201_Nord_Theme_3.png",
         published: 20240201,
         updated: 20240203,
         summary: "Terminus and Nord theme",
-        pageID: 5,
+        pageID: 4,
 
         content: [
             ["p", "", `The main benefit of Sublime Text over VS Code is that it's fast. Comes at the cost of less features, but you can pretty much 
@@ -464,6 +427,54 @@ int main(){
                         a solution for this. What you need to do is install the "JavaScriptNext - ES6 Syntax" package, following the same steps 
                         used to install Terminus and Nord. This seems to fix the issue.`],
             ["figure", "width: 800px", "images/activity/20240201_Nord_Theme_3.png", `Maybe not the most noticeable theme, but it has a wintery type of snugness to it.`],
+        ]
+    },
+    {
+        title: "Writing Tips",
+        mainImg: null,
+        published: 20240206,
+        updated: 20240207,
+        summary: "Compiled over 3 years at OHS",
+        pageID: 5,
+
+        content: [
+            ["p", "", `Collection of tips from 8th - 10th grade English at OHS. Writing tips and general mantras drilled into the head of everyone. 
+                        Most of the time it's about crafting strong thesis statements.`],
+            ["h2", "", `Structure`],
+            ["ul-start"],
+            ["li", "", `The unit of writing is the paragraph, not the sentence.`],
+            ["li", "", `Words are razor blades; don't treat them like bricks.`],
+            ["li", "", `Use as many paragraphs as you need, but paragraphs below 1/3 of a page likely have more to be said about, and paragraphs over 
+                        1 and 1/3 of a page are likely two paragraphs bleeding together.`],
+            ["ul-end"],
+
+            ["h2", "", `Essays`],
+            ["ul-start"],
+            ["li", "", `The term "essay" came from the French verb "essayer," meaning "to attempt." Essays are by definition attempts to explain, not 
+                        definitive explanations.`],
+            ["li", "", `Essays are a mode of inquiry, not a mode of declaration.`],
+            ["li", "", `Write about things that bother you about a subject. This will make it easier to revise and think about.`],
+            ["ul-end"],
+
+            ["h2", "", `Thinking`],
+            ["ul-start"],
+            ["li", "", `Start with evidence (quotations, oddities in story, etc.) and find a thesis that reasonably explains them. Never start with 
+                        the thesis and hunt for evidence.`],
+            ["li", "", `Extended-hand questions: questions that reach their hands to you from the text. Something that makes you stop and think. 
+                        Usually great places to start with thesis statements.`],
+            ["li", "", `If an argument can be applied to any other story, it's too general and needs to be nuanced.`],
+            ["li", "", `After getting an idea, ask the "so what" question. (why is that detail important? Why does the author choose to include it?)`],
+            ["ul-end"],
+
+            ["h2", "", `General`],
+            ["ul-start"],
+            ["li", "", `Quarantine an argument as towards the author and the world within the text.`],
+            ["li", "", `Avoid making a claim like "this moment is important because it moves the story towards its conclusion" or "this moment 
+                        is important because it plays X part within the larger narrative". A scene can be important without just being a cog in the 
+                        wheel for the plot.`],
+            ["li", "", `Every detail an author includes can be thought of as a choice, but how do the details work together?`],
+            ["li", "", `Try not to pull all-nighters on essays.`],
+            ["ul-end"]
         ]
     }
 ];

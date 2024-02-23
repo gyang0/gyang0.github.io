@@ -22,11 +22,9 @@ document.getElementById("footer").innerHTML = footerCode;
 // name = as it appears on the page
 // desc = description
 const projectFilters = [
-    { id: "all", name: "All", desc: "Everything in one page." },
-    { id: "featured", name: "Featured", desc: "A showcase of my projects that I'm particularly proud of." },
-    { id: "contests", name: "Contests", desc: "Projects entered into contests (usually Khan Academy)." },
-    { id: "projects", name: "Projects", desc: "Some long-term or large-scale projects." },
-    { id: "misc", name: "Misc.", desc: "Miscellaneous" }
+    { name: "Physics", desc: "Physics is cool." },
+    { name: "Classics", desc: "Enjoy my terrible essays and analyses." },
+    { name: "Coding", desc: "Programs I dabbled in over the years." }
 ];
 
 const activityFilters = [

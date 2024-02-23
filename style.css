@@ -241,11 +241,11 @@ figcaption {
 .project-thumbnails {
 	box-shadow: 3px 3px 10px rgb(0, 0, 0);
 	
-	height: 310px;
-	width: 300px;
+	height: 320px;
+	width: 310px;
 
 	margin-top: 50px;
-	margin-left: 50px;
+	margin-left: 40px;
 
 	border-radius: 3px;
 	text-decoration: none;
@@ -273,13 +273,13 @@ figcaption {
 }
 
 .project-thumbnails-text-main h1 {
-	font-size: 23px;
-	margin-left: 20px;
+	font-size: 21px;
+	margin-left: 18px;
 }
 
 .project-thumbnails-text-main p {
 	font-size: 15px;
-	margin-left: 20px;
+	margin-left: 18px;
 	vertical-align: bottom;
 }
 
@@ -382,22 +382,22 @@ figcaption {
 	margin-top: 10px;
 }
 
-.languages-used-container {
+.project-tags-container {
 	display: flex;
-	margin-left: 20px;
+	margin-left: 18px;
 }
 
-.languages-used {
+.project-tags {
 	border-radius: 10px;
 	height: 22px;
 	padding-left: 10px;
 	padding-right: 10px;
 
 	margin-right: 7px;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
-.languages-used p {
+.project-tags p {
 	text-align: center;
 	margin-top: -14px;
 	margin-left: 0px;

@@ -5,8 +5,12 @@ function closeDescription(){
     el.style = "opacity: 0%; pointer-events: none";
 }
 
-function showDescription(id){
+// filter - filter string
+// nodeID - numeric value assigned to each element
+function showDescription(filter, nodeID){
     document.getElementById("cover-projects-page").style = "opacity: 99%";
+
+    let proj = projects[filter][nodeID];
 
 	// Popup
 	let el = document.getElementById("project-description");
@@ -19,17 +23,18 @@ function showDescription(id){
         </div>
 		
 		<div>
-			<h1 style="margin-left: 30px; margin-right: 30px">${projects[id].title}</h1>
+			<h1 style="margin-left: 30px; margin-right: 30px">${proj.title}</h1>
 			<p style="margin-left: 30px; margin-right: 30px">
-            <p style="margin-left: 30px; margin-right: 30px">${projects[id].description}</p>
-			<p style="margin-left: 30px"><a href="${projects[id].linkTo}" target="_blank">Click here to go to project</a></p>
+            <p style="margin-left: 30px; margin-right: 30px">${proj.description}</p>
+			<p style="margin-left: 30px"><a href="${proj.linkTo}" target="_blank">Click here to go to project</a></p>
 		</div>
 	`;
 }
 
-function languageColor(lang){
+function tagColor(tag){
+    // Languages for code
     // Modeled after the GitHub schemes as closely as possible
-    switch(lang){
+    switch(tag){
     case "C++":
         return [214, 36, 134];
     case "Java":
@@ -43,107 +48,112 @@ function languageColor(lang){
     case "GLSL":
         return [28, 93, 102];
     }
+
+    // Arbitrary decisions
+    // Greek/Latin
+    switch(tag){
+    case "Greek":
+        return [0, 0, 255];
+    case "Latin":
+        return [255, 0, 0];
+    }
+
+    // Unknown
+    return [95, 222, 245];
 }
 
-function updateProjectsPage(){
-
-}
 
 // Update page
-function handleProjectFilters(filter){
+// filterID - numeric ID of the filter string
+function handleProjectFilters(filterID){
     // Store
-    localStorage.setItem("globalProjectFilter", filter);
+    localStorage.setItem("globalProjectFilter", filterID);
 
     // Display filters
     let arr = document.getElementsByClassName("project-filters-li");
-    for(let i = 0; i < arr.length; i++){
+    for(let i = 0; i < projectFilters.length; i++){
         arr[i].innerHTML = `<a onclick="javascript: handleProjectFilters(${i})">${projectFilters[i].name}</a>`;
         arr[i].style = "background-color: rgb(122, 194, 203)";
     }
-    arr[filter].style = "background-color: rgb(80, 131, 138)";
-
-
-    // To simplify code
-    let obj = projectFilters[filter];
+    arr[filterID].style = "background-color: rgb(80, 131, 138)";
     
     // Set filter description
-    document.getElementById("filter-description").innerHTML = `<p>${obj.name}</p>`;
+    document.getElementById("filter-description").innerHTML = `<p>${projectFilters[filterID].desc}</p>`;
     
     // Update data depending on filter
     let el = document.getElementById("all-projects-container");
     el.innerHTML = "";
 
     // Set the description of the filter
-    for(let i = 0; i < projects.length; i++){
-        if(projects[i].type.includes(obj.id) || obj.id == "all"){
+    let filter = projectFilters[filterID].name.toLowerCase();
 
-            // Add a trophy for the project title if needed.
-            let project_prize = "";
-            let project_blurb = "";
+    for(let i = 0; i < projects[filter].length; i++){
+        let proj = projects[filter][i];
+        
+        // Add a trophy for the project title if needed.
+        let project_prize = "";
+        let project_blurb = "";
 
-            if(projects[i].details.includes("won")){
-                if(projects[i].details.includes("won-1")){
-                    project_prize = `<i class="fa fa-trophy" style="font-size: 55px; color: rgb(219, 172, 52)"></i>`;
-                    project_blurb = `"1st place"`;
-                }
-                else if(projects[i].details.includes("won-2")){
-                    project_prize = `<i class="fa fa-trophy" style="font-size: 55px; color: rgb(165, 169, 180)"></i>`;
-                    project_blurb = `"2nd place"`;
-                }
-                else if(projects[i].details.includes("won-3")){
-                    project_prize = `<i class="fa fa-trophy" style="font-size: 55px; color: rgb(205, 127, 50)"></i>`;
-                    project_blurb = `"3rd place"`;
-                }
+        if(proj.details.includes("won")){
+            if(proj.details.includes("won-1")){
+                project_prize = `<i class="fa fa-trophy" style="font-size: 55px; color: rgb(219, 172, 52)"></i>`;
+                project_blurb = `"1st place"`;
             }
-
-            // Language list
-            let languagesCode = "";
-
-            for(let j = 0; j < projects[i].languages.length; j++){
-                let langCol = languageColor(projects[i].languages[j]);
-                languagesCode += `
-                    <div class="languages-used" style="background-color: rgb(${langCol[0]}, ${langCol[1]}, ${langCol[2]}, 0.5)">
-                        <p>${projects[i].languages[j]}</p>
-                    </div>`;
+            else if(proj.details.includes("won-2")){
+                project_prize = `<i class="fa fa-trophy" style="font-size: 55px; color: rgb(165, 169, 180)"></i>`;
+                project_blurb = `"2nd place"`;
             }
+            else if(proj.details.includes("won-3")){
+                project_prize = `<i class="fa fa-trophy" style="font-size: 55px; color: rgb(205, 127, 50)"></i>`;
+                project_blurb = `"3rd place"`;
+            }
+        }
+
+        // Language list
+        let tagsCode = "";
+
+        for(let j = 0; j < proj.tags.length; j++){
+            let tagCol = tagColor(proj.tags[j]);
+            tagsCode += `
+                <div class="project-tags" style="background-color: rgb(${tagCol[0]}, ${tagCol[1]}, ${tagCol[2]}, 0.5)">
+                    <p>${proj.tags[j]}</p>
+                </div>`;
+        }
 
 
-            // Add the project thumbnail code
-            let thumbnailCode = `<div class="project-thumbnails" onclick="javascript:showDescription(${i})">`;
+        // Add the project thumbnail code
+        el.innerHTML += `
+            <div class="project-thumbnails" onclick="javascript:showDescription('${filter}', ${i})">
 
-            // Images and title
-            thumbnailCode += `
+                <!-- Image thumbnail -->
                 <div class="project-thumbnails-img">
-                    <img src="${projects[i].image}">
+                    <img src="${proj.image}">
                 </div>
 
                 <div class="project-thumbnails-text">
                     <div class="project-thumbnails-text-main">
-                        <h1>${projects[i].title}</h1>
+                        <h1>${proj.title}</h1>
                         
-                        <div class="languages-used-container">${languagesCode}</div>
+                        <div class="project-tags-container">${tagsCode}</div>
 
-                        <p><i class="fa fa-copyright"></i>${Math.floor(projects[i].made/10000) + " " + projects[i].author}</p>
+                        <p><i class="fa fa-copyright"></i>${Math.floor(proj.made/10000) + " " + proj.author}</p>
                     </div>
 
                     <div class="project-thumbnails-text-descriptions">
                         <p>${project_prize}</p>
                         <p><em><strong>${project_blurb}</strong></em></p>
                     </div>
-                </div>`;
-
-            // Finish
-            thumbnailCode += `</div>`;
-
-            el.innerHTML += thumbnailCode;
-        }
+                </div>
+            </div>`;
     }
 }
 
 // Sort by date
-projects.sort((obj1, obj2) => {
-    return obj2.made - obj1.made;
-});
+for(let key in projects){
+    projects[key].sort((obj1, obj2) => {
+        return obj2.made - obj1.made;
+    })
+}
 
 // Display relevant projects
 handleProjectFilters(localStorage.getItem("globalProjectFilter") ?? 0);
