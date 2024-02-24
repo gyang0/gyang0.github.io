@@ -1,36 +1,3 @@
-function closeDescription(){
-    document.getElementById("cover-projects-page").style = "opacity: 0%";
-
-    let el = document.getElementById("project-description");
-    el.style = "opacity: 0%; pointer-events: none";
-}
-
-// filter - filter string
-// nodeID - numeric value assigned to each element
-function showDescription(filter, nodeID){
-    document.getElementById("cover-projects-page").style = "opacity: 99%";
-
-    let proj = projects[filter][nodeID];
-
-	// Popup
-	let el = document.getElementById("project-description");
-    el.style = "opacity: 100%";
-	el.innerHTML = `
-        <div id="close-description">
-		  <a onclick="javascript:closeDescription()">
-	   		<i class="fa fa-close"></i>
-    		</a>
-        </div>
-		
-		<div>
-			<h1 style="margin-left: 30px; margin-right: 30px">${proj.title}</h1>
-			<p style="margin-left: 30px; margin-right: 30px">
-            <p style="margin-left: 30px; margin-right: 30px">${proj.description}</p>
-			<p style="margin-left: 30px"><a href="${proj.linkTo}" target="_blank">Click here to go to project</a></p>
-		</div>
-	`;
-}
-
 function tagColor(tag){
     // Languages for code
     // Modeled after the GitHub schemes as closely as possible
@@ -56,6 +23,12 @@ function tagColor(tag){
         return [0, 0, 255];
     case "Latin":
         return [255, 0, 0];
+    }
+
+    // Misc.
+    switch(tag){
+    case "Unfinished":
+        return [255, 140, 0];
     }
 
     // Unknown
@@ -123,11 +96,12 @@ function handleProjectFilters(filterID){
 
         // Add the project thumbnail code
         el.innerHTML += `
-            <div class="project-thumbnails" onclick="javascript:showDescription('${filter}', ${i})">
+            <a class="project-thumbnails" target="_blank" href=${proj.linkTo}>
 
                 <!-- Image thumbnail -->
-                <div class="project-thumbnails-img">
-                    <img src="${proj.image}">
+                <div class="project-thumbnails-img-container">
+                    <img class="project-thumbnails-img" src="${proj.image}">
+                    <p class="project-thumbnails-desc">${proj.description}</p>
                 </div>
 
                 <div class="project-thumbnails-text">

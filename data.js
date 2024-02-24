@@ -7,7 +7,7 @@ const projects = {
             author: "Gene Yang",
             made: 20231212,
             tags: ["Multivariable Calc"],
-            description: "Final project for semester 1 of Multivariable Calculus: deriving all 4 equations using Multivariable theorems.",
+            description: "Deriving all 4 equations using Multivariable theorems.<br><br>Semester 1 final project",
             image: "images/activity/20240114_maxwells_equations_1.png",
             linkTo: null
         }
@@ -19,7 +19,7 @@ const projects = {
             author: "Gene Yang",
             made: 20240219,
             tags: ["Greek"],
-            description: "Entry for the Paideia Institute 2024 High School Essay Contest. Topic: 'Why should we study Classical Greek?'",
+            description: "Entry for the Paideia Institute 2024 High School Essay Contest.<br><br>Topic: 'Why should we study Classical Greek?'",
             image: null,
             linkTo: null
         }
@@ -31,8 +31,7 @@ const projects = {
             author: "Gene Yang",
             made: 20220621,
             tags: ["C++"],
-            description: `An old program I made in the summer of 2022 after finishing my schools's C++ course. I decided to refurbish the code
-                        in the summer of 2023 and basically rewrote the whole thing. Learned about C++ file splitting and menu-driven design.`,
+            description: `Project to practice menu-driven design in C++.`,
             image: "images/projects/grades_overview.png",
             linkTo: "https://github.com/gyang0/Grades_Overview"
         },
@@ -42,9 +41,7 @@ const projects = {
             author: "Gene Yang",
             made: 20210625,
             tags: ["Processing.js"],
-            description: `Entry for Khan Academy's Contest: Illustrate a Math Concept. This program was supposed to introduce a concept
-                          I saw in the University of Northern Colorado's math contest archives. Half the contest period was spent understanding
-                          the formulas.`,
+            description: "Entry for Khan Academy's Contest: Illustrate a Math Concept.<br><br>A problem from University of Northern Colorado's math contest archive.",
             image: "https://www.khanacademy.org/computer-programming/the-evil-twin-strategy/4839632158015488/latest.png",
             linkTo: "https://www.khanacademy.org/computer-programming/the-evil-twin-strategy/4839632158015488"
         },
@@ -54,9 +51,7 @@ const projects = {
             author: "Gene Yang",
             made: 20210827,
             tags: ["Processing.js"],
-            description: `Entry for Khan Academy's Contest: The Great Outdoors. I learned a lot about image masking in ProcessingJS making
-                          this graphic. Inspired by my family's yearly trip to Colorado and the Rockies. There was a small roadstop with a stream
-                          that I liked.`,
+            description: "Entry for Khan Academy's Contest: The Great Outdoors.<br><br>Inspired by my family's yearly trip to the Rockies.",
             image: "https://www.khanacademy.org/computer-programming/the-little-things/6734816294682624/latest.png",
             linkTo: "https://www.khanacademy.org/computer-programming/the-little-things/6734816294682624"
         },
@@ -66,8 +61,7 @@ const projects = {
             author: "Gene Yang",
             made: 20211226,
             tags: ["Processing.js"],
-            description: `Entry for Khan Academy's Contest: Mysteries. This earned 2nd place in the Advanced bracket. You play as the owner
-                            of a Skyview Inn, rumored to be haunted. The graphics and ghost mechanics took some time to implement.`,
+            description: "Entry for Khan Academy's Contest: Mysteries.<br><br>First time I won 1st in Advanced bracket.",
             image: "https://www.khanacademy.org/computer-programming/skyview-inn/6523416028954624/latest.png",
             linkTo: "https://www.khanacademy.org/computer-programming/skyview-inn/6523416028954624"
         },
@@ -77,8 +71,7 @@ const projects = {
             author: "Gene Yang",
             made: 20220225,
             tags: ["HTML/CSS", "JS"],
-            description: `Entry for Khan Academy's Contest: Introduce a CS Concept. This was my first time making an HTML entry. I tried to
-                          make a slideshow covering a few basic sorting and searching concepts.`,
+            description: "Entry for Khan Academy's Contest: Introduce a CS Concept.<br><br>Covers several sorting algorithms and big O notation.",
             image: "images/projects/sorting_and_searching.png",
             linkTo: "https://www.khanacademy.org/computer-programming/sorting-and-searching-an-intro/5666805503803392"
         },
@@ -88,7 +81,7 @@ const projects = {
             author: "Gene Yang",
             made: 20221028,
             tags: ["Processing.js"],
-            description: "Entry for Khan Academy's Contest: Magic. This earned 3rd place in the Advanced bracket. Pardon the crude pixel art.",
+            description: "Entry for Khan Academy's Contest: Magic.<br><br>Pardon the crude pixel art.",
             image: "https://www.khanacademy.org/computer-programming/diagon-alley/5460353548337152/latest.png",
             linkTo: "https://www.khanacademy.org/computer-programming/diagon-alley/5460353548337152"
         },
@@ -98,9 +91,7 @@ const projects = {
             author: "Gene Yang",
             made: 20221230,
             tags: ["Processing.js"],
-            description: `Entry for Khan Academy's Contest: Inventions. This won 1st place in the Advanced bracket.
-                            The program simulates the Linux termainal with a few working commands. Inspired by my recent installation of
-                            Ubuntu on a spare Chromebook.`,
+            description: "Entry for Khan Academy's Contest: Inventions.<br><br>Won 1st place in the Advanced bracket; contains highly inaccurate information.",
             image: "https://www.khanacademy.org/computer-programming/linux-simulator/6467088633348096/latest.png",
             linkTo: "https://www.khanacademy.org/computer-programming/linux-simulator/6467088633348096"
         },
@@ -110,8 +101,7 @@ const projects = {
             author: "Gene Yang",
             made: 20220510,
             tags: ["Java"],
-            description: `The culmination of a 4-month effort: a working chess engine in Java. It's still pretty slow and makes bad decisions
-            			  sometimes, but it can avoid checkmate and capture sensibly.`,
+            description: "A working chess engine in Java. Pretty slow, but it can avoid checkmate and capture sensibly.",
             image: "images/projects/hackberry.png",
             linkTo: "https://github.com/gyang0/Hackberry"
         },
@@ -121,8 +111,7 @@ const projects = {
             author: "Gene Yang",
             made: 20230607,
             tags: ["C++"],
-            description: `Made because I was wasting way to much time online. The idea was that whenever I wanted to doom scroll, I'd have to
-                            learn a new algorithm/concept first as "payment." Was moderately successful, learned quite a bit of graph algorithms.`,
+            description: "The idea was that whenever I wanted to doom scroll, I'd have to learn a new algorithm/concept first.<br><br>Results were meh.",
             image: "images/projects/procrastination_buster.png",
             linkTo: "https://github.com/gyang0/ProcrastinationBuster"
         },
@@ -131,9 +120,8 @@ const projects = {
             title: "Statistics Library",
             author: "Gene Yang",
             made: 20230530,
-            tags: ["JS"],
-            description: `Something to make drawing graphs/charts and carrying out statistical testing easier for HTML environments. I used
-                            the concepts I had learned from my school's science (core, MSB) course.`,
+            tags: ["JS", "Unfinished"],
+            description: "JS library to make drawing graphs/charts and carrying out statistical analysis easier in HTML environments.",
             image: "images/projects/statistics_library.png",
             linkTo: "https://github.com/gyang0/Statistics-Library"
         },
@@ -143,8 +131,7 @@ const projects = {
             author: "Gene Yang",
             made: 20230625,
             tags: ["HTML/CSS", "JS"],
-            description: `Entry for Khan Academy's Contest: New Perspectives. My program was designed to showcase the examples of perspective 
-                            in different works, from "The Odyssey" to "Joker" (2019 film). I used a lot of ideas from my English essays.`,
+            description: "Entry for Khan Academy's Contest: New Perspectives.<br><br>Examples of perspective ranging from \"The Odyssey\" to \"Joker\" (2019 film).",
             image: "images/projects/perspective_in_art.png",
             linkTo: "https://www.khanacademy.org/computer-programming/perspective-in-art/6031994034372608"
         },
@@ -154,7 +141,7 @@ const projects = {
             author: "Gene Yang",
             made: 20230701,
             tags: ["HTML/CSS", "JS", "GLSL"],
-            description: `A collection of small programs made to get familiar with WebGL. The landscape shown is my "final project."`,
+            description: "Collection of small programs made to get familiar with WebGL.<br><br>The magnificient hellscape shown was my result.",
             image: "images/projects/learning_webgl.png",
             linkTo: "https://github.com/gyang0/learning-webgl"
         },
@@ -164,8 +151,7 @@ const projects = {
             author: "Gene Yang",
             made: 20230903,
             tags: ["HTML/CSS", "JS"],
-            description: `An entry for a 3-day hackathon at my school. The theme was "Climate change," and I made a program to predict flood paths
-                            caused by rising sea levels. It isn't very good, and didn't win, but I still think it's neat.`,
+            description: "Entry for a 3-day hackathon at my school. The theme was \"Climate change.\"<br><br>This program uses some algorithms to crudely predict flood paths.",
             image: "images/projects/gcc_2023.png",
             linkTo: "https://github.com/gyang0/GCC2023"
         },
@@ -174,11 +160,20 @@ const projects = {
             title: "Lost [Game]",
             author: "Gene Yang",
             made: 20231003,
-            tags: ["HTML/CSS", "JS"],
-            description: `A game for an idea that's been in my head for a long time. I prioritized atmosphere over a detailed storyline, 
-                            tried to make decent pixel art, and used lighting as a tool for immersion.`,
+            tags: ["HTML/CSS", "JS", "Unfinished"],
+            description: "Game for an idea that's been in my head for a long time. Still a work in progress.",
             image: "images/projects/lost_game.png",
             linkTo: "https://github.com/gyang0/lost-game"
+        },
+        {
+            details: "",
+            title: "My Website",
+            author: "Gene Yang",
+            made: 20231204,
+            tags: ["HTML/CSS", "JS", "Unfinished"],
+            description: "Holy recursion, Batman.",
+            image: null,
+            linkTo: "https://github.com/gyang0/gyang0.github.io"
         }
     ]
 };
