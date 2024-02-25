@@ -96,9 +96,8 @@ function handleProjectFilters(filterID){
 
         // Add the project thumbnail code
         el.innerHTML += `
-            <a class="project-thumbnails" target="_blank" href=${proj.linkTo}>
-
-                <!-- Image thumbnail -->
+        <a class="project-thumbnails" target="_blank" href=${proj.linkTo}>
+            <!-- Image thumbnail -->
                 <div class="project-thumbnails-img-container">
                     <img class="project-thumbnails-img" src="${proj.image}">
                     <p class="project-thumbnails-desc">${proj.description}</p>
@@ -118,7 +117,7 @@ function handleProjectFilters(filterID){
                         <p><em><strong>${project_blurb}</strong></em></p>
                     </div>
                 </div>
-            </div>`;
+            </a>`;
     }
 }
 

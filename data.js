@@ -9,7 +9,7 @@ const projects = {
             tags: ["Multivariable Calc"],
             description: "Deriving all 4 equations using Multivariable theorems.<br><br>Semester 1 final project",
             image: "images/activity/20240114_maxwells_equations_1.png",
-            linkTo: null
+            linkTo: "documents/20240114_maxwells_equations.pdf"
         }
     ],
     "classics": [
@@ -20,8 +20,8 @@ const projects = {
             made: 20240219,
             tags: ["Greek"],
             description: "Entry for the Paideia Institute 2024 High School Essay Contest.<br><br>Topic: 'Why should we study Classical Greek?'",
-            image: null,
-            linkTo: null
+            image: "images/projects/greek_essay.png",
+            linkTo: "documents/20240219_paideia_submission.pdf"
         }
     ],
     "coding": [
@@ -172,7 +172,7 @@ const projects = {
             made: 20231204,
             tags: ["HTML/CSS", "JS", "Unfinished"],
             description: "Holy recursion, Batman.",
-            image: null,
+            image: "images/projects/my_website.png",
             linkTo: "https://github.com/gyang0/gyang0.github.io"
         }
     ]
@@ -393,7 +393,7 @@ int main(){
         mainImg: "images/activity/20240201_Nord_Theme_3.png",
         published: 20240201,
         updated: 20240203,
-        summary: "Terminus and Nord theme",
+        summary: "Installation of Terminus and Nord theme.",
         pageID: 4,
 
         content: [
@@ -429,7 +429,7 @@ int main(){
         mainImg: null,
         published: 20240206,
         updated: 20240207,
-        summary: "Compiled over 3 years at OHS",
+        summary: "Compiled over 3 years at OHS.",
         pageID: 5,
 
         content: [
@@ -445,10 +445,8 @@ int main(){
 
             ["h2", "", `Essays`],
             ["ul-start"],
-            ["li", "", `The term "essay" came from the French verb "essayer," meaning "to attempt." Essays are by definition attempts to explain, not 
-                        definitive explanations.`],
             ["li", "", `Essays are a mode of inquiry, not a mode of declaration.`],
-            ["li", "", `Write about things that bother you about a subject. This will make it easier to revise and think about.`],
+            ["li", "", `Write about things that bother you in a work.`],
             ["ul-end"],
 
             ["h2", "", `Thinking`],
@@ -467,8 +465,8 @@ int main(){
             ["li", "", `Avoid making a claim like "this moment is important because it moves the story towards its conclusion" or "this moment 
                         is important because it plays X part within the larger narrative". A scene can be important without just being a cog in the 
                         wheel for the plot.`],
-            ["li", "", `Every detail an author includes can be thought of as a choice, but how do the details work together?`],
-            ["li", "", `Try not to pull all-nighters on essays.`],
+            ["li", "", `Every detail an author includes can be thought of as a choice, but the hard part is answering how all the details work together.`],
+            ["li", "", `Try not to pull all-nighters on essays. [I am bad at this]`],
             ["ul-end"]
         ]
     }
