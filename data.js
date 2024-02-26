@@ -141,7 +141,7 @@ const projects = {
             author: "Gene Yang",
             made: 20230701,
             tags: ["HTML/CSS", "JS", "GLSL"],
-            description: "Collection of small programs made to get familiar with WebGL.<br><br>The magnificient hellscape shown was my result.",
+            description: "Collection of small programs made to get familiar with WebGL.<br><br>This magnificient hellscape you see here was my result.",
             image: "images/projects/learning_webgl.png",
             linkTo: "https://github.com/gyang0/learning-webgl"
         },
