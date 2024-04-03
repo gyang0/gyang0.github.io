@@ -469,5 +469,30 @@ int main(){
             ["li", "", `Try not to pull all-nighters on essays. [I am bad at this]`],
             ["ul-end"]
         ]
+    },
+    {
+        title: "Screenshots from Flat Earth Discord",
+        mainImg: "images/activity/20240403_Flat_Earth_1.png",
+        published: 20240403,
+        updated: 20240403,
+        summary: "Yes, it actually exists.",
+        pageID: 6,
+        content: [
+            ["p", "", `Someone I know made a counter to the Flat Earth stuff, so a mod got upset and banned him. I joined out of curiosity and also 
+                        to give context for the ban, since his messages were all deleted.`],
+            ["p", "", `Since it claims to be open to both Flat Earthers and Globe Earthers, they have roles for each. From what I remember, the 
+                    Globe Earthers outnumbered the Flat Earthers significantly. I think there were only 2000 or so members with the Flat 
+                    Earther role.`],
+            ["p", "", `The Flat Earthers don't seem to believe in a Flat Earth as much as they want to disprove the Globe Earthers. They have a 
+                        pretty condescending attitude to counters against a Flat Earth. A common response is that all the evidence is a government 
+                        conspiracy. I see the word "sheep" a lot.`],
+            ["p", "", `Around 1/4 of the forum is full of lewd jokes about "flatness" of a certain body part.`],
+            ["figure", "width: 600px", "images/activity/20240403_Flat_Earth_2.png", `This type of short response with no explanations are common.`],
+            ["figure", "width: 600px", "images/activity/20240403_Flat_Earth_3.png", `You don't get to disprove a definition.`],
+            ["figure", "width: 600px", "images/activity/20240403_Flat_Earth_4.png", `I think they really like alternate hypotheses.<br><br>They would be great at creative writing.`],
+            ["figure", "width: 600px", "images/activity/20240403_Flat_Earth_5.png", `Maybe this is a troll post. I hope it is.`],
+            ["p", "", `Unfortunately I didn't get to browse more, because after I sent an imgur link with context for the ban, it was immediately hidden 
+                        and someone called a mod to ban me too. This happened less than 15 minutes after I joined. That was a heck of an experience.`]
+        ]
     }
 ];

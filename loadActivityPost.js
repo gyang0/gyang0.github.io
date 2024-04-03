@@ -75,6 +75,8 @@ function updateActivityPage(){
             // Include a main image if it exists
             if(activityPosts[i].mainImg != null){
                 posts += `<img src=${activityPosts[i].mainImg}>`;
+            } else {
+                posts += `<div style="background-color: rgb(230, 230, 230); height: 200px"></div>`;
             }
 
             // Second half
