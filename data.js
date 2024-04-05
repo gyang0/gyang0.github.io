@@ -486,7 +486,7 @@ int main(){
             ["p", "", `The Flat Earthers don't seem to believe in a Flat Earth as much as they want to disprove the Globe Earthers. They have a 
                         pretty condescending attitude to counters against a Flat Earth. A common response is that all the evidence is a government 
                         conspiracy. I see the word "sheep" a lot.`],
-            ["p", "", `Around 1/4 of the forum is full of lewd jokes about "flatness" of a certain body part.`],
+            ["p", "", `I'd say around half the forum is actual discussion (if you can call it that) and the other half is lewd jokes/random topics.`],
             ["figure", "width: 600px", "images/activity/20240403_Flat_Earth_2.png", `This type of short response with no explanations are common.`],
             ["figure", "width: 600px", "images/activity/20240403_Flat_Earth_3.png", `You don't get to disprove a definition.`],
             ["figure", "width: 600px", "images/activity/20240403_Flat_Earth_4.png", `I think they really like alternate hypotheses.<br><br>They would be great at creative writing.`],
