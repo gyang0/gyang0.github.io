@@ -474,7 +474,7 @@ int main(){
         title: "Screenshots from Flat Earth Discord",
         mainImg: "images/activity/20240403_Flat_Earth_1.png",
         published: 20240403,
-        updated: 20240403,
+        updated: 20240405,
         summary: "Yes, it actually exists.",
         pageID: 6,
         content: [
@@ -493,6 +493,32 @@ int main(){
             ["figure", "width: 600px", "images/activity/20240403_Flat_Earth_5.png", `Maybe this is a troll post. I hope it is.`],
             ["p", "", `Unfortunately I didn't get to browse more, because after I sent an imgur link with context for the ban, it was immediately hidden 
                         and someone called a mod to ban me too. This happened less than 15 minutes after I joined. That was a heck of an experience.`]
+        ]
+    },
+    {
+        title: "Submissions for BallsDex Art Contest",
+        mainImg: "images/activity/20240407_BallsDex_Contest_6.png",
+        published: 20240407,
+        updated: 20240407,
+        summary: "Mongol Empire and Polish-Lithuanian Commonwealth",
+        pageID: 7,
+        content: [
+            ["p", "", `TL;DR: BallsDex is having an art contest for 2 new countryballs: Mongol Empire and Polish-Lithuanian Commonwealth. 4 separate 
+                        contests will be held - spawn art and card art for each of the 2 balls.`],
+            ["p", "", `My inspiration was from the balls whose spawn art I liked.`],
+            ["figure", "width: 700px", "images/activity/20240407_BallsDex_Contest_1.png", `Nice shading. I also like how the character of each ball shines through.`],
+            ["p", "", `Spawn art and card art are 2 very different styles, e.g.`],
+            ["figure", "width: 700px", "images/activity/20240407_BallsDex_Contest_2.png", `Spawn art is meh but card art is one of the best.`],
+
+            ["p", "", `Originally I'd planned on just doing Mongol Empire, but Polish-Lithuanian Commonwealth was fun to design too.`],
+            ["h2", "", `Draft`],
+            ["figure", "width: 700px", "images/activity/20240407_BallsDex_Contest_3.png", `Kinda blurry`],
+            ["p", "", `I put the sketches into Krita and used a tablet to make the digital version.`],
+            ["h2", "", `Mongol Empire - Final version`],
+            ["figure", "", `images/activity/20240407_BallsDex_Contest_4.png`, `The horse was left out because it took up too much space. <br><br>
+                                                                                Speared balls represent places the Mongols conquered: Kievan Rus, Abbasid Caliphate, and Xia.`],
+            ["h2", "", `Polish-Lithuanian Commonwealth - Final version`],
+            ["figure", "", `images/activity/20240407_BallsDex_Contest_5.png`, `Model based off the Winged Hussars`]
         ]
     }
 ];
