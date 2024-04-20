@@ -499,7 +499,7 @@ int main(){
         title: "Submissions for BallsDex Art Contest",
         mainImg: "images/activity/20240407_BallsDex_Contest_6.png",
         published: 20240407,
-        updated: 20240407,
+        updated: 20240418,
         summary: "Mongol Empire and Polish-Lithuanian Commonwealth",
         pageID: 7,
         content: [
@@ -518,7 +518,9 @@ int main(){
             ["figure", "", `images/activity/20240407_BallsDex_Contest_4.png`, `The horse was left out because it took up too much space. <br><br>
                                                                                 Speared balls represent places the Mongols conquered: Kievan Rus, Abbasid Caliphate, and Xia.`],
             ["h2", "", `Polish-Lithuanian Commonwealth - Final version`],
-            ["figure", "", `images/activity/20240407_BallsDex_Contest_5.png`, `Model based off the Winged Hussars`]
+            ["figure", "", `images/activity/20240407_BallsDex_Contest_5.png`, `Model based off the Winged Hussars`],
+            ["br"],
+            ["p", "", `Result: did not win either. Oh well.`]
         ]
     }
 ];
