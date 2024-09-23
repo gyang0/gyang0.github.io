@@ -1,3 +1,7 @@
+// Global variables
+const FILTER_SELECTED_COL = `80, 131, 138`;
+const FILTER_INACTIVE_COL = "122, 194, 203";
+
 // Navbar and footer
 const navbarCode = `
 	<ul>
@@ -21,11 +25,6 @@ document.getElementById("footer").innerHTML = footerCode;
 // id = used in code
 // name = as it appears on the page
 // desc = description
-const projectFilters = [
-    { name: "Physics", desc: "Physics is cool." },
-    { name: "Classics", desc: "Enjoy my terrible essays and analyses." },
-    { name: "Coding", desc: "Programs I dabbled in over the years." }
-];
 
 const activityFilters = [
     { id: "newer", name: "Newer" },

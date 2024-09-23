@@ -369,11 +369,6 @@ figcaption {
 	transform: translateX(-5px) translateY(-5px);
 }
 
-#filter-description p {
-	margin-bottom: 0px;
-	margin-top: 10px;
-}
-
 .project-tags-container {
 	display: flex;
 	margin-left: 18px;

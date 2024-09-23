@@ -1,0 +1,194 @@
+{
+    "Physics": {
+        "projects": [
+            {
+                "title": "Deriving Maxwell's Equations",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20231212,
+                "tags": ["Multivariable Calc"],
+                "description": "Deriving all 4 equations using Multivariable theorems.<br><br>Semester 1 final project",
+                "image": "images/activity/20240114_maxwells_equations_1.png",
+                "linkTo": "documents/20240114_maxwells_equations.pdf"
+            },
+            {
+                "title": "Matrix Decomposition Proofs",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20240605,
+                "tags": ["Multivariable Calc"],
+                "description": "Proofs for LU, QR, Spectral, and Polar decomposition.<br><br>Semester 2 final project",
+                "image": "images/projects/matrix_decomposition.png",
+                "linkTo": "documents/20240605_matrix_decomposition.pdf"
+            }
+        ]
+    },
+    "Classics": {
+        "projects": [
+            {
+                "title": "To Stop and Smell the Roses",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20240219,
+                "tags": ["Greek"],
+                "description": "Entry for the Paideia Institute 2024 High School Essay Contest.<br><br>Topic: 'Why should we study Classical Greek?'",
+                "image": "images/projects/greek_essay.png",
+                "linkTo": "documents/20240219_paideia_submission.pdf"
+            }
+        ]
+    },
+    "Coding": {
+        "projects": [
+            {
+                "title": "Grades Overview",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20220621,
+                "tags": ["C++"],
+                "description": "Project to practice menu-driven design in C++.",
+                "image": "images/projects/grades_overview.png",
+                "linkTo": "https://github.com/gyang0/Grades_Overview"
+            },
+            {
+                "title": "The Evil Twin Strategy",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20210625,
+                "tags": ["Processing.js"],
+                "description": "Entry for Khan Academy's Contest: Illustrate a Math Concept.<br><br>A problem from University of Northern Colorado's math contest archive.",
+                "image": "https://www.khanacademy.org/computer-programming/the-evil-twin-strategy/4839632158015488/latest.png",
+                "linkTo": "https://www.khanacademy.org/computer-programming/the-evil-twin-strategy/4839632158015488"
+            },
+            {
+                "title": "The Little Things",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20210827,
+                "tags": ["Processing.js"],
+                "description": "Entry for Khan Academy's Contest: The Great Outdoors.<br><br>Inspired by my family's yearly trip to the Rockies.",
+                "image": "https://www.khanacademy.org/computer-programming/the-little-things/6734816294682624/latest.png",
+                "linkTo": "https://www.khanacademy.org/computer-programming/the-little-things/6734816294682624"
+            },
+            {
+                "title": "Skyview Inn",
+                "details": "won-2",
+                "author": "Gene Yang",
+                "made": 20211226,
+                "tags": ["Processing.js"],
+                "description": "Entry for Khan Academy's Contest: Mysteries.<br><br>First time I won 1st in Advanced bracket.",
+                "image": "https://www.khanacademy.org/computer-programming/skyview-inn/6523416028954624/latest.png",
+                "linkTo": "https://www.khanacademy.org/computer-programming/skyview-inn/6523416028954624"
+            },
+            {
+                "title": "Sorting & Searching",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20220225,
+                "tags": ["HTML/CSS", "JS"],
+                "description": "Entry for Khan Academy's Contest: Introduce a CS Concept.<br><br>Covers several sorting algorithms and big O notation.",
+                "image": "images/projects/sorting_and_searching.png",
+                "linkTo": "https://www.khanacademy.org/computer-programming/sorting-and-searching-an-intro/5666805503803392"
+            },
+            {
+                "title": "Diagon Alley",
+                "details": "won-3",
+                "author": "Gene Yang",
+                "made": 20221028,
+                "tags": ["Processing.js"],
+                "description": "Entry for Khan Academy's Contest: Magic.<br><br>Pardon the crude pixel art.",
+                "image": "https://www.khanacademy.org/computer-programming/diagon-alley/5460353548337152/latest.png",
+                "linkTo": "https://www.khanacademy.org/computer-programming/diagon-alley/5460353548337152"
+            },
+            {
+                "title": "Linux Simulator",
+                "details": "won-1",
+                "author": "Gene Yang",
+                "made": 20221230,
+                "tags": ["Processing.js"],
+                "description": "Entry for Khan Academy's Contest: Inventions.<br><br>Won 1st place in the Advanced bracket; contains highly inaccurate information.",
+                "image": "https://www.khanacademy.org/computer-programming/linux-simulator/6467088633348096/latest.png",
+                "linkTo": "https://www.khanacademy.org/computer-programming/linux-simulator/6467088633348096"
+            },
+            {
+                "title": "Hackberry: Chess Engine",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20220510,
+                "tags": ["Java"],
+                "description": "A working chess engine in Java. Pretty slow, but it can avoid checkmate and capture sensibly.",
+                "image": "images/projects/hackberry.png",
+                "linkTo": "https://github.com/gyang0/Hackberry"
+            },
+            {
+                "title": "Procrastination Buster",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20230607,
+                "tags": ["C++"],
+                "description": "The idea was that whenever I wanted to doom scroll, I'd have to learn a new algorithm/concept first.<br><br>Results were meh.",
+                "image": "images/projects/procrastination_buster.png",
+                "linkTo": "https://github.com/gyang0/ProcrastinationBuster"
+            },
+            {
+                "title": "Statistics Library",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20230530,
+                "tags": ["JS", "Unfinished"],
+                "description": "JS library to make drawing graphs/charts and carrying out statistical analysis easier in HTML environments.",
+                "image": "images/projects/statistics_library.png",
+                "linkTo": "https://github.com/gyang0/Statistics-Library"
+            },
+            {
+                "title": "Perspective in Art",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20230625,
+                "tags": ["HTML/CSS", "JS"],
+                "description": "Entry for Khan Academy's Contest: New Perspectives.<br><br>Examples of perspective ranging from \"The Odyssey\" to \"Joker\" (2019 film).",
+                "image": "images/projects/perspective_in_art.png",
+                "linkTo": "https://www.khanacademy.org/computer-programming/perspective-in-art/6031994034372608"
+            },
+            {
+                "title": "Learning WebGL",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20230701,
+                "tags": ["HTML/CSS", "JS", "GLSL"],
+                "description": "Collection of small programs made to get familiar with WebGL.<br><br>This magnificient hellscape you see here was my result.",
+                "image": "images/projects/learning_webgl.png",
+                "linkTo": "https://github.com/gyang0/learning-webgl"
+            },
+            {
+                "title": "2023 Hackathon Entry",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20230903,
+                "tags": ["HTML/CSS", "JS"],
+                "description": "Entry for a 3-day hackathon at my school. The theme was \"Climate change.\"<br><br>This program uses some algorithms to crudely predict flood paths.",
+                "image": "images/projects/gcc_2023.png",
+                "linkTo": "https://github.com/gyang0/GCC2023"
+            },
+            {
+                "title": "Lost [Game]",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20231003,
+                "tags": ["HTML/CSS", "JS", "Unfinished"],
+                "description": "Game for an idea that's been in my head for a long time. Still a work in progress.",
+                "image": "images/projects/lost_game.png",
+                "linkTo": "https://github.com/gyang0/lost-game"
+            },
+            {
+                "title": "My Website",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20231204,
+                "tags": ["HTML/CSS", "JS", "Unfinished"],
+                "description": "Holy recursion, Batman.",
+                "image": "images/projects/my_website.png",
+                "linkTo": "https://github.com/gyang0/gyang0.github.io"
+            }
+        ]
+    }
+}

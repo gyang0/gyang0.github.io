@@ -1,68 +1,98 @@
-function tagColor(tag){
-    // Languages for code
-    // Modeled after the GitHub schemes as closely as possible
-    switch(tag){
-    case "C++":
-        return [214, 36, 134];
-    case "Java":
-        return [143, 74, 26];
-    case "HTML/CSS":
-        return [194, 31, 53];
-    case "JS":
-        return [230, 232, 97];
-    case "Processing.js":
-        return [11, 144, 189];
-    case "GLSL":
-        return [28, 93, 102];
-    }
+// Object storing all projects
+// Populated later after fetching from a file and used as a global variable.
+let allProjects = {};
 
-    // Arbitrary decisions
-    // Greek/Latin
-    switch(tag){
-    case "Greek":
-        return [0, 0, 255];
-    case "Latin":
-        return [255, 0, 0];
-    }
+// Tags in project thumbnails (e.g. "Multivariable Calc", "HTML/CSS", "Java")
+const tagColors = {
+    // Modeled after GitHub's colors for code
+    "C++": [214, 36, 134],
+    "Java": [143, 74, 26],
+    "HTML/CSS": [194, 31, 53],
+    "JS": [230, 232, 97],
+    "Processing.js": [11, 144, 189],
+    "GLSL": [28, 93, 102],
 
-    // Misc.
-    switch(tag){
-    case "Unfinished":
-        return [255, 140, 0];
-    }
+    // Arbitrary decisions for languages
+    "Greek": [0, 0, 255],
+    "Latin": [255, 0, 0],
+    
+    // School
+    "Multivariable Calc": [95, 222, 245],
 
-    // Unknown
-    return [95, 222, 245];
+    // Other
+    "Unfinished": [255, 140, 0]
+};
+
+
+/**
+ * Fetches project data (stored as JSON) to use.
+ * @param {String} file - name of JSON file to read
+ * @returns a Promise that'll fetch the file and return it in JSON format
+ */
+function readData(file){
+    return new Promise((resolve, reject) => {
+        fetch('./data/projectData.json')
+            .then((res) => {
+                if(!res.ok)
+                    throw new Error("Error in readData(): " + res.status);
+                return res.json();
+            })
+            .then((json) => {
+                resolve(json);
+            })
+            .catch((err) => {
+                reject(`Error in readData(): ${err}`);
+            });
+    });
 }
 
+/**
+ * Populates page with project filter options
+ * @param {String} name - name of filter
+ */
+function addFilters(name){
+    document.getElementById('project-filters').innerHTML += `
+        <li class="project-filters-li">
+            <a onclick="javascript: addProjects('${name}')">
+                ${name}
+            </a>
+        </li>
+    `;
+}
 
-// Update page
-// filterID - numeric ID of the filter string
-function handleProjectFilters(filterID){
-    // Store
-    localStorage.setItem("globalProjectFilter", filterID);
-
-    // Display filters
-    let arr = document.getElementsByClassName("project-filters-li");
-    for(let i = 0; i < projectFilters.length; i++){
-        arr[i].innerHTML = `<a onclick="javascript: handleProjectFilters(${i})">${projectFilters[i].name}</a>`;
-        arr[i].style = "background-color: rgb(122, 194, 203)";
-    }
-    arr[filterID].style = "background-color: rgb(80, 131, 138)";
+/**
+ * Populates page with projects depending on current filter
+ * @param {String} filter - current filter to apply
+ */
+function addProjects(filter){
+    // Store filter
+    localStorage.setItem("globalProjectFilter", filter);
     
-    // Set filter description
-    document.getElementById("filter-description").innerHTML = `<p>${projectFilters[filterID].desc}</p>`;
+    // Set filter colors
+    let allFilters = document.getElementsByClassName('project-filters-li');
+    for(let i = 0; i < allFilters.length; i++){
+        allFilters[i].style = `background-color: rgb(${filter == Object.keys(allProjects)[i] ? FILTER_SELECTED_COL : FILTER_INACTIVE_COL})`;
+    }
+    
     
     // Update data depending on filter
     let el = document.getElementById("all-projects-container");
     el.innerHTML = "";
 
-    // Set the description of the filter
-    let filter = projectFilters[filterID].name.toLowerCase();
-
-    for(let i = 0; i < projects[filter].length; i++){
-        let proj = projects[filter][i];
+    // Project thumbnail
+    for(let i = 0; i < allProjects[filter].projects.length; i++){
+        let proj = allProjects[filter].projects[i];
         
+        // Tags for project
+        let tagsCode = "";
+        for(let j = 0; j < proj.tags.length; j++){
+            let tagCol = tagColors[proj.tags[j]];
+            tagsCode += `
+                <div class="project-tags" style="background-color: rgb(${tagCol[0]}, ${tagCol[1]}, ${tagCol[2]}, 0.5)">
+                    <p>${proj.tags[j]}</p>
+                </div>`;
+        }
+
         // Add a trophy for the project title if needed.
         let project_prize = "";
         let project_blurb = "";
@@ -82,22 +112,10 @@ function handleProjectFilters(filterID){
             }
         }
 
-        // Language list
-        let tagsCode = "";
-
-        for(let j = 0; j < proj.tags.length; j++){
-            let tagCol = tagColor(proj.tags[j]);
-            tagsCode += `
-                <div class="project-tags" style="background-color: rgb(${tagCol[0]}, ${tagCol[1]}, ${tagCol[2]}, 0.5)">
-                    <p>${proj.tags[j]}</p>
-                </div>`;
-        }
-
-
-        // Add the project thumbnail code
+        // Ok now the real stuff
         el.innerHTML += `
-        <a class="project-thumbnails" target="_blank" href=${proj.linkTo}>
-            <!-- Image thumbnail -->
+            <a class="project-thumbnails" target="_blank" href=${proj.linkTo}>
+                <!-- Image thumbnail -->
                 <div class="project-thumbnails-img-container">
                     <img class="project-thumbnails-img" src="${proj.image}">
                     <p class="project-thumbnails-desc">${proj.description}</p>
@@ -117,16 +135,42 @@ function handleProjectFilters(filterID){
                         <p><em><strong>${project_blurb}</strong></em></p>
                     </div>
                 </div>
-            </a>`;
+            </a>
+        `;
     }
 }
 
-// Sort by date
-for(let key in projects){
-    projects[key].sort((obj1, obj2) => {
-        return obj2.made - obj1.made;
-    })
+/**
+ * Handle filters, sort projects, etc.
+ * Reads JSON project data file and populates the page accordingly.
+ */
+function updateProjectsPage(){
+    readData('./data/projectData.json')
+        .then((obj) => {
+            // 'obj' contains the project data in JSON format.
+            // IMPORTANT: need to set the global variable so that it can be used in other functions.
+            allProjects = obj;
+
+            // 1. Read JSON and add filters
+            // 2. Set description & adjust colors
+            // 3. Get project data and sort by date
+            for(let key in obj){
+                // Populate filters
+                addFilters(key);
+
+                // Sort projects in each category by creation date
+                obj[key].projects.sort((obj1, obj2) => {
+                    return obj2.made - obj1.made;
+                });
+            }
+
+            // Applies current filter, or if it doesn't exist, the first category.
+            addProjects(localStorage.getItem("globalProjectFilter") ?? Object.keys(obj)[0]);
+        })
+        .catch((err) => {
+            console.log(`Error in updateProjectsPage(): ${err}`);
+        });
 }
 
-// Display relevant projects
-handleProjectFilters(localStorage.getItem("globalProjectFilter") ?? 0);
+// When we load the page
+updateProjectsPage();
