@@ -23,34 +23,11 @@ const tagColors = {
     "Unfinished": [255, 140, 0]
 };
 
-
-/**
- * Fetches project data (stored as JSON) to use.
- * @param {String} file - name of JSON file to read
- * @returns a Promise that'll fetch the file and return it in JSON format
- */
-function readData(file){
-    return new Promise((resolve, reject) => {
-        fetch('./data/projectData.json')
-            .then((res) => {
-                if(!res.ok)
-                    throw new Error("Error in readData(): " + res.status);
-                return res.json();
-            })
-            .then((json) => {
-                resolve(json);
-            })
-            .catch((err) => {
-                reject(`Error in readData(): ${err}`);
-            });
-    });
-}
-
 /**
  * Populates page with project filter options
  * @param {String} name - name of filter
  */
-function addFilters(name){
+function addProjectFilters(name){
     document.getElementById('project-filters').innerHTML += `
         <li class="project-filters-li">
             <a onclick="javascript: addProjects('${name}')">
@@ -71,7 +48,7 @@ function addProjects(filter){
     // Set filter colors
     let allFilters = document.getElementsByClassName('project-filters-li');
     for(let i = 0; i < allFilters.length; i++){
-        allFilters[i].style = `background-color: rgb(${filter == Object.keys(allProjects)[i] ? FILTER_SELECTED_COL : FILTER_INACTIVE_COL})`;
+        allFilters[i].style = `background-color: rgb(${Object.keys(allProjects)[i] == filter ? FILTER_SELECTED_COL : FILTER_INACTIVE_COL})`;
     }
     
     
@@ -142,10 +119,10 @@ function addProjects(filter){
 
 /**
  * Handle filters, sort projects, etc.
- * Reads JSON project data file and populates the page accordingly.
+ * Called on initial page load.
  */
 function updateProjectsPage(){
-    readData('./data/projectData.json')
+    readData('./data/projectData.json', 'json')
         .then((obj) => {
             // 'obj' contains the project data in JSON format.
             // IMPORTANT: need to set the global variable so that it can be used in other functions.
@@ -156,7 +133,7 @@ function updateProjectsPage(){
             // 3. Get project data and sort by date
             for(let key in obj){
                 // Populate filters
-                addFilters(key);
+                addProjectFilters(key);
 
                 // Sort projects in each category by creation date
                 obj[key].projects.sort((obj1, obj2) => {

@@ -12,26 +12,22 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu:wght@300&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
-        <!-- Nord highlight.js -->
-        <link rel='stylesheet' id='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/nord.min.css'/>
-        <style>
-            .hljs-comment {
-                color: #76839e; /* Nord comments in highlight.js are hard to see  */
-            }
-        </style>
+        <!-- highlight.js -->
+        <link rel='stylesheet' id='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css'/>
+        <!-- Code highlighting -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+        <!-- Marked.js -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+        <!-- Katex -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css"></style>
-
-        <!-- KaTex -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
-        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
-
-        <!-- KaTex Autoloader -->
-        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-
-
     </head>
 
     <body>
@@ -43,14 +39,11 @@
                 <!-- The ones to show or hide -->
                 <div id="activity-show-general">
                     <h1>Posts</h1>
-                    <p>Here you can find records of my milestones, things I'm doing, and a few 3am musings.</p>
+                    <p>Things that seemed like a good idea at the time.</p>
 
                     <div class="filters">
                         <ul id="activity-filters">
-                            <!-- # of li tags must be equal to activityFilters.length in init.js -->
-                            <!-- too lazy to fix -->
-                            <li class="activity-filters-li"><a onclick=""></a></li>
-                            <li class="activity-filters-li"><a onclick=""></a></li>
+                            <!-- Filters populated here -->
                         </ul>
                     </div>
                 </div>
@@ -71,13 +64,8 @@
 
         <div id="footer"></div>
     </body>
-    
+
     <script src="scripts/init.js"></script>
     <script src="scripts/data.js"></script>
     <script src="scripts/loadActivityPost.js"></script>
-
-    <!-- Code highlighting -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-    
 </html>

@@ -1,43 +1,12 @@
-function tagConverter(arr){
-    // 1st element signifies the tag.
-    // 2nd element signifies any styles
-    // Anything else depends on the element.
+// Object storing all the post data
+// Populated after fetching data from a file, used as global variable.
+let allPosts = {};
 
-    switch(arr[0]){
-    case "img":
-        return `<img src="${arr[2]}" style="${arr[1]}">`;
-    case "br":
-        return "<br>";
-    case "ul-start":
-        return `<ul style="${arr[1]}">`;
-    case "ol-start":
-        return `<ol style="${arr[1]}">`;
-    case "li":
-        return `<li style="${arr[1]}">${arr[2]}</li>`;
-    case "ul-end":
-        return "</ul>";
-    case "ol-end":
-        return "</ol>";
-    case "figure":
-        return `
-            <figure>
-                <img src="${arr[2]}" style="${arr[1]}">
-                <figcaption>${arr[3]}</figcaption>
-            </figure>
-        `;
-    case "CUSTOM":
-        return arr[2];
-    case "code":
-        return `
-            <pre>
-                <code class="${arr[2]}" style="${arr[1]}">${arr[3]}</code>
-            </pre>
-        `;
-    default:
-        return `<${arr[0]} style="${arr[1]}">${arr[2]}</${arr[0]}>`;
-    }
-}
-
+/**
+ * Converts a number to descriptive date.
+ * @param {Number} num - date in YYYYMMDD format
+ * @returns - String of "month day, year" format
+ */
 function dateFormatter(num){
     const months = ["January", "February", "March", "April",
                     "May", "June", "July", "August",
@@ -57,106 +26,163 @@ function dateFormatter(num){
     return month + " " + day + ", " + year;
 }
 
-function updateActivityPage(){
+/**
+ * Populates page with activity filter options
+ * @param {String} name - name of filter
+ */
+function addActivityFilters(name){
+    document.getElementById('activity-filters').innerHTML += `
+        <li class="activity-filters-li">
+            <a onclick="javascript: addPosts('${name}')">
+                ${name}
+            </a>
+        </li>
+    `;
+}
+
+/**
+ * Displays all the posts on the page as thumbnails.
+ */
+function displayAllPosts(){
+    let el = document.getElementById("all-activity-posts");
+    el.innerHTML = "";
+    
+    for(let i = 0; i < allPosts.posts.length; i++){
+        el.innerHTML += `
+            <div class="activity-posts-container">
+                <a href="activity.html?page=${allPosts.posts[i].pageID}">
+                    <div class="activity-posts">
+                        <img src=${allPosts.posts[i].mainImg ?? "./images/activity/DEFAULT_POST_IMG.png"}>
+                        <h1>${allPosts.posts[i].title}</h1>
+                        <p style="font-size:14px; margin-left:30px;">${dateFormatter(allPosts.posts[i].published)}</p>
+                        <p>${allPosts.posts[i].summary}</p>
+                    </div>
+                </a>
+            </div>`;
+    }
+
+    // Show/hide relevant content
+    document.getElementById("activity-show-general").style.display = "block";
+    document.getElementById("activity-show-specific").style.display = "none";
+}
+
+/**
+ * Displays a single post (not all of them).
+ * @param {Number} pageID - ID of post to display
+ */
+function displaySinglePost(pageID){
+    // Index of content corresponding to page ID
+    let index = -1;
+    for(let i = 0; i < allPosts.posts.length; i++){
+        if(allPosts.posts[i].pageID == pageID){
+            index = i;
+            break;
+        }
+    }
+    if(index == -1){
+        throw new Error(`Error in displaySinglePost(): Unrecognized post ID.`);
+    }
+
+    let el = document.getElementById("specific-activity-post");
+    el.innerHTML = "";
+
+    // Title and date
+    el.innerHTML += `
+        <h1>${allPosts.posts[index].title}</h1>
+        <p style="font-size: 20px; text-align: center; line-height: 40px">
+            Published ${dateFormatter(allPosts.posts[index].published)}
+            <br>
+            Updated ${dateFormatter(allPosts.posts[index].updated)}
+        </p>
+    `;
+
+    // Read markdown file and convert it to HTML
+    readData('./data/activityPosts/' + allPosts.posts[index].contentLink, 'text')
+        .then((content) => {
+            // Render markdown with marked.js
+            el.innerHTML += marked.parse(content);
+                    
+            // Show/hide relevant content
+            document.getElementById("activity-show-general").style.display = "none";
+            document.getElementById("activity-show-specific").style.display = "block";
+
+            return el;
+        })
+        .then((element) => {
+            // Render math with Katex
+            renderMathInElement(element, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError : false
+            });
+        })
+        .then(() => {
+            // Highlight code blocks
+            hljs.highlightAll();
+        })
+        .catch((err) => {
+            console.log(`Error in displaySinglePost(): ${err}`);
+        });
+}
+
+/**
+ * Populates page with multiple posts or just one, depending on the URL.
+ * @param {String} filter - current filter to apply
+ */
+function addPosts(filter){
+    // Store filter
+    localStorage.setItem("globalActivityFilter", filter);
+
+    // Check link to see whether a specific page should be displayed
     const link = window.location.href;
 
     // Link doesn't specify a page -> show all posts
     if(!link.includes("?page=")){
-        let posts = "";
-        for(let i = 0; i < activityPosts.length; i++){
-
-            // First half
-            posts += `
-                <div class="activity-posts-container">
-                    <a href="activity.html?page=${activityPosts[i].pageID}">
-                        <div class="activity-posts">
-            `;
-
-            // Include a main image if it exists
-            if(activityPosts[i].mainImg != null){
-                posts += `<img src=${activityPosts[i].mainImg}>`;
-            } else {
-                posts += `<div style="background-color: rgb(230, 230, 230); height: 200px"></div>`;
-            }
-
-            // Second half
-            posts += `
-                            <h1>${activityPosts[i].title}</h1>
-                            <p style="font-size:14px; margin-left:30px;">${dateFormatter(activityPosts[i].published)}</p>
-                            <p>${activityPosts[i].summary}</p>
-                        </div>
-                    </a>
-                </div>`;
+        // Display & set filter colors
+        let allFilters = document.getElementsByClassName('activity-filters-li');
+        for(let i = 0; i < allFilters.length; i++){
+            allFilters[i].style = `background-color: rgb(${filter == allFilters[i].textContent.trim() ? FILTER_SELECTED_COL : FILTER_INACTIVE_COL})`;
         }
 
-        // Update posts
-        document.getElementById("all-activity-posts").innerHTML = posts;
+        // Sort based on filter
+        allPosts.posts.sort((obj1, obj2) => {
+            if(filter == "Newer") return obj2.published - obj1.published;
+            else return obj1.published - obj2.published;
+        });
 
-        // Show/hide relevant content
-        document.getElementById("activity-show-general").style.display = "block";
-        document.getElementById("activity-show-specific").style.display = "none";
+        // Display all post thumbnails
+        displayAllPosts();
 
     } else {
+        // Display single post
         let pageID = parseInt(link.charAt(link.length - 1), 10);
-        let postContent = "";
-
-        // Index of content corresponding to page ID
-        let index = -1;
-        for(let i = 0; i < activityPosts.length; i++){
-            if(activityPosts[i].pageID == pageID){
-                index = i;
-                break;
-            }
-        }
-
-        if(index == -1){
-            return;
-        }
-
-        // Title and date
-        postContent += `
-            <h1>${activityPosts[index].title}</h1>
-            <p style="font-size: 20px; text-align: center; line-height: 40px">
-                Published ${dateFormatter(activityPosts[index].published)}
-                <br>
-                Updated ${dateFormatter(activityPosts[index].updated)}
-            </p>
-        `;
-
-        // Interpret every tag and add to content
-        let arr = activityPosts[index].content;
-        for(let i = 0; i < arr.length; i++){
-            postContent += tagConverter(arr[i]);
-        }
-
-        document.getElementById("specific-activity-post").innerHTML = postContent;
-
-        // Show/hide relevant content
-        document.getElementById("activity-show-general").style.display = "none";
-        document.getElementById("activity-show-specific").style.display = "block";
+        displaySinglePost(pageID);
     }
 }
 
-function handleActivityFilters(filter){
-    localStorage.setItem("globalActivityFilter", filter);
-    let arr = document.getElementsByClassName("activity-filters-li");
-    for(let i = 0; i < arr.length; i++){
-        arr[i].innerHTML = `<a onclick="javascript: handleActivityFilters(${i})">${activityFilters[i].name}</a>`;
-        arr[i].style = "background-color: rgb(122, 194, 203)";
-    }
-    arr[filter].style = "background-color: rgb(80, 131, 138)";
+/**
+ * Handles filters, sorts projects, etc.
+ * Called on initial page load.
+ */
+function updateActivityPage(){
+    // Get data & store it in global variable
+    readData('./data/activityData.json', 'json')
+        .then((obj) => {
+            // 'obj' contains post data in JSON format
+            // IMPORTANT: set global variable so other functions can use it.
+            allPosts = obj;
 
-    if(activityFilters[filter].id === "older"){
-        activityPosts.sort((obj1, obj2) => {
-            return obj1.published - obj2.published;
-        });
-    } else if(activityFilters[filter].id === "newer"){
-        activityPosts.sort((obj1, obj2) => {
-            return obj2.published - obj1.published;
-        });
-    }
+            // Just 2 filters for posts
+            addActivityFilters("Newer");
+            addActivityFilters("Older");
 
-    updateActivityPage();
+            addPosts(localStorage.getItem("globalActivityFilter") ?? "Newer");
+        })
+        .catch((err) => {
+            console.log(`Error in updateActivityPage(): ${err}`);
+        });
 }
 
-handleActivityFilters(localStorage.getItem("globalActivityFilter") ?? 0);
+updateActivityPage();

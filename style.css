@@ -391,3 +391,5 @@ figcaption {
 	font-size: 12px;
 	font-family: Kanit;
 }
+
+.katex { font-size: 1.1em; }

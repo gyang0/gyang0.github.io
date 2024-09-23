@@ -1,0 +1,76 @@
+{
+    "posts": [
+        {
+            "title": "CodeForces XOR problem",
+            "pageID": 0,
+            "published": 20230916,
+            "updated": 20231204,
+            "mainImg": "images/activity/20230916_CodeForces_XOR_1.png",
+            "summary": "Detailed explanation of problem 1847C (with XOR)",
+            "contentLink": "20230916_CodeForces_XOR.md"
+        },
+        {
+            "title": "2023 Halloween Costume Log",
+            "pageID": 1,
+            "published": 20230926,
+            "updated": 20231021,
+            "mainImg": "images/activity/20230926_halloween_2023_4.jpg",
+            "summary": "Photos, sketches, descriptions. Your favorite demon from the Nightmare Realm.",
+            "contentLink": "20230926_Halloween_Costume.md"
+        },
+        {
+            "title": "Deriving Maxwell's Equations - Notes",
+            "pageID": 2,
+            "published": 20240114,
+            "updated": 20240922,
+            "mainImg": "images/activity/20240114_maxwells_equations_1.png",
+            "summary": "Math final project - deriving the 4 equations with multivariable calc.",
+            "contentLink": "20240114_Maxwells_Equations.md"
+        },
+        {
+            "title": "Sublime Text Package Configuration",
+            "pageID": 4,
+            "published": 20240201,
+            "updated": 20240923,
+            "mainImg": "images/activity/20240201_Nord_Theme_3.png",
+            "summary": "Installation of Terminus and Nord theme.",
+            "contentLink": "20240201_Sublime_Text_Package_Config.md"
+        },
+        {
+            "title": "Notes on Writing",
+            "pageID": 5,
+            "published": 20240206,
+            "updated": 20240207,
+            "mainImg": null,
+            "summary": "Compiled over 3 years at OHS.",
+            "contentLink": "20240206_Writing_Tips.md"
+        },
+        {
+            "title": "Screenshots from Flat Earth Discord",
+            "pageID": 6,
+            "mainImg": "images/activity/20240403_Flat_Earth_1.png",
+            "published": 20240403,
+            "updated": 20240405,
+            "summary": "Yes, it actually exists.",
+            "contentLink": "20240403_Flat_Earth_Discord.md"
+        },
+        {
+            "title": "Submissions for BallsDex Art Contest",
+            "pageID": 7,
+            "published": 20240407,
+            "updated": 20240418,
+            "mainImg": "images/activity/20240407_BallsDex_Contest_6.png",
+            "summary": "Mongol Empire and Polish-Lithuanian Commonwealth",
+            "contentLink": "20240407_BallsDex_Art_Contest.md"
+        },
+        {
+            "title": "2024 Summer of Greek (Classical Edition)",
+            "pageID": 8,
+            "mainImg": "images/activity/20240708_AlphaToOmega.jpg",
+            "published": 20240708,
+            "updated": 20240708,
+            "summary": "Let's see how this goes.<br>EDIT: Welp, gonna have to extend this.",
+            "contentLink": "20240708_Summer_Of_Greek.md"
+        }
+    ]
+}
