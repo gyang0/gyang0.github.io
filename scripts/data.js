@@ -170,7 +170,7 @@ int main(){
         title: "Deriving Maxwell's Equations - Notes",
         mainImg: "images/activity/20240114_maxwells_equations_1.png",
         published: 20240114,
-        updated: 20240114,
+        updated: 20240922,
         summary: "Math final project - deriving the 4 equations with multivariable calc.",
         pageID: 2,
 
@@ -186,19 +186,24 @@ int main(){
                         since Maxwell's equations are supposed to be the foundation of everything else in electromagnetism. But without the laws, 
                         I would have had to use experimental data or some more fundamental concepts to derive them. So I just used the laws and it 
                         seems to have worked out. Lenz's Law and the Continuity Equation were especially helpful.`],
-            ["p", "", `One thing I'm proud of is the derivation of Faraday's Law. At one point, I got `],
+            ["p", "", `Finding a derivation for Faraday's Law was particularly memorable. At one point, I got `],
             ["p", "text-align: center", `\\( \\iint_S (\\nabla \\times \\textbf{E}) \\cdot d\\textbf{S} = -\\frac{d}{dt}\\iint_S \\textbf{B} \\cdot d\\textbf{S} \\)`],
-            ["p", "", `and I was tempted to just remove the integrals, since "Surface S is arbitrary." But then I noticed that they were flux
-                        integrals and not surface integrals, which made me think that it wouldn't work.`],
-            ["p", "", `After spending time with the second page of Google search results, I found an equation in
-                        <a href="http://sgpwe.izt.uam.mx/files/users/uami/jdf/proyectos/Derivar_inetegral.pdf" target="_blank">this article</a>,
-                        but I kept getting an answer that was off. Which led to a one more round of citation chasing, and fortunately the
+            ["p", "", `and was tempted to just remove the integrals, since "Surface S is arbitrary." But I wasn't sure whether that would work, since they were
+                        flux integrals and not surface integrals.`],
+            ["p", "", `After spending time with the second page of Google search results, I found an equation for the flux across a moving surface in
+                        <a href="https://web.archive.org/web/20210413205303/http://sgpwe.izt.uam.mx/files/users/uami/jdf/proyectos/Derivar_inetegral.pdf" target="_blank">this article</a>
+             (page 622), but I kept getting an answer that was off:`],
+            ["p", "text-align: center", `\\( \\frac{d}{dt}\\iint_S \\textbf{B} \\cdot d\\textbf{S} = \\iint_S (\\nabla \\cdot \\textbf{B})\\textbf{v} \\cdot d\\textbf{S} -
+                                                                                                     \\int_C (\\textbf{v} \\times \\textbf{B}) \\cdot dL +
+                                                                                                     \\iint_S \\textbf{B} \\cdot d\\textbf{S} \\)`],
+            ["p", "", `After another more round of citation chasing, fortunately the
                         <a href="https://www.google.com/books/edition/The_Classical_Theory_of_Electricity_and/9rTQAAAAMAAJ?hl=en&gbpv=1&printsec=frontcover&pg=PA40" target="_blank">original source</a>
-                         was available on Google Books. It looks like there was a single misprint or something in the first article. The original equation is`],
+                         was available on Google Books. It looks like there was just one misprint or something in the first article. The original equation is`],
             ["p", "text-align: center", `\\( \\frac{d}{dt}\\iint_S \\textbf{B} \\cdot d\\textbf{S} = \\iint_S (\\nabla \\cdot \\textbf{B})\\textbf{v} \\cdot d\\textbf{S} -
                                                                                                      \\int_C (\\textbf{v} \\times \\textbf{B}) \\cdot dL +
                                                                                                      \\iint_S \\frac{\\partial \\textbf{B}}{\\partial t} \\cdot d\\textbf{S} \\)`],
-            ["p", "", `Which gave me the right result. That was satisfying, but way more work than I expected.`],
+            ["p", "", `With a \\( \\frac{\\partial \\textbf{B}}{\\partial t} \\) instead of a \\(\\textbf{B}\\) in the third integral. This
+                        gave me the right result.`],
             ["p", "", `<br>Anyways, the actual paper:`],
             ["CUSTOM", "", `
                     <div style="display: block; width: 90%; margin: 0 auto">
