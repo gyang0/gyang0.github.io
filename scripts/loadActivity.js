@@ -136,10 +136,11 @@ function addPosts(filter){
     localStorage.setItem("globalActivityFilter", filter);
 
     // Check link to see whether a specific page should be displayed
-    const link = window.location.href;
-
+    const url = new URL(window.location.href.toString());
+    
     // Link doesn't specify a page -> show all posts
-    if(!link.includes("?page=")){
+    // Search designated with ?page=something at end of URL
+    if(url.search == ""){
         // Display & set filter colors
         let allFilters = document.getElementsByClassName('activity-filters-li');
         for(let i = 0; i < allFilters.length; i++){
@@ -157,7 +158,7 @@ function addPosts(filter){
 
     } else {
         // Display single post
-        let pageID = parseInt(link.charAt(link.length - 1), 10);
+        let pageID = parseInt(url.search.substring("?page=".length));
         displaySinglePost(pageID);
     }
 }
