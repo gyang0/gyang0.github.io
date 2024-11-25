@@ -11,6 +11,8 @@ const tagColors = {
     "JS": [230, 232, 97],
     "Processing.js": [11, 144, 189],
     "GLSL": [28, 93, 102],
+    "LaTeX": [61, 97, 23],
+    "LilyPond": [156, 204, 124],
 
     // Arbitrary decisions for languages
     "Greek": [0, 0, 255],

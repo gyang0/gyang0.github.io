@@ -21,5 +21,5 @@ With a $ \frac{\partial \textbf{B}}{\partial t} $ instead of a $ \textbf{B} $ in
 
 Anyways, the actual paper:
 <div style="display: block; width: 70%; margin: 0 auto">
-    <embed align="center" src="documents/20240114_maxwells_equations.pdf" width="100%" height="1000" type="application/pdf">
+    <embed align="center" src="/data/documents/20240114_maxwells_equations.pdf" width="100%" height="1000" type="application/pdf">
 </div>

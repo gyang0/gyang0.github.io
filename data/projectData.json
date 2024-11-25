@@ -9,7 +9,7 @@
                 "tags": ["Multivariable Calc"],
                 "description": "Deriving all 4 equations using Multivariable theorems.<br><br>Semester 1 final project",
                 "image": "images/activity/20240114_maxwells_equations_1.png",
-                "linkTo": "documents/20240114_maxwells_equations.pdf"
+                "linkTo": "data/documents/20240114_maxwells_equations.pdf"
             },
             {
                 "title": "Matrix Decomposition Proofs",
@@ -19,7 +19,7 @@
                 "tags": ["Multivariable Calc"],
                 "description": "Proofs for LU, QR, Spectral, and Polar decomposition.<br><br>Semester 2 final project",
                 "image": "images/projects/matrix_decomposition.png",
-                "linkTo": "documents/20240605_matrix_decomposition.pdf"
+                "linkTo": "data/documents/20240605_matrix_decomposition.pdf"
             }
         ]
     },
@@ -33,7 +33,7 @@
                 "tags": ["Greek"],
                 "description": "Entry for the Paideia Institute 2024 High School Essay Contest.<br><br>Topic: 'Why should we study Classical Greek?'",
                 "image": "images/projects/greek_essay.png",
-                "linkTo": "documents/20240219_paideia_submission.pdf"
+                "linkTo": "data/documents/20240219_paideia_submission.pdf"
             }
         ]
     },
@@ -188,6 +188,30 @@
                 "description": "Holy recursion, Batman.",
                 "image": "images/projects/my_website.png",
                 "linkTo": "https://github.com/gyang0/gyang0.github.io"
+            }
+        ]
+    },
+    "Misc.": {
+        "projects": [
+            {
+                "title": "The Brownie Worldview",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20241125,
+                "tags": ["LaTeX"],
+                "description": "All hail the glorious Brownie<br><br>The mighty ancient one<br><br>by the way he's not my dog",
+                "image": "images/projects/brownie_worldview.png",
+                "linkTo": "data/documents/20241125_brownie_worldview.pdf"
+            },
+            {
+                "title": "Vivaldi - \"Spring\" mvt. 1",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20241121,
+                "tags": ["LilyPond"],
+                "description": "Sheet music for Pixelstra's winter performance. Scores found on IMSLP and redone in LilyPond.<br><br>Most of this was done on a plane ride to Boston.",
+                "image": "images/projects/lilypond_scores.png",
+                "linkTo": "https://github.com/gyang0/LilyPond-Scores/tree/main/Vivaldi%204%20Seasons%20Spring%20mvt%201"
             }
         ]
     }

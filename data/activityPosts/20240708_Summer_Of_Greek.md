@@ -69,8 +69,8 @@ Record of my progress for <i>From Alpha to Omega</i> by Prof. Anne H. Groton (al
     <tr>
     <td>9</td>
     <td>First Declension: Masculine Nouns; Substantives</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>11/8/2024</td>
     <td></td>
     </tr>
     <tr>

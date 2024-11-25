@@ -111,6 +111,11 @@ pre > code {
 	font-size: 35px;
 }
 
+.content h3 {
+	font-family: Kanit;
+	font-size: 25px;
+}
+
 .content p {
 	font-family: Ubuntu;
 	font-size: 25px;
@@ -390,6 +395,15 @@ figcaption {
 	margin-left: 0px;
 	font-size: 12px;
 	font-family: Kanit;
+}
+
+.img-gallery ul {
+	list-style: none;
+	width: 700px;
+}
+.img-gallery li {
+	display: inline-block;
+	margin-right: 10px;
 }
 
 .katex { font-size: 1.1em; }

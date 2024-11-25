@@ -52,7 +52,7 @@ function displayAllPosts(){
             <div class="activity-posts-container">
                 <a href="activity.html?page=${allPosts.posts[i].pageID}">
                     <div class="activity-posts">
-                        <img src=${allPosts.posts[i].mainImg ?? "./images/activity/DEFAULT_POST_IMG.png"}>
+                        <img src=${allPosts.posts[i].mainImg ?? "images/activity/DEFAULT_POST_IMG.png"}>
                         <h1>${allPosts.posts[i].title}</h1>
                         <p style="font-size:14px; margin-left:30px;">${dateFormatter(allPosts.posts[i].published)}</p>
                         <p>${allPosts.posts[i].summary}</p>

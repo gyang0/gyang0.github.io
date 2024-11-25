@@ -38,6 +38,7 @@ function pageSetup(){
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="activity.html">Activity</a></li>
+            <li><a href="random.html">Random</a></li>
         </ul>`;
 
     document.getElementById("footer").innerHTML = `

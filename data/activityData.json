@@ -46,17 +46,8 @@
             "contentLink": "20240206_Writing_Tips.md"
         },
         {
-            "title": "Screenshots from Flat Earth Discord",
-            "pageID": 6,
-            "mainImg": "images/activity/20240403_Flat_Earth_1.png",
-            "published": 20240403,
-            "updated": 20240405,
-            "summary": "Yes, it actually exists.",
-            "contentLink": "20240403_Flat_Earth_Discord.md"
-        },
-        {
             "title": "Submissions for BallsDex Art Contest",
-            "pageID": 7,
+            "pageID": 6,
             "published": 20240407,
             "updated": 20240418,
             "mainImg": "images/activity/20240407_BallsDex_Contest_6.png",
@@ -65,12 +56,30 @@
         },
         {
             "title": "2024 Summer of Greek (Classical Edition)",
-            "pageID": 8,
+            "pageID": 7,
             "mainImg": "images/activity/20240708_AlphaToOmega.jpg",
             "published": 20240708,
             "updated": 20240708,
             "summary": "Let's see how this goes.<br>EDIT: Welp, gonna have to extend this.",
             "contentLink": "20240708_Summer_Of_Greek.md"
+        },
+        {
+            "title": "2024 Halloween Costume Log",
+            "pageID": 8,
+            "mainImg": "images/activity/20241016_halloween_2024_7.jpg",
+            "published": 20241016,
+            "updated": 20241016,
+            "summary": "Work in progress",
+            "contentLink": "20241016_Halloween_Costume.md"
+        },
+        {
+            "title": "Polytonic Greek for LaTeX",
+            "pageID": 9,
+            "mainImg": "images/activity/20241108_Polytonic_Greek_Setup_3.png",
+            "published": 20241108,
+            "updated": 20241108,
+            "summary": "Tidy Greek with macron and accent combinations",
+            "contentLink": "20241108_Polytonic_Greek_Setup.md"
         }
     ]
 }
