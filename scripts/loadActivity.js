@@ -54,8 +54,8 @@ function displayAllPosts(){
                     <div class="activity-posts">
                         <img src=${allPosts.posts[i].mainImg ?? "images/activity/DEFAULT_POST_IMG.png"}>
                         <h1>${allPosts.posts[i].title}</h1>
-                        <p style="font-size:14px; margin-left:30px;">${dateFormatter(allPosts.posts[i].published)}</p>
-                        <p>${allPosts.posts[i].summary}</p>
+                        <p style="font-size:14px; margin-left:22px;margin-top:-5px">${dateFormatter(allPosts.posts[i].published)}</p>
+                        <p style="line-height: 1.7em">${allPosts.posts[i].summary}</p>
                     </div>
                 </a>
             </div>`;

@@ -169,9 +169,8 @@ pre > code {
 }
 
 .activity-posts-container {
-	margin-left: 40px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	margin-left: 60px;
+	margin-top: 10px;
 }
 
 .activity-posts-container a {
@@ -182,7 +181,7 @@ pre > code {
 .activity-posts {
 	box-shadow: 3px 3px 10px rgb(0, 0, 0);
 
-	height: 430px;
+	height: 410px;
 	width: 400px;
 
 	margin-top: 50px;
@@ -197,8 +196,8 @@ pre > code {
 	display: inline-block;
 
 	margin-top: 10px;
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
 	font-size: 25px;
 }
 .activity-posts p {
@@ -326,8 +325,8 @@ figcaption {
 
 .project-thumbnails-text-main h1 {
 	color: black;
-	font-size: 21px;
-	margin-left: 18px;
+	font-size: 20px;
+	margin-left: 15px;
 }
 
 .project-thumbnails-text-main p {
@@ -371,12 +370,12 @@ figcaption {
 	opacity: 0.8;
 	cursor: pointer;
 	box-shadow: 6px 6px 10px rgb(0, 0, 0);
-	transform: translateX(-5px) translateY(-5px);
+	transform: translateX(0px) translateY(0px);
 }
 
 .project-tags-container {
 	display: flex;
-	margin-left: 18px;
+	margin-left: 15px;
 }
 
 .project-tags {

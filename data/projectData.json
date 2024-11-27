@@ -212,6 +212,16 @@
                 "description": "Sheet music for Pixelstra's winter performance. Scores found on IMSLP and redone in LilyPond.<br><br>Most of this was done on a plane ride to Boston.",
                 "image": "images/projects/lilypond_scores.png",
                 "linkTo": "https://github.com/gyang0/LilyPond-Scores/tree/main/Vivaldi%204%20Seasons%20Spring%20mvt%201"
+            },
+            {
+                "title": "LaTeX Macros + Templates",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20241126,
+                "tags": ["LaTeX"],
+                "description": "Growing list",
+                "image": "images/projects/latex_macros.png",
+                "linkTo": "https://github.com/gyang0/LaTeX-Macros"
             }
         ]
     }
