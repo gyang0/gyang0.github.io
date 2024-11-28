@@ -51,7 +51,7 @@ function displayAllPosts(){
         el.innerHTML += `
             <div class="activity-posts-container">
                 <a href="activity.html?page=${allPosts.posts[i].pageID}">
-                    <div class="activity-posts">
+                    <div class="activity-posts" style="background-color:var(--card-background); color:var(--txt-color)">
                         <img src=${allPosts.posts[i].mainImg ?? "images/activity/DEFAULT_POST_IMG.png"}>
                         <h1>${allPosts.posts[i].title}</h1>
                         <p style="font-size:14px; margin-left:22px;margin-top:-5px">${dateFormatter(allPosts.posts[i].published)}</p>
@@ -144,7 +144,7 @@ function addPosts(filter){
         // Display & set filter colors
         let allFilters = document.getElementsByClassName('activity-filters-li');
         for(let i = 0; i < allFilters.length; i++){
-            allFilters[i].style = `background-color: rgb(${filter == allFilters[i].textContent.trim() ? FILTER_SELECTED_COL : FILTER_INACTIVE_COL})`;
+            allFilters[i].style = `background-color: var(${filter == allFilters[i].textContent.trim() ? "--bluegreen2" : "--bluegreen1"})`;
         }
 
         // Sort based on filter

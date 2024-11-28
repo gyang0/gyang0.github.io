@@ -15,8 +15,8 @@ const tagColors = {
     "LilyPond": [156, 204, 124],
 
     // Arbitrary decisions for languages
-    "Greek": [0, 0, 255],
-    "Latin": [255, 0, 0],
+    "Greek": [0, 0, 200],
+    "Latin": [200, 0, 0],
     
     // School
     "Multivariable Calc": [95, 222, 245],
@@ -50,7 +50,7 @@ function addProjects(filter){
     // Set filter colors
     let allFilters = document.getElementsByClassName('project-filters-li');
     for(let i = 0; i < allFilters.length; i++){
-        allFilters[i].style = `background-color: rgb(${Object.keys(allProjects)[i] == filter ? FILTER_SELECTED_COL : FILTER_INACTIVE_COL})`;
+        allFilters[i].style = `background-color: var(${Object.keys(allProjects)[i] == filter ? "--bluegreen2" : "--bluegreen1"})`;
     }
     
     
@@ -68,54 +68,27 @@ function addProjects(filter){
             let tagCol = tagColors[proj.tags[j]];
             tagsCode += `
                 <div class="project-tags" style="background-color: rgb(${tagCol[0]}, ${tagCol[1]}, ${tagCol[2]}, 0.5)">
-                    <p>${proj.tags[j]}</p>
+                    <p style="color:var(--txt-color)">${proj.tags[j]}</p>
                 </div>`;
-        }
-
-        // Add a trophy for the project title if needed.
-        let project_prize = "";
-        let project_blurb = "";
-
-        if(proj.details.includes("won")){
-            if(proj.details.includes("won-1")){
-                project_prize = `<i class="fa fa-trophy" style="font-size: 55px; color: rgb(219, 172, 52)"></i>`;
-                project_blurb = `"1st place"`;
-            }
-            else if(proj.details.includes("won-2")){
-                project_prize = `<i class="fa fa-trophy" style="font-size: 55px; color: rgb(165, 169, 180)"></i>`;
-                project_blurb = `"2nd place"`;
-            }
-            else if(proj.details.includes("won-3")){
-                project_prize = `<i class="fa fa-trophy" style="font-size: 55px; color: rgb(205, 127, 50)"></i>`;
-                project_blurb = `"3rd place"`;
-            }
         }
 
         // Ok now the real stuff
         el.innerHTML += `
-            <a class="project-thumbnails" target="_blank" href=${proj.linkTo}>
+            <a class="project-thumbnails" target="_blank" href=${proj.linkTo} style="background-color:var(--card-background)">
                 <!-- Image thumbnail -->
                 <div class="project-thumbnails-img-container">
                     <img class="project-thumbnails-img" src="${proj.image}">
-                    <p class="project-thumbnails-desc">${proj.description}</p>
+                    <p style="color:var(--txt-color)" class="project-thumbnails-desc">${proj.description}</p>
                 </div>
 
                 <div class="project-thumbnails-text">
-                    <div class="project-thumbnails-text-main">
-                        <h1>${proj.title}</h1>
-                        
-                        <div class="project-tags-container">${tagsCode}</div>
+                    <h1 style="color:var(--txt-color)">${proj.title}</h1>
+                    
+                    <div class="project-tags-container">${tagsCode}</div>
 
-                        <p><i class="fa fa-copyright"></i>${Math.floor(proj.made/10000) + " " + proj.author}</p>
-                    </div>
-
-                    <div class="project-thumbnails-text-descriptions">
-                        <p>${project_prize}</p>
-                        <p><em><strong>${project_blurb}</strong></em></p>
-                    </div>
+                    <p style="color:var(--txt-color)"><i class="fa fa-copyright"></i>${Math.floor(proj.made/10000) + " " + proj.author}</p>
                 </div>
-            </a>
-        `;
+            </a>`;
     }
 }
 

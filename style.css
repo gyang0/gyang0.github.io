@@ -3,6 +3,31 @@
 	padding: 0px;
 }
 
+:root {
+	--bg-color: white;
+	--txt-color: black;
+
+	--bluegreen1: rgb(122, 194, 203);
+	--bluegreen2: rgb(80, 131, 138);
+
+	--card-background: white;
+}
+
+.darkmode {
+	--bg-color: rgb(33, 33, 33);
+	--txt-color: rgb(220, 220, 220);
+
+	--bluegreen1: rgb(69, 105, 109);
+	--bluegreen2: rgb(101, 164, 172);
+
+	--card-background: rgb(66, 66, 66);
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--txt-color);
+}
+
 pre > code {
 	font-family: Source Code Pro;
     font-size: 14px;
@@ -62,6 +87,15 @@ pre > code {
 	background-color: gray;
 }
 
+#darkmode-btn {
+	position: absolute;
+	top: 15px;
+	right: 5%;
+
+	color: rgb(149, 149, 247);
+	font-size: 33px;
+}
+
 .filters {
 	display: flex;
 	width: fit-content;
@@ -76,7 +110,7 @@ pre > code {
 .filters ul li {
 	float: left;
 	min-width: 100px;
-	background: rgb(122, 194, 203);
+	background: var(--bluegreen1);
 }
 
 .filters ul li a {
@@ -85,6 +119,7 @@ pre > code {
 	padding-right: 20px;
 
 	color: black;
+	
 
 	text-align: center;
 	transition: 0.2s;
@@ -92,7 +127,7 @@ pre > code {
 
 .filters ul li a:hover {
 	cursor: pointer;
-	background-color: rgb(80, 131, 138);
+	background-color: var(--bluegreen2);
 	color: white;
 }
 
@@ -188,8 +223,6 @@ pre > code {
 
 	border-radius: 3px;
 	text-decoration: none;
-	
-	transition: 0.2s;
 }
 
 .activity-posts h1 {
@@ -221,10 +254,8 @@ pre > code {
 }
 
 .activity-posts:hover {
-	opacity: 0.8;
+	opacity: 0.6;
 	cursor: pointer;
-	box-shadow: 6px 6px 10px rgb(0, 0, 0);
-	transform: translateX(-5px) translateY(-5px);
 }
 
 #specific-activity-post h1 {
@@ -268,8 +299,6 @@ figcaption {
 
 	border-radius: 3px;
 	text-decoration: none;
-	
-	transition: 0.2s;
 }
 
 .project-thumbnails i {
@@ -281,6 +310,8 @@ figcaption {
 	width: inherit;
 
 	transition: 0.2s;
+
+	position: relative;
 }
 
 .project-thumbnails-img-container img {
@@ -291,6 +322,8 @@ figcaption {
 	margin: 0;
 
 	border-bottom: 2px solid rgb(0, 0, 0, 0.3);
+
+	position: absolute;
 }
 
 .project-thumbnails-img {
@@ -316,61 +349,37 @@ figcaption {
 }
 
 .project-thumbnails:hover .project-thumbnails-img {
-	filter: opacity(5%);
+	filter: opacity(15%);
 }
 
 .project-thumbnails:hover .project-thumbnails-desc {
 	opacity: 100%;
 }
 
-.project-thumbnails-text-main h1 {
+.project-thumbnails-text {
+	margin-top: 205px;
+}
+
+.project-thumbnails-text h1 {
 	color: black;
 	font-size: 20px;
 	margin-left: 15px;
 }
 
-.project-thumbnails-text-main p {
+.project-thumbnails-text p {
 	color: black;
 	font-size: 15px;
 	margin-left: 18px;
 	vertical-align: bottom;
 }
 
-.project-thumbnails-text-main i {
+.project-thumbnails-text i {
 	font-size: 15px;
-}
-
-.project-thumbnails-text-descriptions {
-	display: flex;
-	flex-wrap: wrap;
-	float: right;
-
-	margin-top: -50%;
-
-	width: 100px;
-}
-
-.project-thumbnails-text-descriptions p i {
-	margin: 0px;
-	padding: 0px;
-	margin-top: 28px;
-	margin-left: 12px;
-}
-
-.project-thumbnails-text-descriptions p {
-	text-align: center;
-	font-size: 14px;
-	margin: 0px;
-	padding: 0px;
-	margin-top: -25px;
-	margin-left: 10px;
 }
 
 .project-thumbnails:hover {
 	opacity: 0.8;
 	cursor: pointer;
-	box-shadow: 6px 6px 10px rgb(0, 0, 0);
-	transform: translateX(0px) translateY(0px);
 }
 
 .project-tags-container {
@@ -394,15 +403,6 @@ figcaption {
 	margin-left: 0px;
 	font-size: 12px;
 	font-family: Kanit;
-}
-
-.img-gallery ul {
-	list-style: none;
-	width: 700px;
-}
-.img-gallery li {
-	display: inline-block;
-	margin-right: 10px;
 }
 
 .katex { font-size: 1.1em; }
