@@ -251,11 +251,16 @@ pre > code {
 	margin-bottom: -10px;
 
 	border-bottom: 2px solid rgb(0, 0, 0, 0.3);
+
+	transition: 0.2s;
 }
 
 .activity-posts:hover {
-	opacity: 0.6;
 	cursor: pointer;
+}
+
+.activity-posts:hover img {
+	opacity: 0.6;
 }
 
 #specific-activity-post h1 {

@@ -71,6 +71,15 @@
             "updated": 20241108,
             "summary": "Tidy Greek with macron and accent combinations",
             "contentLink": "20241108_Polytonic_Greek_Setup.md"
+        },
+        {
+            "title": "Simple Interference Pattern",
+            "pageID": 9,
+            "mainImg": "images/activity/20241223_Interference_Bands_3.png",
+            "published": 20241223,
+            "updated": 20241223,
+            "summary": "Basic double slit stuff with two laser pointers. The calculations worked out surprisingly well.",
+            "contentLink": "20241223_Interference_Bands.md"
         }
     ]
 }
