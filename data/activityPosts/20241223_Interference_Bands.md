@@ -1,3 +1,5 @@
+**Edited 12/24/2024:** Fixed a few mistakes in my graphs.
+
 It's basically a double slit interference pattern. After finals week I had more time on my hands, so I wanted to be productive instead of playing games all day.
 
 
@@ -82,14 +84,22 @@ $$I = 4I_0\left(\frac{\sin(\frac{1}{2}\phi)}{\frac{1}{2}\phi}\right)^2\cos^2(\fr
 Drawing this on Desmos (with a small $I_0$ for visibility):
 <figure>
     <img style="width:600px" src="/images/activity/20241223_Interference_Bands_4.png">
-    <figcaption>This would be the pattern of the larger bands.</figcaption>
+    <figcaption>This would be the pattern of the larger bands.<br>The large spike in the center corresponds to max intensity.</figcaption>
+</figure>
+<br>
+<br>
+
+With a logarithmic y scale, other larger bands can be seen on the sides:
+<figure>
+    <img style="width:600px" src="/images/activity/20241223_Interference_Bands_5.png">
+    <figcaption></figcaption>
 </figure>
 <br>
 <br>
 
 Zooming in, smaller bands can be seen within each larger band:
 <figure>
-    <img style="width:600px" src="/images/activity/20241223_Interference_Bands_5.png">
+    <img style="width:600px" src="/images/activity/20241223_Interference_Bands_8.png">
     <figcaption>Existence of small bands</figcaption>
 </figure>
 <br>
