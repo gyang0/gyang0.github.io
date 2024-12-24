@@ -36,14 +36,24 @@
                 "linkTo": "data/documents/20240219_paideia_submission.pdf"
             },
             {
-                "title": "Ovid's <em>Amores</em> 1.4.1-24",
+                "title": "<em>Amores</em> 1.4.1-24",
                 "details": "",
                 "author": "Gene Yang",
                 "made": 20240707,
                 "tags": ["Latin"],
-                "description": "Entry for the 2024 Omnibus Sam Hood Translation Prize. First time translating without help.",
+                "description": "Entry for the 2024 Omnibus Sam Hood Translation Prize. First time translating without help.<br><br>Ovid's <em>Amores</em>",
                 "image": "images/projects/ovid_amores_1.4.1-24.png",
                 "linkTo": "data/documents/20240707_ovid_amores_1.4.1-24.pdf"
+            },
+            {
+                "title": "<em>Metamorphoses</em> VIII.183-235",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20241015,
+                "tags": ["Latin"],
+                "description": "Literal translation attempt. Ovid's version of the story of Daedalus and Icarus.",
+                "image": "images/projects/20241015_ovid_metamorphoses_viii.183-235.png",
+                "linkTo": "data/documents/20241015_ovid_metamorphoses_viii.183-235.pdf"
             }
         ]
     },
