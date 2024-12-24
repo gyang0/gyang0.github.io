@@ -34,6 +34,16 @@
                 "description": "Entry for the Paideia Institute 2024 High School Essay Contest.<br><br>Topic: 'Why should we study Classical Greek?'",
                 "image": "images/projects/greek_essay.png",
                 "linkTo": "data/documents/20240219_paideia_submission.pdf"
+            },
+            {
+                "title": "Ovid's <em>Amores</em> 1.4.1-24",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20240707,
+                "tags": ["Latin"],
+                "description": "Entry for the 2024 Omnibus Sam Hood Translation Prize. First time translating without help.",
+                "image": "images/projects/ovid_amores_1.4.1-24.png",
+                "linkTo": "data/documents/20240707_ovid_amores_1.4.1-24.pdf"
             }
         ]
     },
