@@ -43,19 +43,19 @@ function addActivityFilters(name){
 /**
  * Displays all the posts on the page as thumbnails.
  */
-function displayAllPosts(){
+function displayAllPosts(filter){
     let el = document.getElementById("all-activity-posts");
     el.innerHTML = "";
     
-    for(let i = 0; i < allPosts.posts.length; i++){
+    for(let i = 0; i < allPosts[filter].posts.length; i++){
         el.innerHTML += `
             <div class="activity-posts-container">
-                <a href="activity.html?page=${allPosts.posts[i].pageID}">
+                <a href="activity.html?page=${allPosts[filter].posts[i].pageID}">
                     <div class="activity-posts" style="background-color:var(--card-background); color:var(--txt-color)">
-                        <img src=${allPosts.posts[i].mainImg ?? "images/activity/DEFAULT_POST_IMG.png"}>
-                        <h1>${allPosts.posts[i].title}</h1>
-                        <p style="font-size:14px; margin-left:22px;margin-top:-5px">${dateFormatter(allPosts.posts[i].published)}</p>
-                        <p style="line-height: 1.7em">${allPosts.posts[i].summary}</p>
+                        <img src=${allPosts[filter].posts[i].mainImg ?? "images/activity/DEFAULT_POST_IMG.png"}>
+                        <h1>${allPosts[filter].posts[i].title}</h1>
+                        <p style="font-size:14px; margin-left:22px;margin-top:-5px">${dateFormatter(allPosts[filter].posts[i].published)}</p>
+                        <p style="line-height: 1.7em">${allPosts[filter].posts[i].summary}</p>
                     </div>
                 </a>
             </div>`;
@@ -71,10 +71,12 @@ function displayAllPosts(){
  * @param {Number} pageID - ID of post to display
  */
 function displaySinglePost(pageID){
+    let filter = localStorage.getItem("globalActivityFilter");
+
     // Index of content corresponding to page ID
     let index = -1;
-    for(let i = 0; i < allPosts.posts.length; i++){
-        if(allPosts.posts[i].pageID == pageID){
+    for(let i = 0; i < allPosts[filter].posts.length; i++){
+        if(allPosts[filter].posts[i].pageID == pageID){
             index = i;
             break;
         }
@@ -88,16 +90,16 @@ function displaySinglePost(pageID){
 
     // Title and date
     el.innerHTML += `
-        <h1>${allPosts.posts[index].title}</h1>
+        <h1>${allPosts[filter].posts[index].title}</h1>
         <p style="font-size: 20px; text-align: center; line-height: 40px">
-            Published ${dateFormatter(allPosts.posts[index].published)}
+            Published ${dateFormatter(allPosts[filter].posts[index].published)}
             <br>
-            Updated ${dateFormatter(allPosts.posts[index].updated)}
+            Updated ${dateFormatter(allPosts[filter].posts[index].updated)}
         </p>
     `;
 
     // Read markdown file and convert it to HTML
-    readData('./data/activityPosts/' + allPosts.posts[index].contentLink, 'text')
+    readData('./data/activityPosts/' + allPosts[filter].posts[index].contentLink, 'text')
         .then((content) => {
             // Render markdown with marked.js
             el.innerHTML += marked.parse(content);
@@ -147,14 +149,8 @@ function addPosts(filter){
             allFilters[i].style = `background-color: var(${filter == allFilters[i].textContent.trim() ? "--bluegreen2" : "--bluegreen1"})`;
         }
 
-        // Sort based on filter
-        allPosts.posts.sort((obj1, obj2) => {
-            if(filter == "Newer") return obj2.published - obj1.published;
-            else return obj1.published - obj2.published;
-        });
-
         // Display all post thumbnails
-        displayAllPosts();
+        displayAllPosts(filter);
 
     } else {
         // Display single post
@@ -175,11 +171,23 @@ function updateActivityPage(){
             // IMPORTANT: set global variable so other functions can use it.
             allPosts = obj;
 
-            // Just 2 filters for posts
-            addActivityFilters("Newer");
-            addActivityFilters("Older");
+            // Years where posts were made
+            let years = [];
 
-            addPosts(localStorage.getItem("globalActivityFilter") ?? "Newer");
+            for(let key in obj){
+                years.push(parseInt(key, 10));
+
+                // Sort posts in each category by last updated
+                obj[key].posts.sort((obj1, obj2) => {
+                    return obj2.updated - obj1.updated;
+                });
+            }
+
+            // Populate filters (by year) in decreasing order
+            years.sort((num1, num2) => { return num2 - num1; });
+            years.forEach((el) => { addActivityFilters(el); });
+
+            addPosts(localStorage.getItem("globalActivityFilter") ?? Date.getFullYear());
         })
         .catch((err) => {
             console.log(`Error in updateActivityPage(): ${err}`);

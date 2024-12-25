@@ -1,85 +1,100 @@
 {
-    "posts": [
-        {
-            "title": "CodeForces XOR problem",
-            "pageID": 0,
-            "published": 20230916,
-            "updated": 20231204,
-            "mainImg": "images/activity/20230916_CodeForces_XOR_1.png",
-            "summary": "Detailed explanation of problem 1847C (with XOR)",
-            "contentLink": "20230916_CodeForces_XOR.md"
-        },
-        {
-            "title": "2023 Halloween Costume Log",
-            "pageID": 1,
-            "published": 20230926,
-            "updated": 20231021,
-            "mainImg": "images/activity/20230926_halloween_2023_4.jpg",
-            "summary": "Photos, sketches, descriptions. Your favorite demon from the Nightmare Realm.",
-            "contentLink": "20230926_Halloween_Costume.md"
-        },
-        {
-            "title": "Deriving Maxwell's Equations - Notes",
-            "pageID": 2,
-            "published": 20240114,
-            "updated": 20240922,
-            "mainImg": "images/activity/20240114_maxwells_equations_1.png",
-            "summary": "Math final project - deriving the 4 equations with multivariable calc.",
-            "contentLink": "20240114_Maxwells_Equations.md"
-        },
-        {
-            "title": "Sublime Text Package Configuration",
-            "pageID": 4,
-            "published": 20240201,
-            "updated": 20240923,
-            "mainImg": "images/activity/20240201_Nord_Theme_3.png",
-            "summary": "Installation of Terminus and Nord theme.",
-            "contentLink": "20240201_Sublime_Text_Package_Config.md"
-        },
-        {
-            "title": "Submissions for BallsDex Art Contest",
-            "pageID": 5,
-            "published": 20240407,
-            "updated": 20240418,
-            "mainImg": "images/activity/20240407_BallsDex_Contest_6.png",
-            "summary": "Mongol Empire and Polish-Lithuanian Commonwealth",
-            "contentLink": "20240407_BallsDex_Art_Contest.md"
-        },
-        {
-            "title": "2024 Summer of Greek (Classical Edition)",
-            "pageID": 6,
-            "mainImg": "images/activity/20240708_AlphaToOmega.jpg",
-            "published": 20240708,
-            "updated": 20240708,
-            "summary": "Let's see how this goes.<br>EDIT: Welp, gonna have to extend this.",
-            "contentLink": "20240708_Summer_Of_Greek.md"
-        },
-        {
-            "title": "2024 Halloween Costume Log",
-            "pageID": 7,
-            "mainImg": "images/activity/20241016_halloween_2024_7.jpg",
-            "published": 20241016,
-            "updated": 20241126,
-            "summary": "Happy Halloween from the Grim Proctor",
-            "contentLink": "20241016_Halloween_Costume.md"
-        },
-        {
-            "title": "Polytonic Greek for LaTeX",
-            "pageID": 8,
-            "mainImg": "images/activity/20241108_Polytonic_Greek_Setup_3.png",
-            "published": 20241108,
-            "updated": 20241108,
-            "summary": "Tidy Greek with macron and accent combinations",
-            "contentLink": "20241108_Polytonic_Greek_Setup.md"
-        },
-        {
-            "title": "Simple Interference Pattern",
-            "pageID": 9,
-            "mainImg": "images/activity/20241223_Interference_Bands_3.png",
-            "published": 20241223,
-            "updated": 20241224,
-            "summary": "Basic double slit stuff with two laser pointers. The calculations worked out surprisingly well.",
-            "contentLink": "20241223_Interference_Bands.md"
-        }
-    ]
+    "2023": {
+        "posts": [
+            {
+                "title": "CodeForces XOR problem",
+                "pageID": 0,
+                "published": 20230916,
+                "updated": 20231204,
+                "mainImg": "images/activity/20230916_CodeForces_XOR_1.png",
+                "summary": "Detailed explanation of problem 1847C (with XOR)",
+                "contentLink": "20230916_CodeForces_XOR.md"
+            },
+            {
+                "title": "2023 Halloween Costume Log",
+                "pageID": 1,
+                "published": 20230926,
+                "updated": 20231021,
+                "mainImg": "images/activity/20230926_halloween_2023_4.jpg",
+                "summary": "Photos, sketches, descriptions. Your favorite demon from the Nightmare Realm.",
+                "contentLink": "20230926_Halloween_Costume.md"
+            }
+        ]
+    },
+    "2024": {
+        "posts": [
+            {
+                "title": "Deriving Maxwell's Equations - Notes",
+                "pageID": 2,
+                "published": 20240114,
+                "updated": 20240922,
+                "mainImg": "images/activity/20240114_maxwells_equations_1.png",
+                "summary": "Math final project - deriving the 4 equations with multivariable calc.",
+                "contentLink": "20240114_Maxwells_Equations.md"
+            },
+            {
+                "title": "Sublime Text Package Configuration",
+                "pageID": 4,
+                "published": 20240201,
+                "updated": 20240923,
+                "mainImg": "images/activity/20240201_Nord_Theme_3.png",
+                "summary": "Installation of Terminus and Nord theme.",
+                "contentLink": "20240201_Sublime_Text_Package_Config.md"
+            },
+            {
+                "title": "Submissions for BallsDex Art Contest",
+                "pageID": 5,
+                "published": 20240407,
+                "updated": 20240418,
+                "mainImg": "images/activity/20240407_BallsDex_Contest_6.png",
+                "summary": "Mongol Empire and Polish-Lithuanian Commonwealth",
+                "contentLink": "20240407_BallsDex_Art_Contest.md"
+            },
+            {
+                "title": "2024 Summer of Greek (Classical Edition)",
+                "pageID": 6,
+                "mainImg": "images/activity/20240708_AlphaToOmega.jpg",
+                "published": 20240708,
+                "updated": 20240708,
+                "summary": "Let's see how this goes.<br>EDIT: Welp, gonna have to extend this.",
+                "contentLink": "20240708_Summer_Of_Greek.md"
+            },
+            {
+                "title": "2024 Halloween Costume Log",
+                "pageID": 7,
+                "mainImg": "images/activity/20241016_halloween_2024_7.jpg",
+                "published": 20241016,
+                "updated": 20241126,
+                "summary": "Happy Halloween from the Grim Proctor",
+                "contentLink": "20241016_Halloween_Costume.md"
+            },
+            {
+                "title": "Polytonic Greek for LaTeX",
+                "pageID": 8,
+                "mainImg": "images/activity/20241108_Polytonic_Greek_Setup_3.png",
+                "published": 20241108,
+                "updated": 20241108,
+                "summary": "Tidy Greek with macron and accent combinations",
+                "contentLink": "20241108_Polytonic_Greek_Setup.md"
+            },
+            {
+                "title": "Simple Interference Pattern",
+                "pageID": 9,
+                "mainImg": "images/activity/20241223_Interference_Bands_3.png",
+                "published": 20241223,
+                "updated": 20241224,
+                "summary": "Basic double slit stuff with two laser pointers. The calculations worked out surprisingly well.",
+                "contentLink": "20241223_Interference_Bands.md"
+            },
+            {
+                "title": "My florr.io Builds",
+                "pageID": 10,
+                "mainImg": "images/activity/20241226_Florr_Builds_3.png",
+                "published": 20241226,
+                "updated": 20241226,
+                "summary": "Collection of the loadouts I use + explanations for usage",
+                "contentLink": "20241226_Florr_Builds.md"
+            }
+        ]
+    }
 }
