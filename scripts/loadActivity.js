@@ -187,7 +187,7 @@ function updateActivityPage(){
             years.sort((num1, num2) => { return num2 - num1; });
             years.forEach((el) => { addActivityFilters(el); });
 
-            addPosts(localStorage.getItem("globalActivityFilter") ?? Date.getFullYear());
+            addPosts(localStorage.getItem("globalActivityFilter") ?? (new Date()).getFullYear());
         })
         .catch((err) => {
             console.log(`Error in updateActivityPage(): ${err}`);
