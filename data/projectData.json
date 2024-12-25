@@ -52,8 +52,18 @@
                 "made": 20241015,
                 "tags": ["Latin"],
                 "description": "Literal translation attempt. Ovid's version of the story of Daedalus and Icarus.",
-                "image": "images/projects/20241015_ovid_metamorphoses_viii.183-235.png",
+                "image": "images/projects/ovid_metamorphoses_viii.183-235.png",
                 "linkTo": "data/documents/20241015_ovid_metamorphoses_viii.183-235.pdf"
+            },
+            {
+                "title": "<em>Metamorphoses</em> X.243-297",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20241128,
+                "tags": ["Latin"],
+                "description": "Literal translation for the story of Pygmalion and Galatea.<br><br>Mostly chosen because the themes felt similar to the Icarus story. Maybe I should've gone with a less risqué option.",
+                "image": "images/projects/ovid_metamorphoses_x.243-297.png",
+                "linkTo": "data/documents/20241128_ovid_metamorphoses_x.243-297.pdf"
             }
         ]
     },
