@@ -20,6 +20,8 @@ const tagColors = {
     
     // School
     "Multivariable Calc": [95, 222, 245],
+    "Thermodynamics": [235, 89, 162],
+    "Optics": [167, 200, 252],
 
     // Other
     "Unfinished": [255, 140, 0]

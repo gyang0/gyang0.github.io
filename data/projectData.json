@@ -20,6 +20,26 @@
                 "description": "Proofs for LU, QR, Spectral, and Polar decomposition.<br><br>Semester 2 final project",
                 "image": "images/projects/matrix_decomposition.png",
                 "linkTo": "data/documents/20240605_matrix_decomposition.pdf"
+            },
+            {
+                "title": "UP055 Thermo Notes",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20241102,
+                "tags": ["Thermodynamics"],
+                "description": "Notes for the Thermo portion of Light & Heat [UP055] at OHS.<br><br>Covers the basics of entropy and heat engines.",
+                "image": "images/projects/LH_thermo.png",
+                "linkTo": "data/documents/20241102_LH_thermo_notes.pdf"
+            },
+            {
+                "title": "UP055 Optics Notes",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20250102,
+                "tags": ["Optics"],
+                "description": "Notes for the Optics portion of Light & Heat [UP055] at OHS.<br><br>Covers Maxwell's equations to basic interference & diffraction.",
+                "image": "images/projects/LH_optics.png",
+                "linkTo": "data/documents/20250102_LH_optics_notes.pdf"
             }
         ]
     },

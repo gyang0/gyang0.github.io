@@ -2,6 +2,7 @@
 // Populated after fetching data from a file, used as global variable.
 let allPosts = {};
 
+// Update manually with current year (if there are any posts for that year)
 let ACTIVITY_FILTER = 2025;
 
 /**
