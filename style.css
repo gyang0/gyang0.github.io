@@ -181,7 +181,7 @@ pre > code {
 
 .content a {
 	font-family: Ubuntu;
-	font-size: 25px;
+	font-size: inherit;
 	color: rgb(120, 120, 120);
 }
 

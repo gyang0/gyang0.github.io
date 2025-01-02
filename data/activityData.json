@@ -94,6 +94,28 @@
                 "updated": 20241226,
                 "summary": "Collection of the loadouts I use + explanations for usage",
                 "contentLink": "20241226_Florr_Builds.md"
+            },
+            {
+                "title": "2024: Year in Review",
+                "pageID": 11,
+                "mainImg": null,
+                "published": 20241227,
+                "updated": 20250102,
+                "summary": "Goodbye 2024",
+                "contentLink": "20241227_Year_Review.md"
+            }
+        ]
+    },
+    "2025": {
+        "posts": [
+            {
+                "title": "Fibonacci Sequence Closed Form",
+                "pageID": 12,
+                "mainImg": "images/activity/20250103_closed_fibonacci.jpg",
+                "published": 20250102,
+                "updated": 20250102,
+                "summary": "Deriving the closed-form Fibonacci sequence with linear algebra techniques",
+                "contentLink": "20250102_Fibonacci_Closed_Form.md"
             }
         ]
     }

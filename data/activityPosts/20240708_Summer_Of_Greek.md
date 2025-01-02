@@ -20,81 +20,73 @@ Record of my progress for <i>From Alpha to Omega</i> by Prof. Anne H. Groton (al
     <tr>
     <td>2</td>
     <td>Introduction: The Greek Accents</td>
-    <td style="background-color: rgb(200, 200, 200)">Skipped</td>
-    <td>-</td>
-    <td>Working on it...</td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>12/29/2024</td>
+    <td>Extremely helpful, but felt quite complicated.</td>
     </tr>
     <tr>
     <td>3</td>
     <td>Ω-Verbs: Present Active Indicative, Present Active Infinitive, Present Active Imperative</td>
     <td style="background-color: rgb(0, 200, 0)">Complete</td>
     <td>N/A</td>
-    <td>-</td>
+    <td>Reviewed 12/29/2024 (focus on imperative forms)</td>
     </tr>
     <tr>
     <td>4</td>
     <td>First Declension: Feminine Nouns, Part 1</td>
     <td style="background-color: rgb(0, 200, 0)">Complete</td>
     <td>N/A</td>
-    <td>-</td>
+    <td>Reviewed 12/30/2024</td>
     </tr>
     <tr>
     <td>5</td>
     <td>First Declension: Feminine Nouns, Part 2</td>
     <td style="background-color: rgb(0, 200, 0)">Complete</td>
     <td>N/A</td>
-    <td>-</td>
+    <td>Reviewed 12/30/2024</td>
     </tr>
     <tr>
     <td>6</td>
     <td>Ω-Verbs: Future Active Indicative, Future Active Infinitive</td>
     <td style="background-color: rgb(0, 200, 0)">Complete</td>
     <td>N/A</td>
-    <td>-</td>
+    <td>Reviewed 12/30/2024</td>
     </tr>
     <tr>
     <td>7</td>
     <td>Second Declension: Masculine Nouns</td>
     <td style="background-color: rgb(0, 200, 0)">Complete</td>
     <td>N/A</td>
-    <td>-</td>
+    <td>Reviewed 12/30/2024</td>
     </tr>
     <tr>
     <td>8</td>
     <td>Second Declension: Neuter Nouns; Adjectives: First/Second Declension</td>
     <td style="background-color: rgb(0, 200, 0)">Complete</td>
     <td>7/8/2024</td>
-    <td>-</td>
+    <td>Reviewed 12/31/2024</td>
     </tr>
     <tr>
     <td>9</td>
     <td>First Declension: Masculine Nouns; Substantives</td>
     <td style="background-color: rgb(0, 200, 0)">Complete</td>
     <td>11/8/2024</td>
-    <td></td>
+    <td>Reviewed 12/31/2024</td>
     </tr>
     <tr>
     <td>10</td>
     <td>Ω-Verbs: Imperfect Active Indicative; Correlatives</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>12/31/2024</td>
+    <td>Making good progress over winter break.</td>
     </tr>
     <tr>
     <td>11</td>
     <td>Ω-Verbs: Middle/Passive Voice; Prepositions</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>1/1/2025</td>
+    <td>Death by memorization (Happy new year!)<br>Reviewed 1/2/2025</td>
     </tr>
-    <tr>
-    <td>12</td>
-    <td>εἰμί; Enclitics</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
-    <tr>
     <td>12</td>
     <td>εἰμί; Enclitics</td>
     <td></td>

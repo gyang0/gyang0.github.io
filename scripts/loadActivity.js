@@ -2,6 +2,8 @@
 // Populated after fetching data from a file, used as global variable.
 let allPosts = {};
 
+let ACTIVITY_FILTER = 2025;
+
 /**
  * Converts a number to descriptive date.
  * @param {Number} num - date in YYYYMMDD format
@@ -101,7 +103,12 @@ function displaySinglePost(pageID){
     // Read markdown file and convert it to HTML
     readData('./data/activityPosts/' + allPosts[filter].posts[index].contentLink, 'text')
         .then((content) => {
-            // Render markdown with marked.js
+            // KaTeX rendering
+            content = content.replace(/\\{/g, '\\\\{') // {
+                             .replace(/\\}/g, '\\\\}') // }
+                             .replace(/\\\\/g, '\\\\\\\\'); // newlines
+            
+                             // Render markdown with marked.js
             el.innerHTML += marked.parse(content);
                     
             // Show/hide relevant content
@@ -187,7 +194,7 @@ function updateActivityPage(){
             years.sort((num1, num2) => { return num2 - num1; });
             years.forEach((el) => { addActivityFilters(el); });
 
-            addPosts(localStorage.getItem("globalActivityFilter") ?? (new Date()).getFullYear());
+            addPosts(localStorage.getItem("globalActivityFilter") ?? ACTIVITY_FILTER);
         })
         .catch((err) => {
             console.log(`Error in updateActivityPage(): ${err}`);
