@@ -2,8 +2,6 @@
 // Populated after fetching data from a file, used as global variable.
 let allPosts = {};
 
-// Update manually with current year (if there are any posts for that year)
-let ACTIVITY_FILTER = 2025;
 
 /**
  * Converts a number to descriptive date.
@@ -195,7 +193,8 @@ function updateActivityPage(){
             years.sort((num1, num2) => { return num2 - num1; });
             years.forEach((el) => { addActivityFilters(el); });
 
-            addPosts(localStorage.getItem("globalActivityFilter") ?? ACTIVITY_FILTER);
+            // Saved filter OR most recent year with posts
+            addPosts(localStorage.getItem("globalActivityFilter") ?? years[0]);
         })
         .catch((err) => {
             console.log(`Error in updateActivityPage(): ${err}`);

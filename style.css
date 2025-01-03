@@ -13,6 +13,7 @@
 	--card-background: white;
 	
 	--grayish: rgb(224, 224, 224);
+	--dark-grayish: rgb(100, 100, 100);
 	--greenish: rgb(34, 93, 45);
 	--reddish: rgb(172, 45, 45);
 	--bluish: rgb(28, 28, 175);
@@ -28,6 +29,7 @@
 	--card-background: rgb(66, 66, 66);
 
 	--grayish: rgb(66, 66, 66);
+	--dark-grayish: rgb(130, 130, 130);
 	--greenish: rgb(94, 169, 121);
 	--reddish: rgb(189, 101, 101);
 	--bluish: rgb(111, 115, 225);
@@ -90,7 +92,6 @@ pre > code {
 	background-color: black;
 
 	width: 100%;
-	font-size: 25px;
 	font-family: Ubuntu;
 	position: fixed;
 
@@ -106,10 +107,14 @@ pre > code {
 	text-align: center;
 	width: 100px;
 
+	font-size: 25px;
+
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+
+	margin: 0;
 
 	color: white;
 	float: left;
@@ -142,6 +147,9 @@ pre > code {
 }
 
 .filters ul li {
+	padding: 0;
+	margin: 0;
+	font-size: 23px;
 	float: left;
 	min-width: 100px;
 	background: var(--bluegreen1);
@@ -456,6 +464,28 @@ figcaption {
 	border: 2px solid var(--txt-color);
 
 	margin: 20px;
+}
+
+.random-item h3 {
+	font-size: 28px;
+	text-align: center;
+	margin: 8px 0;
+}
+
+.random-item p {
+	margin: 0;
+	margin-bottom: 5px;
+	margin-left: 30px;
+	line-height: 1.7em;
+	font-size: 18px;
+}
+
+.random-item li {
+	margin: 0;
+	margin-bottom: 5px;
+	margin-left: 30px;
+	line-height: 1.7em;
+	font-size: 18px;
 }
 
 #latest-commit {

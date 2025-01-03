@@ -116,6 +116,15 @@
                 "updated": 20250102,
                 "summary": "Deriving the closed-form Fibonacci sequence with linear algebra techniques",
                 "contentLink": "20250102_Fibonacci_Closed_Form.md"
+            },
+            {
+                "title": "Greek Tenses: Time vs Aspect",
+                "pageID": 13,
+                "mainImg": "images/activity/20250104_time_aspect.jpg",
+                "published": 20250104,
+                "updated": 20250104,
+                "summary": "The distinction and why you should care (spoiler: you shouldn't).",
+                "contentLink": "20250104_Time_vs_Aspect.md"
             }
         ]
     }
