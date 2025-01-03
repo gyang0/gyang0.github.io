@@ -11,6 +11,11 @@
 	--bluegreen2: rgb(80, 131, 138);
 
 	--card-background: white;
+	
+	--grayish: rgb(224, 224, 224);
+	--greenish: rgb(34, 93, 45);
+	--reddish: rgb(172, 45, 45);
+	--bluish: rgb(28, 28, 175);
 }
 
 .darkmode {
@@ -21,7 +26,14 @@
 	--bluegreen2: rgb(101, 164, 172);
 
 	--card-background: rgb(66, 66, 66);
+
+	--grayish: rgb(66, 66, 66);
+	--greenish: rgb(94, 169, 121);
+	--reddish: rgb(189, 101, 101);
+	--bluish: rgb(111, 115, 225);
 }
+
+.katex { font-size: 1.1em; }
 
 body {
 	background-color: var(--bg-color);
@@ -34,6 +46,28 @@ pre > code {
 	line-height: 1.6em;
     background-color: #2E3440;
     border-radius: 8px;
+}
+
+#sms-links {
+	position: relative;
+	margin: 0 auto;
+	width: 470px;
+	padding-left: 120px;
+}
+
+#sms-links > ul {
+	list-style-type: none;
+}
+
+#sms-links > ul > li {
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 40px;
+}
+
+#sms-links > ul > li > a {
+	color: var(--reddish);
 }
 
 #footer {
@@ -410,4 +444,40 @@ figcaption {
 	font-family: Kanit;
 }
 
-.katex { font-size: 1.1em; }
+.random-box {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.random-item {
+	width: calc(100vw/2 - 100px);
+	height: 400px;
+	border: 2px solid var(--txt-color);
+
+	margin: 20px;
+}
+
+#latest-commit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	border: 3px solid var(--grayish);
+	border-radius: 10px;
+}
+
+#latest-commit p {
+	font-size: 17px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 20px;
+
+	line-height: 1.2em;
+}

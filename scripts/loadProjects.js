@@ -80,6 +80,11 @@ function addProjects(filter){
                 <!-- Image thumbnail -->
                 <div class="project-thumbnails-img-container">
                     <img class="project-thumbnails-img" src="${proj.image}">
+                    ${
+                        (proj.details.includes("pinned")) ? 
+                        `<p style="left: 255px; top: -5px; color: rgb(212, 175, 55)"><i class="bi bi-pin-angle-fill"></i></p>` :
+                        ""
+                    }
                     <p style="color:var(--txt-color)" class="project-thumbnails-desc">${proj.description}</p>
                 </div>
 
@@ -113,9 +118,12 @@ function updateProjectsPage(){
                 addProjectFilters(key);
 
                 // Sort projects in each category by creation date
-                obj[key].projects.sort((obj1, obj2) => {
-                    return obj2.made - obj1.made;
-                });
+                // Put pinned posts first
+                const myOrderedArr = [
+                    ...obj[key].projects.filter(el => el.details.includes("pinned")).sort((a, b) => {return b.made - a.made}),
+                    ...obj[key].projects.filter(el => !el.details.includes("pinned")).sort((a, b) => {return b.made - a.made})
+                ];
+                obj[key].projects = myOrderedArr;
             }
 
             // Applies current filter, or if it doesn't exist, the first category.

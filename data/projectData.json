@@ -84,6 +84,16 @@
                 "description": "Literal translation for the story of Pygmalion and Galatea.<br><br>Mostly chosen because the themes felt similar to the Icarus story. Maybe I should've gone with a less risqué option.",
                 "image": "images/projects/ovid_metamorphoses_x.243-297.png",
                 "linkTo": "data/documents/20241128_ovid_metamorphoses_x.243-297.pdf"
+            },
+            {
+                "title": "<em>Alpha to Omega</em> Notes",
+                "details": "pinned",
+                "author": "Gene Yang",
+                "made": 20241121,
+                "tags": ["Greek"],
+                "description": "My handwritten notes on Prof. Groton's <em>From Alpha to Omega: A Beginning Course in Classical Greek</em>.<br><br>Greek is hard.",
+                "image": "images/projects/alpha_to_omega_notes.png",
+                "linkTo": "https://github.com/gyang0/Grek"
             }
         ]
     },
