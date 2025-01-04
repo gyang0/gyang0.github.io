@@ -27,7 +27,7 @@
 	--bluegreen2: rgb(101, 164, 172);
 
 	--card-background: rgb(66, 66, 66);
-
+	
 	--grayish: rgb(66, 66, 66);
 	--dark-grayish: rgb(130, 130, 130);
 	--greenish: rgb(94, 169, 121);
@@ -486,6 +486,64 @@ figcaption {
 	margin-left: 30px;
 	line-height: 1.7em;
 	font-size: 18px;
+}
+
+@keyframes fade {
+	0%, 100% { opacity: 1 }
+	50% { opacity: 0 }
+}
+
+.fade-out {
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.fade-in {
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+#random-passages > div {
+	text-align: center;
+	height: calc(100% - 80px);
+	
+	justify-content: center;
+  	align-items: center;
+}
+
+#random-passage-text {
+	animation: 0.2s fade;
+}
+
+#random-passage-text > p {
+	font-family: Cardo;
+	margin: 0;
+	margin-top: -30px;
+
+	color: var(--dark-grayish);
+}
+
+#random-passage-info > p {
+	float: right;
+	margin-right: 15%;
+	font-size: 15px;
+}
+
+#random-passages button {
+	width: 50px;
+	background: none;
+	border: none;
+	margin-top: -50px;
+
+	font-size: 50px;
+	color: var(--dark-grayish);
+
+	transition: 0.2s;
+}
+
+#random-passages button:hover {
+	opacity: 0.5;
+	cursor: pointer;
 }
 
 #latest-commit {

@@ -120,6 +120,73 @@ function loadPhysicistBDays(){
     document.getElementById('random-physicists').innerHTML = str;
 }
 
+// Passages
+// Clunky but it works
+function changeRandomPassage(dx, mod){
+    // localStorage loves strings
+    let r = Number(localStorage.getItem('random_passageNum'));
+    r = (r + dx + mod) % mod;
+
+    localStorage.setItem('random_passageNum', r);
+
+    let obj = randomData["Passages"][r];
+
+
+    document.getElementById('random-passage-text').setAttribute('class', 'fade-out');
+
+    setTimeout(() => {
+        document.getElementById('random-passage-text').innerHTML = `
+            <p>${obj.text.replace(/\n/g, '<br>')}</p>
+        `;
+        document.getElementById('random-passage-info').innerHTML = `
+            <p>${obj.author}, <a href="${obj.url}" target="_blank"><em>${obj.work}</em></a></p>
+        `;
+
+        document.getElementById('random-passage-text').setAttribute('class', 'fade-in');
+    }, 500);
+}
+
+function loadPassages(){
+    let str = '<h3>Stuff I Liked</h3>';
+    
+    let ind = 0;
+    if(localStorage.getItem('random_passageNum') === null){
+        ind = 0;
+        localStorage.setItem('random_passageNum', ind);
+    } else {
+        ind = Number(localStorage.getItem('random_passageNum'));
+    }
+
+    let len = randomData["Passages"].length;
+    let obj = randomData["Passages"][ind];
+    
+    str += `
+        <div style="display: flex; justify-content: center">
+            <div style="width: 15%">
+                <button onclick="javascript:changeRandomPassage(-1, ${len})">
+                    <i class="bi bi-arrow-left-circle"></i>
+                </button>
+            </div>
+
+            <div style="width: 70%" id="random-passage-text">
+                <p>${obj.text.replace(/\n/g, '<br>')}</p>
+            </div>
+
+            <div style="width: 15%">
+                <button onclick="javascript:changeRandomPassage(1, ${len})">
+                    <i class="bi bi-arrow-right-circle"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="random-passage-info" style="height: 50px; margin-top: -20px">
+            <p>${obj.author}, <a href="${obj.url}" target="_blank"><em>${obj.work}</em></a></p>
+        </div>
+    `;
+
+    document.getElementById('random-passages').innerHTML = str;
+}
+
 // List of resources
 function loadResources(){
     let str = `
@@ -165,6 +232,7 @@ readData('./data/randomData.json')
         loadCommit();
         loadSetup();
         loadPhysicistBDays();
+        loadPassages();
         loadResources();
     });
 

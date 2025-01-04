@@ -21,7 +21,32 @@
             { "name": "Daft Punk", "url": "https://www.youtube.com/@daftpunk/videos" }
         ]
     },
-    "Passages": [],
+    "Passages": [
+        {
+            "text": "Παλλάδʼ Ἀθηναίην ἐρυσίπτολιν ἄρχομʼ ἀείδειν,\nδεινήν, ᾗ σὺν Ἄρηι μέλει πολεμήια ἔργα\nπερθόμεναί τε πόληες ἀϋτή τε πτόλεμοί τε,\nκαί τʼ ἐρρύσατο λαὸν ἰόντα τε νισσόμενόν τε.\nχαῖρε, θεά, δὸς δʼ ἄμμι τύχην εὐδαιμονίην τε.",
+            "author": "Unknown",
+            "work": "Homeric Hymns, Hymn 11",
+            "url": "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0013.tlg011.perseus-grc2:1-5/"
+        },
+        {
+            "text": "Ξέρξου δὲ γράψαντος αὐτῷ, ἔξεστί σοι μὴ θεομαχοῦντι, μετʼ ἐμοῦ δὲ ταττομένῳ, τῆς Ἑλλάδος μοναρχεῖν, ἀντέγραψεν, εἰ τὰ καλὰ τοῦ βίου ἐγίγωσκες, ἀπέστης ἂν τῆς τῶν ἀλλοτρίων ἐπιθυμίας ἐμοὶ δὲ κρείττων ὁ ὑπὲρ τῆς Ἑλλάδος θάνατος τοῦ μοναρχεῖν τῶν ὁμοφύλων.\n\nπάλιν δὲ τοῦ Ξέρξου γράψαντος, πέμψον\n\nτὰ ὅπλα, ἀντέγραψε, μολὼν λαβέ.",
+            "author": "Plutarch",
+            "work": "Apophthegmata Laconica 225c-d",
+            "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0195%3Astephpage%3D225c/"
+        },
+        {
+            "text": "\"O socii&mdash;neque enim ignari sumus ante malorum&mdash;\nO passi graviora, dabit deus his quoque finem.\nVos et Scyllaeam rabiem penitusque sonantis\naccestis scopulos, vos et Cyclopea saxa\nexperti: revocate animos, maestumque timorem\nmittite: forsan et haec olim meminisse iuvabit.",
+            "author": "Virgil",
+            "work": "Aeneid 1.198-203",
+            "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0055%3Abook%3D1%3Acard%3D198"
+        },
+        {
+            "text": "[ΚΡΕΩΝ] πορθῶν δὲ τήνδε γῆν: ὁ δ᾽ ἀντιστὰς ὕπερ.\n[ΑΝΤΙΓΟΝΗ] ὁμῶς ὅ γ᾽ Ἅιδης τοὺς νόμους τούτους ποθεῖ.\n[ΚΡΕΩΝ] ἀλλ᾽ οὐχ ὁ χρηστὸς τῷ κακῷ λαχεῖν ἴσος.\n[ΑΝΤΙΓΟΝΗ] τίς οἶδεν εἰ κάτωθεν εὐαγῆ τάδε;\n[ΚΡΕΩΝ] οὔτοι ποθ᾽ οὑχθρός, οὐδ᾽ ὅταν θάνῃ, φίλος.\n[ΑΝΤΙΓΟΝΗ] οὔτοι συνέχθειν, ἀλλὰ συμφιλεῖν ἔφυν.",
+            "author": "Sophocles",
+            "work": "Antigone 518-23",
+            "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0185%3Acard%3D499"
+        }
+    ],
     "Physicists": [
         {
             "name": "Albert Einstein",
@@ -86,13 +111,47 @@
             "desc": "Known for his work in quantum electrodynamics and particle physics. Developed Feynman diagrams to describe the behavior of subatomic particles.",
             "url": "https://en.wikipedia.org/wiki/Richard_Feynman"
         },
-
         {
-            "name": "",
-            "bday": "",
-            "image": "",
-            "desc": "",
-            "url": ""
+            "name": "Max Planck",
+            "bday": "1858-04-23",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Max_Planck_by_Hugo_Erfurth_1938cr_-_restoration1.jpg",
+            "desc": "Known as one of the founders of quantum theory. Discovered that energy is quantized, and postulated the Planck constant.",
+            "url": "https://en.wikipedia.org/wiki/Max_Planck"
+        },
+        {
+            "name": "Max Born",
+            "bday": "1882-12-11",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Max_Born.jpg",
+            "desc": "Helped create the matrix mechanics representation, and formulated the standard interpretation of the probability density function in the Schrödinger equation.",
+            "url": "https://en.wikipedia.org/wiki/Max_Born"
+        },
+        {
+            "name": "Werner Heisenberg",
+            "bday": "1901-12-05",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Bundesarchiv_Bild183-R57262%2C_Werner_Heisenberg.jpg",
+            "desc": "Known as one of the pioneers of quantum theory. Developed the matrix formulation of quantum mechanics with M. Born and P. Jordan. Discovered the uncertainty principle.",
+            "url": "https://en.wikipedia.org/wiki/Werner_Heisenberg"
+        },
+        {
+            "name": "Marie Curie",
+            "bday": "1867-11-07",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg",
+            "desc": "Pioneered the theory of radioactivity, and discovered the elements polonium and radium. First woman to win the Nobel prize and first person to win the Nobel prize twice.",
+            "url": "https://en.wikipedia.org/wiki/Marie_Curie"
+        },
+        {
+            "name": "Hendrik Lorentz",
+            "bday": "1853-07-18",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Nobelprijswinnaars._H.A._Lorentz_%28cropped%29.jpg",
+            "desc": "Provided a theoretical explanation of the Zeeman effect. Derived the Lorentz transformation of the special theory of relativity, as well as the Lorentz force.",
+            "url": "https://en.wikipedia.org/wiki/Hendrik_Lorentz"
+        },
+        {
+            "name": "Wolfgang Pauli",
+            "bday": "1900-04-25",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Pauli.jpg",
+            "desc": "One of the pioneers of quantum physics. Discovered the Pauli exclusion principle, for which he received a Nobel prize in 1945.",
+            "url": "https://en.wikipedia.org/wiki/Wolfgang_Pauli"
         }
     ]
 }
