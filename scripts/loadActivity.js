@@ -100,7 +100,8 @@ function displaySinglePost(pageID){
     `;
 
     // Read markdown file and convert it to HTML
-    readData('./data/activityPosts/' + allPosts[filter].posts[index].contentLink, 'text')
+    readData('./data/activityPosts/' + allPosts[filter].posts[index].contentLink)
+        .then(res => res.text())
         .then((content) => {
             // KaTeX rendering
             content = content.replace(/\\{/g, '\\\\{') // {
@@ -171,7 +172,8 @@ function addPosts(filter){
  */
 function updateActivityPage(){
     // Get data & store it in global variable
-    readData('./data/activityData.json', 'json')
+    readData('./data/activityData.json')
+        .then(res => res.json())
         .then((obj) => {
             // 'obj' contains post data in JSON format
             // IMPORTANT: set global variable so other functions can use it.

@@ -104,7 +104,8 @@ function addProjects(filter){
  * Called on initial page load.
  */
 function updateProjectsPage(){
-    readData('./data/projectData.json', 'json')
+    readData('./data/projectData.json')
+        .then(res => res.json())
         .then((obj) => {
             // 'obj' contains the project data in JSON format.
             // IMPORTANT: need to set the global variable so that it can be used in other functions.

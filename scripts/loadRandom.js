@@ -19,8 +19,8 @@ function loadCommit(){
     let commit_overview = document.getElementById('commit-overview');
     let commit_desc = document.getElementById('commit-desc');
     
-    fetch('https://api.github.com/repos/gyang0/gyang0.github.io/commits?per_page=1')
-        .then(res => res.json())
+    // Cache result for meager performance gains :p
+    myFetch('https://api.github.com/repos/gyang0/gyang0.github.io/commits?per_page=1')
         .then(res => {
             let date = res[0].commit.committer.date.substr(0, 10);
             let sha = res[0].sha;
@@ -155,9 +155,12 @@ function loadResources(){
 }
 
 // *fireworks*
-readData('./data/randomData.json', 'json')
+readData('./data/randomData.json')
+    .then(res => res.json())
     .then((obj) => {
         randomData = obj;
+
+        document.getElementById('cache-duration').innerText = CACHE_DURATION_MIN;
 
         loadCommit();
         loadSetup();
