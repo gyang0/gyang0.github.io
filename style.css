@@ -546,6 +546,40 @@ figcaption {
 	cursor: pointer;
 }
 
+#random-tracks table {
+	margin: 0;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 30px;
+
+	font-size: 15px;
+}
+
+#random-tracks th {
+	border: 2px solid var(--grayish);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+#random-tracks td {
+	border: 2px solid var(--grayish);
+	border-left: none;
+	border-right: none;
+	
+	margin: 0;
+	padding: 0;
+	height: 60px;
+
+	line-height: 1.5em;
+}
+
+#random-tracks td > img {
+	width: 50px;
+	margin-top: 5px;
+	height: 50px;
+}
+
 #latest-commit {
 	display: flex;
 	justify-content: center;

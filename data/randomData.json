@@ -1,4 +1,11 @@
 {
+    "Death": [
+        "Electrodynamics",
+        "Ciceronian prose",
+        "Greek middle voice",
+        "Concave lenses",
+        "Entropy"
+    ],
     "Resources": {
         "greenish": [
             { "name": "Perseus Scaife Viewer", "url": "https://scaife.perseus.org/" },
@@ -152,6 +159,27 @@
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Pauli.jpg",
             "desc": "One of the pioneers of quantum physics. Discovered the Pauli exclusion principle, for which he received a Nobel prize in 1945.",
             "url": "https://en.wikipedia.org/wiki/Wolfgang_Pauli"
+        },
+        {
+            "name": "Enrico Fermi",
+            "bday": "1901-09-29",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Enrico_Fermi_1943-49.jpg",
+            "desc": "Known for his contributions to statistical mechanics, nuclear physics, and particle physics. Led the team that demostrated the first human-made nuclear chain reaction.",
+            "url": "https://en.wikipedia.org/wiki/Enrico_Fermi"
+        },
+        {
+            "name": "Galileo Galilei",
+            "bday": "1564-02-15",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Justus_Sustermans_-_Portrait_of_Galileo_Galilei_%28Uffizi%29.jpg",
+            "desc": "Known for his contributions to classical mechanics (including his study of pendulums) and astronomy. Persecuted by the Catholic Church for his belief in helicentrism.",
+            "url": "https://en.wikipedia.org/wiki/Enrico_Fermi"
+        },
+        {
+            "name": "Ludwig Boltzmann",
+            "bday": "1844-02-20",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Boltzmann2.jpg",
+            "desc": "Known for his development of statistical mechanics. Provided a definition of entropy using the Boltzmann constant which interpreted it as the statistical disorder in a system.",
+            "url": "https://en.wikipedia.org/wiki/Ludwig_Boltzmann"
         }
     ]
 }

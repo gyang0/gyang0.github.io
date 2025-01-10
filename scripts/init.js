@@ -1,7 +1,7 @@
 let darkmode = true;
 let content = document.documentElement;
 
-let CACHE_DURATION_MIN = 30; // Cache duration in millis (current: 30 minutes)
+let BASE_CACHE_DURATION = 30*1000*60; // Cache duration in millis (current: 30 minutes)
 
 /**
  * Fetches data from a file to use.
@@ -23,20 +23,34 @@ function readData(file){
     });
 }
 
+// Helps to access a nested element in an Object with a String
+// https://stackoverflow.com/a/72928956
+function access(obj, path){
+    let res = obj;
+    path.split('.').forEach(item => {
+        res = res[item];
+    });
+
+    return res;
+}
+
 /**
- * Fetches content from an API, but caches the result for 30 minutes.
+ * Fetches content from an API and returns the cached version or does an API call
  * 
  * @param {String} url - URL to fetch
+ * @param {Object} headers - fetch request headers
+ * @param {Number} expiration - expiration of cache (in minutes)
+ * @param {Array} fields - which JSON fields to cache (to save space)
  */
-function myFetch(url){
+function myFetch(url, headers, expiration, fields){
     // Check if it's already cached
     if(localStorage.getItem(url) != null){
         // Check if it's too old
         // { data: ..., time: ... }
         let obj = JSON.parse(localStorage.getItem(url));
 
-        // 15 minute expiration time
-        if(Date.now() - obj.time < CACHE_DURATION_MIN * 1000 * 60){
+        // 30 minute base expiration time
+        if(Date.now() - obj.time < obj.expiration){
             return new Promise((resolve, reject) => {
                 resolve(obj.data);
             });
@@ -45,21 +59,57 @@ function myFetch(url){
 
     // Fetch data the hard way
     return new Promise((resolve, reject) => {
-        fetch(url)
+        fetch(url, headers)
             .then((res) => {
                 if(!res.ok)
                     throw new Error("Error in myFetch(): " + res.status);
                 
                 return res.json();
             })
-            .then((fileContents) => {
-                localStorage.setItem(url, JSON.stringify({ data: fileContents, time: Date.now() }));
-                resolve(fileContents);
+            .then((json) => {
+                // Cache results
+                let obj = {};
+                for(let i = 0; i < fields.length; i++){
+                    obj[fields[i]] = access(json, fields[i]);
+                }
+
+                localStorage.setItem(url, JSON.stringify({
+                    data: obj,
+                    time: Date.now(),
+                    expiration: expiration
+                }));
+
+                resolve(obj);
             })
             .catch((err) => {
                 reject(`Error in myFetch(): ${err}`);
             })
     });
+}
+
+
+function isCached(key){
+    // Check if it's already cached
+    if(localStorage.getItem(key) != null){
+        // Check if it's too old
+        // { data: ..., time: ... }
+        let obj = JSON.parse(localStorage.getItem(key));
+
+        // 30 minute base expiration time
+        if(Date.now() - obj.time < obj.expiration){
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function cacheCall(key, obj, expiration){
+    localStorage.setItem(key, JSON.stringify({
+        data: obj,
+        time: Date.now(),
+        expiration: expiration
+    }));
 }
 
 /**
@@ -71,6 +121,14 @@ function shuffleArr(arr){
         let j = Math.floor(Math.random() * (i + 1));
         [arr[i], arr[j]] = [arr[j], arr[i]];
     }
+}
+
+/**
+ * Gets a random element from an array
+ * @param {Array} arr - Do I really need to explain this, JSDoc?
+ */
+function getRand(arr){
+    return arr[Math.floor(Math.random() * arr.length)];
 }
 
 /**
