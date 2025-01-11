@@ -34,60 +34,6 @@ function access(obj, path){
     return res;
 }
 
-/**
- * Fetches content from an API and returns the cached version or does an API call
- * 
- * @param {String} url - URL to fetch
- * @param {Object} headers - fetch request headers
- * @param {Number} expiration - expiration of cache (in minutes)
- * @param {Array} fields - which JSON fields to cache (to save space)
- */
-function myFetch(url, headers, expiration, fields){
-    // Check if it's already cached
-    if(localStorage.getItem(url) != null){
-        // Check if it's too old
-        // { data: ..., time: ... }
-        let obj = JSON.parse(localStorage.getItem(url));
-
-        // 30 minute base expiration time
-        if(Date.now() - obj.time < obj.expiration){
-            return new Promise((resolve, reject) => {
-                resolve(obj.data);
-            });
-        }
-    }
-
-    // Fetch data the hard way
-    return new Promise((resolve, reject) => {
-        fetch(url, headers)
-            .then((res) => {
-                if(!res.ok)
-                    throw new Error("Error in myFetch(): " + res.status);
-                
-                return res.json();
-            })
-            .then((json) => {
-                // Cache results
-                let obj = {};
-                for(let i = 0; i < fields.length; i++){
-                    obj[fields[i]] = access(json, fields[i]);
-                }
-
-                localStorage.setItem(url, JSON.stringify({
-                    data: obj,
-                    time: Date.now(),
-                    expiration: expiration
-                }));
-
-                resolve(obj);
-            })
-            .catch((err) => {
-                reject(`Error in myFetch(): ${err}`);
-            })
-    });
-}
-
-
 function isCached(key){
     // Check if it's already cached
     if(localStorage.getItem(key) != null){

@@ -29,21 +29,36 @@ let boxes = {
             let commit_overview = document.getElementById('commit-overview');
             let commit_desc = document.getElementById('commit-desc');
             
-            // Cache result for meager performance gains :p
-            myFetch(
-                'https://api.github.com/repos/gyang0/gyang0.github.io/commits?per_page=1',
-                {},
-                BASE_CACHE_DURATION,
-                ['0.commit.committer.date', '0.sha', '0.commit.message']
-            )
-                .then(res => {
-                    let date = res['0.commit.committer.date'].substr(0, 10);
-                    let sha = res['0.sha'];
-                    let msg = res['0.commit.message'];
+            if(!isCached('github_commit')){
+                fetch('https://api.github.com/repos/gyang0/gyang0.github.io/commits?per_page=1')
+                    .then(res => res.json())
+                    .then(res => {
+                        let obj = {
+                            date: res[0].commit.committer.date.slice(0, 10),
+                            sha: res[0].sha,
+                            message: res[0].commit.message
+                        };
 
-                    commit_overview.innerHTML = `${date} (<a href="https://github.com/gyang0/gyang0.github.io/commit/${sha}" target="_blank">${sha.substr(0, 6)}</a>)`;
-                    commit_desc.innerHTML = msg;
-                });
+                        // Cache
+                        cacheCall('github_commit', obj, BASE_CACHE_DURATION);
+
+                        commit_overview.innerHTML = `
+                            ${obj.date}
+                            (<a href="https://github.com/gyang0/gyang0.github.io/commit/${obj.sha}" target="_blank">${obj.sha.slice(0, 6)}</a>)
+                        `;
+                        commit_desc.innerHTML = obj.message;
+                        
+                    });
+
+            } else {
+                let obj = JSON.parse(localStorage.getItem('github_commit')).data;
+
+                commit_overview.innerHTML = `
+                    ${obj.date}
+                    (<a href="https://github.com/gyang0/gyang0.github.io/commit/${obj.sha}" target="_blank">${obj.sha.slice(0, 6)}</a>)
+                `;
+                commit_desc.innerHTML = obj.message;
+            }
         }
     },
 
@@ -303,9 +318,7 @@ readData('./data/randomData.json')
     .then(res => res.json())
     .then((obj) => {
         randomData = obj;
-
-        document.getElementById('cache-duration').innerText = BASE_CACHE_DURATION/(1000 * 60);
-
+        
         // Load boxes
         for(const [key, val] of Object.entries(boxes)){
             val.load();
