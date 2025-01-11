@@ -21,6 +21,32 @@ function trimText(str, limit){
         return str;
 }
 
+function changeRandomPassage(dx, mod){
+    // localStorage loves strings
+    let r = Number(localStorage.getItem('random_passageNum'));
+        
+    if(r + dx >= mod) return;
+    if(r + dx < 0) return;
+
+    r += dx;
+
+    localStorage.setItem('random_passageNum', r);
+
+    let obj = randomData["Passages"][r];
+
+    document.getElementById('random-passage-text').setAttribute('class', 'fade-out');
+    setTimeout(() => {
+        document.getElementById('random-passage-text').innerHTML = `
+            <p>${obj.text.replace(/\n/g, '<br>')}</p>
+        `;
+        document.getElementById('random-passage-info').innerHTML = `
+            <p>${obj.author}, <a href="${obj.url}" target="_blank"><em>${obj.work}</em></a></p>
+        `;
+
+        document.getElementById('random-passage-text').setAttribute('class', 'fade-in');
+    }, 500);
+}
+
 
 let boxes = {
     // Latest commit
@@ -158,31 +184,6 @@ let boxes = {
 
     // Passages
     'passages': {
-        changeRandomPassage: function(dx, mod){
-            // localStorage loves strings
-            let r = Number(localStorage.getItem('random_passageNum'));
-                
-            if(r + dx >= mod) return;
-            if(r + dx < 0) return;
-
-            r += dx;
-
-            localStorage.setItem('random_passageNum', r);
-
-            let obj = randomData["Passages"][r];
-
-            document.getElementById('random-passage-text').setAttribute('class', 'fade-out');
-            setTimeout(() => {
-                document.getElementById('random-passage-text').innerHTML = `
-                    <p>${obj.text.replace(/\n/g, '<br>')}</p>
-                `;
-                document.getElementById('random-passage-info').innerHTML = `
-                    <p>${obj.author}, <a href="${obj.url}" target="_blank"><em>${obj.work}</em></a></p>
-                `;
-
-                document.getElementById('random-passage-text').setAttribute('class', 'fade-in');
-            }, 500);
-        },
         load: function(){
             let str = '<h3>Fuzzy Letters</h3>';
     
@@ -267,7 +268,7 @@ let boxes = {
             let arr = randomData['Music'];
 
             let str = `
-                <h3>Music (via <a href="https://www.last.fm">last.fm</a>)</h3>
+                <h3>Recent Musical Taste</h3>
                 <table style="margin-top: 15px">
                 <tr>
                     <th style="width: 5%"></th>
@@ -306,9 +307,65 @@ let boxes = {
 
             str += `
                 </table>
-            <p style="color: var(--dark-grayish); float:right; font-size: 14px; margin-right: 40px; margin-top: 5px">(From 100 most recent tracks)</p>`;
+            <p style="color: var(--dark-grayish); float:right; font-size: 14px; margin-right: 40px; margin-top: 5px">(Updated every week from <a href="https://www.last.fm">last.fm</a>)</p>`;
             
             document.getElementById('random-tracks').innerHTML = str;
+        }
+    },
+
+    'monkeytype': {
+        dateFormat: function(num){
+            // e.g. 1/2/2025, 4:47:09 AM
+            return new Date(num).toISOString().split('T')[0];
+        },
+        init: function(){
+            document.getElementById('random-typing').innerHTML = `
+                <h3>Typing Stats</h3>
+                <div style="width: 90%; margin: 0 auto">
+                    <canvas id="random-typing-graph"></canvas>
+                </div>
+                <p style="color: var(--dark-grayish); float:right; font-size: 14px; margin-right: 40px; margin-top: 5px">(Updated every week from <a href="https://monkeytype.com/" target="_blank">MonkeyType</a>, displayed with <a href="https://www.chartjs.org/" target="_blank">Chart.js</a>)</p>
+            `;
+        },
+        load: function(){
+            this.init();
+
+            // Maximum date that occurs in the dataset
+            let maxDate = 0;
+
+            const ctx = document.getElementById('random-typing-graph').getContext('2d');
+            let dataset = [];
+            for(const [lang, records] of Object.entries(randomData['MonkeyType'])){
+                let arr = [];
+                for(let i = 0; i < records.length; i++){
+                    maxDate = Math.max(maxDate, records[i].date);
+
+                    arr.push({
+                        x: this.dateFormat(records[i].date),
+                        y: records[i].wpm
+                    });
+                }
+                
+                dataset.push({
+                    label: lang,
+                    data: arr
+                });
+            }
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: dataset
+                },
+                options: {
+                    scales: {
+                        xAxis: {
+                            type: 'time',
+                            min: this.dateFormat(maxDate - 2628000000) // 1 month ago
+                        }
+                    }
+                }
+            });
         }
     }
 };

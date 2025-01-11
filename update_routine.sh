@@ -2,7 +2,7 @@
 
 # Update stuff
 cd ../'Website Updater'
-node update_randomData.mjs
+node update.mjs
 
 # Come back to project folder
 # Commit changes for that file only
