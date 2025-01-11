@@ -9,48 +9,34 @@
     "Music": [
         {
             "name": "Despacito",
-            "num": 95,
+            "num": 87,
             "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito",
             "artist": "Luis Fonsi",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/a4fded9b5d03f0854cb80a60a1faeca7.jpg"
         },
         {
-            "name": "Violin Concerto BWV 1042 in E Major: Violin Concerto BWV 1042 in E Major: I. Allegro",
-            "num": 1,
-            "url": "https://www.last.fm/music/Johann+Sebastian+Bach/_/Violin+Concerto+BWV+1042+in+E+Major:+Violin+Concerto+BWV+1042+in+E+Major:+I.+Allegro",
-            "artist": "Johann Sebastian Bach",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/622a7818a3348fda1b35ab570aff6b3d.jpg"
+            "name": "Fire In The Sky",
+            "num": 2,
+            "url": "https://www.last.fm/music/Anderson+.Paak/_/Fire+In+The+Sky",
+            "artist": "Anderson .Paak",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/84f1d741d7852b73931e3949c620b4fb.jpg"
         },
         {
-            "name": "Desolation Row",
-            "num": 1,
-            "url": "https://www.last.fm/music/Bob+Dylan/_/Desolation+Row",
-            "artist": "Bob Dylan",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/c2312403b76a4d75b23b2b5134142d58.png"
+            "name": "Elements: No. 2. Fire: Presto con fuoco",
+            "num": 2,
+            "url": "https://www.last.fm/music/Michael+McLean/_/Elements:+No.+2.+Fire:+Presto+con+fuoco",
+            "artist": "Michael McLean",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
         },
         {
-            "name": "Despacito - Remix",
+            "name": "Violin Concerto No. 1 in B-flat major, K. 207: II. Adagio",
             "num": 1,
-            "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito+-+Remix",
-            "artist": "Luis Fonsi",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/c57992cd052f794aa74e28958e730b75.jpg"
+            "url": "https://www.last.fm/music/Wolfgang+Amadeus+Mozart/_/Violin+Concerto+No.+1+in+B-flat+major,+K.+207:+II.+Adagio",
+            "artist": "Wolfgang Amadeus Mozart",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
         }
     ],
     "MonkeyType": {
-        "english": [
-            {
-                "date": 1735822029000,
-                "wpm": 113.2
-            },
-            {
-                "date": 1735878230000,
-                "wpm": 116.79
-            },
-            {
-                "date": 1736595684000,
-                "wpm": 123.59
-            }
-        ],
         "korean": [
             {
                 "date": 1736055870000,
@@ -63,6 +49,40 @@
             {
                 "date": 1736595613000,
                 "wpm": 14.6
+            },
+            {
+                "date": 1736607551000,
+                "wpm": 18.8
+            },
+            {
+                "date": 1736607617000,
+                "wpm": 18.6
+            },
+            {
+                "date": 1736617166000,
+                "wpm": 16.4
+            }
+        ],
+        "english": [
+            {
+                "date": 1735822029000,
+                "wpm": 113.2
+            },
+            {
+                "date": 1735878230000,
+                "wpm": 116.79
+            },
+            {
+                "date": 1736595684000,
+                "wpm": 123.59
+            },
+            {
+                "date": 1736607333000,
+                "wpm": 128.79
+            },
+            {
+                "date": 1736607479000,
+                "wpm": 126.98
             }
         ]
     },
@@ -101,6 +121,10 @@
             {
                 "name": "IBM Qiskit courses",
                 "url": "https://learning.quantum.ibm.com/catalog/courses"
+            },
+            {
+                "name": "Guide to Semiconductors",
+                "url": "https://britneyspears.ac/lasers.htm"
             }
         ],
         "bluish": [
