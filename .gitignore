@@ -1,3 +1,4 @@
 # Drafts and such
 .drafts/*
-scripts/secrets.js
+update.sh
+test.sh

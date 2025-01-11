@@ -247,100 +247,53 @@ let boxes = {
     },
 
     'tracks': {
-        getTracks: function(){
-            // Check if cached
-            if(isCached('lastfm-getrecenttrack')){
-                return new Promise((resolve, reject) => {
-                    let cachedRes = JSON.parse(localStorage.getItem('lastfm-getrecenttrack'));
-                    resolve(cachedRes.data);
-                });
+        load: function(){
+            let text_limit = 55;
+            let arr = randomData['Music'];
+
+            let str = `
+                <h3>Music (via <a href="https://www.last.fm">last.fm</a>)</h3>
+                <table style="margin-top: 15px">
+                <tr>
+                    <th style="width: 5%"></th>
+                    <th style="width: 30%">Title</th>
+                    <th style="width: 5%">Scrobbles</th>
+                </tr>`;
+
+            // Yes tracks
+            for(let i = 0; i < Math.min(4, arr.length); i++){
+                str += `
+                    <tr>
+                        <td><img src="${arr[i].image}"></td>
+                        <td style="text-align: left; padding-left: 10px">
+                            <a style="color: var(--txt-color)" href="${arr[i].url}" target="_blank">
+                                ${trimText(arr[i].name, text_limit)}
+                            </a>
+                            <br>
+                            <span style="color: var(--dark-grayish)">${arr[i].artist}</span>
+                        </td>
+                        <td>${arr[i].num}</td>
+                    </tr>`;
             }
 
-            // Not cached :(
-            return new Promise((resolve, reject) => {
-                fetch(`http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=cnode0&api_key=${secrets.LASTFM_API_KEY}&format=json&limit=100`)
-                    .then(res => res.json())
-                    .then(res => {
-                        // Cache
-                        let obj = {};
-
-                        for(let i = 0; i < res.recenttracks.track.length; i++){
-                            let el = res.recenttracks.track[i];
-                            if(el.name in obj){
-                                obj[el.name].num++;
-
-                            } else {
-                                obj[el.name] = {
-                                    name: el.name,
-                                    num: 1,
-                                    url: el.url,
-                                    artist: el.artist['#text'],
-                                    image: el.image[1]['#text']
-                                }
-                            }
-                        }
-
-                        // Cache
-                        cacheCall('lastfm-getrecenttrack', obj, BASE_CACHE_DURATION);
-
-                        resolve(obj);
-                    })
-                    .catch(err => {
-                        reject(err);
-                    });
-            });
-        },
-        load: function(){
-            this.getTracks()
-            .then(res => {
-                let arr = [];
-                for(const [key, val] of Object.entries(res)){
-                    arr.push(val);
-                }
-                arr.sort((obj1, obj2) => { return obj2.num - obj1.num; });
-    
-                let text_limit = 55;
-                let str = `
-                    <h3>Music (via <a href="https://www.last.fm">last.fm</a>)</h3>
-                    <table>
+            // No tracks
+            for(let i = 0; i < 4 - arr.length; i++){
+                str += `
                     <tr>
-                        <th style="width: 5%"></th>
-                        <th style="width: 30%">Title</th>
-                        <th style="width: 5%">Scrobbles</th>
+                        <td><img src="/images/activity/DEFAULT_POST_IMG.png"></td>
+                        <td style="text-align: left; padding-left: 10px">
+                            -<br>
+                            <span style="color: var(--dark-grayish)">-</span>
+                        </td>
+                        <td>-</td>
                     </tr>`;
-    
-                // Yes tracks
-                for(let i = 0; i < Math.min(4, arr.length); i++){
-                    str += `
-                        <tr>
-                            <td><img src="${arr[i].image}"></td>
-                            <td style="text-align: left; padding-left: 10px">
-                                <a style="color: var(--txt-color)" href="${arr[i].url}" target="_blank">
-                                    ${trimText(arr[i].name, text_limit)}
-                                </a>    
-                                <br>
-                                <span style="color: var(--dark-grayish)">${arr[i].artist}</span>
-                            </td>
-                            <td>${arr[i].num}</td>
-                        </tr>`;
-                }
-    
-                // No tracks
-                for(let i = 0; i < 4 - arr.length; i++){
-                    str += `
-                        <tr>
-                            <td><img src="/images/activity/DEFAULT_POST_IMG.png"></td>
-                            <td style="text-align: left; padding-left: 10px">
-                                -<br>
-                                <span style="color: var(--dark-grayish)">-</span>
-                            </td>
-                            <td>-</td>
-                        </tr>`;
-                }
-    
-                str += `</table>`;
-                document.getElementById('random-tracks').innerHTML = str;
-            });
+            }
+
+            str += `
+                </table>
+            <p style="color: var(--dark-grayish); float:right; font-size: 14px; margin-right: 40px; margin-top: 5px">(From 100 most recent tracks)</p>`;
+            
+            document.getElementById('random-tracks').innerHTML = str;
         }
     }
 };
