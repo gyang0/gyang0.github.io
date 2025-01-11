@@ -10,6 +10,7 @@ Just some random stuff and a collection of projects
 - Project data is stored as JSON, and website posts are stored as markdown files.
 - Any images I need go in the `images` folder, in whatever category they're best suited for. Remember to <a href="https://tinypng.com/">minify images</a>.
 - Libraries used:
-  - <a href="https://github.com/highlightjs/highlight.js">highlight.js</a> for styling code blocks
   - <a href="https://github.com/markedjs/marked">Marked</a> for markdown -> HTML conversion
   - <a href="https://katex.org/">KaTeX</a> for math rendering
+  - <a href="https://highlightjs.org/">Highlight.js</a> for styling code blocks
+  - <a href="https://www.chartjs.org/">Chart.js</a> for graphs

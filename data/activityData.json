@@ -125,6 +125,15 @@
                 "updated": 20250104,
                 "summary": "The distinction and why you should care (spoiler: you shouldn't).",
                 "contentLink": "20250104_Time_vs_Aspect.md"
+            },
+            {
+                "title": "Mimicking Live Data on Static Sites",
+                "pageID": 14,
+                "published": 20250111,
+                "updated": 20250111,
+                "mainImg": "images/activity/20250111_fake_api_1.png",
+                "summary": "Why did I spend a week doing this",
+                "contentLink": "20250111_Fake_API.md"
             }
         ]
     }

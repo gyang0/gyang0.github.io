@@ -100,6 +100,7 @@ let boxes = {
                     <li><a href="https://github.com/markedjs/marked" target="_blank">Marked.js</a> for Markdown -> HTML rendering</li>
                     <li><a href="https://katex.org/" target="_blank">KaTeX</a> for math formatting</li>
                     <li><a href="https://highlightjs.org/" target="_blank">Highlight.js</a> for code blocks</li>
+                    <li><a href="https://www.chartjs.org/" target="_blank">Chart.js</a> for graphs</li>
                 </ul>
         
                 <div style="background-color: var(--grayish); width: 95%; height: 2px; margin: 0 auto"></div>
@@ -246,7 +247,7 @@ let boxes = {
                             <a style="color:var(--${col});"
                                     href="${res.url}"
                             target="_blank">
-                            <strong>${res.name}</strong>
+                            ${res.name}
                             </a>
                         </p>
                     </div>`;
@@ -314,10 +315,6 @@ let boxes = {
     },
 
     'monkeytype': {
-        dateFormat: function(num){
-            // e.g. 1/2/2025, 4:47:09 AM
-            return new Date(num).toISOString().split('T')[0];
-        },
         init: function(){
             document.getElementById('random-typing').innerHTML = `
                 <h3>Typing Stats</h3>
@@ -341,7 +338,7 @@ let boxes = {
                     maxDate = Math.max(maxDate, records[i].date);
 
                     arr.push({
-                        x: this.dateFormat(records[i].date),
+                        x: new Date(records[i].date),
                         y: records[i].wpm
                     });
                 }
@@ -361,7 +358,7 @@ let boxes = {
                     scales: {
                         xAxis: {
                             type: 'time',
-                            min: this.dateFormat(maxDate - 2628000000) // 1 month ago
+                            min: new Date(maxDate - 2628000000) // 1 month ago
                         }
                     }
                 }

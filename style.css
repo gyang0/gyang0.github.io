@@ -503,6 +503,18 @@ figcaption {
 	transition: all 0.5s ease;
 }
 
+#random-setup > ul > li {
+	line-height: 1.5em;
+}
+
+#random-setup p {
+	line-height: 1.5em;
+}
+
+#random-resources p {
+	line-height: 1.5em;
+}
+
 #random-passages > div {
 	text-align: center;
 	height: calc(100% - 80px);
