@@ -36,6 +36,36 @@
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/c57992cd052f794aa74e28958e730b75.jpg"
         }
     ],
+    "MonkeyType": {
+        "english": [
+            {
+                "date": 1735822029000,
+                "wpm": 113.2
+            },
+            {
+                "date": 1735878230000,
+                "wpm": 116.79
+            },
+            {
+                "date": 1736595684000,
+                "wpm": 123.59
+            }
+        ],
+        "korean": [
+            {
+                "date": 1736055870000,
+                "wpm": 14.6
+            },
+            {
+                "date": 1736056396000,
+                "wpm": 11.6
+            },
+            {
+                "date": 1736595613000,
+                "wpm": 14.6
+            }
+        ]
+    },
     "Resources": {
         "greenish": [
             {
@@ -252,6 +282,41 @@
             "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Boltzmann2.jpg",
             "desc": "Known for his development of statistical mechanics. Provided a definition of entropy using the Boltzmann constant which interpreted it as the statistical disorder in a system.",
             "url": "https://en.wikipedia.org/wiki/Ludwig_Boltzmann"
+        },
+        {
+            "name": "Hermann Minkowski",
+            "bday": "1864-06-22",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/De_Raum_zeit_Minkowski_Bild_%28cropped%29.jpg",
+            "desc": "Known for his contributions to the theory of general relativity. Developed \"Minkowski spacetime,\" a mathematical description of space and time as a 4D space.",
+            "url": "https://en.wikipedia.org/wiki/Hermann_Minkowski"
+        },
+        {
+            "name": "Augustin-Jean Fresnel",
+            "bday": "1788-05-10",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Augustin_Fresnel.jpg",
+            "desc": "Known for his many contributions to optics. Gave an explanation for diffraction patterns and the nature of polarization. His work led to the acceptance of the wave theory of light.",
+            "url": "https://en.wikipedia.org/wiki/Augustin-Jean_Fresnel"
+        },
+        {
+            "name": "Joseph-Louis Lagrange",
+            "bday": "1736-01-25",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Lagrange_crop.jpg",
+            "desc": "Known for his work on classical mechanics and astronomy. Transformed Newtonian mechanics into a branch of analysis, Lagrangian mechanics.",
+            "url": "https://en.wikipedia.org/wiki/Joseph-Louis_Lagrange"
+        },
+        {
+            "name": "Joseph Fourier",
+            "bday": "1768-03-21",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Fourier2_-_restoration1.jpg",
+            "desc": "Known for his development of the Fourier series, widely applicable to models of heat transfer and vibrations. The Fourier series eventually led to the Fourier transform and Fourier analysis.",
+            "url": "https://en.wikipedia.org/wiki/Joseph_Fourier"
+        },
+        {
+            "name": "Gottfried W. Leibniz",
+            "bday": "1646-07-01",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_%28ca._1695%29.jpg",
+            "desc": "A polymath with significant contributions in many fields. Credited alongside Newton with the creation of calculus. Anticipated the relational nature of space and time.",
+            "url": "https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz"
         }
     ]
 }
