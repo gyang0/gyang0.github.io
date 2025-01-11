@@ -8,5 +8,5 @@ node update_randomData.mjs
 # Commit changes for that file only
 cd ../'My Website'
 git add data/randomData.json
-git commit -m 'Routine update ' $(date '+%Y-%m-%d') data/randomData.json
+git commit -m "Routine update $(date '+%Y-%m-%d')" data/randomData.json
 git push origin main
