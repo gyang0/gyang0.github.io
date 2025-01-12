@@ -72,16 +72,26 @@ function displayAllPosts(filter){
  * @param {Number} pageID - ID of post to display
  */
 function displaySinglePost(pageID){
-    let filter = localStorage.getItem("globalActivityFilter");
-
     // Index of content corresponding to page ID
+    // And year (filter) under which it's categorized
     let index = -1;
-    for(let i = 0; i < allPosts[filter].posts.length; i++){
-        if(allPosts[filter].posts[i].pageID == pageID){
-            index = i;
+    let filter = -1;
+    let found = false;
+
+    for(const [key, val] of Object.entries(allPosts)){
+        for(let i = 0; i < val.posts.length; i++){
+            if(val.posts[i].pageID == pageID){
+                index = i;
+                filter = key;
+                break;
+            }
+        }
+
+        if(found){
             break;
         }
     }
+
     if(index == -1){
         throw new Error(`Error in displaySinglePost(): Unrecognized post ID.`);
     }
