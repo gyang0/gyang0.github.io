@@ -9,31 +9,31 @@
     "Music": [
         {
             "name": "Despacito",
-            "num": 87,
+            "num": 72,
             "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito",
             "artist": "Luis Fonsi",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/a4fded9b5d03f0854cb80a60a1faeca7.jpg"
         },
         {
-            "name": "Fire In The Sky",
-            "num": 2,
-            "url": "https://www.last.fm/music/Anderson+.Paak/_/Fire+In+The+Sky",
-            "artist": "Anderson .Paak",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/84f1d741d7852b73931e3949c620b4fb.jpg"
+            "name": "Despacito - Remix",
+            "num": 11,
+            "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito+-+Remix",
+            "artist": "Luis Fonsi",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/c57992cd052f794aa74e28958e730b75.jpg"
         },
         {
-            "name": "Elements: No. 2. Fire: Presto con fuoco",
+            "name": "I Feel It Coming",
             "num": 2,
-            "url": "https://www.last.fm/music/Michael+McLean/_/Elements:+No.+2.+Fire:+Presto+con+fuoco",
-            "artist": "Michael McLean",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            "url": "https://www.last.fm/music/The+Weeknd/_/I+Feel+It+Coming",
+            "artist": "The Weeknd",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/08e3f15aca0423b084fb49f342756f3b.png"
         },
         {
-            "name": "Violin Concerto No. 1 in B-flat major, K. 207: II. Adagio",
-            "num": 1,
-            "url": "https://www.last.fm/music/Wolfgang+Amadeus+Mozart/_/Violin+Concerto+No.+1+in+B-flat+major,+K.+207:+II.+Adagio",
-            "artist": "Wolfgang Amadeus Mozart",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+            "name": "Get Lucky (feat. Pharrell Williams and Nile Rodgers)",
+            "num": 2,
+            "url": "https://www.last.fm/music/Daft+Punk/_/Get+Lucky+(feat.+Pharrell+Williams+and+Nile+Rodgers)",
+            "artist": "Daft Punk",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/11dd7e48a1f042c688bf54985f01d088.png"
         }
     ],
     "MonkeyType": {
@@ -81,6 +81,22 @@
             {
                 "date": 1737043225000,
                 "wpm": 19.2
+            },
+            {
+                "date": 1737266406000,
+                "wpm": 18
+            },
+            {
+                "date": 1737266560000,
+                "wpm": 18
+            },
+            {
+                "date": 1738096873000,
+                "wpm": 20.8
+            },
+            {
+                "date": 1738096939000,
+                "wpm": 19.6
             }
         ],
         "english": [
@@ -123,6 +139,26 @@
             {
                 "date": 1737043147000,
                 "wpm": 118.17
+            },
+            {
+                "date": 1737266484000,
+                "wpm": 120.57
+            },
+            {
+                "date": 1737302662000,
+                "wpm": 122.19
+            },
+            {
+                "date": 1737821027000,
+                "wpm": 127.19
+            },
+            {
+                "date": 1738096662000,
+                "wpm": 120.58
+            },
+            {
+                "date": 1738096789000,
+                "wpm": 126.76
             }
         ]
     },
