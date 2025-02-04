@@ -134,6 +134,15 @@
                 "mainImg": "images/activity/20250111_fake_api_1.png",
                 "summary": "Why did I spend a week doing this",
                 "contentLink": "20250111_Fake_API.md"
+            },
+            {
+                "title": "Geometry of Spacetime I: Minkowski Diagrams",
+                "pageID": 15,
+                "published": 20250204,
+                "updated": 20250204,
+                "mainImg": "/images/activity/20250204_geometry_of_spacetime_8.png",
+                "summary": "Part 1: Minkowski diagrams, causal diamonds, geometric metric derivation.",
+                "contentLink": "20250204_Geometry_of_Spacetime_1.md"
             }
         ]
     }
