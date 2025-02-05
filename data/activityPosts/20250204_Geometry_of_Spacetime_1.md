@@ -107,4 +107,4 @@ $$\text{Area}_{S^\prime} = \frac{1}{2}(c\Delta t)^2 - \frac{1}{2}(\Delta x)^2$$
 Setting the two equal, we have $\Delta s^2 = c^2\Delta t^2 - \Delta x^2$. However, note that we're only in one dimension, namely $x$. To properly consider all 3 dimensions, we have to consider $\Delta x^2 + \Delta y^2 + \Delta z^2$ instead of just $\Delta x^2$. The final spacetime metric is
 $$\Delta s^2 = c^2\Delta t^2 - \Delta x^2 - \Delta y^2 - \Delta z^2$$
 
-(This will be done more rigorously in part 2. In the meantime, compare with the Euclidean metric: $\Delta l^2 = \Delta x^2 + \Delta y^2 + \Delta z^2$)
+(This will be done more rigorously in part 3. In the meantime, compare with the Euclidean metric: $\Delta l^2 = \Delta x^2 + \Delta y^2 + \Delta z^2$)

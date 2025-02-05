@@ -143,6 +143,15 @@
                 "mainImg": "/images/activity/20250204_geometry_of_spacetime_8.png",
                 "summary": "Part 1: Minkowski diagrams, causal diamonds, geometric metric derivation.",
                 "contentLink": "20250204_Geometry_of_Spacetime_1.md"
+            },
+            {
+                "title": "Geometry of Spacetime II: Kinematical Effects",
+                "pageID": 16,
+                "published": 20250205,
+                "updated": 20250205,
+                "mainImg": "/images/activity/20250205_geometry_of_spacetime_1.png",
+                "summary": "Part 2: Time dilation, length contraction, and the twin paradox.",
+                "contentLink": "20250205_Geometry_of_Spacetime_2.md"
             }
         ]
     }

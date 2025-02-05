@@ -358,7 +358,7 @@ let boxes = {
                     scales: {
                         xAxis: {
                             type: 'time',
-                            min: new Date(maxDate - 2628000000) // 1 month ago
+                            min: new Date(maxDate - (3*2628000000)) // 3 months ago
                         }
                     }
                 }
