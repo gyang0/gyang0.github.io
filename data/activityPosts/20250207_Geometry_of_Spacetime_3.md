@@ -110,7 +110,7 @@ Let's unpack that a bit.
 
 The first condition says that the distance between two points doesn't depend on the order. The second condition says that if the distance between two points are zero, they must be the same point. The third condition is the triangle inequality.
 
-A Riemannian metric space is one with a form that allows for finding distances and angles. In general, a Riemannian metric function has the form $dl^2 = \sum_{i,j = 1}^{n} g_{ij}dx^idy^j$. But let's only consider te diagonal elements to get
+A Riemannian metric space is one with a form that allows for finding distances and angles. In general, a Riemannian metric function has the form $dl^2 = \sum_{i,j = 1}^{n} g_{ij}dx^idy^j$. But let's only consider the diagonal elements to get
 $$dl^2 = \sum_{i = 1}^{n} g_{ii}dx^idy^i$$
 
 Where the array $[g_{ii}]$ forms the "metric tensor." This form will be used to derive the spacetime metric later on.
