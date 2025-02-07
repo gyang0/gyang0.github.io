@@ -139,7 +139,7 @@
                 "title": "Geometry of Spacetime I: Minkowski Diagrams",
                 "pageID": 15,
                 "published": 20250204,
-                "updated": 20250204,
+                "updated": 20250206,
                 "mainImg": "/images/activity/20250204_geometry_of_spacetime_8.png",
                 "summary": "Part 1: Minkowski diagrams, causal diamonds, geometric metric derivation.",
                 "contentLink": "20250204_Geometry_of_Spacetime_1.md"
@@ -152,6 +152,15 @@
                 "mainImg": "/images/activity/20250205_geometry_of_spacetime_1.png",
                 "summary": "Part 2: Time dilation, length contraction, and the twin paradox.",
                 "contentLink": "20250205_Geometry_of_Spacetime_2.md"
+            },
+            {
+                "title": "Geometry of Spacetime III: More Math",
+                "pageID": 17,
+                "published": 20250207,
+                "updated": 20250207,
+                "mainImg": "/images/activity/20250207_geometry_of_spacetime_1.png",
+                "summary": "Part 3: Lorentz transformations, the Poincaré group, and topology.",
+                "contentLink": "20250207_Geometry_of_Spacetime_3.md"
             }
         ]
     }

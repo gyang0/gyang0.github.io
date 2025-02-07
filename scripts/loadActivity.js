@@ -195,9 +195,9 @@ function updateActivityPage(){
             for(let key in obj){
                 years.push(parseInt(key, 10));
 
-                // Sort posts in each category by last updated
+                // Sort posts in each category by published date
                 obj[key].posts.sort((obj1, obj2) => {
-                    return obj2.updated - obj1.updated;
+                    return obj2.published - obj1.published;
                 });
             }
 

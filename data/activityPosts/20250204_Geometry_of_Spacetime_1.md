@@ -79,7 +79,7 @@ Remember, information can't be transmitted faster than the speed of light. There
 The causal diamond is the overlap between 1). the set of events that can be causally affected by $A$ and 2). All past events that could have causally affected $B$. Since causes always precede their effects, the causal diamond's area is constant in all frames of reference. Check out <a href="https://www.desmos.com/calculator/dh0hqgmphw" target="_blank">this graph on Desmos</a> for a demonstration of this idea (from the course). Drag the $\beta$ slider and see the causal diamond warp, but preserve its area.
 
 ## Deriving the Spacetime Metric <a name="spacetime-metric"></a>
-A more math-y proof will be done in part 2. But a purely geometric proof can be done with the causal diamond, which is really neat. What we're after here is a kind of "distance" between two events in spacetime that will remain constant no matter what frame we're in. Basically, the spacetime version of the Euclidean metric $\Delta l^2 = \Delta x^2 + \Delta y^2 + \Delta z^2$.
+A more math-y proof will be done in part 3. But a purely geometric proof can be done with the causal diamond, which is really neat. What we're after here is a kind of "distance" between two events in spacetime that will remain constant no matter what frame we're in. Basically, the spacetime version of the Euclidean metric $\Delta l^2 = \Delta x^2 + \Delta y^2 + \Delta z^2$.
 
 First, consider Frame $S$, in which events $A$ and $B$ are observed to happen at the same position:
 <figure>
