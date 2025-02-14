@@ -9,63 +9,35 @@
     "Music": [
         {
             "name": "Despacito",
-            "num": 63,
+            "num": 57,
             "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito",
             "artist": "Luis Fonsi",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/a4fded9b5d03f0854cb80a60a1faeca7.jpg"
         },
         {
+            "name": "Get Lucky (feat. Pharrell Williams and Nile Rodgers)",
+            "num": 5,
+            "url": "https://www.last.fm/music/Daft+Punk/_/Get+Lucky+(feat.+Pharrell+Williams+and+Nile+Rodgers)",
+            "artist": "Daft Punk",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/11dd7e48a1f042c688bf54985f01d088.png"
+        },
+        {
+            "name": "Violin Concerto BWV 1042 in E Major: Violin Concerto BWV 1042 in E Major: I. Allegro",
+            "num": 5,
+            "url": "https://www.last.fm/music/Johann+Sebastian+Bach/_/Violin+Concerto+BWV+1042+in+E+Major:+Violin+Concerto+BWV+1042+in+E+Major:+I.+Allegro",
+            "artist": "Johann Sebastian Bach",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/622a7818a3348fda1b35ab570aff6b3d.jpg"
+        },
+        {
             "name": "Despacito - Remix",
-            "num": 9,
+            "num": 5,
             "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito+-+Remix",
             "artist": "Luis Fonsi",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/c57992cd052f794aa74e28958e730b75.jpg"
-        },
-        {
-            "name": "Elements: No. 2. Fire: Presto con fuoco",
-            "num": 4,
-            "url": "https://www.last.fm/music/Michael+McLean/_/Elements:+No.+2.+Fire:+Presto+con+fuoco",
-            "artist": "Michael McLean",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-        },
-        {
-            "name": "Instant Crush (feat. Julian Casablancas)",
-            "num": 4,
-            "url": "https://www.last.fm/music/Daft+Punk/_/Instant+Crush+(feat.+Julian+Casablancas)",
-            "artist": "Daft Punk",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/11dd7e48a1f042c688bf54985f01d088.png"
         }
     ],
     "MonkeyType": {
         "english": [
-            {
-                "date": 1736595684000,
-                "wpm": 123.59
-            },
-            {
-                "date": 1736607333000,
-                "wpm": 128.79
-            },
-            {
-                "date": 1736607479000,
-                "wpm": 126.98
-            },
-            {
-                "date": 1736662741000,
-                "wpm": 110.19
-            },
-            {
-                "date": 1736745647000,
-                "wpm": 119.98
-            },
-            {
-                "date": 1736758457000,
-                "wpm": 120.2
-            },
-            {
-                "date": 1736764068000,
-                "wpm": 118.59
-            },
             {
                 "date": 1737043147000,
                 "wpm": 118.17
@@ -105,41 +77,17 @@
             {
                 "date": 1738805225000,
                 "wpm": 130.99
+            },
+            {
+                "date": 1739078200000,
+                "wpm": 129.39
+            },
+            {
+                "date": 1739078310000,
+                "wpm": 121.39
             }
         ],
         "korean": [
-            {
-                "date": 1736595613000,
-                "wpm": 14.6
-            },
-            {
-                "date": 1736607551000,
-                "wpm": 18.8
-            },
-            {
-                "date": 1736607617000,
-                "wpm": 18.6
-            },
-            {
-                "date": 1736617166000,
-                "wpm": 16.4
-            },
-            {
-                "date": 1736662655000,
-                "wpm": 22.2
-            },
-            {
-                "date": 1736745733000,
-                "wpm": 21
-            },
-            {
-                "date": 1736758384000,
-                "wpm": 14.2
-            },
-            {
-                "date": 1736758545000,
-                "wpm": 21.8
-            },
             {
                 "date": 1737043225000,
                 "wpm": 19.2
