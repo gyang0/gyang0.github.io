@@ -51,7 +51,7 @@
                 "author": "Gene Yang",
                 "made": 20240219,
                 "tags": ["Greek"],
-                "description": "Entry for the Paideia Institute 2024 High School Essay Contest.<br><br>Topic: 'Why should we study Classical Greek?'",
+                "description": "Entry for the Paideia Institute 2024 High School Essay Contest.<br><br>Selected as a finalist entry, but didn't win.",
                 "image": "images/projects/greek_essay.png",
                 "linkTo": "data/documents/20240219_paideia_submission.pdf"
             },
@@ -94,6 +94,16 @@
                 "description": "My handwritten notes on Prof. Groton's <em>From Alpha to Omega: A Beginning Course in Classical Greek</em>.<br><br>Greek is hard.",
                 "image": "images/projects/alpha_to_omega_notes.png",
                 "linkTo": "https://github.com/gyang0/Grek"
+            },
+            {
+                "title": "An Odyssey Through Time",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20250225,
+                "tags": ["Greek"],
+                "description": "Entry for the Paideia Institute 2025 High School Essay Contest.<br><br>Wasn't shortlisted this time, but I view this as an improvement over last year's submission.",
+                "image": "images/projects/2025_paideia_submission.png",
+                "linkTo": "data/documents/20250225_paideia_submission.pdf"
             }
         ]
     },
