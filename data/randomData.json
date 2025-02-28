@@ -9,47 +9,35 @@
     "Music": [
         {
             "name": "Despacito",
-            "num": 57,
+            "num": 24,
             "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito",
             "artist": "Luis Fonsi",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/a4fded9b5d03f0854cb80a60a1faeca7.jpg"
         },
         {
-            "name": "Get Lucky (feat. Pharrell Williams and Nile Rodgers)",
-            "num": 5,
-            "url": "https://www.last.fm/music/Daft+Punk/_/Get+Lucky+(feat.+Pharrell+Williams+and+Nile+Rodgers)",
-            "artist": "Daft Punk",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/11dd7e48a1f042c688bf54985f01d088.png"
+            "name": "Liebesleid",
+            "num": 14,
+            "url": "https://www.last.fm/music/Fritz+Kreisler/_/Liebesleid",
+            "artist": "Fritz Kreisler",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/dc7ad008c3c889db5190e71f78b3040b.jpg"
         },
         {
-            "name": "Violin Concerto BWV 1042 in E Major: Violin Concerto BWV 1042 in E Major: I. Allegro",
-            "num": 5,
-            "url": "https://www.last.fm/music/Johann+Sebastian+Bach/_/Violin+Concerto+BWV+1042+in+E+Major:+Violin+Concerto+BWV+1042+in+E+Major:+I.+Allegro",
-            "artist": "Johann Sebastian Bach",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/622a7818a3348fda1b35ab570aff6b3d.jpg"
+            "name": "We Are Young (feat. Janelle Monáe)",
+            "num": 11,
+            "url": "https://www.last.fm/music/fun./_/We+Are+Young+(feat.+Janelle+Mon%C3%A1e)",
+            "artist": "fun.",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/b2c64d81d94943443fadb2ba11315f2d.jpg"
         },
         {
-            "name": "Despacito - Remix",
-            "num": 5,
-            "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito+-+Remix",
-            "artist": "Luis Fonsi",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/c57992cd052f794aa74e28958e730b75.jpg"
+            "name": "Gangsta's Paradise - Medieval Bardcore Version",
+            "num": 9,
+            "url": "https://www.last.fm/music/Beedle+The+Bardcore/_/Gangsta%27s+Paradise+-+Medieval+Bardcore+Version",
+            "artist": "Beedle The Bardcore",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/71fc020cb522ee31d7512def6b707856.jpg"
         }
     ],
     "MonkeyType": {
         "english": [
-            {
-                "date": 1737821027000,
-                "wpm": 127.19
-            },
-            {
-                "date": 1738096662000,
-                "wpm": 120.58
-            },
-            {
-                "date": 1738096789000,
-                "wpm": 126.76
-            },
             {
                 "date": 1738200874000,
                 "wpm": 112.58
@@ -74,16 +62,6 @@
                 "date": 1739078310000,
                 "wpm": 121.39
             }
-        ],
-        "korean": [
-            {
-                "date": 1738096873000,
-                "wpm": 20.8
-            },
-            {
-                "date": 1738096939000,
-                "wpm": 19.6
-            }
         ]
     },
     "Resources": {
@@ -99,6 +77,10 @@
             {
                 "name": "Accenting Polytonic Greek",
                 "url": "https://www.reddit.com/r/AncientGreek/comments/wbpoy2/comment/ii8fybm/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+            },
+            {
+                "name": "Geoffrey Steadman's PDFs",
+                "url": "https://geoffreysteadman.com"
             }
         ],
         "reddish": [
