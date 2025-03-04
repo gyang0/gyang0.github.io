@@ -22,6 +22,9 @@ const tagColors = {
     "Multivariable Calc": [95, 222, 245],
     "Thermodynamics": [235, 89, 162],
     "Optics": [167, 200, 252],
+    "Relativity": [219, 215, 105],
+
+    "Notes": [150, 100, 100],
 
     // Other
     "Unfinished": [255, 140, 0]

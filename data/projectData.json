@@ -26,7 +26,7 @@
                 "details": "",
                 "author": "Gene Yang",
                 "made": 20241102,
-                "tags": ["Thermodynamics"],
+                "tags": ["Notes", "Thermodynamics"],
                 "description": "Notes for the Thermo portion of Light & Heat [UP055] at OHS.<br><br>Covers the basics of entropy and heat engines.",
                 "image": "images/projects/LH_thermo.png",
                 "linkTo": "data/documents/20241102_LH_thermo_notes.pdf"
@@ -36,10 +36,20 @@
                 "details": "",
                 "author": "Gene Yang",
                 "made": 20250102,
-                "tags": ["Optics"],
+                "tags": ["Notes", "Optics"],
                 "description": "Notes for the Optics portion of Light & Heat [UP055] at OHS.<br><br>Covers Maxwell's equations to basic interference & diffraction.",
                 "image": "images/projects/LH_optics.png",
                 "linkTo": "data/documents/20250102_LH_optics_notes.pdf"
+            },
+            {
+                "title": "UP070 Relativity Notes",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20250304,
+                "tags": ["Notes", "Relativity"],
+                "description": "Notes for the Relativity portion of Modern Physics [UP070] at OHS.<br><br>Covers basic kinematical effects of special relativty to relativistic dynamics.",
+                "image": "images/projects/MP_relativity.png",
+                "linkTo": "data/documents/20250304_MP_relativity_notes.pdf"
             }
         ]
     },
