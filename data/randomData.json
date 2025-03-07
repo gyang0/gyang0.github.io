@@ -16,10 +16,17 @@
         },
         {
             "name": "Liebesleid",
-            "num": 14,
+            "num": 20,
             "url": "https://www.last.fm/music/Fritz+Kreisler/_/Liebesleid",
             "artist": "Fritz Kreisler",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/dc7ad008c3c889db5190e71f78b3040b.jpg"
+        },
+        {
+            "name": "Gangsta's Paradise - Medieval Bardcore Version",
+            "num": 12,
+            "url": "https://www.last.fm/music/Beedle+The+Bardcore/_/Gangsta%27s+Paradise+-+Medieval+Bardcore+Version",
+            "artist": "Beedle The Bardcore",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/71fc020cb522ee31d7512def6b707856.jpg"
         },
         {
             "name": "We Are Young (feat. Janelle Monáe)",
@@ -27,25 +34,10 @@
             "url": "https://www.last.fm/music/fun./_/We+Are+Young+(feat.+Janelle+Mon%C3%A1e)",
             "artist": "fun.",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/b2c64d81d94943443fadb2ba11315f2d.jpg"
-        },
-        {
-            "name": "Gangsta's Paradise - Medieval Bardcore Version",
-            "num": 9,
-            "url": "https://www.last.fm/music/Beedle+The+Bardcore/_/Gangsta%27s+Paradise+-+Medieval+Bardcore+Version",
-            "artist": "Beedle The Bardcore",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/71fc020cb522ee31d7512def6b707856.jpg"
         }
     ],
     "MonkeyType": {
         "english": [
-            {
-                "date": 1738200874000,
-                "wpm": 112.58
-            },
-            {
-                "date": 1738200951000,
-                "wpm": 117.19
-            },
             {
                 "date": 1738805135000,
                 "wpm": 123.39
