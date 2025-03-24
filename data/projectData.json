@@ -50,6 +50,16 @@
                 "description": "Notes for the Relativity portion of Modern Physics [UP070] at OHS.<br><br>Covers basic kinematical effects of special relativty to relativistic dynamics.",
                 "image": "images/projects/MP_relativity.png",
                 "linkTo": "data/documents/20250304_MP_relativity_notes.pdf"
+            },
+            {
+                "title": "F=ma Question Randomizer",
+                "details": "pinned",
+                "author": "Gene Yang",
+                "made": 20241229,
+                "tags": ["HTML/CSS", "JS"],
+                "description": "Imagine missing the cutoff by a point<br><br>Couldn't be me<br><br>Quick tool I made for practice",
+                "image": "images/activity/20250319_f=ma_1.png",
+                "linkTo": "https://github.com/gyang0/F-ma-Study-Tool"
             }
         ]
     },
@@ -114,6 +124,16 @@
                 "description": "Entry for the Paideia Institute 2025 High School Essay Contest.<br><br>Wasn't shortlisted this time, but I view this as an improvement over last year's submission.",
                 "image": "images/projects/2025_paideia_submission.png",
                 "linkTo": "data/documents/20250225_paideia_submission.pdf"
+            },
+            {
+                "title": "<em>Metamorphoses</em> VIII.616-724",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20250226,
+                "tags": ["Latin"],
+                "description": "Literal translation for the story of Baucis and Philemon.<br><br>Only up to line 696 because I'm busy with school.",
+                "image": "images/projects/ovid_metamorphoses_viii.616-724.png",
+                "linkTo": "data/documents/20250227_ovid_metamorphoses_viii.616-724.pdf"
             }
         ]
     },
