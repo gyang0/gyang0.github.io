@@ -8,32 +8,32 @@
     ],
     "Music": [
         {
+            "name": "Señorita",
+            "num": 28,
+            "url": "https://www.last.fm/music/Shawn+Mendes/_/Se%C3%B1orita",
+            "artist": "Shawn Mendes",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/9ab745bcf534411f182b3d1b07bedab7.jpg"
+        },
+        {
             "name": "Despacito",
-            "num": 45,
+            "num": 22,
             "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito",
             "artist": "Luis Fonsi",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/a4fded9b5d03f0854cb80a60a1faeca7.jpg"
         },
         {
+            "name": "Cheap Thrills",
+            "num": 9,
+            "url": "https://www.last.fm/music/Sia/_/Cheap+Thrills",
+            "artist": "Sia",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/275a7fc8fac97cc6c35bc701b33d8598.jpg"
+        },
+        {
             "name": "We Are Young (feat. Janelle Monáe)",
-            "num": 10,
+            "num": 6,
             "url": "https://www.last.fm/music/fun./_/We+Are+Young+(feat.+Janelle+Mon%C3%A1e)",
             "artist": "fun.",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/b2c64d81d94943443fadb2ba11315f2d.jpg"
-        },
-        {
-            "name": "Heartless",
-            "num": 7,
-            "url": "https://www.last.fm/music/Kanye+West/_/Heartless",
-            "artist": "Kanye West",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/a10a67180b666ce93a3bb79c49faca0b.jpg"
-        },
-        {
-            "name": "Despacito - Remix",
-            "num": 5,
-            "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito+-+Remix",
-            "artist": "Luis Fonsi",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/c57992cd052f794aa74e28958e730b75.jpg"
         }
     ],
     "MonkeyType": {
