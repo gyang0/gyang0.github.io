@@ -8,56 +8,35 @@
     ],
     "Music": [
         {
-            "name": "Señorita",
-            "num": 41,
-            "url": "https://www.last.fm/music/Shawn+Mendes/_/Se%C3%B1orita",
-            "artist": "Shawn Mendes",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/9ab745bcf534411f182b3d1b07bedab7.jpg"
-        },
-        {
             "name": "Despacito",
-            "num": 28,
+            "num": 51,
             "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito",
             "artist": "Luis Fonsi",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/a4fded9b5d03f0854cb80a60a1faeca7.jpg"
         },
         {
+            "name": "Señorita",
+            "num": 22,
+            "url": "https://www.last.fm/music/Shawn+Mendes/_/Se%C3%B1orita",
+            "artist": "Shawn Mendes",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/9ab745bcf534411f182b3d1b07bedab7.jpg"
+        },
+        {
             "name": "We Are Young (feat. Janelle Monáe)",
-            "num": 5,
+            "num": 6,
             "url": "https://www.last.fm/music/fun./_/We+Are+Young+(feat.+Janelle+Mon%C3%A1e)",
             "artist": "fun.",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/b2c64d81d94943443fadb2ba11315f2d.jpg"
         },
         {
-            "name": "Get Lucky (feat. Pharrell Williams and Nile Rodgers)",
+            "name": "Instant Crush (feat. Julian Casablancas)",
             "num": 3,
-            "url": "https://www.last.fm/music/Daft+Punk/_/Get+Lucky+(feat.+Pharrell+Williams+and+Nile+Rodgers)",
+            "url": "https://www.last.fm/music/Daft+Punk/_/Instant+Crush+(feat.+Julian+Casablancas)",
             "artist": "Daft Punk",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/11dd7e48a1f042c688bf54985f01d088.png"
         }
     ],
-    "MonkeyType": {
-        "english": [
-            {
-                "date": 1741832371000,
-                "wpm": 129.77
-            },
-            {
-                "date": 1741888199000,
-                "wpm": 117.4
-            }
-        ],
-        "korean": [
-            {
-                "date": 1741832477000,
-                "wpm": 23.78
-            },
-            {
-                "date": 1741888129000,
-                "wpm": 28.98
-            }
-        ]
-    },
+    "MonkeyType": {},
     "Resources": {
         "greenish": [
             {
