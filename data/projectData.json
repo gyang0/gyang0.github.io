@@ -22,6 +22,16 @@
                 "linkTo": "data/documents/20240605_matrix_decomposition.pdf"
             },
             {
+                "title": "Matrix Chain Multiplication",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20241209,
+                "tags": ["Linear Algebra"],
+                "description": "Presentation on how to optimize the order of matrix operations, with a computer simulation.<br><br>Final project for Linear Algebra.",
+                "image": "images/projects/matrix_chain_mult.png",
+                "linkTo": "data/documents/20241209_matrix_chain_mult_presentation.pdf"
+            },
+            {
                 "title": "UP055 Thermo Notes",
                 "details": "",
                 "author": "Gene Yang",

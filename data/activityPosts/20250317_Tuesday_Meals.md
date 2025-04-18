@@ -25,3 +25,21 @@ Started with a makeshift tuna sandwich on Tuesday, making some progress (and tra
     <img style="width:400px" src="/images/activity/20250318_tuesday_meals_4.jpg">
     <figcaption>Leftover rice fried in cooking oil with lots and lots of spring onions. Flavored with garlic and soy sauce.<br><br>Added chunks of mystery meat to substitute for the nonexistent chicken. The taste came out a little strong, but it's alright.</figcaption>
 </figure>
+
+<h2 style="text-align:center">April 1st, 2025: Fried Rice with Cherry Tomatoes and Chicken</h2>
+<figure>
+    <img style="width:400px" src="/images/activity/20250318_tuesday_meals_5.jpg">
+    <figcaption>Fried rice but with chicken and crushed cherry tomatoes in an attempt to make it more flavored.<br><br>Juice from the tomatoes mostly evaporated, but the flavor was quite strong, overall pretty good.</figcaption>
+</figure>
+
+<h2 style="text-align:center">April 8th, 2025: Tomato Chicken Canapés</h2>
+<figure>
+    <img style="width:400px" src="/images/activity/20250318_tuesday_meals_6.jpg">
+    <figcaption>Chicken cooked with cherry tomatoes and spread on some crackers. <br><br>Quite good, would eat again.</figcaption>
+</figure>
+
+<h2 style="text-align:center">April 15th, 2025: Tomato Chicken Sandwich</h2>
+<figure>
+    <img style="width:400px" src="/images/activity/20250318_tuesday_meals_7.jpg">
+    <figcaption>Tomato and chicken seemed to be a good combo so far. Tried adding it to bread. <br><br>Overall very flavorful, but dry. Needed a beverage side or some lettuce.</figcaption>
+</figure>
