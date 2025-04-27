@@ -43,3 +43,9 @@ Started with a makeshift tuna sandwich on Tuesday, making some progress (and tra
     <img style="width:400px" src="/images/activity/20250318_tuesday_meals_7.jpg">
     <figcaption>Tomato and chicken seemed to be a good combo so far. Tried adding it to bread. <br><br>Overall very flavorful, but dry. Needed a beverage side or some lettuce.</figcaption>
 </figure>
+
+<h2 style="text-align:center">April 22nd, 2025: Tuna Fried Rice [not recommended]</h2>
+<figure>
+    <img style="width:400px" src="/images/activity/20250318_tuesday_meals_8.jpg">
+    <figcaption>Got the bright idea to cook tuna along with rice. Bad idea. Tasted like cat food. Smelled horrible too. Almost couldn't finish the bowl.<br><br>I think the problem was that the moisture in the tuna caused the rice to get soggy. Plus, the tuna broke down instead of remaining relatively chunky.</figcaption>
+</figure>
