@@ -179,6 +179,15 @@
                 "mainImg": "/images/activity/20250319_f=ma_3.png",
                 "summary": "some thoughts",
                 "contentLink": "20250319_F=ma_Results.md"
+            },
+            {
+                "title": "Pics From the Nearby Park",
+                "pageID": 20,
+                "published": 20250507,
+                "updated": 20250507,
+                "mainImg": "/images/activity/20250507_grass_2.jpg",
+                "summary": "very important to touch grass during finals",
+                "contentLink": "20250507_Grass.md"
             }
         ]
     }

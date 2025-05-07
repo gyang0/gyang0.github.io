@@ -49,3 +49,9 @@ Started with a makeshift tuna sandwich on Tuesday, making some progress (and tra
     <img style="width:400px" src="/images/activity/20250318_tuesday_meals_8.jpg">
     <figcaption>Got the bright idea to cook tuna along with rice. Bad idea. Tasted like cat food. Smelled horrible too. Almost couldn't finish the bowl.<br><br>I think the problem was that the moisture in the tuna caused the rice to get soggy. Plus, the tuna broke down instead of remaining relatively chunky.</figcaption>
 </figure>
+
+<h2 style="text-align:center">May 6, 2025: Pan-Fried Finger with Spring Onions</h2>
+<figure>
+    <img style="width:400px" src="/images/activity/20250318_tuesday_meals_9.jpg">
+    <figcaption>please don't ask</figcaption>
+</figure>
