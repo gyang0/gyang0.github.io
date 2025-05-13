@@ -70,6 +70,26 @@
                 "description": "Imagine missing the cutoff by a point<br><br>Couldn't be me<br><br>Quick tool I made for practice",
                 "image": "images/activity/20250319_f=ma_1.png",
                 "linkTo": "https://github.com/gyang0/F-ma-Study-Tool"
+            },
+            {
+                "title": "UP070 Quantum Mech Notes",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20250512,
+                "tags": ["Notes", "Quantum Mech"],
+                "description": "Notes for the Quantum Mechanics portion of Modern Physics [UP070] at OHS.<br><br>Covers the core mathematical formalism to a bit of the Schrodinger Equation.",
+                "image": "images/projects/MP_quantum.png",
+                "linkTo": "data/documents/20250512_MP_quantum_notes.pdf"
+            },
+            {
+                "title": "Standing Wave Boundaries",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20250513,
+                "tags": ["Differential Equations"],
+                "description": "Forms of standing Wave solutions and their use in acoustophoresis.<br><br>Final project for Differential Equations",
+                "image": "images/projects/acoustophoresis.png",
+                "linkTo": "data/documents/20250513_acoustophoresis.pdf"
             }
         ]
     },
