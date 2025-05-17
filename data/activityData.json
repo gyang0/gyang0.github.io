@@ -188,6 +188,15 @@
                 "mainImg": "/images/activity/20250507_grass_2.jpg",
                 "summary": "very important to touch grass during finals",
                 "contentLink": "20250507_Grass.md"
+            },
+            {
+                "title": "Standing Waves on a Square Boundary",
+                "pageID": 21,
+                "published": 20250517,
+                "updated": 20250517,
+                "mainImg": "/images/activity/20250517_acoustophoresis_calc_1.png",
+                "summary": "More in-depth calculations and graphs.",
+                "contentLink": "20250517_Acoustophoresis_Calc.md"
             }
         ]
     }
