@@ -197,6 +197,15 @@
                 "mainImg": "/images/activity/20250517_acoustophoresis_calc_1.png",
                 "summary": "More in-depth calculations and graphs.",
                 "contentLink": "20250517_Acoustophoresis_Calc.md"
+            },
+            {
+                "title": "Hexagonal Diffraction Spike",
+                "pageID": 22,
+                "published": 20250530,
+                "updated": 20250530,
+                "mainImg": "/images/activity/20250530_diffraction_spike_11.jpg",
+                "summary": "Entry for the 2025 AAPT Physics Photo Contest. Some notes & photos.",
+                "contentLink": "20250530_Diffraction_Spike.md"
             }
         ]
     }

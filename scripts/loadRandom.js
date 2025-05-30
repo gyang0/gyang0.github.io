@@ -231,7 +231,7 @@ let boxes = {
     'resources': {
         load: function(){
             let str = `
-                <h3>Resources</h3>
+                <h3>Links</h3>
                 <div style="display: flex; flex-wrap: wrap">
             `;
 
