@@ -8,11 +8,32 @@
     ],
     "Music": [
         {
+            "name": "Good Luck, Babe!",
+            "num": 20,
+            "url": "https://www.last.fm/music/Chappell+Roan/_/Good+Luck,+Babe!",
+            "artist": "Chappell Roan",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/86fa0d410ba70ada74d22cf4b690b05b.png"
+        },
+        {
             "name": "Despacito",
-            "num": 101,
+            "num": 17,
             "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito",
             "artist": "Luis Fonsi",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/a4fded9b5d03f0854cb80a60a1faeca7.jpg"
+        },
+        {
+            "name": "Flowers",
+            "num": 8,
+            "url": "https://www.last.fm/music/Miley+Cyrus/_/Flowers",
+            "artist": "Miley Cyrus",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/9a8c97a8f4df58b16ff5b08d16f5f263.jpg"
+        },
+        {
+            "name": "Pink Pony Club",
+            "num": 5,
+            "url": "https://www.last.fm/music/Chappell+Roan/_/Pink+Pony+Club",
+            "artist": "Chappell Roan",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/acd4dcd1ffdc64da01273b1e3512a708.jpg"
         }
     ],
     "MonkeyType": {},
