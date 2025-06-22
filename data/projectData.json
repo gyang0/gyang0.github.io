@@ -63,7 +63,7 @@
             },
             {
                 "title": "F=ma Question Randomizer",
-                "details": "pinned",
+                "details": "",
                 "author": "Gene Yang",
                 "made": 20241229,
                 "tags": ["HTML/CSS", "JS"],
@@ -90,6 +90,26 @@
                 "description": "Forms of standing Wave solutions and their use in acoustophoresis.<br><br>Final project for Differential Equations",
                 "image": "images/projects/acoustophoresis.png",
                 "linkTo": "data/documents/20250513_acoustophoresis.pdf"
+            },
+            {
+                "title": "AP Physics C: E & M Notes",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20250516,
+                "tags": ["Notes", "Electromag"],
+                "description": "Notes for basic electricity & magnetism covered in the AP exam.",
+                "image": "images/projects/ap_em_notes.png",
+                "linkTo": "data/documents/20250516_ap_electricity_magnetism_notes.pdf"
+            },
+            {
+                "title": "Particle Physics Notes",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20250622,
+                "tags": ["Notes", "Electromag", "Quantum Mech"],
+                "description": "Notes on David J. Griffiths' \"Introduction to Elementary Particles,\" read over summer.<br><br>Had a hard time keeping up. At least I learned some new words, if nothing else.",
+                "image": "images/projects/griffiths_particles_notes.png",
+                "linkTo": "data/documents/20250622_elementary_particles_notes.pdf"
             }
         ]
     },

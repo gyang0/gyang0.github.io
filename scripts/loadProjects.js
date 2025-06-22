@@ -26,6 +26,8 @@ const tagColors = {
     "Optics": [167, 200, 252],
     "Relativity": [219, 215, 105],
     "Quantum Mech": [204, 35, 102],
+    "Electromag": [29, 135, 27],
+    "Particles": [115, 40, 166],
 
     "Notes": [150, 100, 100],
 
