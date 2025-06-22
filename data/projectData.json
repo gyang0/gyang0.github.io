@@ -96,7 +96,7 @@
                 "details": "",
                 "author": "Gene Yang",
                 "made": 20250516,
-                "tags": ["Notes", "Electromag"],
+                "tags": ["Notes", "Electromagnetism"],
                 "description": "Notes for basic electricity & magnetism covered in the AP exam.",
                 "image": "images/projects/ap_em_notes.png",
                 "linkTo": "data/documents/20250516_ap_electricity_magnetism_notes.pdf"
@@ -106,7 +106,7 @@
                 "details": "",
                 "author": "Gene Yang",
                 "made": 20250622,
-                "tags": ["Notes", "Electromag", "Quantum Mech"],
+                "tags": ["Notes", "Particles", "Quantum Mech"],
                 "description": "Notes on David J. Griffiths' \"Introduction to Elementary Particles,\" read over summer.<br><br>Had a hard time keeping up. At least I learned some new words, if nothing else.",
                 "image": "images/projects/griffiths_particles_notes.png",
                 "linkTo": "data/documents/20250622_elementary_particles_notes.pdf"
