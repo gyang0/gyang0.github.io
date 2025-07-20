@@ -37,7 +37,7 @@ function changeRandomPassage(dx, mod){
     document.getElementById('random-passage-text').setAttribute('class', 'fade-out');
     setTimeout(() => {
         document.getElementById('random-passage-text').innerHTML = `
-            <p>${obj.text.replace(/\n/g, '<br>')}</p>
+            <p style="color: rgb(94, 119, 152)">${obj.text.replace(/\n/g, '<br>')}</p>
         `;
         document.getElementById('random-passage-info').innerHTML = `
             <p>${obj.author}, <a href="${obj.url}" target="_blank"><em>${obj.work}</em></a></p>
@@ -150,7 +150,7 @@ let boxes = {
                 }
             }
         
-            let short_desc = `Many physicists were born on this day, but unfortunately my dataset doesn't have them.<br><br>In the meantime, want a <a href="https://en.wikipedia.org/wiki/List_of_physicists" target="_blank">rabbit hole</a>?`;
+            let short_desc = `Many physicists were born on this day, but unfortunately my dataset doesn't have them.<br><br>Here is coquette hamster instead.`;
             let read_more = "";
         
             if(res != null){
@@ -163,8 +163,8 @@ let boxes = {
                 <i style="position: absolute; margin-left: 80px; margin-top: 250px; font-size: 70px; color: pink" class="bi bi-cake2"></i>
                 <div style="display: flex; justify-content: center">
                     <div style="width: 42%">
-                        <div style="overflow: hidden; width: 90%; height: 300px; border-radius: 50%; margin-top: 20px; margin-left: 20px">
-                            <img src="${res == null ? "/images/activity/DEFAULT_POST_IMG.png" : res.image}" style="width: 100%">
+                        <div style="overflow: hidden; width: 90%; height: 300px; border-radius: 50%; margin-top: 20px; margin-left: 20px; background-color: rgb(50, 50, 50)">
+                            <img src="${res == null ? "/images/projects/coquette_hamster.png" : res.image}" style="width: 100%">
                         </div>
                     </div>
                     
@@ -208,7 +208,7 @@ let boxes = {
                     </div>
         
                     <div style="width: 70%" id="random-passage-text">
-                        <p>${obj.text.replace(/\n/g, '<br>')}</p>
+                        <p style="color: rgb(94, 119, 152)">${obj.text.replace(/\n/g, '<br>')}</p>
                     </div>
         
                     <div style="width: 15%">
@@ -265,7 +265,7 @@ let boxes = {
 
     'tracks': {
         load: function(){
-            let text_limit = 55;
+            let text_limit = 53;
             let arr = randomData['Music'];
 
             let str = `

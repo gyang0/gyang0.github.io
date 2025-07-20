@@ -81,10 +81,6 @@
                 "url": "https://iquilezles.org/articles/"
             },
             {
-                "name": "IBM Qiskit courses",
-                "url": "https://learning.quantum.ibm.com/catalog/courses"
-            },
-            {
                 "name": "Guide to Semiconductors",
                 "url": "https://britneyspears.ac/lasers.htm"
             }
@@ -124,6 +120,12 @@
             "url": "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0013.tlg011.perseus-grc2:1-5/"
         },
         {
+            "text": "soles occidere et redire possunt:\nnobis, cum semel occidit brevis lux,\nnox est perpetua una dormienda.",
+            "author": "Catullus",
+            "work": "Carmina 5",
+            "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0003%3Apoem%3D5"
+        },
+        {
             "text": "Ξέρξου δὲ γράψαντος αὐτῷ, ἔξεστί σοι μὴ θεομαχοῦντι, μετʼ ἐμοῦ δὲ ταττομένῳ, τῆς Ἑλλάδος μοναρχεῖν, ἀντέγραψεν, εἰ τὰ καλὰ τοῦ βίου ἐγίγωσκες, ἀπέστης ἂν τῆς τῶν ἀλλοτρίων ἐπιθυμίας ἐμοὶ δὲ κρείττων ὁ ὑπὲρ τῆς Ἑλλάδος θάνατος τοῦ μοναρχεῖν τῶν ὁμοφύλων.\n\nπάλιν δὲ τοῦ Ξέρξου γράψαντος, πέμψον\n\nτὰ ὅπλα, ἀντέγραψε, μολὼν λαβέ.",
             "author": "Plutarch",
             "work": "Apophthegmata Laconica 225c-d",
@@ -136,10 +138,10 @@
             "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0055%3Abook%3D1%3Acard%3D198"
         },
         {
-            "text": "[ΚΡΕΩΝ] πορθῶν δὲ τήνδε γῆν: ὁ δ᾽ ἀντιστὰς ὕπερ.\n[ΑΝΤΙΓΟΝΗ] ὁμῶς ὅ γ᾽ Ἅιδης τοὺς νόμους τούτους ποθεῖ.\n[ΚΡΕΩΝ] ἀλλ᾽ οὐχ ὁ χρηστὸς τῷ κακῷ λαχεῖν ἴσος.\n[ΑΝΤΙΓΟΝΗ] τίς οἶδεν εἰ κάτωθεν εὐαγῆ τάδε;\n[ΚΡΕΩΝ] οὔτοι ποθ᾽ οὑχθρός, οὐδ᾽ ὅταν θάνῃ, φίλος.\n[ΑΝΤΙΓΟΝΗ] οὔτοι συνέχθειν, ἀλλὰ συμφιλεῖν ἔφυν.",
-            "author": "Sophocles",
-            "work": "Antigone 518-23",
-            "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0185%3Acard%3D499"
+            "text": "ἕτερος γὰρ αὐτὸς ὁ φίλος ἐστίν",
+            "author": "Aristotle",
+            "work": "Nicomachean Ethics 1170b",
+            "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0053%3Abekker+page%3D1170b%3Abekker+line%3D5"
         }
     ],
     "Physicists": [
