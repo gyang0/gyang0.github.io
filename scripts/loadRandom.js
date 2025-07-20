@@ -100,7 +100,6 @@ let boxes = {
                     <li><a href="https://github.com/markedjs/marked" target="_blank">Marked.js</a> for Markdown -> HTML rendering</li>
                     <li><a href="https://katex.org/" target="_blank">KaTeX</a> for math formatting</li>
                     <li><a href="https://highlightjs.org/" target="_blank">Highlight.js</a> for code blocks</li>
-                    <li><a href="https://www.chartjs.org/" target="_blank">Chart.js</a> for graphs</li>
                 </ul>
         
                 <div style="background-color: var(--grayish); width: 95%; height: 2px; margin: 0 auto"></div>
@@ -319,50 +318,13 @@ let boxes = {
             document.getElementById('random-typing').innerHTML = `
                 <h3>Typing Stats</h3>
                 <div style="width: 90%; margin: 0 auto">
-                    <canvas id="random-typing-graph"></canvas>
+                    Under construction
                 </div>
-                <p style="color: var(--dark-grayish); float:right; font-size: 14px; margin-right: 40px; margin-top: 5px">(Updated every week from <a href="https://monkeytype.com/" target="_blank">MonkeyType</a>, displayed with <a href="https://www.chartjs.org/" target="_blank">Chart.js</a>)</p>
+                <p style="color: var(--dark-grayish); float:right; font-size: 14px; margin-right: 40px; margin-top: 5px">Under construction</p>
             `;
         },
         load: function(){
             this.init();
-
-            // Maximum date that occurs in the dataset
-            let maxDate = 0;
-
-            const ctx = document.getElementById('random-typing-graph').getContext('2d');
-            let dataset = [];
-            for(const [lang, records] of Object.entries(randomData['MonkeyType'])){
-                let arr = [];
-                for(let i = 0; i < records.length; i++){
-                    maxDate = Math.max(maxDate, records[i].date);
-
-                    arr.push({
-                        x: new Date(records[i].date),
-                        y: records[i].wpm
-                    });
-                }
-                
-                dataset.push({
-                    label: lang,
-                    data: arr
-                });
-            }
-            
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    datasets: dataset
-                },
-                options: {
-                    scales: {
-                        xAxis: {
-                            type: 'time',
-                            min: new Date(maxDate - (3*2628000000)) // 3 months ago
-                        }
-                    }
-                }
-            });
         }
     }
 };
