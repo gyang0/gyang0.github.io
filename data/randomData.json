@@ -1,11 +1,4 @@
 {
-    "Death": [
-        "Electrodynamics",
-        "Ciceronian prose",
-        "Greek middle voice",
-        "Concave lenses",
-        "Entropy"
-    ],
     "Music": [
         {
             "name": "Subeme la radio",
@@ -36,19 +29,11 @@
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/87314dd7f1eaa18af36c4d1feb9abe3f.jpg"
         }
     ],
-    "MonkeyType": {
-        "english": [
-            {
-                "date": 1752052619000,
-                "wpm": 118.78
-            }
-        ]
-    },
     "Resources": {
         "greenish": [
             {
-                "name": "Perseus Scaife Viewer",
-                "url": "https://scaife.perseus.org/"
+                "name": "Logeion Dictionary",
+                "url": "https://logeion.uchicago.edu"
             },
             {
                 "name": "Podium Arts (YT)",
@@ -109,6 +94,10 @@
             {
                 "name": "Daft Punk",
                 "url": "https://www.youtube.com/@daftpunk/videos"
+            },
+            {
+                "name": "Arcane",
+                "url": "https://en.wikipedia.org/wiki/Arcane_(TV_series)"
             }
         ]
     },
@@ -396,6 +385,41 @@
             "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/JohnvonNeumann-LosAlamos.gif",
             "desc": "Known for his contributions to mathematics, physics, and computer science. Established the first rigorous mathematical framework for quantum mechanics.",
             "url": "https://en.wikipedia.org/wiki/John_von_Neumann"
+        },
+        {
+            "name": "Chien-Shiung Wu",
+            "bday": "1912-05-31",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Chien-shiung_Wu_%281912-1997%29_C.jpg",
+            "desc": "Contributed to nuclear and particle physics; known for her work in experimental physics. Discovered that parity is not conserved.",
+            "url": "https://en.wikipedia.org/wiki/Chien-Shiung_Wu"
+        },
+        {
+            "name": "Peter Shor",
+            "bday": "1959-08-14",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Peter_Shor_2017_Dirac_Medal_Award_Ceremony.png",
+            "desc": "Best known for his work on quantum computation and information theory. Discovered Shor's algorithm and developed the Shor code for quantum error correction.",
+            "url": "https://en.wikipedia.org/wiki/Peter_Shor"
+        },
+        {
+            "name": "Ernst Mach",
+            "bday": "1838-02-18",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Ernst_Mach_01.jpg",
+            "desc": "Physicist and philosopher who contributed to the physics of shock waves. Mach's Principle was influential in the formation of general relativity by Einstein.",
+            "url": "https://en.wikipedia.org/wiki/Ernst_Mach"
+        },
+        {
+            "name": "Arnold Sommerfeld",
+            "bday": "1868-12-05",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/A._Sommerfeld_LCCN2014715010.jpg",
+            "desc": "Pioneered developments in atomic and quantum physics. Introduced the fine-structure constant and the 2nd & 3rd quantum numbers. Mentored several accomplished physicists.",
+            "url": "https://en.wikipedia.org/wiki/Arnold_Sommerfeld"
+        },
+        {
+            "name": "Llewellyn Hilleth Thomas",
+            "bday": "1903-10-21",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Thomas%2CLlewellyn_1926_Kopenhagen.jpg",
+            "desc": "Contributed to atomic and solid-state physics. Calculated the Thomas precession and developed the Thomas-Fermi theory for N-body quantum systems.",
+            "url": "https://en.wikipedia.org/wiki/Llewellyn_Thomas"
         }
     ]
 }

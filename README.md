@@ -13,3 +13,4 @@ Just some random stuff and a collection of projects
   - <a href="https://github.com/markedjs/marked">Marked</a> for markdown -> HTML conversion
   - <a href="https://katex.org/">KaTeX</a> for math rendering
   - <a href="https://highlightjs.org/">Highlight.js</a> for styling code blocks
+  - <a href="https://chartjs.org/">Chart.js</a> for graphs

@@ -91,38 +91,39 @@ let boxes = {
     // Setup
     'setup': {
         load: function(){
-            let str = "";
+            let str = `
+                <h3 style="margin-bottom:20px">Website Setup</h3>
+                <div style="display: flex; justify-content: center; flex-wrap: wrap">
+                    <div style="width: 320px">
+                        <p><a href="https://github.com/markedjs/marked" target="_blank">Marked.js</a> for Markdown -> HTML</p>
+                        <p><a href="https://katex.org/" target="_blank">KaTeX</a> for math formatting</p>
+                    </div>
+                    
+                    <div style="width: 2px; background-color: var(--grayish)"></div>
 
-            str += `
-                <h3>Stuff for Nerds</h3>
-                <p>Website setup:</p>
-                <ul>
-                    <li><a href="https://github.com/markedjs/marked" target="_blank">Marked.js</a> for Markdown -> HTML rendering</li>
-                    <li><a href="https://katex.org/" target="_blank">KaTeX</a> for math formatting</li>
-                    <li><a href="https://highlightjs.org/" target="_blank">Highlight.js</a> for code blocks</li>
-                </ul>
+                    <div style="width: 320px">
+                        <p><a href="https://highlightjs.org/" target="_blank">Highlight.js</a> for code blocks</p>
+                    </div>
+                    
+                    <div style="width: 100%; margin-top: 15px; margin-right: 20px">
+                        <p>Some data is updated <a href="/activity.html?page=14" target="_blank">every week</a>.</p>
+                        <p>API calls are cached for <u>${BASE_CACHE_DURATION/1000/60} minutes</u>. To see updates, open console and input <code>localStorage.clear()</code>.</p>
+                        <p>Cannot guarantee screen compatibility. It looks fine on my end :d</p>
+                    </div>
+                </div>
         
-                <div style="background-color: var(--grayish); width: 95%; height: 2px; margin: 0 auto"></div>
+                <div style="background-color: var(--grayish); width: 95%; height: 2px; margin: 0 auto; margin-top: 15px"></div>
                 <br>
         
-                <div style="display: flex; justify-content: center">
-                    <div style="width: 345px">
-                        <p>Editor: VSCode</p>
-                        <p>Theme: <a href="https://marketplace.visualstudio.com/items?itemName=johnpapa.winteriscoming" target="_blank">Winter is Coming</a></p>
-                        <p>TeX distro: TeXLive</p>
-                        <p>Browser: FireFox w/ uBlock Origin</p>
-                    </div>
-        
-                    <div style="width: 2px; background-color: var(--grayish)"></div>
-                    
-                    <div style="width: 350px">
-                        <p>Location: Earth</p>
-                        <p>Cause of death: ${getRand(randomData['Death'])}</p>
-                        <p>Drowning in work: Yes</p>
+                <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-right: 20px">
+                    <div style="width: 100%">
+                        <p style="font-size: 15px">The first version of this website was made in 2023. It was a basic site with a main page and some links. Since then, it grew into a storage for some of my projects and half baked ideas.</p>
+                    </div>    
+                    <div style="width: 100%; text-align: center; margin-top: 5px">
+                        <p style="font-size: 15px">Made with <i class="bi bi-balloon-heart"></i></p>
                     </div>
                 </div>
             `;
-        
         
             document.getElementById('random-setup').innerHTML = str;
         }
@@ -310,21 +311,6 @@ let boxes = {
             <p style="color: var(--dark-grayish); float:right; font-size: 14px; margin-right: 40px; margin-top: 5px">(Updated every week from <a href="https://www.last.fm">last.fm</a>)</p>`;
             
             document.getElementById('random-tracks').innerHTML = str;
-        }
-    },
-
-    'monkeytype': {
-        init: function(){
-            document.getElementById('random-typing').innerHTML = `
-                <h3>Typing Stats</h3>
-                <div style="width: 90%; margin: 0 auto">
-                    Under construction
-                </div>
-                <p style="color: var(--dark-grayish); float:right; font-size: 14px; margin-right: 40px; margin-top: 5px">Under construction</p>
-            `;
-        },
-        load: function(){
-            this.init();
         }
     }
 };

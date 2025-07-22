@@ -2,6 +2,8 @@ Record of my progress for <i>From Alpha to Omega</i> by Prof. Anne H. Groton (al
 
 **EDIT 9/23/2024:** Well, that didn't go as planned. I'll extend this and continue over the school year too.
 
+**EDIT 7/22/2025:** Made good progress over summer break. Will likely pick up again after school is over.
+
 <table style="width: 90%">
     <tr>
     <th style="width: 5%">Chapter</th>
@@ -89,78 +91,78 @@ Record of my progress for <i>From Alpha to Omega</i> by Prof. Anne H. Groton (al
     </tr>
     <td>12</td>
     <td>εἰμί; Enclitics</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>6/20/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>13</td>
     <td>Demonstratives</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>6/21/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>14</td>
     <td>Personal Pronouns</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>6/22/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>15</td>
     <td>Contract Verbs (-άω, -έω, -όω); Contracted Futures</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>6/23/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>16</td>
     <td>Third Declension: Stop, Liquid, and Nasal Stems</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>6/25/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>17</td>
     <td>Third Declension: Sigma Stems; Adjectives: Third Declension</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>6/26/2025</td>
+    <td>Reviewed 6/27/2025</td>
     </tr>
     <tr>
     <td>18</td>
     <td>Ω-Verbs: First Aorist Active and Middle Indicative, First Aorist Active and Middle Infinitives, First Aorist Active and Middle Imperatives</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>6/28/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>19</td>
     <td>Ω-Verbs: Second Aorist Active and Middle Indicative, Second Aorist Active and Middle Infinitives, Second Aorist Active and Middle Imperatives; Reflexive Pronouns</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>6/29/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>20</td>
     <td>Ω-Verbs: Perfect Active Indicative, Perfect Active Infinitive; Pluperfect Active Indicative</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>7/4/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>21</td>
     <td>Interrogative τίς and Indefinite τις</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>7/17/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>22</td>
     <td>Ω-Verbs: Perfect Middle/Passive Indicative, Perfect Middle/Passive Infinitive; Pluperfect Middle/Passive Indicative</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>7/18/2025</td>
     <td></td>
     </tr>
     <tr>

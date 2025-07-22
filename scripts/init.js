@@ -6,7 +6,6 @@ let BASE_CACHE_DURATION = 30*1000*60; // Cache duration in millis (current: 30 m
 /**
  * Fetches data from a file to use.
  * @param {String} file - name of file to read
- * @returns a Promise that'll fetch the file and return it in its correct format
  */
 function readData(file){
     return new Promise((resolve, reject) => {

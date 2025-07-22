@@ -331,13 +331,23 @@
             },
             {
                 "title": "My Website",
-                "details": "",
+                "details": "pinned",
                 "author": "Gene Yang",
                 "made": 20231204,
                 "tags": ["HTML/CSS", "JS", "Unfinished"],
                 "description": "Holy recursion, Batman.",
                 "image": "images/projects/my_website.png",
                 "linkTo": "https://github.com/gyang0/gyang0.github.io"
+            },
+            {
+                "title": "Connect-4 Tournament",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20250722,
+                "tags": ["Java"],
+                "description": "A Connect-4 assignment and tournament I developed for the OCS20 course at OHS.<br><br>It took way longer than it should have, but an initial version is done now.",
+                "image": "images/projects/connect_4_tournament.png",
+                "linkTo": "https://github.com/gyang0/Connect-4-Competition/"
             }
         ]
     },
