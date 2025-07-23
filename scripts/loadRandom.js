@@ -94,14 +94,14 @@ let boxes = {
             let str = `
                 <h3 style="margin-bottom:20px">Website Setup</h3>
                 <div style="display: flex; justify-content: center; flex-wrap: wrap">
-                    <div style="width: 320px">
+                    <div style="width: 19vw">
                         <p><a href="https://github.com/markedjs/marked" target="_blank">Marked.js</a> for Markdown -> HTML</p>
                         <p><a href="https://katex.org/" target="_blank">KaTeX</a> for math formatting</p>
                     </div>
                     
                     <div style="width: 2px; background-color: var(--grayish)"></div>
 
-                    <div style="width: 320px">
+                    <div style="width: 19vw">
                         <p><a href="https://highlightjs.org/" target="_blank">Highlight.js</a> for code blocks</p>
                     </div>
                     
@@ -117,10 +117,10 @@ let boxes = {
         
                 <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-right: 20px">
                     <div style="width: 100%">
-                        <p style="font-size: 15px">The first version of this website was made in 2023. It was a basic site with a main page and some links. Since then, it grew into a storage for some of my projects and half baked ideas.</p>
+                        <p style="font-size: 1vw">The first version of this website was made in 2023. It was a basic site with a main page and some links. Since then, it grew into a storage for some of my projects and half baked ideas.</p>
                     </div>    
                     <div style="width: 100%; text-align: center; margin-top: 5px">
-                        <p style="font-size: 15px">Made with <i class="bi bi-balloon-heart"></i></p>
+                        <p style="font-size: 1vw">Made with <i class="bi bi-balloon-heart"></i></p>
                     </div>
                 </div>
             `;
@@ -160,10 +160,10 @@ let boxes = {
         
             str = `
                 <h3>Physicist Birthdays</h3>
-                <i style="position: absolute; margin-left: 80px; margin-top: 250px; font-size: 70px; color: pink" class="bi bi-cake2"></i>
+                <i style="position: absolute; margin-left: 5vw; margin-top: 17vw; font-size: 5vw; color: pink" class="bi bi-cake2"></i>
                 <div style="display: flex; justify-content: center">
                     <div style="width: 42%">
-                        <div style="overflow: hidden; width: 90%; height: 300px; border-radius: 50%; margin-top: 20px; margin-left: 20px; background-color: rgb(50, 50, 50)">
+                        <div style="overflow: hidden; width: 90%; height: 40vh; border-radius: 50%; margin-top: 20px; margin-left: 20px; background-color: rgb(50, 50, 50)">
                             <img src="${res == null ? "/images/projects/coquette_hamster.png" : res.image}" style="width: 100%">
                         </div>
                     </div>
@@ -242,7 +242,7 @@ let boxes = {
                     let res = resources[col][i];
 
                     str += `
-                    <div style="width: 330px">
+                    <div style="width: 20vw">
                         <p>
                             <a style="color:var(--${col});"
                                     href="${res.url}"
@@ -254,7 +254,7 @@ let boxes = {
                 }
 
                 // New row
-                str += `<div style="flex-basis: 100%; height: 10px"></div>`;
+                str += `<div style="flex-basis: 100%; height: 0.5vw"></div>`;
             }
 
             str += `</div>`;
@@ -265,7 +265,7 @@ let boxes = {
 
     'tracks': {
         load: function(){
-            let text_limit = 53;
+            let text_limit = 45;
             let arr = randomData['Music'];
 
             let str = `
@@ -276,18 +276,18 @@ let boxes = {
                     <th style="width: 30%">Title</th>
                     <th style="width: 5%">Scrobbles</th>
                 </tr>`;
-
+            
             // Yes tracks
             for(let i = 0; i < Math.min(4, arr.length); i++){
                 str += `
                     <tr>
-                        <td><img src="${arr[i].image}"></td>
-                        <td style="text-align: left; padding-left: 10px">
-                            <a style="color: var(--txt-color)" href="${arr[i].url}" target="_blank">
+                        <td><img src="${arr[i].image}" style="width: 3.5vw; height: 3.5vw"></td>
+                        <td style="text-align: left; padding-left: 10px; line-height: 1.4vw">
+                            <a style="color: var(--txt-color); font-size: 1vw" href="${arr[i].url}" target="_blank">
                                 ${trimText(arr[i].name, text_limit)}
                             </a>
                             <br>
-                            <span style="color: var(--dark-grayish)">${arr[i].artist}</span>
+                            <span style="color: var(--dark-grayish); font-size: 1vw">${arr[i].artist}</span>
                         </td>
                         <td>${arr[i].num}</td>
                     </tr>`;
@@ -308,7 +308,7 @@ let boxes = {
 
             str += `
                 </table>
-            <p style="color: var(--dark-grayish); float:right; font-size: 14px; margin-right: 40px; margin-top: 5px">(Updated every week from <a href="https://www.last.fm">last.fm</a>)</p>`;
+            <p style="color: var(--dark-grayish); float:right; font-size: 1vw; margin-right: 40px; margin-top: 5px">(Updated every week from <a href="https://www.last.fm">last.fm</a>)</p>`;
             
             document.getElementById('random-tracks').innerHTML = str;
         }
