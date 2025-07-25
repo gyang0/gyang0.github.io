@@ -1,32 +1,32 @@
 {
     "Music": [
         {
-            "name": "Subeme la radio",
-            "num": 12,
-            "url": "https://www.last.fm/music/Enrique+Iglesias/_/Subeme+la+radio",
-            "artist": "Enrique Iglesias",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/1c7f9b121f0d71be13b5239a0f4e7174.jpg"
+            "name": "A Keepsake",
+            "num": 16,
+            "url": "https://www.last.fm/music/Arcane/_/A+Keepsake",
+            "artist": "Arcane",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/87314dd7f1eaa18af36c4d1feb9abe3f.jpg"
         },
         {
             "name": "What Could Have Been (from the series Arcane League of Legends)",
-            "num": 10,
+            "num": 13,
             "url": "https://www.last.fm/music/Sting/_/What+Could+Have+Been+(from+the+series+Arcane+League+of+Legends)",
             "artist": "Sting",
             "image": "https://lastfm.freetls.fastly.net/i/u/64s/124c3018e98968ce69e948534f9f7a15.jpg"
         },
         {
-            "name": "Wasteland (from the series Arcane League of Legends)",
-            "num": 10,
-            "url": "https://www.last.fm/music/Royal+&+the+Serpent/_/Wasteland+(from+the+series+Arcane+League+of+Legends)",
-            "artist": "Royal & the Serpent",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/5d881cafa1e84dfb3ef790237858a366.jpg"
+            "name": "这样很好 (Isha's Song) (from the series Arcane League of Legends)",
+            "num": 12,
+            "url": "https://www.last.fm/music/Eason+Chan/_/%E8%BF%99%E6%A0%B7%E5%BE%88%E5%A5%BD+(Isha%27s+Song)+(from+the+series+Arcane+League+of+Legends)",
+            "artist": "Eason Chan",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/9517e288068c2980f1c18e1b08cbc0e5.jpg"
         },
         {
-            "name": "A Keepsake",
-            "num": 9,
-            "url": "https://www.last.fm/music/Arcane/_/A+Keepsake",
-            "artist": "Arcane",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/87314dd7f1eaa18af36c4d1feb9abe3f.jpg"
+            "name": "Goodbye (from the series Arcane League of Legends)",
+            "num": 12,
+            "url": "https://www.last.fm/music/Ramsey/_/Goodbye+(from+the+series+Arcane+League+of+Legends)",
+            "artist": "Ramsey",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/7a380e2889653a6178aa7f0c0f06648c.jpg"
         }
     ],
     "Resources": {
@@ -177,6 +177,13 @@
             "url": "https://en.wikipedia.org/wiki/Enrico_Fermi"
         },
         {
+            "name": "Ernst Mach",
+            "bday": "1838-02-18",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Ernst_Mach_01.jpg",
+            "desc": "Physicist and philosopher who contributed to the physics of shock waves. Mach's Principle was influential in the formation of general relativity by Einstein.",
+            "url": "https://en.wikipedia.org/wiki/Ernst_Mach"
+        },
+        {
             "name": "Ludwig Boltzmann",
             "bday": "1844-02-20",
             "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Boltzmann2.jpg",
@@ -238,6 +245,13 @@
             "image": "https://upload.wikimedia.org/wikipedia/en/4/42/Richard_Feynman_Nobel.jpg",
             "desc": "Known for his work in quantum electrodynamics and particle physics. Developed Feynman diagrams to describe the behavior of subatomic particles.",
             "url": "https://en.wikipedia.org/wiki/Richard_Feynman"
+        },
+        {
+            "name": "Chien-Shiung Wu",
+            "bday": "1912-05-31",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Chien-shiung_Wu_%281912-1997%29_C.jpg",
+            "desc": "Contributed to nuclear and particle physics; known for her work in experimental physics. Discovered that parity is not conserved.",
+            "url": "https://en.wikipedia.org/wiki/Chien-Shiung_Wu"
         },
         {
             "name": "Sadi Carnot",
@@ -317,6 +331,13 @@
             "url": "https://en.wikipedia.org/wiki/Sir_George_Stokes,_1st_Baronet"
         },
         {
+            "name": "Peter Shor",
+            "bday": "1959-08-14",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Peter_Shor_2017_Dirac_Medal_Award_Ceremony.png",
+            "desc": "Best known for his work on quantum computation and information theory. Discovered Shor's algorithm and developed the Shor code for quantum error correction.",
+            "url": "https://en.wikipedia.org/wiki/Peter_Shor"
+        },
+        {
             "name": "Ernest Rutherford",
             "bday": "1871-08-30",
             "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Sir_Ernest_Rutherford_LCCN2014716719_-_restoration1.jpg",
@@ -352,11 +373,25 @@
             "url": "https://en.wikipedia.org/wiki/James_Chadwick"
         },
         {
+            "name": "Llewellyn Hilleth Thomas",
+            "bday": "1903-10-21",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Thomas%2CLlewellyn_1926_Kopenhagen.jpg",
+            "desc": "Contributed to atomic and solid-state physics. Calculated the Thomas precession and developed the Thomas-Fermi theory for N-body quantum systems.",
+            "url": "https://en.wikipedia.org/wiki/Llewellyn_Thomas"
+        },
+        {
             "name": "Marie Curie",
             "bday": "1867-11-07",
             "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg",
             "desc": "Pioneered the theory of radioactivity, and discovered the elements polonium and radium. First woman to win the Nobel prize and first person to win the Nobel prize twice.",
             "url": "https://en.wikipedia.org/wiki/Marie_Curie"
+        },
+        {
+            "name": "Arnold Sommerfeld",
+            "bday": "1868-12-05",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/A._Sommerfeld_LCCN2014715010.jpg",
+            "desc": "Pioneered developments in atomic and quantum physics. Introduced the fine-structure constant and the 2nd & 3rd quantum numbers. Mentored several accomplished physicists.",
+            "url": "https://en.wikipedia.org/wiki/Arnold_Sommerfeld"
         },
         {
             "name": "Werner Heisenberg",
@@ -385,41 +420,6 @@
             "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/JohnvonNeumann-LosAlamos.gif",
             "desc": "Known for his contributions to mathematics, physics, and computer science. Established the first rigorous mathematical framework for quantum mechanics.",
             "url": "https://en.wikipedia.org/wiki/John_von_Neumann"
-        },
-        {
-            "name": "Chien-Shiung Wu",
-            "bday": "1912-05-31",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Chien-shiung_Wu_%281912-1997%29_C.jpg",
-            "desc": "Contributed to nuclear and particle physics; known for her work in experimental physics. Discovered that parity is not conserved.",
-            "url": "https://en.wikipedia.org/wiki/Chien-Shiung_Wu"
-        },
-        {
-            "name": "Peter Shor",
-            "bday": "1959-08-14",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Peter_Shor_2017_Dirac_Medal_Award_Ceremony.png",
-            "desc": "Best known for his work on quantum computation and information theory. Discovered Shor's algorithm and developed the Shor code for quantum error correction.",
-            "url": "https://en.wikipedia.org/wiki/Peter_Shor"
-        },
-        {
-            "name": "Ernst Mach",
-            "bday": "1838-02-18",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Ernst_Mach_01.jpg",
-            "desc": "Physicist and philosopher who contributed to the physics of shock waves. Mach's Principle was influential in the formation of general relativity by Einstein.",
-            "url": "https://en.wikipedia.org/wiki/Ernst_Mach"
-        },
-        {
-            "name": "Arnold Sommerfeld",
-            "bday": "1868-12-05",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/A._Sommerfeld_LCCN2014715010.jpg",
-            "desc": "Pioneered developments in atomic and quantum physics. Introduced the fine-structure constant and the 2nd & 3rd quantum numbers. Mentored several accomplished physicists.",
-            "url": "https://en.wikipedia.org/wiki/Arnold_Sommerfeld"
-        },
-        {
-            "name": "Llewellyn Hilleth Thomas",
-            "bday": "1903-10-21",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Thomas%2CLlewellyn_1926_Kopenhagen.jpg",
-            "desc": "Contributed to atomic and solid-state physics. Calculated the Thomas precession and developed the Thomas-Fermi theory for N-body quantum systems.",
-            "url": "https://en.wikipedia.org/wiki/Llewellyn_Thomas"
         }
     ]
 }
