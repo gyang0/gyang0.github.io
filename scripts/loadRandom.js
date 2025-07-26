@@ -42,6 +42,7 @@ function changeRandomPassage(dx, mod){
         document.getElementById('random-passage-info').innerHTML = `
             <p>${obj.author}, <a href="${obj.url}" target="_blank"><em>${obj.work}</em></a></p>
         `;
+        document.getElementById('random-passage-num-counter').innerHTML = `${r+1}/${mod}`;
 
         document.getElementById('random-passage-text').setAttribute('class', 'fade-in');
     }, 500);
@@ -200,7 +201,7 @@ let boxes = {
             let obj = randomData["Passages"][ind];
             
             str += `
-                <div style="display: flex; justify-content: center">
+                <div style="display: flex; justify-content: center; flex-wrap: wrap">
                     <div style="width: 15%">
                         <button onclick="javascript:changeRandomPassage(-1, ${len})">
                             <i class="bi bi-arrow-left-circle"></i>
@@ -215,6 +216,12 @@ let boxes = {
                         <button onclick="javascript:changeRandomPassage(1, ${len})">
                             <i class="bi bi-arrow-right-circle"></i>
                         </button>
+                    </div>
+                </div>
+
+                <div style="height: 50px; margin-top: -90px; position: absolute; display: flex; justify-content: center; width: inherit">
+                    <div style="width: 100%">
+                        <p id="random-passage-num-counter" style="margin-left: -10px; font-size: 0.9vw; color: var(--dark-grayish)">${ind + 1}/${len}</p>
                     </div>
                 </div>
         

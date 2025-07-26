@@ -110,6 +110,16 @@
                 "description": "Notes on David J. Griffiths' \"Introduction to Elementary Particles,\" read over summer.<br><br>Had a hard time keeping up. At least I learned some new words, if nothing else.",
                 "image": "images/projects/griffiths_particles_notes.png",
                 "linkTo": "data/documents/20250622_elementary_particles_notes.pdf"
+            },
+            {
+                "title": "Quantum Computation Notes",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20250725,
+                "tags": ["Notes", "Quantum Mech"],
+                "description": "Notes on Nielsen & Chuang's \"Quantum Computation and Quantum Information,\" read over summer.<br><br>Largely a skim.",
+                "image": "images/projects/nielsen_chuang_qc_qi.png",
+                "linkTo": "data/documents/20250725_quantum_computation_notes.pdf"
             }
         ]
     },
