@@ -168,29 +168,29 @@ Record of my progress for <i>From Alpha to Omega</i> by Prof. Anne H. Groton (al
     <tr>
     <td>23</td>
     <td>Reflexive Pronouns; πᾶς; Expressions of Time</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>7/18/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>24</td>
     <td>Ω-Verbs: Present Active Participle, Future Active Participle, First and Second Aorist Active Participles, Perfect Active Participle</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>7/23/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>25</td>
     <td>Ω-Verbs: Present Middle/Passive Participle, Future Middle Participle, First and Second Aorist Middle Participles, Perfect Middle/Passive Participle</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>7/23/2025</td>
     <td></td>
     </tr>
     <tr>
     <td>26</td>
     <td>Direct and Indirect Questions; Alternative Questions</td>
-    <td></td>
-    <td></td>
+    <td style="background-color: rgb(0, 200, 0)">Complete</td>
+    <td>7/25/2025</td>
     <td></td>
     </tr>
     <tr>

@@ -37,6 +37,8 @@
 
 .katex { font-size: 1.1em; }
 
+.serif { font-family: Cardo; }
+
 body {
 	background-color: var(--bg-color);
 	color: var(--txt-color);
@@ -215,7 +217,7 @@ pre > code {
 
 .content td,th {
 	padding: 6px;
-	border: 2px solid black;
+	border: 2px solid var(--dark-grayish);
 }
 
 #specific-activity-post figure {

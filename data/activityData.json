@@ -55,7 +55,7 @@
                 "pageID": 6,
                 "mainImg": "images/activity/20240708_AlphaToOmega.jpg",
                 "published": 20240708,
-                "updated": 20240708,
+                "updated": 20250726,
                 "summary": "Let's see how this goes.<br>EDIT: Welp, gonna have to extend this.",
                 "contentLink": "20240708_Summer_Of_Greek.md"
             },
@@ -206,6 +206,15 @@
                 "mainImg": "/images/activity/20250530_diffraction_spike_11.jpg",
                 "summary": "Entry for the 2025 AAPT Physics Photo Contest. Some notes & photos.",
                 "contentLink": "20250530_Diffraction_Spike.md"
+            },
+            {
+                "title": "Notes on Attic Verb Conjugation",
+                "pageID": 23,
+                "published": 20250726,
+                "updated": 20250728,
+                "mainImg": "/images/activity/20250726_attic_conjugation_1.png",
+                "summary": "Per <em>From Alpha to Omega</em>, mostly as practice for me.",
+                "contentLink": "20250726_Greek_Conjugation_Table.md"
             }
         ]
     }

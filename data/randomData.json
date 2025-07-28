@@ -68,6 +68,10 @@
             {
                 "name": "Guide to Semiconductors",
                 "url": "https://britneyspears.ac/lasers.htm"
+            },
+            {
+                "name": "Scott Aaronson's QC Notes",
+                "url": "https://www.scottaaronson.com/qclec.pdf"
             }
         ],
         "bluish": [
