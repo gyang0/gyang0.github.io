@@ -647,7 +647,7 @@ Only the indicative mood for now.
             <br>
             <li>Middle/passive endings are similar to primary present tense ones, sans one letter.</li>
             <li>If stem ends in consonant, euphonic changes necessary in middle/passive.</li>
-            <li>In 3rd person middle/passive, stems ending in ν are expressed periphrastically (rather than try a euphonic change), e.g. <strong>λελειμμένοι εἰσί(ν)</strong> = "I have abandoned for myself"/"I have been abandoned"</li>
+            <li>In 3rd person middle/passive, stems ending in ν are expressed periphrastically (rather than try a euphonic change), e.g. <strong>λελειμμένοι εἰσί(ν)</strong> = "they have abandoned for themselves"/"they have been abandoned"</li>
         </ul>
     </div>
 </div>
@@ -752,7 +752,7 @@ Only the indicative mood for now.
             <li>Middle = passive in form.</li>
             <li>Middle/passive endings are similar to primary present tense ones, sans one letter.</li>
             <li>If stem ends in consonant, euphonic changes necessary in middle/passive.</li>
-            <li>In 3rd person middle/passive, stems ending in ν are expressed periphrastically (rather than try a euphonic change), e.g. <strong>λελειμμένοι ἦσαν</strong> = "I had abandoned for myself"/"I had been abandoned"</li>
+            <li>In 3rd person middle/passive, stems ending in ν are expressed periphrastically (rather than try a euphonic change), e.g. <strong>λελειμμένοι ἦσαν</strong> = "They had abandoned for themselves"/"they had been abandoned"</li>
             <br>
             <li>Other than that, pretty simple. No infinitives or participles.</li>
         </ul>
