@@ -215,6 +215,15 @@
                 "mainImg": "/images/activity/20250726_attic_conjugation_1.png",
                 "summary": "Per <em>From Alpha to Omega</em>, mostly as practice for me.",
                 "contentLink": "20250726_Greek_Conjugation_Table.md"
+            },
+            {
+                "title": "Stanford's Rare Books Collection",
+                "pageID": 24,
+                "published": 20250815,
+                "updated": 20250815,
+                "mainImg": "/images/activity/20250815_rare_books_6.png",
+                "summary": "Pictures and such from the Green Library.",
+                "contentLink": "20250815_Stanford_Rare_Collections.md"
             }
         ]
     }
