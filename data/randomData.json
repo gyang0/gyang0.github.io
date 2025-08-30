@@ -2,31 +2,31 @@
     "Music": [
         {
             "name": "Despacito",
-            "num": 19,
-            "url": "https://www.last.fm/music/Luis+Fonsi/_/Despacito",
-            "artist": "Luis Fonsi",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/a4fded9b5d03f0854cb80a60a1faeca7.jpg"
+            "num": 6,
+            "url": "https://www.last.fm/music/Peter+Bence/_/Despacito",
+            "artist": "Peter Bence",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/9623a9f5830813cd54d18aa53b30472f.jpg"
         },
         {
-            "name": "Primadonna",
-            "num": 7,
-            "url": "https://www.last.fm/music/Marina/_/Primadonna",
-            "artist": "Marina",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/a0a0029c26ff3c4bdb69f3ba3bdea618.jpg"
-        },
-        {
-            "name": "Good Luck, Babe!",
+            "name": "Golden",
             "num": 5,
-            "url": "https://www.last.fm/music/Chappell+Roan/_/Good+Luck,+Babe!",
-            "artist": "Chappell Roan",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/86fa0d410ba70ada74d22cf4b690b05b.png"
+            "url": "https://www.last.fm/music/HUNTR%2FX/_/Golden",
+            "artist": "HUNTR/X",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/c8b02d0731e867cd38ca0ff7329a759b.jpg"
         },
         {
-            "name": "Cancion Del Mariachi",
+            "name": "Dance Monkey",
             "num": 4,
-            "url": "https://www.last.fm/music/Antonio+Banderas/_/Cancion+Del+Mariachi",
-            "artist": "Antonio Banderas",
-            "image": "https://lastfm.freetls.fastly.net/i/u/64s/ce1d721298821852168c6005e3b3ced7.jpg"
+            "url": "https://www.last.fm/music/Peter+Bence/_/Dance+Monkey",
+            "artist": "Peter Bence",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/fb10777afe6257525a3ce2cdf0cb1d93.jpg"
+        },
+        {
+            "name": "Kings & Queens",
+            "num": 4,
+            "url": "https://www.last.fm/music/Ava+Max/_/Kings+&+Queens",
+            "artist": "Ava Max",
+            "image": "https://lastfm.freetls.fastly.net/i/u/64s/f90651a84738cd15cd08b8cd73adfa4a.jpg"
         }
     ],
     "Resources": {
