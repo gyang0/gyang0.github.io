@@ -13,6 +13,7 @@ const tagColors = {
     "GLSL": [28, 93, 102],
     "LaTeX": [61, 97, 23],
     "LilyPond": [156, 204, 124],
+    "Shell": [158, 250, 125],
 
     // Arbitrary decisions for languages
     "Greek": [0, 0, 200],

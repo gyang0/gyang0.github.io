@@ -392,6 +392,16 @@
                 "description": "Growing list",
                 "image": "images/projects/latex_macros.png",
                 "linkTo": "https://github.com/gyang0/LaTeX-Macros"
+            },
+            {
+                "title": "Class Notes with Pandoc",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20250907,
+                "tags": ["Shell", "LaTeX"],
+                "description": "Markdown -> LaTeX class notes with Pandoc, through a basic bash script.",
+                "image": "images/projects/pandoc_notes.png",
+                "linkTo": "https://github.com/gyang0/class-notes-template"
             }
         ]
     }
