@@ -96,7 +96,7 @@ function pageSetup(){
 
     document.getElementById("footer").innerHTML = `
         <p>Website hosted through GitHub pages</p>
-	    <p>&copy; ${new Date().getFullYear()} by Gene Yang</p><br>
+	    <p>2023 - ${new Date().getFullYear()}</p><br>
         <p>
             <a href="https://github.com/gyang0/gyang0.github.io" target="_blank"><i class="bi bi-github" style="font-size:40px;color:white"></i></a>
         </p>`;

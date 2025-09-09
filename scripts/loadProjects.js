@@ -102,7 +102,7 @@ function addProjects(filter){
                     
                     <div class="project-tags-container">${tagsCode}</div>
 
-                    <p style="color:var(--txt-color)"><i class="fa fa-copyright"></i>${Math.floor(proj.made/10000) + " " + proj.author}</p>
+                    <p style="color:var(--txt-color)">Created ${Math.floor(proj.made/10000)}</p>
                 </div>
             </a>`;
     }
