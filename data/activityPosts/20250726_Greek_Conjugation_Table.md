@@ -490,8 +490,8 @@ Only the indicative mood for now.
             <tr>
                 <th>3rd</th>
                 <td>ἐ- ... -ον</td>
-                <td>ἐ- ... -ετο</td>
-                <td>ἐ- ... -ετο</td>
+                <td>ἐ- ... -οντο</td>
+                <td>ἐ- ... -οντο</td>
             </tr>
             <tr style="border-top: 3px double">
                 <th rowspan="4">Imperative</th>
