@@ -224,6 +224,15 @@
                 "mainImg": "/images/activity/20250815_rare_books_6.png",
                 "summary": "Pictures and such from the Green Library.",
                 "contentLink": "20250815_Stanford_Rare_Collections.md"
+            },
+            {
+                "title": "Busy Beavers",
+                "pageID": 25,
+                "published": 20250924,
+                "updated": 20250924,
+                "mainImg": "",
+                "summary": "Playing with Turing Machines.",
+                "contentLink": "20250924_Busy_Beavers.md"
             }
         ]
     }
