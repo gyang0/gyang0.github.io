@@ -120,6 +120,16 @@
                 "description": "Notes on Nielsen & Chuang's \"Quantum Computation and Quantum Information,\" read over summer.<br><br>Largely a skim.",
                 "image": "images/projects/nielsen_chuang_qc_qi.png",
                 "linkTo": "data/documents/20250725_quantum_computation_notes.pdf"
+            },
+            {
+                "title": "UP135 Quantum Comp. Notes",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20251009,
+                "tags": ["Notes", "Quantum Mech"],
+                "description": "Notes for the Introduction to Quantum Computing [UP135] at OHS.<br><br>I've moved to LaTeX-based notes, which are easier to make and edit.",
+                "image": "images/projects/up135_notes.png",
+                "linkTo": "data/documents/20251009_up135_notes.pdf"
             }
         ]
     },
