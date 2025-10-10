@@ -411,7 +411,7 @@
                 "tags": ["Shell", "LaTeX"],
                 "description": "Markdown -> LaTeX class notes with Pandoc, through a basic bash script.",
                 "image": "images/projects/pandoc_notes.png",
-                "linkTo": "https://github.com/gyang0/class-notes-template"
+                "linkTo": "https://github.com/gyang0/Pandoc-Notes-Template"
             }
         ]
     }
