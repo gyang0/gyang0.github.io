@@ -33,7 +33,7 @@
             },
             {
                 "title": "UP055 Thermo Notes",
-                "details": "",
+                "details": "pinned",
                 "author": "Gene Yang",
                 "made": 20241102,
                 "tags": ["Notes", "Thermodynamics"],
@@ -43,7 +43,7 @@
             },
             {
                 "title": "UP055 Optics Notes",
-                "details": "",
+                "details": "pinned",
                 "author": "Gene Yang",
                 "made": 20250102,
                 "tags": ["Notes", "Optics"],
@@ -53,7 +53,7 @@
             },
             {
                 "title": "UP070 Relativity Notes",
-                "details": "",
+                "details": "pinned",
                 "author": "Gene Yang",
                 "made": 20250304,
                 "tags": ["Notes", "Relativity"],
@@ -73,7 +73,7 @@
             },
             {
                 "title": "UP070 Quantum Mech Notes",
-                "details": "",
+                "details": "pinned",
                 "author": "Gene Yang",
                 "made": 20250512,
                 "tags": ["Notes", "Quantum Mech"],
@@ -93,7 +93,7 @@
             },
             {
                 "title": "AP Physics C: E & M Notes",
-                "details": "",
+                "details": "pinned",
                 "author": "Gene Yang",
                 "made": 20250516,
                 "tags": ["Notes", "Electromagnetism"],
@@ -103,7 +103,7 @@
             },
             {
                 "title": "Particle Physics Notes",
-                "details": "",
+                "details": "pinned",
                 "author": "Gene Yang",
                 "made": 20250622,
                 "tags": ["Notes", "Particles", "Quantum Mech"],
@@ -113,7 +113,7 @@
             },
             {
                 "title": "Quantum Computation Notes",
-                "details": "",
+                "details": "pinned",
                 "author": "Gene Yang",
                 "made": 20250725,
                 "tags": ["Notes", "Quantum Mech"],
@@ -123,7 +123,7 @@
             },
             {
                 "title": "UP135 Quantum Comp. Notes",
-                "details": "",
+                "details": "pinned",
                 "author": "Gene Yang",
                 "made": 20251009,
                 "tags": ["Notes", "Quantum Mech"],
