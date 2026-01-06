@@ -140,6 +140,16 @@
                 "description": "Extension of Eisert's 1999 quantum Prisoner's Dilemma to the 3x3 Optional Prisoner's Dilemma.<br><br>Semester 1 project for UP135.",
                 "image": "images/projects/quantum_games.png",
                 "linkTo": "data/documents/20251229_quantum_games_paper.pdf"
+            },
+            {
+                "title": "General Relativity Notes",
+                "details": "pinned",
+                "author": "Gene Yang",
+                "made": 20260106,
+                "tags": ["Notes", "Relativity", "Unfinished"],
+                "description": "Notes on Sean M. Carroll's \"Spacetime and Geometry.\" Work in progress.",
+                "image": "images/projects/genrel_notes.png",
+                "linkTo": "data/documents/20260106_spacetime_and_geometry_notes.pdf"
             }
         ]
     },
