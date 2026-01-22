@@ -235,5 +235,18 @@
                 "contentLink": "20250924_Busy_Beavers.md"
             }
         ]
+    },
+    "2026": {
+        "posts": [
+            {
+                "title": "Diffraction from Polygonal Apertures",
+                "pageID": 26,
+                "published": 20260122,
+                "updated": 20260122,
+                "mainImg": "/images/activity/20260122_diffraction_spike_4.png",
+                "summary": "Yet another diffraction post.",
+                "contentLink": "20260122_Diffraction_Spike_Extended.md"
+            }
+        ]
     }
 }

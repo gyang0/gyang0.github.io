@@ -1,3 +1,5 @@
+**Note 1/22/2026:** I'm not going to fix anything more here. But the assumptions are inaccurate. This should have been considered a double-slit experiment with *both* diffraction and interference, leading to the equation $I(\theta) = I_m \cos^2\beta\left(\frac{\sin\alpha}{\alpha}\right)^2$ where $\alpha = \frac{\pi}{\lambda}a\sin\theta$ and $\beta = \frac{\pi}{\lambda}d\sin\theta$, per Halliday-Resnick-Krane *Fundamentals of Physics*. $a$ is the aperture width and $d$ is the distance between the centers of apertures.
+
 **Edited 12/24/2024:** Fixed a few mistakes in my graphs.
 
 It's basically a double slit interference pattern. After finals week I had more time on my hands, so I wanted to be productive instead of playing games all day.
