@@ -23,10 +23,12 @@ const tagColors = {
     "Multivariable Calc": [95, 222, 245],
     "Linear Algebra": [49, 148, 75],
     "Differential Equations": [26, 85, 173],
+
+    "Classical Mech": [189, 6, 33],
     "Thermodynamics": [235, 100, 162],
     "Optics": [167, 200, 252],
     "Relativity": [219, 215, 105],
-    "Quantum Mech": [204, 35, 102],
+    "Quantum Mech": [43, 37, 219],
     "Electromagnetism": [29, 135, 27],
     "Particles": [115, 40, 166],
 

@@ -150,6 +150,16 @@
                 "description": "Notes on Sean M. Carroll's \"Spacetime and Geometry.\" Work in progress.",
                 "image": "images/projects/genrel_notes.png",
                 "linkTo": "data/documents/20260106_spacetime_and_geometry_notes.pdf"
+            },
+            {
+                "title": "Classical Mechanics Notes",
+                "details": "pinned",
+                "author": "Gene Yang",
+                "made": 20260217,
+                "tags": ["Notes", "Classical Mech", "Unfinished"],
+                "description": "Notes on V. I. Arnold's \"Mathematical Methods of Classical Mechanics.\" Work in progress.",
+                "image": "images/projects/arnold_classical_mech_notes.png",
+                "linkTo": "data/documents/20260217_classical_mech_arnold.pdf"
             }
         ]
     },
