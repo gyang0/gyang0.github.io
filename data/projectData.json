@@ -18,7 +18,7 @@
                 "made": 20240605,
                 "tags": ["Multivariable Calc"],
                 "description": "Proofs for LU, QR, Spectral, and Polar decomposition.<br><br>Semester 2 final project",
-                "image": "images/projects/matrix_decomposition.png",
+                "image": "images/projects/2024_matrix_decomposition.png",
                 "linkTo": "data/documents/20240605_matrix_decomposition.pdf"
             },
             {
@@ -28,7 +28,7 @@
                 "made": 20241209,
                 "tags": ["Linear Algebra"],
                 "description": "Presentation on how to optimize the order of matrix operations, with a computer simulation.<br><br>Final project for Linear Algebra.",
-                "image": "images/projects/matrix_chain_mult.png",
+                "image": "images/projects/2024_matrix_chain_mult.png",
                 "linkTo": "data/documents/20241209_matrix_chain_mult_presentation.pdf"
             },
             {
@@ -38,7 +38,7 @@
                 "made": 20241102,
                 "tags": ["Notes", "Thermodynamics"],
                 "description": "Notes for the Thermo portion of Light & Heat [UP055] at OHS.<br><br>Covers the basics of entropy and heat engines.",
-                "image": "images/projects/LH_thermo.png",
+                "image": "images/projects/2024_LH_thermo.png",
                 "linkTo": "data/documents/20241102_LH_thermo_notes.pdf"
             },
             {
@@ -48,7 +48,7 @@
                 "made": 20250102,
                 "tags": ["Notes", "Optics"],
                 "description": "Notes for the Optics portion of Light & Heat [UP055] at OHS.<br><br>Covers Maxwell's equations to basic interference & diffraction.",
-                "image": "images/projects/LH_optics.png",
+                "image": "images/projects/2025_LH_optics.png",
                 "linkTo": "data/documents/20250102_LH_optics_notes.pdf"
             },
             {
@@ -58,18 +58,8 @@
                 "made": 20250304,
                 "tags": ["Notes", "Relativity"],
                 "description": "Notes for the Relativity portion of Modern Physics [UP070] at OHS.<br><br>Covers basic kinematical effects of special relativty to relativistic dynamics.",
-                "image": "images/projects/MP_relativity.png",
+                "image": "images/projects/2025_MP_relativity.png",
                 "linkTo": "data/documents/20250304_MP_relativity_notes.pdf"
-            },
-            {
-                "title": "F=ma Question Randomizer",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20241229,
-                "tags": ["HTML/CSS", "JS"],
-                "description": "Imagine missing the cutoff by a point<br><br>Couldn't be me<br><br>Quick tool I made for practice",
-                "image": "images/activity/20250319_f=ma_1.png",
-                "linkTo": "https://github.com/gyang0/F-ma-Study-Tool"
             },
             {
                 "title": "UP070 Quantum Mech Notes",
@@ -78,28 +68,8 @@
                 "made": 20250512,
                 "tags": ["Notes", "Quantum Mech"],
                 "description": "Notes for the Quantum Mechanics portion of Modern Physics [UP070] at OHS.<br><br>Covers the core mathematical formalism to a bit of the Schrodinger Equation.",
-                "image": "images/projects/MP_quantum.png",
+                "image": "images/projects/2025_MP_quantum.png",
                 "linkTo": "data/documents/20250512_MP_quantum_notes.pdf"
-            },
-            {
-                "title": "Standing Wave Boundaries",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20250513,
-                "tags": ["Differential Equations"],
-                "description": "Forms of standing Wave solutions and their use in acoustophoresis.<br><br>Final project for Differential Equations",
-                "image": "images/projects/acoustophoresis.png",
-                "linkTo": "data/documents/20250513_acoustophoresis.pdf"
-            },
-            {
-                "title": "AP Physics C: E & M Notes",
-                "details": "pinned",
-                "author": "Gene Yang",
-                "made": 20250516,
-                "tags": ["Notes", "Electromagnetism"],
-                "description": "Notes for basic electricity & magnetism covered in the AP exam.",
-                "image": "images/projects/ap_em_notes.png",
-                "linkTo": "data/documents/20250516_ap_electricity_magnetism_notes.pdf"
             },
             {
                 "title": "Particle Physics Notes",
@@ -108,7 +78,7 @@
                 "made": 20250622,
                 "tags": ["Notes", "Particles", "Quantum Mech"],
                 "description": "Notes on David J. Griffiths' \"Introduction to Elementary Particles,\" read over summer.<br><br>Had a hard time keeping up. At least I learned some new words, if nothing else.",
-                "image": "images/projects/griffiths_particles_notes.png",
+                "image": "images/projects/2025_griffiths_particles_notes.png",
                 "linkTo": "data/documents/20250622_elementary_particles_notes.pdf"
             },
             {
@@ -118,7 +88,7 @@
                 "made": 20250725,
                 "tags": ["Notes", "Quantum Mech"],
                 "description": "Notes on Nielsen & Chuang's \"Quantum Computation and Quantum Information,\" read over summer.<br><br>Largely a skim.",
-                "image": "images/projects/nielsen_chuang_qc_qi.png",
+                "image": "images/projects/2025_nielsen_chuang_qc_qi.png",
                 "linkTo": "data/documents/20250725_quantum_computation_notes.pdf"
             },
             {
@@ -128,7 +98,7 @@
                 "made": 20251009,
                 "tags": ["Notes", "Quantum Mech"],
                 "description": "Notes for the Introduction to Quantum Computing [UP135] at OHS.<br><br>I've moved to LaTeX-based notes, which are easier to make and edit.",
-                "image": "images/projects/up135_notes.png",
+                "image": "images/projects/2025_up135_notes.png",
                 "linkTo": "data/documents/20251009_up135_notes.pdf"
             },
             {
@@ -138,7 +108,7 @@
                 "made": 20251229,
                 "tags": ["Notes", "Quantum Mech"],
                 "description": "Extension of Eisert's 1999 quantum Prisoner's Dilemma to the 3x3 Optional Prisoner's Dilemma.<br><br>Semester 1 project for UP135.",
-                "image": "images/projects/quantum_games.png",
+                "image": "images/projects/2025_quantum_games.png",
                 "linkTo": "data/documents/20251229_quantum_games_paper.pdf"
             },
             {
@@ -148,7 +118,7 @@
                 "made": 20260106,
                 "tags": ["Notes", "Relativity", "Unfinished"],
                 "description": "Notes on Sean M. Carroll's \"Spacetime and Geometry.\" Work in progress.",
-                "image": "images/projects/genrel_notes.png",
+                "image": "images/projects/2026_carroll_genrel_notes.png",
                 "linkTo": "data/documents/20260106_spacetime_and_geometry_notes.pdf"
             },
             {
@@ -158,7 +128,7 @@
                 "made": 20260217,
                 "tags": ["Notes", "Classical Mech", "Unfinished"],
                 "description": "Notes on V. I. Arnold's \"Mathematical Methods of Classical Mechanics.\" Work in progress.",
-                "image": "images/projects/arnold_classical_mech_notes.png",
+                "image": "images/projects/2026_arnold_classical_mech_notes.png",
                 "linkTo": "data/documents/20260217_classical_mech_arnold.pdf"
             }
         ]
@@ -166,23 +136,13 @@
     "Classics": {
         "projects": [
             {
-                "title": "To Stop and Smell the Roses",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20240219,
-                "tags": ["Greek"],
-                "description": "Entry for the Paideia Institute 2024 High School Essay Contest.<br><br>Selected as a finalist entry, but didn't win.",
-                "image": "images/projects/greek_essay.png",
-                "linkTo": "data/documents/20240219_paideia_submission.pdf"
-            },
-            {
                 "title": "<em>Amores</em> 1.4.1-24",
                 "details": "",
                 "author": "Gene Yang",
                 "made": 20240707,
                 "tags": ["Latin"],
-                "description": "Entry for the 2024 Omnibus Sam Hood Translation Prize. First time translating without help.<br><br>Ovid's <em>Amores</em>",
-                "image": "images/projects/ovid_amores_1.4.1-24.png",
+                "description": "Entry for the 2024 Omnibus Sam Hood Translation Prize. First time translating without help.<br><br>Slightly saucy, as Ovid does.</em>",
+                "image": "images/projects/2024_ovid_amores_1.4.1-24.png",
                 "linkTo": "data/documents/20240707_ovid_amores_1.4.1-24.pdf"
             },
             {
@@ -192,7 +152,7 @@
                 "made": 20241015,
                 "tags": ["Latin"],
                 "description": "Literal translation attempt. Ovid's version of the story of Daedalus and Icarus.",
-                "image": "images/projects/ovid_metamorphoses_viii.183-235.png",
+                "image": "images/projects/2024_ovid_metamorphoses_viii.183-235.png",
                 "linkTo": "data/documents/20241015_ovid_metamorphoses_viii.183-235.pdf"
             },
             {
@@ -202,7 +162,7 @@
                 "made": 20241128,
                 "tags": ["Latin"],
                 "description": "Literal translation for the story of Pygmalion and Galatea.<br><br>Mostly chosen because the themes felt similar to the Icarus story. Maybe I should've gone with a less risqué option.",
-                "image": "images/projects/ovid_metamorphoses_x.243-297.png",
+                "image": "images/projects/2024_ovid_metamorphoses_x.243-297.png",
                 "linkTo": "data/documents/20241128_ovid_metamorphoses_x.243-297.pdf"
             },
             {
@@ -212,18 +172,8 @@
                 "made": 20241121,
                 "tags": ["Greek"],
                 "description": "My handwritten notes on Prof. Groton's <em>From Alpha to Omega: A Beginning Course in Classical Greek</em>.<br><br>Greek is hard.",
-                "image": "images/projects/alpha_to_omega_notes.png",
+                "image": "images/projects/2024_alpha_to_omega_notes.png",
                 "linkTo": "https://github.com/gyang0/Grek"
-            },
-            {
-                "title": "An Odyssey Through Time",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20250225,
-                "tags": ["Greek"],
-                "description": "Entry for the Paideia Institute 2025 High School Essay Contest.<br><br>Wasn't shortlisted this time, but I view this as an improvement over last year's submission.",
-                "image": "images/projects/2025_paideia_submission.png",
-                "linkTo": "data/documents/20250225_paideia_submission.pdf"
             },
             {
                 "title": "<em>Metamorphoses</em> VIII.616-724",
@@ -232,7 +182,7 @@
                 "made": 20250226,
                 "tags": ["Latin"],
                 "description": "Literal translation for the story of Baucis and Philemon.<br><br>Only up to line 696 because I'm busy with school.",
-                "image": "images/projects/ovid_metamorphoses_viii.616-724.png",
+                "image": "images/projects/2025_ovid_metamorphoses_viii.616-724.png",
                 "linkTo": "data/documents/20250227_ovid_metamorphoses_viii.616-724.pdf"
             }
         ]
@@ -240,114 +190,14 @@
     "Coding": {
         "projects": [
             {
-                "title": "Grades Overview",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20220621,
-                "tags": ["C++"],
-                "description": "Project to practice menu-driven design in C++.",
-                "image": "images/projects/grades_overview.png",
-                "linkTo": "https://github.com/gyang0/Grades_Overview"
-            },
-            {
-                "title": "The Evil Twin Strategy",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20210625,
-                "tags": ["Processing.js"],
-                "description": "Entry for Khan Academy's Contest: Illustrate a Math Concept.<br><br>A problem from University of Northern Colorado's math contest archive.",
-                "image": "https://www.khanacademy.org/computer-programming/the-evil-twin-strategy/4839632158015488/latest.png",
-                "linkTo": "https://www.khanacademy.org/computer-programming/the-evil-twin-strategy/4839632158015488"
-            },
-            {
-                "title": "The Little Things",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20210827,
-                "tags": ["Processing.js"],
-                "description": "Entry for Khan Academy's Contest: The Great Outdoors.<br><br>Inspired by my family's yearly trip to the Rockies.",
-                "image": "https://www.khanacademy.org/computer-programming/the-little-things/6734816294682624/latest.png",
-                "linkTo": "https://www.khanacademy.org/computer-programming/the-little-things/6734816294682624"
-            },
-            {
-                "title": "Skyview Inn",
-                "details": "won-2",
-                "author": "Gene Yang",
-                "made": 20211226,
-                "tags": ["Processing.js"],
-                "description": "Entry for Khan Academy's Contest: Mysteries.<br><br>First time I won 1st in Advanced bracket.",
-                "image": "https://www.khanacademy.org/computer-programming/skyview-inn/6523416028954624/latest.png",
-                "linkTo": "https://www.khanacademy.org/computer-programming/skyview-inn/6523416028954624"
-            },
-            {
-                "title": "Sorting & Searching",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20220225,
-                "tags": ["HTML/CSS", "JS"],
-                "description": "Entry for Khan Academy's Contest: Introduce a CS Concept.<br><br>Covers several sorting algorithms and big O notation.",
-                "image": "images/projects/sorting_and_searching.png",
-                "linkTo": "https://www.khanacademy.org/computer-programming/sorting-and-searching-an-intro/5666805503803392"
-            },
-            {
-                "title": "Diagon Alley",
-                "details": "won-3",
-                "author": "Gene Yang",
-                "made": 20221028,
-                "tags": ["Processing.js"],
-                "description": "Entry for Khan Academy's Contest: Magic.<br><br>Pardon the crude pixel art.",
-                "image": "https://www.khanacademy.org/computer-programming/diagon-alley/5460353548337152/latest.png",
-                "linkTo": "https://www.khanacademy.org/computer-programming/diagon-alley/5460353548337152"
-            },
-            {
-                "title": "Linux Simulator",
-                "details": "won-1",
-                "author": "Gene Yang",
-                "made": 20221230,
-                "tags": ["Processing.js"],
-                "description": "Entry for Khan Academy's Contest: Inventions.<br><br>Won 1st place in the Advanced bracket; contains highly inaccurate information.",
-                "image": "https://www.khanacademy.org/computer-programming/linux-simulator/6467088633348096/latest.png",
-                "linkTo": "https://www.khanacademy.org/computer-programming/linux-simulator/6467088633348096"
-            },
-            {
                 "title": "Hackberry: Chess Engine",
                 "details": "",
                 "author": "Gene Yang",
                 "made": 20220510,
                 "tags": ["Java"],
-                "description": "A working chess engine in Java. Pretty slow, but it can avoid checkmate and capture sensibly.",
-                "image": "images/projects/hackberry.png",
+                "description": "A working chess engine in Java I made after my AP Computer Science A course.<br><br>Pretty slow, but it can avoid checkmate and capture sensibly.",
+                "image": "images/projects/2023_hackberry.png",
                 "linkTo": "https://github.com/gyang0/Hackberry"
-            },
-            {
-                "title": "Procrastination Buster",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20230607,
-                "tags": ["C++"],
-                "description": "The idea was that whenever I wanted to doom scroll, I'd have to learn a new algorithm/concept first.<br><br>Results were meh.",
-                "image": "images/projects/procrastination_buster.png",
-                "linkTo": "https://github.com/gyang0/ProcrastinationBuster"
-            },
-            {
-                "title": "Statistics Library",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20230530,
-                "tags": ["JS", "Unfinished"],
-                "description": "JS library to make drawing graphs/charts and carrying out statistical analysis easier in HTML environments.",
-                "image": "images/projects/statistics_library.png",
-                "linkTo": "https://github.com/gyang0/Statistics-Library"
-            },
-            {
-                "title": "Perspective in Art",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20230625,
-                "tags": ["HTML/CSS", "JS"],
-                "description": "Entry for Khan Academy's Contest: New Perspectives.<br><br>Examples of perspective ranging from \"The Odyssey\" to \"Joker\" (2019 film).",
-                "image": "images/projects/perspective_in_art.png",
-                "linkTo": "https://www.khanacademy.org/computer-programming/perspective-in-art/6031994034372608"
             },
             {
                 "title": "Learning WebGL",
@@ -356,18 +206,8 @@
                 "made": 20230701,
                 "tags": ["HTML/CSS", "JS", "GLSL"],
                 "description": "Collection of small programs made to get familiar with WebGL.<br><br>This magnificient hellscape you see here was my result.",
-                "image": "images/projects/learning_webgl.png",
+                "image": "images/projects/2023_learning_webgl.png",
                 "linkTo": "https://github.com/gyang0/learning-webgl"
-            },
-            {
-                "title": "2023 Hackathon Entry",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20230903,
-                "tags": ["HTML/CSS", "JS"],
-                "description": "Entry for a 3-day hackathon at my school. The theme was \"Climate change.\"<br><br>This program uses some algorithms to crudely predict flood paths.",
-                "image": "images/projects/gcc_2023.png",
-                "linkTo": "https://github.com/gyang0/GCC2023"
             },
             {
                 "title": "Lost [Game]",
@@ -375,19 +215,9 @@
                 "author": "Gene Yang",
                 "made": 20231003,
                 "tags": ["HTML/CSS", "JS", "Unfinished"],
-                "description": "Game for an idea that's been in my head for a long time. Still a work in progress.",
-                "image": "images/projects/lost_game.png",
+                "description": "Started out as a JS platformer.<br><br> I've since stopped working on it, but the title screen is quite nice.",
+                "image": "images/projects/2023_lost_game.png",
                 "linkTo": "https://github.com/gyang0/lost-game"
-            },
-            {
-                "title": "My Website",
-                "details": "pinned",
-                "author": "Gene Yang",
-                "made": 20231204,
-                "tags": ["HTML/CSS", "JS", "Unfinished"],
-                "description": "Holy recursion, Batman.",
-                "image": "images/projects/my_website.png",
-                "linkTo": "https://github.com/gyang0/gyang0.github.io"
             },
             {
                 "title": "Connect-4 Tournament",
@@ -396,52 +226,8 @@
                 "made": 20250722,
                 "tags": ["Java"],
                 "description": "A Connect-4 assignment and tournament I developed for the OCS20 course at OHS.<br><br>It took way longer than it should have, but an initial version is done now.",
-                "image": "images/projects/connect_4_tournament.png",
+                "image": "images/projects/2025_connect_4_tournament.png",
                 "linkTo": "https://github.com/gyang0/Connect-4-Competition/"
-            }
-        ]
-    },
-    "Misc.": {
-        "projects": [
-            {
-                "title": "The Brownie Worldview",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20241125,
-                "tags": ["LaTeX"],
-                "description": "All hail the glorious Brownie<br><br>The mighty ancient one<br><br>by the way he's not my dog",
-                "image": "images/projects/brownie_worldview.png",
-                "linkTo": "data/documents/20241125_brownie_worldview.pdf"
-            },
-            {
-                "title": "Vivaldi - \"Spring\" mvt. 1",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20241121,
-                "tags": ["LilyPond"],
-                "description": "Sheet music for Pixelstra's winter performance. Scores found on IMSLP and redone in LilyPond.<br><br>Most of this was done on a plane ride to Boston.",
-                "image": "images/projects/lilypond_scores.png",
-                "linkTo": "https://github.com/gyang0/LilyPond-Scores/tree/main/Vivaldi%204%20Seasons%20Spring%20mvt%201"
-            },
-            {
-                "title": "LaTeX Macros + Templates",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20241126,
-                "tags": ["LaTeX"],
-                "description": "Growing list",
-                "image": "images/projects/latex_macros.png",
-                "linkTo": "https://github.com/gyang0/LaTeX-Macros"
-            },
-            {
-                "title": "Class Notes with Pandoc",
-                "details": "",
-                "author": "Gene Yang",
-                "made": 20250907,
-                "tags": ["Shell", "LaTeX"],
-                "description": "Markdown -> LaTeX class notes with Pandoc, through a basic bash script.",
-                "image": "images/projects/pandoc_notes.png",
-                "linkTo": "https://github.com/gyang0/Pandoc-Notes-Template"
             }
         ]
     }
