@@ -1,5 +1,5 @@
 {
-    "Physics": {
+    "Physics / Math": {
         "projects": [
             {
                 "title": "Deriving Maxwell's Equations",
@@ -130,8 +130,20 @@
                 "description": "Notes on V. I. Arnold's \"Mathematical Methods of Classical Mechanics.\" Work in progress.",
                 "image": "images/projects/2026_arnold_classical_mech_notes.png",
                 "linkTo": "data/documents/20260217_classical_mech_arnold.pdf"
+            },
+            {
+                "title": "UM106 Complex Analysis Notes",
+                "details": "pinned",
+                "author": "Gene Yang",
+                "made": 20260218,
+                "tags": ["Notes", "Unfinished"],
+                "description": "Notes for Complex Analysis [UM106] at OHS.\" Work in progress.",
+                "image": "images/activity/DEFAULT_POST_IMG.png",
+                "linkTo": "data/documents/20260218_complex_analysis_notes.pdf"
             }
-        ]
+        ],
+        "Lecture Notes": [],
+        "Book Notes": []
     },
     "Classics": {
         "projects": [
