@@ -108,6 +108,106 @@ function addProjects(filter){
                 </div>
             </a>`;
     }
+
+    addNotes(filter);
+}
+
+/**
+ * Add lecture notes & book notes
+ * (Only used in "Physics / Math" section for the time being)
+ */
+function addNotes(filter){
+    // Store filter
+    localStorage.setItem("globalProjectFilter", filter);
+    
+    // Set filter colors
+    let allFilters = document.getElementsByClassName('project-filters-li');
+    for(let i = 0; i < allFilters.length; i++){
+        allFilters[i].style = `background-color: var(${Object.keys(allProjects)[i] == filter ? "--bluegreen2" : "--bluegreen1"})`;
+    }
+
+    let el = document.getElementById("all-projects-container");
+    
+    // Lecture notes
+    if(allProjects[filter].lectures.length != 0){
+        el.innerHTML += `
+            <hr style="width:50%; margin: 0 auto; margin-top: 75px"> 
+            <p style="margin-left: 100px; margin-right: 100px; margin-top: 25px; line-height: 1.6em; font-size: 1.3em">Below are some notes I made for my physics and math classes. I use a hybrid Markdown/LaTeX system to take notes and convert them to a PDF with Pandoc.</p>
+        `;
+        
+        // Lecture notes
+        for(let i = 0; i < allProjects[filter].lectures.length; i++){
+            let proj = allProjects[filter].lectures[i];
+
+            // Populate lecture notes
+            el.innerHTML += `
+                <p>${proj.title}</p>
+            `;
+        }
+
+    }
+
+    // ==============================================
+    // ==============================================
+
+    // Book notes
+    let book_notes = ``;
+    if(allProjects[filter].books.length != 0){
+        for(let i = 0; i < allProjects[filter].books.length; i++){
+            let proj = allProjects[filter].books[i];
+
+            let status_color, status_text, status_icon1, status_icon2;
+            if(proj.status == "incomplete-handwritten") {
+                status_color = "--reddish";
+                status_text = "In progress";
+                status_icon1 = "bi bi-stopwatch";
+                status_icon2 = "bi bi-pencil";
+            }
+            else if(proj.status == "incomplete-typed") {
+                status_color = "--reddish";
+                status_text = "In progress";
+                status_icon1 = "bi bi-stopwatch";
+                status_icon2 = "bi bi-code-slash";
+            }
+            else if(proj.status == "complete-handwritten"){
+                status_color = "--bluish";
+                status_text = "Complete (written)";
+                status_icon1 = "bi bi-check2-circle";
+                status_icon2 = "bi bi-pencil";
+            }
+            else if(proj.status == "complete-typed"){
+                status_color = "--greenish";
+                status_text = "Complete (typed)";
+                status_icon1 = "bi bi-stopwatch";
+                status_icon2 = "bi bi-code-slash";
+            }
+
+
+            // Populate book notes
+            book_notes += `
+            <a class="notes-box" style="display: flex" target="_blank" href="${proj.linkTo}">
+                <div style="width: 5%">
+                    <div style="height: 100%; width: 100%; margin-top: -10px; margin-left: -10px; margin-right: 10px; padding-right: 20px; padding-bottom: 20px; clip-path: polygon(0% 0%, 35px 0%, 0% 35px);background-color:var(${status_color})"></div>
+                    
+                </div>
+                <div style="width: 85%">
+                    <h1 style="font-size: 20px; color: var(--txt-color)">${proj.title}</h1>
+                    <p style="line-height: 20px; font-size: 0.9em; color: var(--txt-color)">${proj.author}</p>
+                </div>
+
+                <div style="width: 10%">
+                    <p style="font-size: 20px"><i style="color:var(${status_color})" class="${status_icon2}">&nbsp;&nbsp;</i><i style="color:var(${status_color})" class="${status_icon1}"></i></p>
+                </div>
+            </a>`;
+        }
+    }
+
+    el.innerHTML += `
+        <hr style="width:50%; margin: 0 auto; margin-top: 75px"> 
+        <p style="margin: 0 auto; margin-left: 100px; margin-right: 100px; margin-top: 25px; line-height: 1.6em; font-size: 1.3em">Starting 2024, I did some independent reading to supplement my school courses. I made the notes listed below for easy review. The topics should cover a solid baseline in theoretical physics &mdash; from rigorous classical mechanics to general relativity.</p>
+        
+        <div class="notes-container">${book_notes}</div>
+    `;
 }
 
 /**

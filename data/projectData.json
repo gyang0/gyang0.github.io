@@ -32,76 +32,6 @@
                 "linkTo": "data/documents/20241209_matrix_chain_mult_presentation.pdf"
             },
             {
-                "title": "UP055 Thermo Notes",
-                "details": "pinned",
-                "author": "Gene Yang",
-                "made": 20241102,
-                "tags": ["Notes", "Thermodynamics"],
-                "description": "Notes for the Thermo portion of Light & Heat [UP055] at OHS.<br><br>Covers the basics of entropy and heat engines.",
-                "image": "images/projects/2024_LH_thermo.png",
-                "linkTo": "data/documents/20241102_LH_thermo_notes.pdf"
-            },
-            {
-                "title": "UP055 Optics Notes",
-                "details": "pinned",
-                "author": "Gene Yang",
-                "made": 20250102,
-                "tags": ["Notes", "Optics"],
-                "description": "Notes for the Optics portion of Light & Heat [UP055] at OHS.<br><br>Covers Maxwell's equations to basic interference & diffraction.",
-                "image": "images/projects/2025_LH_optics.png",
-                "linkTo": "data/documents/20250102_LH_optics_notes.pdf"
-            },
-            {
-                "title": "UP070 Relativity Notes",
-                "details": "pinned",
-                "author": "Gene Yang",
-                "made": 20250304,
-                "tags": ["Notes", "Relativity"],
-                "description": "Notes for the Relativity portion of Modern Physics [UP070] at OHS.<br><br>Covers basic kinematical effects of special relativty to relativistic dynamics.",
-                "image": "images/projects/2025_MP_relativity.png",
-                "linkTo": "data/documents/20250304_MP_relativity_notes.pdf"
-            },
-            {
-                "title": "UP070 Quantum Mech Notes",
-                "details": "pinned",
-                "author": "Gene Yang",
-                "made": 20250512,
-                "tags": ["Notes", "Quantum Mech"],
-                "description": "Notes for the Quantum Mechanics portion of Modern Physics [UP070] at OHS.<br><br>Covers the core mathematical formalism to a bit of the Schrodinger Equation.",
-                "image": "images/projects/2025_MP_quantum.png",
-                "linkTo": "data/documents/20250512_MP_quantum_notes.pdf"
-            },
-            {
-                "title": "Particle Physics Notes",
-                "details": "pinned",
-                "author": "Gene Yang",
-                "made": 20250622,
-                "tags": ["Notes", "Particles", "Quantum Mech"],
-                "description": "Notes on David J. Griffiths' \"Introduction to Elementary Particles,\" read over summer.<br><br>Had a hard time keeping up. At least I learned some new words, if nothing else.",
-                "image": "images/projects/2025_griffiths_particles_notes.png",
-                "linkTo": "data/documents/20250622_elementary_particles_notes.pdf"
-            },
-            {
-                "title": "Quantum Computation Notes",
-                "details": "pinned",
-                "author": "Gene Yang",
-                "made": 20250725,
-                "tags": ["Notes", "Quantum Mech"],
-                "description": "Notes on Nielsen & Chuang's \"Quantum Computation and Quantum Information,\" read over summer.<br><br>Largely a skim.",
-                "image": "images/projects/2025_nielsen_chuang_qc_qi.png",
-                "linkTo": "data/documents/20250725_quantum_computation_notes.pdf"
-            },
-            {
-                "title": "UP135 Quantum Comp. Notes",
-                "details": "pinned",
-                "author": "Gene Yang",
-                "made": 20251009,
-                "tags": ["Notes", "Quantum Mech"],
-                "description": "Notes for the Introduction to Quantum Computing [UP135] at OHS.<br><br>I've moved to LaTeX-based notes, which are easier to make and edit.",
-                "image": "images/projects/2025_up135_notes.png",
-                "linkTo": "data/documents/20251009_up135_notes.pdf"
-            },
-            {
                 "title": "Quantum OPD Calculations",
                 "details": "pinned",
                 "author": "Gene Yang",
@@ -110,40 +40,88 @@
                 "description": "Extension of Eisert's 1999 quantum Prisoner's Dilemma to the 3x3 Optional Prisoner's Dilemma.<br><br>Semester 1 project for UP135.",
                 "image": "images/projects/2025_quantum_games.png",
                 "linkTo": "data/documents/20251229_quantum_games_paper.pdf"
+            }
+        ],
+
+        "lectures": [
+            {
+                "title": "[UP055] Light & Heat: Thermodynamics unit",
+                "made": 20241102,
+                "tags": ["Notes", "Thermodynamics"],
+                "image": "images/projects/2024_LH_thermo.png",
+                "linkTo": "data/documents/20241102_LH_thermo_notes.pdf"
             },
             {
-                "title": "General Relativity Notes",
-                "details": "pinned",
-                "author": "Gene Yang",
-                "made": 20260106,
-                "tags": ["Notes", "Relativity", "Unfinished"],
-                "description": "Notes on Sean M. Carroll's \"Spacetime and Geometry.\" Work in progress.",
-                "image": "images/projects/2026_carroll_genrel_notes.png",
-                "linkTo": "data/documents/20260106_spacetime_and_geometry_notes.pdf"
+                "title": "[UP055] Light & Heat: Optics unit",
+                "made": 20250102,
+                "tags": ["Notes", "Optics"],
+                "image": "images/projects/2025_LH_optics.png",
+                "linkTo": "data/documents/20250102_LH_optics_notes.pdf"
             },
             {
-                "title": "Classical Mechanics Notes",
-                "details": "pinned",
-                "author": "Gene Yang",
-                "made": 20260217,
-                "tags": ["Notes", "Classical Mech", "Unfinished"],
-                "description": "Notes on V. I. Arnold's \"Mathematical Methods of Classical Mechanics.\" Work in progress.",
-                "image": "images/projects/2026_arnold_classical_mech_notes.png",
-                "linkTo": "data/documents/20260217_classical_mech_arnold.pdf"
+                "title": "[UP070] Modern Physics: Special Relativity unit",
+                "made": 20250304,
+                "tags": ["Notes", "Relativity"],
+                "image": "images/projects/2025_MP_relativity.png",
+                "linkTo": "data/documents/20250304_MP_relativity_notes.pdf"
             },
             {
-                "title": "UM106 Complex Analysis Notes",
-                "details": "pinned",
-                "author": "Gene Yang",
+                "title": "[UP070] Modern Physics: Quantum Mechanics unit",
+                "made": 20250512,
+                "tags": ["Notes", "Quantum Mech"],
+                "image": "images/projects/2025_MP_quantum.png",
+                "linkTo": "data/documents/20250512_MP_quantum_notes.pdf"
+            },
+            {
+                "title": "[UP135] Introduction to Quantum Computing",
+                "made": 20251009,
+                "tags": ["Notes", "Quantum Mech"],
+                "image": "images/projects/2025_up135_notes.png",
+                "linkTo": "data/documents/20251009_up135_notes.pdf"
+            },
+            {
+                "title": "[UM106] Complex Analysis",
                 "made": 20260218,
                 "tags": ["Notes", "Unfinished"],
-                "description": "Notes for Complex Analysis [UM106] at OHS.\" Work in progress.",
                 "image": "images/activity/DEFAULT_POST_IMG.png",
                 "linkTo": "data/documents/20260218_complex_analysis_notes.pdf"
             }
         ],
-        "Lecture Notes": [],
-        "Book Notes": []
+
+        "books": [
+            {
+                "title": "Spacetime and Geometry",
+                "author": "Sean M. Carroll",
+                "made": 20260106,
+                "status": "incomplete-typed",
+                "image": "images/projects/2026_carroll_genrel_notes.png",
+                "linkTo": "data/documents/20260106_spacetime_and_geometry_notes.pdf"
+            },
+            {
+                "title": "Mathematical Methods of Classical Mechanics",
+                "author": "Vladimir I. Arnold ",
+                "made": 20260217,
+                "status": "incomplete-typed",
+                "image": "images/projects/2026_arnold_classical_mech_notes.png",
+                "linkTo": "data/documents/20260217_classical_mech_arnold.pdf"
+            },
+            {
+                "title": "Introduction to Elementary Particles",
+                "author": "David J. Griffiths",
+                "made": 20250622,
+                "status": "complete-handwritten",
+                "image": "images/projects/2025_griffiths_particles_notes.png",
+                "linkTo": "data/documents/20250622_elementary_particles_notes.pdf"
+            },
+            {
+                "title": "Quantum Computation and Quantum Information",
+                "author": "Michael Nielsen, Isaac Chuang",
+                "made": 20250725,
+                "status": "complete-handwritten",
+                "image": "images/projects/2025_nielsen_chuang_qc_qi.png",
+                "linkTo": "data/documents/20250725_quantum_computation_notes.pdf"
+            }
+        ]
     },
     "Classics": {
         "projects": [
