@@ -125,7 +125,7 @@ function addProjects(filter){
     // Books
     el.innerHTML += `
         <hr style="width:50%; margin: 0 auto; margin-top: 75px"> 
-        <p style="margin: 0 auto; margin-left: 100px; margin-right: 100px; margin-top: 25px; line-height: 1.6em; font-size: 1.3em">Starting 2024, I did some independent reading to supplement my school courses. I made the notes listed below for easy review. The topics should cover a solid baseline in theoretical physics &mdash; from rigorous classical mechanics to general relativity.</p>
+        <p style="margin: 0 auto; margin-left: 100px; margin-right: 100px; margin-top: 25px; line-height: 1.6em; font-size: 1.3em">Starting 2025, I did some independent reading to supplement my school courses. I made the notes listed below for easy review. The topics should cover a solid baseline in theoretical physics &mdash; from Lagrangian mechanics to general relativity.</p>
         
         <div class="notes-container">${addNotesCode(filter, "books")}</div>
     `;
