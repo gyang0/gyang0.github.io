@@ -104,7 +104,7 @@ function addProjects(filter){
                     
                     <div class="project-tags-container">${tagsCode}</div>
 
-                    <p style="color:var(--txt-color)">Created ${Math.floor(proj.made/10000)}</p>
+                    <p style="color:var(--txt-color); margin-top: -3px">Created ${Math.floor(proj.made/10000)}</p>
                 </div>
             </a>`;
     }

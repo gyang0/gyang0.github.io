@@ -16,7 +16,7 @@
                 "details": "",
                 "author": "Gene Yang",
                 "made": 20240605,
-                "tags": ["Multivariable Calc"],
+                "tags": ["Multivariable Calc", "Linear Algebra"],
                 "description": "Proofs for LU, QR, Spectral, and Polar decomposition.<br><br>Semester 2 final project",
                 "image": "images/projects/2024_matrix_decomposition.png",
                 "linkTo": "data/documents/20240605_matrix_decomposition.pdf"
