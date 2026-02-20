@@ -10,13 +10,14 @@
 	--bluegreen1: rgb(122, 194, 203);
 	--bluegreen2: rgb(80, 131, 138);
 
-	--card-background: white;
+	--card-background: rgb(236, 236, 236);
 	
 	--grayish: rgb(224, 224, 224);
 	--dark-grayish: rgb(100, 100, 100);
 	--greenish: rgb(34, 93, 45);
 	--reddish: rgb(172, 45, 45);
 	--bluish: rgb(28, 28, 175);
+	--yellowish: rgb(211, 207, 87);
 }
 
 .darkmode {
@@ -33,6 +34,8 @@
 	--greenish: rgb(94, 169, 121);
 	--reddish: rgb(189, 101, 101);
 	--bluish: rgb(111, 115, 225);
+
+	--yellowish: rgb(168, 165, 73);
 }
 
 .katex { font-size: 1.1em; }

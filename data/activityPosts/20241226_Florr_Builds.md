@@ -90,12 +90,6 @@ When you take a lot of damage and don't want to use SC, you'll need to use a spo
 
 The secondary here is a fast bubbling build. Use in low rarity areas or for traveling to Supers. Swap in a compass to see where the Super mobs is.
 
-Here's a video to show how Builds 4 & 5 work together. I simulate damage by ramming the target dummy a few times.
-<video width="700px" style="display: block; margin: 0 auto;" controls muted>
-  <source src="/videos/activity/20241226_florr.mp4" type="video/mp4">
-</video>
-<br>
-
 ## 6. Stealth Bubbling
 <figure>
     <img style="width:600px" src="/images/activity/20241226_florr_builds_6.png">

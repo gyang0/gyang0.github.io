@@ -36,7 +36,7 @@
                 "details": "pinned",
                 "author": "Gene Yang",
                 "made": 20251229,
-                "tags": ["Notes", "Quantum Mech"],
+                "tags": ["Quantum Mech"],
                 "description": "Extension of Eisert's 1999 quantum Prisoner's Dilemma to the 3x3 Optional Prisoner's Dilemma.<br><br>Semester 1 project for UP135.",
                 "image": "images/projects/2025_quantum_games.png",
                 "linkTo": "data/documents/20251229_quantum_games_paper.pdf"
@@ -45,80 +45,76 @@
 
         "lectures": [
             {
-                "title": "[UP055] Light & Heat: Thermodynamics unit",
-                "made": 20241102,
-                "tags": ["Notes", "Thermodynamics"],
-                "image": "images/projects/2024_LH_thermo.png",
-                "linkTo": "data/documents/20241102_LH_thermo_notes.pdf"
-            },
-            {
-                "title": "[UP055] Light & Heat: Optics unit",
-                "made": 20250102,
-                "tags": ["Notes", "Optics"],
-                "image": "images/projects/2025_LH_optics.png",
-                "linkTo": "data/documents/20250102_LH_optics_notes.pdf"
-            },
-            {
-                "title": "[UP070] Modern Physics: Special Relativity unit",
-                "made": 20250304,
-                "tags": ["Notes", "Relativity"],
-                "image": "images/projects/2025_MP_relativity.png",
-                "linkTo": "data/documents/20250304_MP_relativity_notes.pdf"
-            },
-            {
-                "title": "[UP070] Modern Physics: Quantum Mechanics unit",
-                "made": 20250512,
-                "tags": ["Notes", "Quantum Mech"],
-                "image": "images/projects/2025_MP_quantum.png",
-                "linkTo": "data/documents/20250512_MP_quantum_notes.pdf"
-            },
-            {
                 "title": "[UP135] Introduction to Quantum Computing",
-                "made": 20251009,
-                "tags": ["Notes", "Quantum Mech"],
-                "image": "images/projects/2025_up135_notes.png",
+                "subtitle": "Dr. Gary Oas",
+                "date": "2025 &ndash; 2026",
+                "status": "incomplete-typed",
                 "linkTo": "data/documents/20251009_up135_notes.pdf"
             },
             {
                 "title": "[UM106] Complex Analysis",
-                "made": 20260218,
-                "tags": ["Notes", "Unfinished"],
-                "image": "images/activity/DEFAULT_POST_IMG.png",
+                "subtitle": "Dr. Tina Lal",
+                "date": "2026",
+                "status": "incomplete-typed",
                 "linkTo": "data/documents/20260218_complex_analysis_notes.pdf"
+            },
+            {
+                "title": "[UP070] Modern Physics: Special Relativity unit",
+                "subtitle": "Dr. Kaveh Niazi",
+                "date": "2025",
+                "status": "complete-handwritten",
+                "linkTo": "data/documents/20250304_MP_relativity_notes.pdf"
+            },
+            {
+                "title": "[UP070] Modern Physics: Quantum Mechanics unit",
+                "subtitle": "Dr. Kaveh Niazi",
+                "date": "2025",
+                "status": "complete-handwritten",
+                "linkTo": "data/documents/20250512_MP_quantum_notes.pdf"
+            },
+            {
+                "title": "[UP055] Light & Heat: Thermodynamics unit",
+                "subtitle": "Dr. Kaveh Niazi",
+                "date": "2024",
+                "status": "complete-handwritten",
+                "linkTo": "data/documents/20241102_LH_thermo_notes.pdf"
+            },
+            {
+                "title": "[UP055] Light & Heat: Optics unit",
+                "subtitle": "Dr. Kaveh Niazi",
+                "date": "2024",
+                "status": "complete-handwritten",
+                "linkTo": "data/documents/20250102_LH_optics_notes.pdf"
             }
         ],
 
         "books": [
             {
                 "title": "Spacetime and Geometry",
-                "author": "Sean M. Carroll",
-                "made": 20260106,
+                "subtitle": "Sean M. Carroll",
+                "date": "2026",
                 "status": "incomplete-typed",
-                "image": "images/projects/2026_carroll_genrel_notes.png",
                 "linkTo": "data/documents/20260106_spacetime_and_geometry_notes.pdf"
             },
             {
                 "title": "Mathematical Methods of Classical Mechanics",
-                "author": "Vladimir I. Arnold ",
-                "made": 20260217,
+                "subtitle": "Vladimir I. Arnold ",
+                "date": "2026",
                 "status": "incomplete-typed",
-                "image": "images/projects/2026_arnold_classical_mech_notes.png",
                 "linkTo": "data/documents/20260217_classical_mech_arnold.pdf"
             },
             {
                 "title": "Introduction to Elementary Particles",
-                "author": "David J. Griffiths",
-                "made": 20250622,
+                "subtitle": "David J. Griffiths",
+                "date": "2025",
                 "status": "complete-handwritten",
-                "image": "images/projects/2025_griffiths_particles_notes.png",
                 "linkTo": "data/documents/20250622_elementary_particles_notes.pdf"
             },
             {
                 "title": "Quantum Computation and Quantum Information",
-                "author": "Michael Nielsen, Isaac Chuang",
-                "made": 20250725,
+                "subtitle": "Michael Nielsen, Isaac Chuang",
+                "date": "2025",
                 "status": "complete-handwritten",
-                "image": "images/projects/2025_nielsen_chuang_qc_qi.png",
                 "linkTo": "data/documents/20250725_quantum_computation_notes.pdf"
             }
         ]
@@ -160,7 +156,7 @@
                 "details": "pinned",
                 "author": "Gene Yang",
                 "made": 20241121,
-                "tags": ["Greek"],
+                "tags": ["Notes", "Greek"],
                 "description": "My handwritten notes on Prof. Groton's <em>From Alpha to Omega: A Beginning Course in Classical Greek</em>.<br><br>Greek is hard.",
                 "image": "images/projects/2024_alpha_to_omega_notes.png",
                 "linkTo": "https://github.com/gyang0/Grek"

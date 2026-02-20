@@ -11,9 +11,9 @@ const tagColors = {
     "JS": [230, 232, 97],
     "Processing.js": [11, 144, 189],
     "GLSL": [28, 93, 102],
-    "LaTeX": [61, 97, 23],
-    "LilyPond": [156, 204, 124],
-    "Shell": [158, 250, 125],
+    //"LaTeX": [61, 97, 23],
+    //"LilyPond": [156, 204, 124],
+    //"Shell": [158, 250, 125],
 
     // Arbitrary decisions for languages
     "Greek": [0, 0, 200],
@@ -22,15 +22,15 @@ const tagColors = {
     // School
     "Multivariable Calc": [95, 222, 245],
     "Linear Algebra": [49, 148, 75],
-    "Differential Equations": [26, 85, 173],
+    //"Differential Equations": [26, 85, 173],
 
     "Classical Mech": [189, 6, 33],
     "Thermodynamics": [235, 100, 162],
-    "Optics": [167, 200, 252],
-    "Relativity": [219, 215, 105],
+    //"Optics": [167, 200, 252],
+    //"Relativity": [219, 215, 105],
     "Quantum Mech": [43, 37, 219],
     "Electromagnetism": [29, 135, 27],
-    "Particles": [115, 40, 166],
+    //"Particles": [115, 40, 166],
 
     "Notes": [150, 100, 100],
 
@@ -109,52 +109,43 @@ function addProjects(filter){
             </a>`;
     }
 
-    addNotes(filter);
-}
+    // ====================================================
+    // ====================================================
 
-/**
- * Add lecture notes & book notes
- * (Only used in "Physics / Math" section for the time being)
- */
-function addNotes(filter){
-    // Store filter
-    localStorage.setItem("globalProjectFilter", filter);
-    
-    // Set filter colors
-    let allFilters = document.getElementsByClassName('project-filters-li');
-    for(let i = 0; i < allFilters.length; i++){
-        allFilters[i].style = `background-color: var(${Object.keys(allProjects)[i] == filter ? "--bluegreen2" : "--bluegreen1"})`;
-    }
-
-    let el = document.getElementById("all-projects-container");
-    
-    // Lecture notes
+    // Lectures
     if(allProjects[filter].lectures.length != 0){
         el.innerHTML += `
             <hr style="width:50%; margin: 0 auto; margin-top: 75px"> 
-            <p style="margin-left: 100px; margin-right: 100px; margin-top: 25px; line-height: 1.6em; font-size: 1.3em">Below are some notes I made for my physics and math classes. I use a hybrid Markdown/LaTeX system to take notes and convert them to a PDF with Pandoc.</p>
+            <p style="margin: 0 auto; margin-left: 100px; margin-right: 100px; margin-top: 25px; line-height: 1.6em; font-size: 1.3em">Below are some notes I made for my physics and math classes. I scribble notes by hand during class and use a hybrid Markdown/LaTeX system to make a PDF with Pandoc.</p>
+
+            <div class="notes-container">${addNotesCode(filter, "lectures")}</div>
         `;
-        
-        // Lecture notes
-        for(let i = 0; i < allProjects[filter].lectures.length; i++){
-            let proj = allProjects[filter].lectures[i];
-
-            // Populate lecture notes
-            el.innerHTML += `
-                <p>${proj.title}</p>
-            `;
-        }
-
     }
 
-    // ==============================================
-    // ==============================================
+    // Books
+    el.innerHTML += `
+        <hr style="width:50%; margin: 0 auto; margin-top: 75px"> 
+        <p style="margin: 0 auto; margin-left: 100px; margin-right: 100px; margin-top: 25px; line-height: 1.6em; font-size: 1.3em">Starting 2024, I did some independent reading to supplement my school courses. I made the notes listed below for easy review. The topics should cover a solid baseline in theoretical physics &mdash; from rigorous classical mechanics to general relativity.</p>
+        
+        <div class="notes-container">${addNotesCode(filter, "books")}</div>
+    `;
+}
 
+/**
+ * Add lecture notes & book note -> return HTML code string
+ * (Only used in "Physics / Math" section for the time being)
+ * 
+ * @param type - "lectures" or "books" (for now)
+ */
+function addNotesCode(filter, type){
+    let el = document.getElementById("all-projects-container");
+    
+    
     // Book notes
-    let book_notes = ``;
-    if(allProjects[filter].books.length != 0){
-        for(let i = 0; i < allProjects[filter].books.length; i++){
-            let proj = allProjects[filter].books[i];
+    let str = ``;
+    if(allProjects[filter][type].length != 0){
+        for(let i = 0; i < allProjects[filter][type].length; i++){
+            let proj = allProjects[filter][type][i];
 
             let status_color, status_text, status_icon1, status_icon2;
             if(proj.status == "incomplete-handwritten") {
@@ -170,7 +161,7 @@ function addNotes(filter){
                 status_icon2 = "bi bi-code-slash";
             }
             else if(proj.status == "complete-handwritten"){
-                status_color = "--bluish";
+                status_color = "--yellowish";
                 status_text = "Complete (written)";
                 status_icon1 = "bi bi-check2-circle";
                 status_icon2 = "bi bi-pencil";
@@ -184,7 +175,7 @@ function addNotes(filter){
 
 
             // Populate book notes
-            book_notes += `
+            str += `
             <a class="notes-box" style="display: flex" target="_blank" href="${proj.linkTo}">
                 <div style="width: 5%">
                     <div style="height: 100%; width: 100%; margin-top: -10px; margin-left: -10px; margin-right: 10px; padding-right: 20px; padding-bottom: 20px; clip-path: polygon(0% 0%, 35px 0%, 0% 35px);background-color:var(${status_color})"></div>
@@ -192,7 +183,7 @@ function addNotes(filter){
                 </div>
                 <div style="width: 85%">
                     <h1 style="font-size: 20px; color: var(--txt-color)">${proj.title}</h1>
-                    <p style="line-height: 20px; font-size: 0.9em; color: var(--txt-color)">${proj.author}</p>
+                    <p style="line-height: 20px; font-size: 0.9em; color: var(--txt-color)">${proj.subtitle} &nbsp; | &nbsp; ${proj.date}</p>
                 </div>
 
                 <div style="width: 10%">
@@ -202,12 +193,7 @@ function addNotes(filter){
         }
     }
 
-    el.innerHTML += `
-        <hr style="width:50%; margin: 0 auto; margin-top: 75px"> 
-        <p style="margin: 0 auto; margin-left: 100px; margin-right: 100px; margin-top: 25px; line-height: 1.6em; font-size: 1.3em">Starting 2024, I did some independent reading to supplement my school courses. I made the notes listed below for easy review. The topics should cover a solid baseline in theoretical physics &mdash; from rigorous classical mechanics to general relativity.</p>
-        
-        <div class="notes-container">${book_notes}</div>
-    `;
+    return str;
 }
 
 /**
