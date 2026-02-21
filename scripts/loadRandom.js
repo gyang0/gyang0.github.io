@@ -118,7 +118,7 @@ let boxes = {
         
                 <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-right: 20px">
                     <div style="width: 100%">
-                        <p style="font-size: 1vw">The first version of this website was made in 2023. It was a basic site with a main page and some links. Since then, it grew into a storage for some of my projects and half baked ideas.</p>
+                        <p style="font-size: 1vw">The first version of this website was made in 2023. It was a basic site with a main page and some links. Since then, it grew into a storage for some of my projects and half-baked ideas.</p>
                     </div>    
                     <div style="width: 100%; text-align: center; margin-top: 5px">
                         <p style="font-size: 1vw">Made with <i class="bi bi-balloon-heart"></i></p>
