@@ -246,6 +246,15 @@
                 "mainImg": "/images/activity/20260122_diffraction_spike_4.png",
                 "summary": "Yet another diffraction post.",
                 "contentLink": "20260122_Diffraction_Spike_Extended.md"
+            },
+            {
+                "title": "My LaTeX Notetaking Process",
+                "pageID": 27,
+                "published": 20260309,
+                "updated": 20260309,
+                "mainImg": "/images/activity/2026/20260309_notetaking_1.png",
+                "summary": "Overview of my setup + things I found helpful",
+                "contentLink": "20260309_Notetaking_Process.md"
             }
         ]
     }

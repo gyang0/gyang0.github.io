@@ -33,7 +33,7 @@
             },
             {
                 "title": "Quantum OPD Calculations",
-                "details": "pinned",
+                "details": "",
                 "author": "Gene Yang",
                 "made": 20251229,
                 "tags": ["Quantum Mech"],
@@ -42,80 +42,88 @@
                 "linkTo": "data/documents/20251229_quantum_games_paper.pdf"
             }
         ],
-
-        "lectures": [
+        "other": [
             {
-                "title": "[UP135] Introduction to Quantum Computing",
-                "subtitle": "Dr. Gary Oas",
-                "date": "2025 &ndash; 2026",
-                "status": "incomplete-typed",
-                "linkTo": "data/documents/20251009_up135_notes.pdf"
+                "name": "lectures",
+                "desc": "Below are some notes I made for my physics and math classes. I scribble notes by hand during class and use a hybrid Markdown/LaTeX system to make a PDF with Pandoc.",
+                "contents": [
+                    {
+                        "title": "[UP135] Introduction to Quantum Computing",
+                        "subtitle": "Dr. Gary Oas",
+                        "date": "2025 &ndash; 2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20251009_up135_notes.pdf"
+                    },
+                    {
+                        "title": "[UM106] Complex Analysis",
+                        "subtitle": "Dr. Tina Lal",
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260218_complex_analysis_notes.pdf"
+                    },
+                    {
+                        "title": "[UP070] Modern Physics: Special Relativity unit",
+                        "subtitle": "Dr. Kaveh Niazi",
+                        "date": "2025",
+                        "status": "complete-handwritten",
+                        "linkTo": "data/documents/20250304_MP_relativity_notes.pdf"
+                    },
+                    {
+                        "title": "[UP070] Modern Physics: Quantum Mechanics unit",
+                        "subtitle": "Dr. Kaveh Niazi",
+                        "date": "2025",
+                        "status": "complete-handwritten",
+                        "linkTo": "data/documents/20250512_MP_quantum_notes.pdf"
+                    },
+                    {
+                        "title": "[UP055] Light & Heat: Thermodynamics unit",
+                        "subtitle": "Dr. Kaveh Niazi",
+                        "date": "2024",
+                        "status": "complete-handwritten",
+                        "linkTo": "data/documents/20241102_LH_thermo_notes.pdf"
+                    },
+                    {
+                        "title": "[UP055] Light & Heat: Optics unit",
+                        "subtitle": "Dr. Kaveh Niazi",
+                        "date": "2024",
+                        "status": "complete-handwritten",
+                        "linkTo": "data/documents/20250102_LH_optics_notes.pdf"
+                    }
+                ]
             },
             {
-                "title": "[UM106] Complex Analysis",
-                "subtitle": "Dr. Tina Lal",
-                "date": "2026",
-                "status": "incomplete-typed",
-                "linkTo": "data/documents/20260218_complex_analysis_notes.pdf"
-            },
-            {
-                "title": "[UP070] Modern Physics: Special Relativity unit",
-                "subtitle": "Dr. Kaveh Niazi",
-                "date": "2025",
-                "status": "complete-handwritten",
-                "linkTo": "data/documents/20250304_MP_relativity_notes.pdf"
-            },
-            {
-                "title": "[UP070] Modern Physics: Quantum Mechanics unit",
-                "subtitle": "Dr. Kaveh Niazi",
-                "date": "2025",
-                "status": "complete-handwritten",
-                "linkTo": "data/documents/20250512_MP_quantum_notes.pdf"
-            },
-            {
-                "title": "[UP055] Light & Heat: Thermodynamics unit",
-                "subtitle": "Dr. Kaveh Niazi",
-                "date": "2024",
-                "status": "complete-handwritten",
-                "linkTo": "data/documents/20241102_LH_thermo_notes.pdf"
-            },
-            {
-                "title": "[UP055] Light & Heat: Optics unit",
-                "subtitle": "Dr. Kaveh Niazi",
-                "date": "2024",
-                "status": "complete-handwritten",
-                "linkTo": "data/documents/20250102_LH_optics_notes.pdf"
-            }
-        ],
-
-        "books": [
-            {
-                "title": "Spacetime and Geometry",
-                "subtitle": "Sean M. Carroll",
-                "date": "2026",
-                "status": "incomplete-typed",
-                "linkTo": "data/documents/20260106_spacetime_and_geometry_notes.pdf"
-            },
-            {
-                "title": "Mathematical Methods of Classical Mechanics",
-                "subtitle": "Vladimir I. Arnold ",
-                "date": "2026",
-                "status": "incomplete-typed",
-                "linkTo": "data/documents/20260217_classical_mech_arnold.pdf"
-            },
-            {
-                "title": "Introduction to Elementary Particles",
-                "subtitle": "David J. Griffiths",
-                "date": "2025",
-                "status": "complete-handwritten",
-                "linkTo": "data/documents/20250622_elementary_particles_notes.pdf"
-            },
-            {
-                "title": "Quantum Computation and Quantum Information",
-                "subtitle": "Michael Nielsen, Isaac Chuang",
-                "date": "2025",
-                "status": "complete-handwritten",
-                "linkTo": "data/documents/20250725_quantum_computation_notes.pdf"
+                "name": "books",
+                "desc": "Starting 2025, I did some independent reading to supplement my school courses. I made the notes listed below for easy review. The topics should cover a solid baseline in theoretical physics, from Lagrangian mechanics to general relativity.",
+                "contents": [
+                    {
+                        "title": "Spacetime and Geometry",
+                        "subtitle": "Sean M. Carroll",
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260106_spacetime_and_geometry_notes.pdf"
+                    },
+                    {
+                        "title": "Mathematical Methods of Classical Mechanics",
+                        "subtitle": "Vladimir I. Arnold ",
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260217_classical_mech_arnold.pdf"
+                    },
+                    {
+                        "title": "Introduction to Elementary Particles",
+                        "subtitle": "David J. Griffiths",
+                        "date": "2025",
+                        "status": "complete-handwritten",
+                        "linkTo": "data/documents/20250622_elementary_particles_notes.pdf"
+                    },
+                    {
+                        "title": "Quantum Computation and Quantum Information",
+                        "subtitle": "Michael Nielsen, Isaac Chuang",
+                        "date": "2025",
+                        "status": "complete-handwritten",
+                        "linkTo": "data/documents/20250725_quantum_computation_notes.pdf"
+                    }
+                ]
             }
         ]
     },
@@ -170,6 +178,28 @@
                 "description": "Literal translation for the story of Baucis and Philemon.<br><br>Only up to line 696 because I'm busy with school.",
                 "image": "images/projects/2025_ovid_metamorphoses_viii.616-724.png",
                 "linkTo": "data/documents/20250227_ovid_metamorphoses_viii.616-724.pdf"
+            }
+        ],
+        "other": [
+            {
+                "name": "translations",
+                "desc": "These are my attempts at translating passages in books. <em>Alpha to Omega</em> is the textbook I've been using to learn Ancient Greek for the past few years. <em>Greek Through Reading</em> was a gift from my school's Latin teacher, who actually got me into Greek originally. Since the book is quite old, I'm trying to digitize the passages within it.",
+                "contents": [
+                    {
+                        "title": "<em>Alpha to Omega</em> Translations",
+                        "subtitle": "Anne H. Groton",
+                        "date": "2025 &ndash; 2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20250725_ao_translations.pdf"
+                    },
+                    {
+                        "title": "<em>Greek Through Reading</em> Translations",
+                        "subtitle": "J. A. Nairn & G. A. Nairn",
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260309_gtr_translations.pdf"
+                    }
+                ]
             }
         ]
     },

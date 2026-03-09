@@ -112,40 +112,30 @@ function addProjects(filter){
     // ====================================================
     // ====================================================
 
-    // Lectures
-    if(allProjects[filter].lectures.length != 0){
+    // Misc. things like lectures, books, translations
+    for(let i = 0; i < allProjects[filter].other.length; i++){
         el.innerHTML += `
+            <div style="width: 100%"></div>
             <hr style="width:50%; margin: 0 auto; margin-top: 75px"> 
-            <p style="margin: 0 auto; margin-left: 100px; margin-right: 100px; margin-top: 25px; line-height: 1.6em; font-size: 1.3em">Below are some notes I made for my physics and math classes. I scribble notes by hand during class and use a hybrid Markdown/LaTeX system to make a PDF with Pandoc.</p>
+            <p style="width: 100%; margin: 0 auto; margin-left: 100px; margin-right: 100px; margin-top: 25px; line-height: 1.6em; font-size: 1.3em">${allProjects[filter].other[i].desc}</p>
 
-            <div class="notes-container">${addNotesCode(filter, "lectures")}</div>
+            <div class="notes-container">${addNotesCode(filter, i)}</div>
         `;
     }
-
-    // Books
-    el.innerHTML += `
-        <hr style="width:50%; margin: 0 auto; margin-top: 75px"> 
-        <p style="margin: 0 auto; margin-left: 100px; margin-right: 100px; margin-top: 25px; line-height: 1.6em; font-size: 1.3em">Starting 2025, I did some independent reading to supplement my school courses. I made the notes listed below for easy review. The topics should cover a solid baseline in theoretical physics &mdash; from Lagrangian mechanics to general relativity.</p>
-        
-        <div class="notes-container">${addNotesCode(filter, "books")}</div>
-    `;
 }
 
 /**
- * Add lecture notes & book note -> return HTML code string
- * (Only used in "Physics / Math" section for the time being)
+ * Add lecture/book/translation notes -> return HTML code string
  * 
- * @param type - "lectures" or "books" (for now)
+ * @param index - index of 'other' projects to iterate through
  */
-function addNotesCode(filter, type){
-    let el = document.getElementById("all-projects-container");
-    
-    
-    // Book notes
+function addNotesCode(filter, index){
+    let projects = allProjects[filter].other[index].contents;
+
     let str = ``;
-    if(allProjects[filter][type].length != 0){
-        for(let i = 0; i < allProjects[filter][type].length; i++){
-            let proj = allProjects[filter][type][i];
+    if(projects.length != 0){
+        for(let i = 0; i < projects.length; i++){
+            let proj = projects[i];
 
             let status_color, status_text, status_icon1, status_icon2;
             if(proj.status == "incomplete-handwritten") {
