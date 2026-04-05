@@ -186,12 +186,12 @@ pre > code {
 
 .content h1 {
 	font-family: Kanit;
-	font-size: 45px;
+	font-size: 40px;
 }
 
 .content h2 {
 	font-family: Kanit;
-	font-size: 35px;
+	font-size: 33px;
 }
 
 .content h3 {
@@ -452,7 +452,7 @@ figcaption {
 
 .project-tags p {
 	text-align: center;
-	margin-top: -10px;
+	margin-top: -7px;
 	margin-left: 0px;
 	font-size: 12px;
 	font-family: Kanit;

@@ -20,8 +20,8 @@ const tagColors = {
     "Latin": [200, 0, 0],
     
     // School
-    "Multivariable Calc": [95, 222, 245],
-    "Linear Algebra": [49, 148, 75],
+    //"Multivariable Calc": [95, 222, 245],
+    //"Linear Algebra": [49, 148, 75],
     //"Differential Equations": [26, 85, 173],
 
     "Classical Mech": [189, 6, 33],
@@ -33,6 +33,7 @@ const tagColors = {
     //"Particles": [115, 40, 166],
 
     "Notes": [150, 100, 100],
+    "Presentation": [118, 34, 181],
 
     // Other
     "Unfinished": [255, 140, 0]
