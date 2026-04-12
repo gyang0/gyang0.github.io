@@ -3,7 +3,7 @@
         "projects": [
             {
                 "title": "Quantum OPD Calculations",
-                "details": "pinned",
+                "details": "",
                 "author": "Gene Yang",
                 "made": 20251229,
                 "tags": ["Quantum Mech"],
@@ -38,7 +38,7 @@
                         "title": "[UM106] Complex Analysis",
                         "subtitle": "Dr. Tina Lal",
                         "date": "2026",
-                        "status": "incomplete-typed",
+                        "status": "complete-typed",
                         "linkTo": "data/documents/20260218_complex_analysis_notes.pdf"
                     },
                     {

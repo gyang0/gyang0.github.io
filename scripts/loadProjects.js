@@ -178,7 +178,7 @@ function addNotesCode(filter, index){
                 </div>
 
                 <div style="width: 10%">
-                    <p style="font-size: 20px"><i style="color:var(${status_color})" class="${status_icon2}">&nbsp;&nbsp;</i><i style="color:var(${status_color})" class="${status_icon1}"></i></p>
+                    <p style="font-size: 20px; margin-top: 7px"><i style="color:var(${status_color})" class="${status_icon2}">&nbsp;&nbsp;</i><i style="color:var(${status_color})" class="${status_icon1}"></i></p>
                 </div>
             </a>`;
         }
