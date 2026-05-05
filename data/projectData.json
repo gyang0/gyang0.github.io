@@ -76,6 +76,13 @@
                 "desc": "Starting 2025, I did some independent reading to supplement my school courses. I made the notes listed below for easy review. The topics should cover a solid baseline in theoretical physics, from Lagrangian mechanics to general relativity.",
                 "contents": [
                     {
+                        "title": "Principles of Quantum Mechanics",
+                        "subtitle": "R. Shankar",
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260504_principles_of_quantum_mechanics.pdf"
+                    },
+                    {
                         "title": "Spacetime and Geometry",
                         "subtitle": "Sean M. Carroll",
                         "date": "2026",
