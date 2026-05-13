@@ -160,7 +160,7 @@ function addNotesCode(filter, index){
             else if(proj.status == "complete-typed"){
                 status_color = "--greenish";
                 status_text = "Complete (typed)";
-                status_icon1 = "bi bi-stopwatch";
+                status_icon1 = "bi bi-check2-circle";
                 status_icon2 = "bi bi-code-slash";
             }
 
