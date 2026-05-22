@@ -77,6 +77,7 @@ function displaySinglePost(pageID){
     let index = -1;
     let filter = -1;
     let found = false;
+    document.title = `Toast γ – ${pageID}`;
 
     for(const [key, val] of Object.entries(allPosts)){
         for(let i = 0; i < val.posts.length; i++){

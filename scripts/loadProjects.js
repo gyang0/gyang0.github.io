@@ -30,6 +30,7 @@ const tagColors = {
     //"Relativity": [219, 215, 105],
     "Quantum Mech": [43, 37, 219],
     "Electromagnetism": [29, 135, 27],
+    "CS": [150, 76, 26],
     //"Particles": [115, 40, 166],
 
     "Notes": [150, 100, 100],

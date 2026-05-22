@@ -20,6 +20,16 @@
                 "description": "Presentation for [UM106] Complex Analysis.<br><br>The analytic continuation of the Riemann zeta and its application to the Casimir effect.",
                 "image": "images/projects/2026_zeta_regularization.png",
                 "linkTo": "data/documents/20260405_zeta_regularization.pdf"
+            },
+            {
+                "title": "Heuristics for Surface Codes",
+                "details": "",
+                "author": "Gene Yang",
+                "made": 20260522,
+                "tags": ["Quantum Mech", "CS"],
+                "description": "Analysis of 3 heuristics for quantum error correction on surface codes.<br><br>Semester 2 project for UP135.",
+                "image": "images/projects/2026_surface_codes.png",
+                "linkTo": "data/documents/20260522_surface_codes_heuristics.pdf"
             }
         ],
         "other": [
