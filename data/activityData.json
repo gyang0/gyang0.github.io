@@ -255,6 +255,15 @@
                 "mainImg": "/images/activity/2026/20260309_notetaking_1.png",
                 "summary": "Overview of my setup + things I found helpful",
                 "contentLink": "20260309_Notetaking_Process.md"
+            },
+            {
+                "title": "Aristotle on Friendship",
+                "pageID": 28,
+                "published": 20260529,
+                "updated": 20260529,
+                "mainImg": "/images/activity/2026/20260529_aristotle.jpg",
+                "summary": "Or: The value of imperfect friendships.",
+                "contentLink": "20260529_Aristotle_on_Friendship.md"
             }
         ]
     }
