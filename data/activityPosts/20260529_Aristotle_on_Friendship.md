@@ -58,12 +58,12 @@ Importantly, this long-term effect can happen even in the imperfect material and
 ### The Criteria
 But how do we compare imperfect friendships according to this metric? I'll admit, it's unclear &ndash; I'd hate for this to turn into another utilitarian calculation, for example. But it may be unavoidable. Loosely speaking, a friendship might be "good" if its influences are good: enriching and enjoyable. Conversely, a friendship may be "bad" if its influences are bad: those that tend to decrease our life’s value, like a drug addiction. This doesn't have to involve virtue! Good friendships only need to bring happiness into the other person's life.
 
-For an interesting analysis of Aristotle's philosophy of friendship, see Simon Keller's "“Belief for Someone Else's Sake." Keller believes that friendships need not be oriented towards virtue to be good. Instead, good friendships are like "good palliative care": they enrich life, without assuming a complete capacity for virtue.
+For an interesting analysis of Aristotle's philosophy of friendship, see Simon Keller's "Belief for Someone Else's Sake." Keller believes that friendships need not be oriented towards virtue to be good. Instead, good friendships are like "good palliative care": they enrich life, without assuming a complete capacity for virtue.
 
 ### Takeaways
 This analysis isn't perfect. One problem is that it characterizes friendships primarily based on its lasting effects, not the friendship as it exists. It also leaves a lot up to individual discretion. An especially dense person might not take away anything from a good friend, for example.
 
-But it's certainly comforting to know that Aristotle's philosophy allows for a spectrum of imperfect friendships, not just "imperfect" and "perfect." Personally, none of my friendships haven't been perfect. We fall apart, drift away, and outgrow each other. But I still remember everyone for the things they taught me &ndash; things that made me *me*. Despacito, baller signs, and OHS mao. Were these friendships imperfect? Yes. Would I choose not to have them? No.
+But it's certainly comforting to know that Aristotle's philosophy allows for a spectrum of imperfect friendships, not just "imperfect" and "perfect." Personally, none of my friendships have been perfect. We fall apart, drift away, and outgrow each other. But I still remember everyone for the things they taught me &ndash; things that made me *me*. Despacito, baller signs, and OHS mao. Were these friendships imperfect? Yes. Would I choose not to have them? No.
 
 Ironically, for someone who declares that "no one would choose to live" without a friend, Aristotle doesn't write much about his own friendships. However, the end of Book IX in *Nicomachean Ethics* presents a rare instance where Aristotle seems to draw from his own life:
 <div style="display: flex; justify-content: center">
