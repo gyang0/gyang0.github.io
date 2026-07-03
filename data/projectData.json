@@ -86,25 +86,11 @@
                 "desc": "Starting 2025, I did some independent reading to supplement my school courses. I made the notes listed below for easy review. The topics should cover a solid baseline in theoretical physics, from Lagrangian mechanics to general relativity.",
                 "contents": [
                     {
-                        "title": "Principles of Quantum Mechanics",
-                        "subtitle": "R. Shankar",
-                        "date": "2026",
-                        "status": "incomplete-typed",
-                        "linkTo": "data/documents/20260504_principles_of_quantum_mechanics.pdf"
-                    },
-                    {
                         "title": "Spacetime and Geometry",
                         "subtitle": "Sean M. Carroll",
                         "date": "2026",
                         "status": "complete-typed",
                         "linkTo": "data/documents/20260106_spacetime_and_geometry_notes.pdf"
-                    },
-                    {
-                        "title": "Mathematical Methods of Classical Mechanics",
-                        "subtitle": "Vladimir I. Arnold ",
-                        "date": "2026",
-                        "status": "complete-typed",
-                        "linkTo": "data/documents/20260217_classical_mech_arnold.pdf"
                     },
                     {
                         "title": "Introduction to Elementary Particles",
@@ -114,11 +100,42 @@
                         "linkTo": "data/documents/20250622_elementary_particles_notes.pdf"
                     },
                     {
+                        "title": "Principles of Quantum Mechanics",
+                        "subtitle": "R. Shankar",
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260504_principles_of_quantum_mechanics.pdf"
+                    },
+                    {
+                        "title": "Mathematical Methods of Classical Mechanics",
+                        "subtitle": "Vladimir I. Arnold ",
+                        "date": "2026",
+                        "status": "complete-typed",
+                        "linkTo": "data/documents/20260217_classical_mech_arnold.pdf"
+                    },
+                    {
                         "title": "Quantum Computation and Quantum Information",
                         "subtitle": "Michael Nielsen, Isaac Chuang",
                         "date": "2025",
                         "status": "complete-handwritten",
                         "linkTo": "data/documents/20250725_quantum_computation_notes.pdf"
+                    },
+                    {
+                        "title": "SKIP"
+                    },
+                    {
+                        "title": "Geometry, Topology, and Physics",
+                        "subtitle": "Mikio Nakahara",
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260703_geometry_topology_physics.pdf"
+                    },
+                    {
+                        "title": "Abstract Algebra",
+                        "subtitle": "David S. Dummit, Richard M. Foote",
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260703_abstract_algebra.pdf"
                     }
                 ]
             }

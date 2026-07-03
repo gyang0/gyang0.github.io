@@ -139,6 +139,11 @@ function addNotesCode(filter, index){
         for(let i = 0; i < projects.length; i++){
             let proj = projects[i];
 
+            if(proj.title == "SKIP"){
+                str += `<div style="width: 100%; height: 30px"></div>`;
+                continue;
+            }
+
             let status_color, status_text, status_icon1, status_icon2;
             if(proj.status == "incomplete-handwritten") {
                 status_color = "--reddish";
