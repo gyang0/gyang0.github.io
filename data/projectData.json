@@ -50,34 +50,6 @@
                         "date": "2026",
                         "status": "complete-typed",
                         "linkTo": "data/documents/20260218_complex_analysis_notes.pdf"
-                    },
-                    {
-                        "title": "[UP070] Modern Physics: Special Relativity unit",
-                        "subtitle": "Dr. Niazi",
-                        "date": "2025",
-                        "status": "complete-handwritten",
-                        "linkTo": "data/documents/20250304_MP_relativity_notes.pdf"
-                    },
-                    {
-                        "title": "[UP070] Modern Physics: Quantum Mechanics unit",
-                        "subtitle": "Dr. Niazi",
-                        "date": "2025",
-                        "status": "complete-handwritten",
-                        "linkTo": "data/documents/20250512_MP_quantum_notes.pdf"
-                    },
-                    {
-                        "title": "[UP055] Light & Heat: Thermodynamics unit",
-                        "subtitle": "Dr. Niazi",
-                        "date": "2024",
-                        "status": "complete-handwritten",
-                        "linkTo": "data/documents/20241102_LH_thermo_notes.pdf"
-                    },
-                    {
-                        "title": "[UP055] Light & Heat: Optics unit",
-                        "subtitle": "Dr. Niazi",
-                        "date": "2024",
-                        "status": "complete-handwritten",
-                        "linkTo": "data/documents/20250102_LH_optics_notes.pdf"
                     }
                 ]
             },
@@ -95,9 +67,9 @@
                     {
                         "title": "Introduction to Elementary Particles",
                         "subtitle": "David J. Griffiths",
-                        "date": "2025",
-                        "status": "complete-handwritten",
-                        "linkTo": "data/documents/20250622_elementary_particles_notes.pdf"
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260708_elementary_particles.pdf"
                     },
                     {
                         "title": "Principles of Quantum Mechanics",
