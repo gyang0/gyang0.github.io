@@ -40,7 +40,7 @@
 
 .katex { font-size: 1.1em; }
 
-.serif { font-family: Cardo; }
+.serif { font-family: Charis SIL; }
 
 body {
 	background-color: var(--bg-color);
@@ -180,7 +180,7 @@ pre > code {
 }
 
 .pages {
-	padding: 50px;
+	padding: 70px;
 	padding-top: 100px;
 }
 
@@ -276,17 +276,17 @@ pre > code {
 .activity-posts h1 {
 	display: inline-block;
 
-	margin-top: 10px;
+	margin-top: 17px;
 	margin-left: 20px;
 	margin-right: 20px;
-	font-size: 25px;
+	font-size: 22px;
 }
 .activity-posts p {
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	font-size: 20px;
+	font-size: 18px;
 
 	line-height: 40px;
 }
@@ -534,7 +534,7 @@ figcaption {
 }
 
 #random-passage-text > p {
-	font-family: Cardo;
+	font-family: Charis SIL;
 	margin: 0;
 	margin-top: -30px;
 

@@ -84,7 +84,7 @@ function pageSetup(){
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="activity.html">Activity</a></li>
+            <li><a href="activity.html">Posts</a></li>
         </ul>
 
         <div id="darkmode-btn">
@@ -94,10 +94,10 @@ function pageSetup(){
         `;
 
     document.getElementById("footer").innerHTML = `
-        <p>Website hosted through GitHub pages</p>
-	    <p>2023 - ${new Date().getFullYear()}</p><br>
-        <p>
-            <a href="https://github.com/gyang0/gyang0.github.io" target="_blank"><i class="bi bi-github" style="font-size:40px;color:white"></i></a>
+        <p style="font-size: 17px; padding-bottom: 0px">Website hosted through GitHub pages</p>
+	    <p style="font-size: 17px">2023 &ndash; ${new Date().getFullYear()}</p>
+        <p style="font-size: 17px">
+            <a href="https://github.com/gyang0/gyang0.github.io" target="_blank"><i class="bi bi-github" style="font-size:30px;color:white"></i></a>
         </p>`;
 }
 
