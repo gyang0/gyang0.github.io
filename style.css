@@ -235,7 +235,7 @@ pre > code {
 
 .content ul,ol {
 	padding-left: 40px;
-	font-size: 23px;
+	font-size: 21px;
 	font-family: Ubuntu;
 	line-height: 40px;
 
@@ -252,8 +252,9 @@ pre > code {
 }
 
 .activity-posts-container {
-	margin-left: 60px;
-	margin-top: 10px;
+	margin-right: 30px;
+	margin-left: 30px;
+    margin-top: 10px;
 }
 
 .activity-posts-container a {
