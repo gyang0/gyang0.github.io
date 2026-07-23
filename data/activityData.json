@@ -85,24 +85,6 @@
                 "updated": 20241224,
                 "summary": "Basic double slit stuff with two laser pointers. The calculations worked out surprisingly well.",
                 "contentLink": "20241223_Interference_Bands.md"
-            },
-            {
-                "title": "My florr.io Builds",
-                "pageID": 10,
-                "mainImg": "images/activity/20241226_florr_builds_3.png",
-                "published": 20241226,
-                "updated": 20241226,
-                "summary": "Collection of the loadouts I use + explanations for usage",
-                "contentLink": "20241226_Florr_Builds.md"
-            },
-            {
-                "title": "2024: Year in Review",
-                "pageID": 11,
-                "mainImg": null,
-                "published": 20241227,
-                "updated": 20250102,
-                "summary": "Goodbye 2024",
-                "contentLink": "20241227_Year_Review.md"
             }
         ]
     },
@@ -170,15 +152,6 @@
                 "mainImg": "/images/activity/20250318_tuesday_meals_3.jpg",
                 "summary": "Kiss the chef",
                 "contentLink": "20250317_Tuesday_Meals.md"
-            },
-            {
-                "title": "F=ma 2025",
-                "pageID": 19,
-                "published": 20250319,
-                "updated": 20250319,
-                "mainImg": "/images/activity/20250319_f=ma_3.png",
-                "summary": "some thoughts",
-                "contentLink": "20250319_F=ma_Results.md"
             },
             {
                 "title": "Pics From the Nearby Park",
