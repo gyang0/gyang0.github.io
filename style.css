@@ -325,7 +325,8 @@ pre > code {
 }
 
 #specific-activity-post ul,ol {
-	line-height: 50px;
+    margin-top: -0.8em;
+	line-height: 1.7em;
 }
 
 #specific-activity-post li {

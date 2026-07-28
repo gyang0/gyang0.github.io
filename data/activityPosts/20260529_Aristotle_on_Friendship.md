@@ -15,8 +15,10 @@ My final Core paper in high school analyzed Aristotle's concept of friendship. A
     <figcaption>Plato and Aristotle &ndash; <em>The School of Athens</em>, Raphael</figcaption>
 </figure>
 
-## Aristotle's Philosophy of Friendship
-### 1. The Three Categories
+## I. Aristotle's Philosophy of Friendship
+### I.1. The Three Categories
+<hr style="width:70%; margin-top: 10px; margin-bottom: 10px">
+
 This is covered most extensively in *Nicomachean Ethics*, Books VIII - IX. Aristotle explores his philosophy of friendship thoroughly, devoting two full chapters to the topic.
 
 Several others *had* analyzed friendship before Aristotle. Hesiod, for example (in *Works and Days*, circa 700 BCE) thought friends were "potters against potters" (κεραμεὺς κεραμεῖ κοτέει) who would compete and bring out the best in each other. In a gentler analysis, Euripides (in a lost fragment, circa 400 BCE) likened a friend-friend relationship as that of "rain" to "parched earth" (ἐρᾶν μὲν ὄμβρου γαῖαν ζηρανθεῖσαν).
@@ -31,15 +33,19 @@ Aristotle himself is concerned with categorizing friendship. In particular, he a
 
 Aristotle himself valued friends deeply, arguing that without friends, "no one would choose to live, even if he possessed all other goods."
 
-### 2. More on Perfect Friendships
+### I.2. More on Perfect Friendships
+<hr style="width:70%; margin-top: 10px; margin-bottom: 10px">
+
 The "perfect friendship" as described by Aristotle is a bit controversial. The necessary ingredients as given by Aristotle are: supreme virtue, mutual goodwill, and shared activities. Eventually, perfect friends become "another self" (ἔτερος...αὐτὸς).
 
 Most modern writers note that while friends can be "another self" in one sense, they must be a "separate self" as well. Else, perfect friendships are only possible with yourself. Aristotle's characterization of perfect friendships has further been criticized as a "mirror view" friendship: that friends should act like a mirror of each other’s character, identical in character and virtue. If friends must be literally "another self," it's necessary for both parties to come to the friendship as fully-formed, virtuous individuals &ndash; difficult at best, impossible at worst. Even further, there isn't much to be gained from a relationship with someone who’s an exact copy of yourself. The balance between similar virtue and realistic distance is difficult to draw in Aristotle’s original philosophy, and it may be why Aristotle believed perfect friendships to be exceedingly rare (but not impossible).
 
 I'll leave the defense of perfect friendships to the philosophers. Instead, what about imperfect friendships?
 
-## The Flexibility of Imperfect Friendships
-### A Spectrum of Imperfect Friendships
+## II. The Flexibility of Imperfect Friendships
+### II.1. A Spectrum of Imperfect Friendships
+<hr style="width:70%; margin-top: 10px; margin-bottom: 10px">
+
 Though he divides friendship into three strict categories, Aristotle's philosophy of friendship is more flexible than it appears. Aristotle himself, for example, acknowledges that a perfect friendship doesn’t start off as perfect. Instead, he suggests that an element of "goodwill" can cause two people to become close, eventually engaging in shared activities that make a perfect friendship.
 
 An interesting argument with the same idea can be found in Sara Goering's "Choosing Our Friends: Moral Partiality and the Value of Diversity." Goering argues that an "instrumental friendship" can transition into that of virtue &ndash; we can, for example, actively seek out a certain friendship for the sake of a having a certain friend, then transition that to a friendship centered around character. This certainly accords with what we see in reality.
@@ -55,12 +61,16 @@ In the spirit of Aristotle and later authors, we can analyze imperfect friendshi
 
 Importantly, this long-term effect can happen even in the imperfect material and pleasure friendships. Furthermore, because this assessment is different from friendship to friendship, it shows that there’s a spectrum of imperfect friendships rather than purely imperfect ones. Instead of immediately disregarding imperfect friendships as a lesser form, we can understand them as a spectrum, assessed by the lessons they give.
 
-### The Criteria
+### II.2. The Criteria
+<hr style="width:70%; margin-top: 10px; margin-bottom: 10px">
+
 But how do we compare imperfect friendships according to this metric? I'll admit, it's unclear &ndash; I'd hate for this to turn into another utilitarian calculation, for example. But it may be unavoidable. Loosely speaking, a friendship might be "good" if its influences are good: enriching and enjoyable. Conversely, a friendship may be "bad" if its influences are bad: those that tend to decrease our life’s value, like a drug addiction. This doesn't have to involve virtue! Good friendships only need to bring happiness into the other person's life.
 
 For an interesting analysis of Aristotle's philosophy of friendship, see Simon Keller's "Belief for Someone Else's Sake." Keller believes that friendships need not be oriented towards virtue to be good. Instead, good friendships are like "good palliative care": they enrich life, without assuming a complete capacity for virtue.
 
-### Takeaways
+### II.3. Takeaways
+<hr style="width:70%; margin-top: 10px; margin-bottom: 10px">
+
 This analysis isn't perfect. One problem is that it characterizes friendships primarily based on its lasting effects, not the friendship as it exists. It also leaves a lot up to individual discretion. An especially dense person might not take away anything from a good friend, for example.
 
 But it's certainly comforting to know that Aristotle's philosophy allows for a spectrum of imperfect friendships, not just "imperfect" and "perfect." Personally, none of my friendships have been perfect. We fall apart, drift away, and outgrow each other. But I still remember everyone for the things they taught me &ndash; things that made me *me*. Despacito, baller signs, and OHS mao. Were these friendships imperfect? Yes. Would I choose not to have them? No.
@@ -75,7 +85,9 @@ Ironically, for someone who declares that "no one would choose to live" without 
 
 If he was reminiscing on his own friendships, perhaps he was reflecting on the good that they brought him. Not as a perfect friendship, but a sufficiently good one, whose influence extended further than expected.
 
-## Readings
+## III. Readings
+<hr style="width:70%; margin-top: 10px; margin-bottom: 10px">
+
 An excellent translation of *Nicomachean Ethics* is that of Robert C. Bartlett and Susan D. Collins, by the University of Chicago Press (2011). There are copious footnotes, which help to understand the finer points of Aristotle.
 
 Some interesting papers on Aristotle's philosophy of friendship:

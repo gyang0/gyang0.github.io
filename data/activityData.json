@@ -237,6 +237,15 @@
                 "mainImg": "/images/activity/2026/20260529_aristotle.jpg",
                 "summary": "Or: The value of imperfect friendships.",
                 "contentLink": "20260529_Aristotle_on_Friendship.md"
+            },
+            {
+                "title": "Atomic Orbitals from a Quantum Mechanist Point of View",
+                "pageID": 29,
+                "published": 20260727,
+                "updated": 20260728,
+                "mainImg": "/images/activity/2026/20260727_atomic_orbitals_3.png",
+                "summary": "Overview of angular momentum operators and the (<em>s, p, d, f</em>&nbsp;) subshells",
+                "contentLink": "20260727_Atomic_Orbitals.md"
             }
         ]
     }
