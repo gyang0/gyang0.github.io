@@ -17,7 +17,7 @@ Angular momentum operators $L_z$ and $L^2$ are briefly introduced. Spherical har
 From Hamiltonian mechanics, we know that momentum ($P$) is the generator of infinitesimal translations.
 $$\hat T(\varepsilon) = \mathrm{exp}\left(-\frac{i\varepsilon}{\hbar}P\right) \approx I - \frac{i\varepsilon}{\hbar}P$$
 
-Similarly, we define the $z$-component of angular momentum ($L_z$) as the generator of infinitesimal rotations around the $z$-axis. Consider spherical coordinates $(r,\phi,\theta)$ with $0 \leq r <\infty$, $0 \leq \phi < 2\pi$, and $0 \leq \theta < \pi$. Intuitively, $L_z$ takes the form
+Similarly, we define the $z$-component of angular momentum ($L_z$) as the generator of infinitesimal rotations around the $z$-axis. Consider spherical coordinates $(r,\phi,\theta)$ with $0 \leq r <\infty$, $0 \leq \phi < 2\pi$, and $0 \leq \theta < \pi$. By comparison with $P$, $L_z$ intuitively takes the form
 $$L_z \equiv -i\hbar\frac{\partial}{\partial\phi} \tag{Spherical coordinates}$$
 
 We further require our system to have <em>rotational symmetry</em>, i.e. independence of $\theta$. In such a system, $L_z$ must commute with the Hamiltonian: $[H, L_z] = 0$. This implies a simultaneous eigenbasis of $H$ and $L_z$. Let $\ket{l_z}$ be such a basis and assume a separable solution $\ket{l_z} = R(r)\Phi(\phi)$. In spherical coordinates,

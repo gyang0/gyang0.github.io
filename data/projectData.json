@@ -72,6 +72,13 @@
                         "linkTo": "data/documents/20260708_elementary_particles.pdf"
                     },
                     {
+                        "title": "Statistical Physics of Particles",
+                        "subtitle": "Mehran Kardar",
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260729_stat_particles.pdf"
+                    },
+                    {
                         "title": "Principles of Quantum Mechanics",
                         "subtitle": "R. Shankar",
                         "date": "2026",
