@@ -110,10 +110,10 @@
                         "linkTo": "data/documents/20260703_geometry_topology_physics.pdf"
                     },
                     {
-                        "title": "Abstract Algebra",
+                        "title": "Abstract Algebra [Groups & Rings]",
                         "subtitle": "David S. Dummit, Richard M. Foote",
                         "date": "2026",
-                        "status": "incomplete-typed",
+                        "status": "complete-typed",
                         "linkTo": "data/documents/20260703_abstract_algebra.pdf"
                     }
                 ]
