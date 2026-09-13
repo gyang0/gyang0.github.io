@@ -86,6 +86,13 @@
                         "linkTo": "data/documents/20260504_principles_of_quantum_mechanics.pdf"
                     },
                     {
+                        "title": "Introduction to Electrodynamics",
+                        "subtitle": "David J. Griffiths",
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260901_intro_to_electrodynamics.pdf"
+                    },
+                    {
                         "title": "Mathematical Methods of Classical Mechanics",
                         "subtitle": "Vladimir I. Arnold ",
                         "date": "2026",

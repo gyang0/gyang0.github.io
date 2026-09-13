@@ -246,6 +246,15 @@
                 "mainImg": "/images/activity/2026/20260727_atomic_orbitals_3.png",
                 "summary": "Overview of angular momentum operators and the (<em>s, p, d, f</em>&nbsp;) subshells",
                 "contentLink": "20260727_Atomic_Orbitals.md"
+            },
+            {
+                "title": "Geometry of Black Holes: Errata",
+                "pageID": 30,
+                "published": 20260803,
+                "updated": 20260912,
+                "mainImg": "/images/activity/2026/20260803_black_holes_2.png",
+                "summary": "For fun, I entered the Breakthrough Junior Challenge with a 2-minute video on black holes. These are the notes & errata.",
+                "contentLink": "20260803_Black_Holes_Video.md"
             }
         ]
     }
