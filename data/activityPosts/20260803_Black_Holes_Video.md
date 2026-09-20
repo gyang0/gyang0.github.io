@@ -2,6 +2,8 @@ In the interest of good science, here are the interesting bits I skipped over. I
 
 The video was fun to make. Though I'm slightly disappointed that I ended up skimming a lot of the details to fit the time limit &ndash; I was hoping to avoid making a pop-sci flick, but it seems to be so. Well, as long as I got the gravity = curvature across, I'm happy.
 
+<span style="color:var(--reddish)">Note: Absolutely no AI was used in drafting or creating the video.</span>
+
 <div style="display: flex; justify-content: center">
     <iframe style="width:50%; height: 400px" src="https://www.youtube.com/embed/6HTT4o9cTHg"></iframe>
 </div>
