@@ -252,8 +252,7 @@ pre > code {
 }
 
 .activity-posts-container {
-	margin-right: 30px;
-	margin-left: 30px;
+	margin-right: 50px;
     margin-top: 10px;
 }
 
@@ -265,10 +264,10 @@ pre > code {
 .activity-posts {
 	box-shadow: 3px 3px 10px rgb(0, 0, 0);
 
-	height: 400px;
-	width: 400px;
+	height: 370px;
+	width: 370px;
 
-	margin-top: 50px;
+	margin-top: 30px;
 
 	border-radius: 3px;
 	text-decoration: none;
@@ -280,14 +279,14 @@ pre > code {
 	margin-top: 17px;
 	margin-left: 20px;
 	margin-right: 20px;
-	font-size: 22px;
+	font-size: 20px;
 }
 .activity-posts p {
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	font-size: 18px;
+	font-size: 15px;
 
 	line-height: 40px;
 }
@@ -346,11 +345,11 @@ figcaption {
 .project-thumbnails {
 	box-shadow: 3px 3px 10px rgb(0, 0, 0);
 	
-	height: 310px;
-	width: 310px;
+	height: 300px;
+	width: 300px;
 
 	margin-top: 50px;
-	margin-right: 35px;
+	margin-right: 25px;
 
 	border-radius: 3px;
 	text-decoration: none;
