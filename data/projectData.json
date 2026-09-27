@@ -65,6 +65,13 @@
                         "linkTo": "data/documents/20260106_spacetime_and_geometry_notes.pdf"
                     },
                     {
+                        "title": "Quantum Field Theory and the Standard Model",
+                        "subtitle": "Matthew D. Schwartz",
+                        "date": "Currently reading",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20260927_qft_sm.pdf"
+                    },
+                    {
                         "title": "Introduction to Elementary Particles",
                         "subtitle": "David J. Griffiths",
                         "date": "2026",
@@ -74,7 +81,7 @@
                     {
                         "title": "Statistical Physics of Particles",
                         "subtitle": "Mehran Kardar",
-                        "date": "2026",
+                        "date": "Currently reading",
                         "status": "incomplete-typed",
                         "linkTo": "data/documents/20260729_stat_particles.pdf"
                     },
@@ -88,7 +95,7 @@
                     {
                         "title": "Introduction to Electrodynamics",
                         "subtitle": "David J. Griffiths",
-                        "date": "2026",
+                        "date": "Currently reading",
                         "status": "incomplete-typed",
                         "linkTo": "data/documents/20260901_intro_to_electrodynamics.pdf"
                     },
@@ -112,7 +119,7 @@
                     {
                         "title": "Geometry, Topology, and Physics",
                         "subtitle": "Mikio Nakahara",
-                        "date": "2026",
+                        "date": "Currently reading",
                         "status": "incomplete-typed",
                         "linkTo": "data/documents/20260703_geometry_topology_physics.pdf"
                     },
