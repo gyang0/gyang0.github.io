@@ -179,8 +179,8 @@ function addNotesCode(filter, index){
                     
                 </div>
                 <div style="width: 85%">
-                    <h1 style="font-size: 20px; color: var(--txt-color)">${proj.title}</h1>
-                    <p style="line-height: 20px; font-size: 0.9em; color: var(--txt-color)">${proj.subtitle} &nbsp; | &nbsp; ${proj.date}</p>
+                    <h1 style="font-size: 18px; color: var(--txt-color)">${proj.title}</h1>
+                    <p style="line-height: 25px; font-size: 14px; color: var(--txt-color)">${proj.subtitle} &nbsp; | &nbsp; ${proj.date}</p>
                 </div>
 
                 <div style="width: 10%">
