@@ -55,7 +55,7 @@
             },
             {
                 "name": "books",
-                "desc": "Starting 2025, I did some independent reading to supplement my school courses. I made the notes listed below for easy review. The topics should cover a solid baseline in theoretical physics, from Lagrangian mechanics to general relativity.",
+                "desc": "Starting 2025, I did some independent reading to supplement my school courses. I made the notes listed below for easy review. The topics should hopefully cover a solid baseline in theoretical physics, from Lagrangian mechanics to general relativity.",
                 "contents": [
                     {
                         "title": "Spacetime and Geometry",
@@ -205,6 +205,13 @@
                         "date": "2026",
                         "status": "incomplete-typed",
                         "linkTo": "data/documents/20260309_gtr_translations.pdf"
+                    },
+                    {
+                        "title": "<em>46 Stories in Classical Greek</em>",
+                        "subtitle": "Anne H. Groton & James M. May",
+                        "date": "2026",
+                        "status": "incomplete-typed",
+                        "linkTo": "data/documents/20261014_46_stories.pdf"
                     }
                 ]
             }

@@ -139,6 +139,7 @@ function addNotesCode(filter, index){
         for(let i = 0; i < projects.length; i++){
             let proj = projects[i];
 
+            // Sentinels
             if(proj.title == "SKIP"){
                 str += `<div style="width: 100%; height: 30px"></div>`;
                 continue;
