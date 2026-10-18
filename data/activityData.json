@@ -264,7 +264,17 @@
                 "mainImg": "/images/activity/2026/20261015_magnetic_monopoles_1.png",
                 "summary": "All hail the Dirac String",
                 "contentLink": "20261013_Magnetic_Monopoles_UW.md"
+            },
+            {
+                "title": "Short-α Subset of 1st Declension Nouns in Ancient Greek",
+                "pageID": 32,
+                "published": 20261016,
+                "updated": 20261017,
+                "mainImg": "/images/activity/2026/20261017_laryngeals.png",
+                "summary": "And its origins in the Proto Indo-European laryngeals",
+                "contentLink": "20261017_PIE_Laryngeals.md"
             }
+
         ]
     }
 }

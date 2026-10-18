@@ -55,8 +55,8 @@ function displayAllPosts(filter){
                     <div class="activity-posts" style="background-color:var(--card-background); color:var(--txt-color)">
                         <img src=${allPosts[filter].posts[i].mainImg ?? "images/activity/DEFAULT_POST_IMG.png"} loading="lazy">
                         <h1>${allPosts[filter].posts[i].title}</h1>
-                        <p style="font-size:14px; margin-left:22px;margin-top:-5px">${dateFormatter(allPosts[filter].posts[i].published)}</p>
-                        <p style="line-height: 1.7em">${allPosts[filter].posts[i].summary}</p>
+                        <p style="font-size:14px; margin-left:22px;margin-top:-7px">${dateFormatter(allPosts[filter].posts[i].published)}</p>
+                        <p style="line-height: 1.7em;margin-top:-3px">${allPosts[filter].posts[i].summary}</p>
                     </div>
                 </a>
             </div>`;
